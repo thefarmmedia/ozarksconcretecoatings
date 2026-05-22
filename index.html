@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ozarks Concrete Coatings | #1 Epoxy &amp; Polyaspartic Floor Contractor | Springfield, MO</title>
+  <meta name="description" content="Southwest Missouri's #1 rated epoxy & polyaspartic floor coating contractor. Serving Springfield, Nixa, Ozark, Branson & all of SW Missouri within 75 miles. 15-Year Warranty. 1-Day Install. Call 417.402.6821."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --red:#cc202f; --red-dark:#a01824; --red-glow:rgba(204,32,47,.18);
+      --black:#000; --bg:#090909; --bg2:#111; --bg3:#181818; --bg4:#222;
+      --border:rgba(255,255,255,.07); --gray:#888; --gray-light:#bbb; --white:#fff;
+      --font-d:'Bebas Neue',sans-serif; --font-c:'Barlow Condensed',sans-serif; --font-b:'Barlow',sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--white);font-family:var(--font-b);overflow-x:hidden;line-height:1.6}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+
+    /* TOP BAR */
+    .topbar{background:var(--red);padding:7px 32px;display:flex;justify-content:space-between;align-items:center;font-family:var(--font-c);font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;flex-wrap:wrap;gap:8px}
+    .topbar a{transition:opacity .2s}.topbar a:hover{opacity:.8}
+    .topbar-l{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+    .topbar-r{display:flex;gap:16px;align-items:center}
+    .t-social{display:flex;gap:8px}
+    .t-social a{width:26px;height:26px;background:rgba(0,0,0,.25);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;transition:background .2s}
+    .t-social a:hover{background:rgba(0,0,0,.45)}
+
+    /* NAV */
+    nav{background:var(--black);border-bottom:2px solid var(--red);padding:0 36px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:1000;height:70px}
+    .nav-logo img{height:50px;width:auto}
+    .nav-links{display:flex;gap:26px;list-style:none;font-family:var(--font-c);font-weight:700;font-size:14px;letter-spacing:.07em;text-transform:uppercase}
+    .nav-links a{color:var(--gray-light);transition:color .2s;padding:4px 0;border-bottom:2px solid transparent}
+    .nav-links a:hover{color:var(--white);border-bottom-color:var(--red)}
+    .nav-cta{background:var(--red)!important;color:var(--white)!important;padding:9px 20px!important;border-radius:4px!important;border-bottom:none!important;font-weight:900!important;letter-spacing:.1em;box-shadow:0 2px 12px rgba(204,32,47,.35);transition:background .2s,transform .15s!important}
+    .nav-cta:hover{background:var(--red-dark)!important;transform:translateY(-1px)!important}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px}
+    .hamburger span{display:block;width:24px;height:2px;background:var(--white);border-radius:2px;transition:all .3s}
+    .mob-menu{display:none;flex-direction:column;background:var(--black);border-top:1px solid var(--border);padding:18px 24px;gap:0;font-family:var(--font-c);font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+    .mob-menu a{color:var(--gray-light);padding:11px 0;border-bottom:1px solid var(--border);display:block}
+    .mob-menu a:last-child{border-bottom:none;color:var(--red)}
+    .mob-menu.open{display:flex}
+
+    /* HERO */
+    .hero{min-height:92vh;position:relative;display:flex;align-items:center;overflow:hidden}
+    .hero-bg{position:absolute;inset:0;z-index:0}
+    .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center center}
+    .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.93) 0%,rgba(0,0,0,.80) 45%,rgba(0,0,0,.25) 100%)}
+    .hero-inner{position:relative;z-index:1;max-width:1300px;margin:0 auto;width:100%;padding:70px 40px;display:grid;grid-template-columns:1fr 420px;gap:60px;align-items:center}
+    /* PHOTO SHOWCASE */
+    .photo-showcase{background:var(--black);padding:0;position:relative;overflow:hidden}
+    .photo-showcase-in{max-width:100%;display:grid;grid-template-columns:1fr 1fr;align-items:stretch;min-height:500px}
+    .ps-img-wrap{position:relative;overflow:hidden}
+    .ps-img-wrap img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transition:transform .5s ease}
+    .ps-img-wrap:hover img{transform:scale(1.03)}
+    .ps-content{background:var(--red);padding:60px 56px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+    .ps-content::before{content:'OCC';position:absolute;font-family:var(--font-d);font-size:200px;color:rgba(0,0,0,.1);bottom:-20px;right:-10px;pointer-events:none;line-height:1}
+    .ps-eyebrow{font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;opacity:.8;margin-bottom:12px}
+    .ps-title{font-family:var(--font-d);font-size:clamp(36px,4vw,56px);line-height:.95;margin-bottom:18px;position:relative}
+    .ps-body{font-size:15px;line-height:1.78;opacity:.93;margin-bottom:28px;position:relative;max-width:420px}
+    .ps-caption{display:inline-flex;align-items:center;gap:8px;background:rgba(0,0,0,.2);border-radius:4px;padding:8px 14px;font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;position:relative}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--red-glow);border:1px solid var(--red);border-radius:4px;padding:5px 13px;font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:18px}
+    .hero-logo{margin-bottom:22px;animation:fsu .7s ease both}
+    .hero-logo img{height:80px;width:auto;filter:drop-shadow(0 4px 24px rgba(204,32,47,.45))}
+    .hero-h1{font-family:var(--font-d);font-size:clamp(50px,6vw,90px);line-height:.93;letter-spacing:.01em;margin-bottom:10px;animation:fsu .7s .1s ease both}
+    .hero-h1 .r{color:var(--red)}
+    .hero-sub{font-family:var(--font-c);font-size:clamp(15px,2vw,20px);font-weight:600;color:var(--gray-light);letter-spacing:.05em;text-transform:uppercase;margin-bottom:26px;animation:fsu .7s .17s ease both}
+    .hero-trust{display:flex;gap:18px;margin-bottom:32px;flex-wrap:wrap;animation:fsu .7s .24s ease both}
+    .tp{display:flex;align-items:center;gap:7px;font-family:var(--font-c);font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gray-light)}
+    .tp .ic{width:30px;height:30px;background:var(--red-glow);border:1px solid rgba(204,32,47,.4);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:15px}
+    .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;animation:fsu .7s .3s ease both}
+
+    /* BUTTONS */
+    .btn{display:inline-block;font-family:var(--font-c);font-weight:900;letter-spacing:.1em;text-transform:uppercase;border-radius:5px;cursor:pointer;transition:all .2s;border:none}
+    .btn-red{background:var(--red);color:var(--white);padding:15px 30px;font-size:15px;box-shadow:0 4px 20px rgba(204,32,47,.35)}
+    .btn-red:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 8px 28px rgba(204,32,47,.45)}
+    .btn-outline{background:transparent;color:var(--white);padding:13px 26px;font-size:15px;border:2px solid rgba(255,255,255,.25)}
+    .btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,.06)}
+    .btn-white{background:var(--white);color:var(--red);padding:15px 36px;font-size:16px;box-shadow:0 4px 20px rgba(0,0,0,.3)}
+    .btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.4)}
+    .btn-blk{background:var(--black);color:var(--white);padding:13px 30px;font-size:15px;border:2px solid rgba(255,255,255,.25);margin-left:12px}
+    .btn-blk:hover{border-color:var(--white);background:#111}
+
+    /* HERO FORM */
+    .hform{background:rgba(8,8,8,.97);border:1px solid rgba(204,32,47,.4);border-radius:10px;padding:30px 26px;animation:fsu .7s .18s ease both;box-shadow:0 20px 60px rgba(0,0,0,.7)}
+    .hform-head{font-family:var(--font-c);font-size:20px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;border-bottom:2px solid var(--red);padding-bottom:12px;margin-bottom:18px;line-height:1.2}
+    .hform-head .sub{font-size:12px;font-weight:600;color:var(--gray);display:block;margin-top:3px;letter-spacing:.08em}
+    .fg{margin-bottom:12px}
+    .fg label{display:block;font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray);margin-bottom:5px}
+    .fg input,.fg select,.fg textarea{width:100%;background:var(--bg3);border:1px solid var(--border);border-radius:5px;color:var(--white);font-family:var(--font-b);font-size:14px;padding:10px 13px;outline:none;transition:border-color .2s;-webkit-appearance:none}
+    .fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--red)}
+    .fg select option{background:var(--bg3)}
+    .fg textarea{resize:vertical;min-height:72px}
+    .frow{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .fsub{width:100%;margin-top:4px}
+    .fnote{font-size:11px;color:var(--gray);text-align:center;margin-top:8px;font-family:var(--font-c)}
+
+    /* STATS */
+    .stats{background:var(--black);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:26px 40px}
+    .stats-in{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+    .st{text-align:center;padding:14px;border-right:1px solid var(--border)}
+    .st:last-child{border-right:none}
+    .st-n{font-family:var(--font-d);font-size:48px;color:var(--red);line-height:1;margin-bottom:3px}
+    .st-l{font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-light)}
+
+    /* SECTIONS */
+    .sec{padding:88px 40px}
+    .sec-dk{background:var(--bg2)}
+    .sec-dkr{background:var(--bg)}
+    .inner{max-width:1300px;margin:0 auto}
+    .sec-label{font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:9px;display:block}
+    .sec-title{font-family:var(--font-d);font-size:clamp(36px,5vw,62px);line-height:.95;margin-bottom:14px}
+    .sec-desc{font-size:16px;color:var(--gray-light);max-width:600px;line-height:1.75}
+    .sec-split{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;gap:24px;flex-wrap:wrap}
+    .divider{width:48px;height:3px;background:var(--red);border-radius:2px;margin:14px 0 20px}
+
+    /* PILLARS */
+    .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+    .pillar{background:var(--bg2);padding:40px 34px;transition:background .25s;position:relative;overflow:hidden}
+    .pillar:hover{background:var(--bg3)}
+    .pillar-ghost{position:absolute;top:10px;right:16px;font-family:var(--font-d);font-size:80px;color:var(--red);opacity:.08;line-height:1;pointer-events:none}
+    .pillar-icon{font-size:38px;margin-bottom:14px;display:block}
+    .pillar-bar{width:36px;height:3px;background:var(--red);border-radius:2px;margin-bottom:14px}
+    .pillar-t{font-family:var(--font-c);font-size:22px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;margin-bottom:9px}
+    .pillar-d{font-size:14px;color:var(--gray-light);line-height:1.7}
+
+    /* ALL SERVICES */
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .sc{background:var(--bg3);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:border-color .25s,transform .25s,box-shadow .25s;display:flex;flex-direction:column}
+    .sc:hover{border-color:rgba(204,32,47,.45);transform:translateY(-4px);box-shadow:0 14px 40px rgba(0,0,0,.5)}
+    .sc-img{height:190px;overflow:hidden;position:relative;background:var(--bg4);display:flex;align-items:center;justify-content:center;font-size:52px}
+    .sc-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+    .sc:hover .sc-img img{transform:scale(1.07)}
+    .sc-body{padding:22px;flex:1;display:flex;flex-direction:column}
+    .sc-tag{font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:7px}
+    .sc-t{font-family:var(--font-c);font-size:20px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:9px}
+    .sc-d{font-size:13px;color:var(--gray-light);line-height:1.65;flex:1}
+    .sc-lnk{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--red);margin-top:15px;transition:gap .2s}
+    .sc-lnk:hover{gap:10px}
+
+    /* PROCESS */
+    .proc{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;position:relative}
+    .proc::before{content:'';position:absolute;top:35px;left:10%;right:10%;height:2px;background:linear-gradient(to right,var(--red),transparent);z-index:0}
+    .ps{text-align:center;padding:0 12px;position:relative;z-index:1}
+    .ps-num{width:70px;height:70px;background:var(--black);border:2px solid var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:28px;color:var(--red);margin:0 auto 18px;box-shadow:0 0 0 5px var(--bg2),0 0 18px var(--red-glow)}
+    .ps-t{font-family:var(--font-c);font-size:15px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+    .ps-d{font-size:12px;color:var(--gray);line-height:1.6}
+
+    /* WHY */
+    .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+    .why-list{list-style:none;display:flex;flex-direction:column;gap:18px;margin-top:28px}
+    .wi{display:flex;gap:14px;align-items:flex-start}
+    .wi-ic{width:42px;height:42px;min-width:42px;background:var(--red-glow);border:1px solid rgba(204,32,47,.35);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:19px}
+    .wi-t{font-family:var(--font-c);font-size:16px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px}
+    .wi-d{font-size:13px;color:var(--gray-light);line-height:1.6}
+    .why-vis{border-radius:10px;overflow:hidden;border:1px solid var(--border);position:relative}
+    .why-vis img{width:100%;display:block}
+    .why-badge{position:absolute;bottom:18px;left:18px;background:var(--red);border-radius:6px;padding:10px 16px;font-family:var(--font-c);font-weight:900;font-size:14px;text-transform:uppercase;letter-spacing:.06em}
+
+    /* CTA BAND */
+    .cta-band{background:var(--red);padding:52px 40px;text-align:center;position:relative;overflow:hidden}
+    .cta-band::before{content:'OCC';position:absolute;font-family:var(--font-d);font-size:260px;color:rgba(0,0,0,.1);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;white-space:nowrap}
+    .cta-band h2{font-family:var(--font-d);font-size:clamp(34px,5vw,62px);margin-bottom:10px;position:relative}
+    .cta-band p{font-family:var(--font-c);font-size:17px;font-weight:600;letter-spacing:.06em;opacity:.9;margin-bottom:26px;text-transform:uppercase;position:relative}
+
+    /* BEFORE/AFTER */
+    .ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .ba-card{border-radius:8px;overflow:hidden;border:1px solid var(--border);background:var(--bg3);position:relative}
+    .ba-card .ba-img{height:220px;background:var(--bg4);display:flex;align-items:center;justify-content:center;font-size:48px}
+    .ba-card img{width:100%;height:220px;object-fit:cover}
+    .ba-label{position:absolute;top:12px;left:12px;background:var(--red);font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:3px}
+    .ba-info{padding:16px 18px}
+    .ba-info-t{font-family:var(--font-c);font-size:16px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
+    .ba-info-d{font-size:13px;color:var(--gray)}
+
+    /* AREAS */
+    .areas-g{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:36px}
+    .area-p{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:11px 15px;font-family:var(--font-c);font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gray-light);display:flex;align-items:center;gap:7px;transition:border-color .2s,color .2s,background .2s}
+    .area-p:hover{border-color:var(--red);color:var(--white);background:var(--bg4)}
+    .area-p::before{content:'📍';font-size:12px}
+
+    /* REVIEWS */
+    .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .rc{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;transition:border-color .25s}
+    .rc:hover{border-color:rgba(204,32,47,.35)}
+    .rc-stars{color:#ffc107;font-size:17px;margin-bottom:12px;letter-spacing:2px}
+    .rc-txt{font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:16px;font-style:italic}
+    .rc-auth{font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px}
+    .rc-auth::before{content:'';width:22px;height:2px;background:var(--red);display:block}
+    .rc-loc{color:var(--gray);font-weight:400}
+    .google-badge{display:inline-flex;align-items:center;gap:10px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:14px 20px;margin-bottom:36px;font-family:var(--font-c);font-weight:700;font-size:14px;letter-spacing:.04em}
+    .google-badge .stars{color:#ffc107;font-size:18px;letter-spacing:2px}
+
+    /* FAQ */
+    .faq-list{display:flex;flex-direction:column;gap:4px}
+    .fi{border:1px solid var(--border);border-radius:6px;overflow:hidden;transition:border-color .2s}
+    .fi.open{border-color:rgba(204,32,47,.35)}
+    .fq{padding:18px 22px;font-family:var(--font-c);font-size:17px;font-weight:700;letter-spacing:.03em;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;background:var(--bg3);transition:background .2s;user-select:none}
+    .fq:hover{background:var(--bg4)}
+    .fq .arr{font-size:18px;color:var(--red);transition:transform .3s;flex-shrink:0}
+    .fi.open .fq .arr{transform:rotate(180deg)}
+    .fa{max-height:0;overflow:hidden;transition:max-height .35s ease;background:var(--bg2)}
+    .fa-in{padding:0 22px;font-size:14px;color:var(--gray-light);line-height:1.75}
+    .fi.open .fa{max-height:280px}
+    .fi.open .fa-in{padding:18px 22px}
+
+    /* BLOG */
+    .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .bc{background:var(--bg3);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:border-color .25s,transform .25s;display:flex;flex-direction:column}
+    .bc:hover{border-color:rgba(204,32,47,.4);transform:translateY(-3px)}
+    .bc-img{height:170px;overflow:hidden;background:var(--bg4);display:flex;align-items:center;justify-content:center;font-size:42px}
+    .bc-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+    .bc:hover .bc-img img{transform:scale(1.07)}
+    .bc-body{padding:20px;flex:1;display:flex;flex-direction:column}
+    .bc-cat{font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:7px}
+    .bc-t{font-family:var(--font-c);font-size:18px;font-weight:900;text-transform:uppercase;letter-spacing:.03em;margin-bottom:8px;line-height:1.2}
+    .bc-d{font-size:13px;color:var(--gray-light);line-height:1.65;flex:1}
+    .bc-lnk{display:inline-flex;align-items:center;gap:6px;font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--red);margin-top:14px;transition:gap .2s}
+    .bc-lnk:hover{gap:10px}
+    .bc-meta{font-size:11px;color:var(--gray);font-family:var(--font-c);letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px}
+
+    /* CONTACT */
+    .contact-g{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+    .ci-block{display:flex;flex-direction:column;gap:20px;margin-top:24px}
+    .ci-item{display:flex;gap:14px;align-items:flex-start}
+    .ci-ic{width:42px;height:42px;min-width:42px;background:var(--red);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:19px}
+    .ci-lbl{font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gray);margin-bottom:2px}
+    .ci-val{font-family:var(--font-c);font-size:18px;font-weight:700}
+    .ci-val a:hover{color:var(--red);transition:color .2s}
+    .big-form{background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:34px}
+    .bf-t{font-family:var(--font-d);font-size:34px;margin-bottom:5px}
+    .bf-s{font-size:13px;color:var(--gray);margin-bottom:22px}
+
+    /* FOOTER */
+    footer{background:var(--black);border-top:2px solid var(--red);padding:56px 40px 28px}
+    .footer-in{max-width:1300px;margin:0 auto}
+    .footer-top{display:grid;grid-template-columns:260px 1fr 1fr 1fr 1fr;gap:36px;margin-bottom:44px}
+    .fl img{height:52px;width:auto;margin-bottom:12px}
+    .fl-tag{font-size:13px;color:var(--gray);line-height:1.65;margin-bottom:16px}
+    .fl-soc{display:flex;gap:8px}
+    .fs-a{width:34px;height:34px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;transition:background .2s,border-color .2s}
+    .fs-a:hover{background:var(--red);border-color:var(--red)}
+    .fc-t{font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--red);margin-bottom:15px}
+    .fl-links{list-style:none;display:flex;flex-direction:column;gap:9px}
+    .fl-links a{font-size:13px;color:var(--gray-light);transition:color .2s;display:flex;align-items:center;gap:5px}
+    .fl-links a::before{content:'›';color:var(--red);font-size:15px}
+    .fl-links a:hover{color:var(--white)}
+    .footer-bot{border-top:1px solid var(--border);padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--gray);font-family:var(--font-c);letter-spacing:.04em}
+    .footer-bot a{color:var(--gray);transition:color .2s}
+    .footer-bot a:hover{color:var(--red)}
+
+    /* STICKY MOBILE */
+    .sticky-mob{display:none;position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--black);border-top:2px solid var(--red);padding:10px 14px;gap:9px}
+    .sticky-mob a{flex:1;text-align:center;padding:12px;border-radius:5px;font-family:var(--font-c);font-size:14px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+    .s-call{background:var(--red);color:var(--white)}
+    .s-quote{background:var(--bg3);color:var(--white);border:1px solid var(--border)}
+
+    /* TRUST LOGOS BAR */
+    .trust-bar{background:var(--bg3);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:22px 40px;text-align:center}
+    .trust-bar-in{max-width:1300px;margin:0 auto}
+    .trust-bar p{font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gray);margin-bottom:14px}
+    .trust-logos{display:flex;justify-content:center;align-items:center;gap:40px;flex-wrap:wrap}
+    .tl-item{font-family:var(--font-c);font-size:14px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--gray-light);display:flex;align-items:center;gap:8px}
+    .tl-item .badge{background:var(--red);color:var(--white);font-size:10px;padding:2px 7px;border-radius:3px;letter-spacing:.1em}
+
+    /* ANIMATIONS */
+    @keyframes fsu{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+    .rev{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
+    .rev.vis{opacity:1;transform:translateY(0)}
+
+    /* RESPONSIVE */
+    @media(max-width:1100px){
+      .hero-inner{grid-template-columns:1fr;padding:44px 24px}
+      .hform{max-width:540px}
+      .services-grid{grid-template-columns:repeat(2,1fr)}
+      .blog-grid{grid-template-columns:repeat(2,1fr)}
+      .proc{grid-template-columns:repeat(3,1fr)}
+      .proc::before{display:none}
+      .why-grid{grid-template-columns:1fr}
+      .footer-top{grid-template-columns:1fr 1fr}
+      .stats-in{grid-template-columns:repeat(3,1fr)}
+      .ba-grid{grid-template-columns:repeat(2,1fr)}
+      .areas-g{grid-template-columns:repeat(4,1fr)}
+    }
+    @media(max-width:768px){
+      nav{padding:0 18px}
+      .nav-links{display:none}
+      .hamburger{display:flex}
+      .sec{padding:56px 18px}
+      .stats{padding:18px}
+      .topbar{display:none}
+      .pillars{grid-template-columns:1fr}
+      .services-grid{grid-template-columns:1fr}
+      .rev-grid{grid-template-columns:1fr}
+      .blog-grid{grid-template-columns:1fr}
+      .ba-grid{grid-template-columns:1fr}
+      .areas-g{grid-template-columns:repeat(2,1fr)}
+      .proc{grid-template-columns:repeat(2,1fr)}
+      .contact-g{grid-template-columns:1fr}
+      .footer-top{grid-template-columns:1fr}
+      .footer-bot{flex-direction:column;text-align:center}
+      .sticky-mob{display:flex}
+      body{padding-bottom:70px}
+      .hero-inner{min-height:auto}
+      .frow{grid-template-columns:1fr}
+      .trust-logos{gap:20px}
+      .btn-blk{margin-left:0;margin-top:10px;display:inline-block}
+      .photo-showcase-in{grid-template-columns:1fr}
+      .ps-img-wrap{min-height:300px}
+      .ps-content{padding:36px 22px}
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-l">
+    <span>📞 <a href="tel:4174026821">417.402.6821</a></span>
+    <span style="opacity:.6">|</span>
+    <span>✉ <a href="mailto:OzarksConcreteCoatings@gmail.com">OzarksConcreteCoatings@gmail.com</a></span>
+  </div>
+  <div class="topbar-r">
+    <span style="opacity:.8">SW Missouri's #1 Rated Floor Contractor &nbsp;·&nbsp; Mon–Fri 9am–5pm</span>
+    <div class="t-social">
+      <a href="https://www.facebook.com/ozarksconcretecoatings" target="_blank">f</a>
+      <a href="https://www.instagram.com/ozarksconcretecoatings/" target="_blank">ig</a>
+      <a href="https://www.tiktok.com/@ozarksconcretecoatings" target="_blank">tt</a>
+      <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x87cf674402116c75:0x49ad633ad1cd078f" target="_blank">G</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo"><img src="Logo_with_number_black.png" alt="Ozarks Concrete Coatings"/></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/residential.html">Residential</a></li>
+    <li><a href="/commercial.html">Commercial</a></li>
+    <li><a href="/gallery.html">Gallery</a></li>
+    <li><a href="/colors.html">Colors</a></li>
+    <li><a href="/blog.html">Blog</a></li>
+    <li><a href="/reviews.html">Reviews</a></li>
+    <li><a href="/contact.html" class="nav-cta">Free Quote</a></li>
+  </ul>
+  <div class="hamburger" id="hbtn"><span></span><span></span><span></span></div>
+</nav>
+<div class="mob-menu" id="mmenu">
+  <a href="/">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/residential.html">Residential</a>
+  <a href="/commercial.html">Commercial</a>
+  <a href="/gallery.html">Gallery</a>
+  <a href="/colors.html">Colors</a>
+  <a href="/blog.html">Blog</a>
+  <a href="/reviews.html">Reviews</a>
+  <a href="/contact.html">Get Free Quote →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="hero-bg.png" alt="Premier Epoxy Garage Floor - Ozarks Concrete Coatings Springfield MO"/>
+  </div>
+  <div class="hero-inner">
+    <!-- LEFT -->
+    <div>
+      <div class="hero-badge">⭐ Google Verified — #1 Epoxy Contractor in SW Missouri</div>
+      <div class="hero-logo"><img src="Logo_with_number_black.png" alt="Ozarks Concrete Coatings"/></div>
+      <h1 class="hero-h1">Southwest<br/>Missouri's <span class="r">Premier</span><br/>Floor Coatings</h1>
+      <p class="hero-sub">Springfield · Nixa · Ozark · Branson · Republic · Joplin &amp; 75-Mile Radius</p>
+      <div class="hero-trust">
+        <div class="tp"><div class="ic">🛡️</div>15-Year Warranty</div>
+        <div class="tp"><div class="ic">⚡</div>1-Day Install</div>
+        <div class="tp"><div class="ic">💪</div>6× Stronger Than Epoxy</div>
+        <div class="tp"><div class="ic">💎</div>Diamond Ground Prep</div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#quote-form" class="btn btn-red">🚀 Get Free Quote</a>
+        <a href="tel:4174026821" class="btn btn-outline">📞 417.402.6821</a>
+      </div>
+    </div>
+    <!-- FORM (also anchored for scroll) -->
+    <div class="hform" id="quote-form">
+      <div class="hform-head">Get Your Free Quote<span class="sub">No obligation · Fast response · Local experts</span></div>
+      <div class="frow">
+        <div class="fg"><label>First Name</label><input type="text" placeholder="John"/></div>
+        <div class="fg"><label>Last Name</label><input type="text" placeholder="Smith"/></div>
+      </div>
+      <div class="fg"><label>Phone Number</label><input type="tel" placeholder="417-555-0000"/></div>
+      <div class="fg"><label>Email Address</label><input type="email" placeholder="you@email.com"/></div>
+      <div class="fg">
+        <label>Service Needed</label>
+        <select>
+          <option value="">Select a service...</option>
+          <option>Epoxy Garage Floor</option>
+          <option>Polyaspartic Floor Coating</option>
+          <option>Metallic Epoxy Floor</option>
+          <option>Basement Floor Coating</option>
+          <option>Patio / Outdoor Coating</option>
+          <option>Commercial Flooring</option>
+          <option>ManCave / Shop Floor</option>
+          <option>Church or School</option>
+          <option>Concrete Repair / Sealing</option>
+          <option>Not Sure — Need Advice</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label>Approximate Square Footage</label>
+        <select>
+          <option value="">Select range...</option>
+          <option>Under 300 sq ft</option>
+          <option>300–500 sq ft</option>
+          <option>500–800 sq ft</option>
+          <option>800–1,200 sq ft</option>
+          <option>1,200–2,000 sq ft</option>
+          <option>2,000+ sq ft (Commercial)</option>
+        </select>
+      </div>
+      <div class="fg"><label>Your City / Zip</label><input type="text" placeholder="Springfield, MO or 65804"/></div>
+      <div class="fg"><label>Tell Us About Your Project</label><textarea placeholder="Current floor condition, cracks, project goals..."></textarea></div>
+      <button class="btn btn-red fsub" onclick="submitForm()">Submit Free Quote Request →</button>
+      <p class="fnote">🔒 Private &amp; secure. No spam. Response within 1 business day.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-in">
+    <div class="st"><div class="st-n">500+</div><div class="st-l">Projects Completed</div></div>
+    <div class="st"><div class="st-n">15</div><div class="st-l">Year Warranty</div></div>
+    <div class="st"><div class="st-n">6×</div><div class="st-l">Stronger Than Epoxy</div></div>
+    <div class="st"><div class="st-n">75mi</div><div class="st-l">Service Radius</div></div>
+    <div class="st"><div class="st-n">5★</div><div class="st-l">Google Verified</div></div>
+  </div>
+</div>
+
+<!-- PHOTO SHOWCASE — Premier Sports Cars Lamborghini -->
+<div class="photo-showcase">
+  <div class="photo-showcase-in">
+    <div class="ps-img-wrap">
+      <img src="hero-bg.png" alt="Premier Sports Cars Springfield MO - Ozarks Concrete Coatings Epoxy Floor - Lamborghini Huracan on Full Flake Polyaspartic Floor" />
+    </div>
+    <div class="ps-content">
+      <div class="ps-eyebrow">📍 Springfield, Missouri — Featured Project</div>
+      <div class="ps-title">When Your Floor Has to Be as Nice as What's Parked on It</div>
+      <p class="ps-body">Premier Sports Cars of Springfield trusted Ozarks Concrete Coatings to coat their showroom floor — the same floor that holds Lamborghinis, Ferraris, and some of the most prized vehicles in Southwest Missouri. Our full flake polyaspartic system delivered a showroom-quality finish that's as tough as it is stunning.</p>
+      <div class="ps-caption">🏆 Premier Sports Cars · Springfield, MO · Commercial Full Flake System</div>
+      <div style="margin-top:22px;position:relative">
+        <a href="/gallery.html" class="btn btn-white" style="font-size:14px;padding:12px 26px">View Full Gallery →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST LOGOS -->
+<div class="trust-bar">
+  <div class="trust-bar-in">
+    <p>Trusted By Southwest Missouri Homeowners &amp; Businesses</p>
+    <div class="trust-logos">
+      <div class="tl-item"><span class="badge">VERIFIED</span> Google #1 Rated</div>
+      <div class="tl-item">⭐⭐⭐⭐⭐ 5-Star Reviews</div>
+      <div class="tl-item"><span class="badge">CERTIFIED</span> Polyaspartic Pro</div>
+      <div class="tl-item">🏆 SW Missouri's Premier Installer</div>
+      <div class="tl-item"><span class="badge">15 YR</span> Written Warranty</div>
+      <div class="tl-item">💎 Diamond Grind Standard</div>
+    </div>
+  </div>
+</div>
+
+<!-- WHY OCC -->
+<section class="sec sec-dk">
+  <div class="inner">
+    <div class="sec-split rev">
+      <div>
+        <span class="sec-label">Why Choose OCC</span>
+        <h2 class="sec-title">Built Different.<br/>Built to Last.</h2>
+      </div>
+      <p class="sec-desc">We're not just another floor company. We're the most trusted concrete coating contractor in Southwest Missouri — and we have the work to prove it.</p>
+    </div>
+    <div class="pillars rev">
+      <div class="pillar">
+        <div class="pillar-ghost">01</div>
+        <span class="pillar-icon">🏆</span>
+        <div class="pillar-bar"></div>
+        <div class="pillar-t">Top-Quality Coatings</div>
+        <p class="pillar-d">Our polyaspartic/polyurea hybrid system is six times stronger than standard epoxy. UV stable, chemical resistant, hot-tire proof — backed by our industry-leading 15-year written warranty.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-ghost">02</div>
+        <span class="pillar-icon">⚡</span>
+        <div class="pillar-bar"></div>
+        <div class="pillar-t">1-Day Installation</div>
+        <p class="pillar-d">We won't disrupt your life for days on end. Most floor coating installations are completed in a single day — so you get your garage, basement, or shop back fast.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-ghost">03</div>
+        <span class="pillar-icon">🛡️</span>
+        <div class="pillar-bar"></div>
+        <div class="pillar-t">15-Year Warranty</div>
+        <p class="pillar-d">Every install is covered by a full 15-year written warranty against fading, peeling, and yellowing. That's our confidence in our process — and our promise to every customer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALL SERVICES -->
+<section class="sec sec-dkr">
+  <div class="inner">
+    <div class="sec-split rev">
+      <div>
+        <span class="sec-label">What We Do</span>
+        <h2 class="sec-title">Every Floor.<br/>Every Surface.</h2>
+      </div>
+      <a href="/residential.html" class="btn btn-red" style="flex-shrink:0">View All Services →</a>
+    </div>
+    <div class="services-grid rev">
+      <!-- 1 -->
+      <div class="sc">
+        <div class="sc-img"><img src="https://ozarksconcretecoatings.com/wp-content/uploads/2023/04/Ozarks-Concrete-Coatings-Epoxy-Flooring-in-Springfield-Missouri-15.jpg" alt="Epoxy Garage Floors Springfield MO" loading="lazy"/></div>
+        <div class="sc-body">
+          <div class="sc-tag">Most Popular</div>
+          <div class="sc-t">Epoxy Garage Floors</div>
+          <p class="sc-d">Showroom-quality polyaspartic/polyurea hybrid coatings for your garage. UV stable, hot-tire resistant, chemical proof. Dozens of flake colors. Done in one day.</p>
+          <a href="/garage-floors.html" class="sc-lnk">Learn More →</a>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="sc">
+        <div class="sc-img"><img src="https://ozarksconcretecoatings.com/wp-content/uploads/2023/04/Ozarks-Concrete-Coatings-Epoxy-Flooring-in-Springfield-Missouri-23.jpg" alt="Basement Floor Coating Springfield MO" loading="lazy"/></div>
+        <div class="sc-body">
+          <div class="sc-tag">Residential</div>
+          <div class="sc-t">Basement Floor Coatings</div>
+          <p class="sc-d">Transform your unfinished basement into something stunning. Moisture-resistant, scratch-proof, and easy to clean. Perfect for gyms, entertainment rooms, and home offices.</p>
+          <a href="/basement-floors.html" class="sc-lnk">Learn More →</a>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="sc">
+        <div class="sc-img" style="font-size:52px">✨</div>
+        <div class="sc-body">
+          <div class="sc-tag">Premium</div>
+          <div class="sc-t">Metallic Epoxy Floors</div>
+          <p class="sc-d">Liquid-metal artistry frozen in time. Every metallic pour is completely unique — no two floors are the same. Perfect for luxury garages, showrooms, and high-end basements.</p>
+          <a href="/metallic-epoxy.html" class="sc-lnk">Learn More →</a>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="sc">
+        <div class="sc-img" style="font-size:52px">🏋️</div>
+        <div class="sc-body">
+          <div class="sc-tag">Residential</div>
+          <div class="sc-t">ManCaves &amp; Shop Floors</div>
+          <p class="sc-d">Your man cave, home gym, she-shed, or shop deserves a floor that matches the space. Custom colors, metallic options, and commercial-grade durability for the places you love most.</p>
+          <a href="/mancave-shop.html" class="sc-lnk">Learn More →</a>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="sc">
+        <div class="sc-img" style="font-size:52px">🌤️</div>
+        <div class="sc-body">
+          <div class="sc-tag">Outdoor</div>
+          <div class="sc-t">Patio &amp; Outdoor Coatings</div>
+          <p class="sc-d">UV-resistant, slip-resistant coatings for patios, pool decks, porches, and driveways. Built to handle Missouri's harsh summers, freezing winters, and everything in between.</p>
+          <a href="/patio-coatings.html" class="sc-lnk">Learn More →</a>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="sc">
+        <div class="sc-img" style="font-size:52px">🏗️</div>
+        <div class="sc-body">
+          <div class="sc-tag">Commercial</div>
+          <div class="sc-t">Commercial Floor Coatings</div>
+          <p class="sc-d">Warehouses, retail, auto shops, restaurants — we coat it all. Industrial-grade systems built for heavy foot traffic, forklifts, chemical spills, and the real demands of business.</p>
+          <a href="/commercial.html" class="sc-lnk">Learn More →</a>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="sc">
+        <div class="sc-img" style="font-size:52px">⛪</div>
+        <div class="sc-body">
+          <div class="sc-tag">Institutional</div>
+          <div class="sc-t">Churches &amp; Schools</div>
+          <p class="sc-d">Durable, easy-to-clean coatings designed for high-traffic institutional environments. Safe, slip-resistant, and built to last through years of daily use with minimal maintenance.</p>
+          <a href="/churches-schools.html" class="sc-lnk">Learn More →</a>
+        </div>
+      </div>
+      <!-- 8 -->
+      <div class="sc">
+        <div class="sc-img" style="font-size:52px">🚗</div>
+        <div class="sc-body">
+          <div class="sc-tag">Commercial</div>
+          <div class="sc-t">Auto Shop &amp; Showroom Floors</div>
+          <p class="sc-d">Oil-resistant, chemical-proof industrial coatings for auto shops, dealerships, and showrooms. Professional finish that impresses customers and stands up to daily abuse.</p>
+          <a href="/auto-shop-floors.html" class="sc-lnk">Learn More →</a>
+        </div>
+      </div>
+      <!-- 9 -->
+      <div class="sc">
+        <div class="sc-img" style="font-size:52px">🔧</div>
+        <div class="sc-body">
+          <div class="sc-tag">Prep Service</div>
+          <div class="sc-t">Concrete Repair &amp; Sealing</div>
+          <p class="sc-d">Crack repair, joint filling, surface leveling, and concrete sealing. We fix the problems other contractors coat over — because the prep is everything when it comes to floor longevity.</p>
+          <a href="/concrete-repair.html" class="sc-lnk">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec sec-dk">
+  <div class="inner">
+    <div style="text-align:center;margin-bottom:54px" class="rev">
+      <span class="sec-label">How It Works</span>
+      <h2 class="sec-title">Our Proven 5-Step Process</h2>
+      <p class="sec-desc" style="margin:14px auto 0;text-align:center">Every install follows the same meticulous process. No shortcuts. No skipped steps. That's why our floors last 15+ years.</p>
+    </div>
+    <div class="proc rev">
+      <div class="ps"><div class="ps-num">1</div><div class="ps-t">Surface Prep</div><p class="ps-d">Diamond grinding removes all coatings, oils, and imperfections. Cracks filled and leveled. This step is everything.</p></div>
+      <div class="ps"><div class="ps-num">2</div><div class="ps-t">Primer Coat</div><p class="ps-d">Specialized primer applied for maximum adhesion between the coating system and your concrete substrate.</p></div>
+      <div class="ps"><div class="ps-num">3</div><div class="ps-t">Base Coat</div><p class="ps-d">High-performance polyaspartic base coat spread evenly across the entire floor creating a flawless foundation.</p></div>
+      <div class="ps"><div class="ps-num">4</div><div class="ps-t">Decorative Layer</div><p class="ps-d">Color flakes, metallic pigments, or solid tones broadcast into the wet base to create your custom, unique look.</p></div>
+      <div class="ps"><div class="ps-num">5</div><div class="ps-t">Topcoat Seal</div><p class="ps-d">UV-stable, chemical-resistant topcoat locks it all in. The result: a floor that's gorgeous and maintenance-free for 15 years.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY OCC DEEP DIVE -->
+<section class="sec sec-dkr">
+  <div class="inner">
+    <div class="why-grid">
+      <div class="rev">
+        <span class="sec-label">The OCC Difference</span>
+        <h2 class="sec-title">Quality Construction.<br/>Honest Service.<br/>Great Value.</h2>
+        <div class="divider"></div>
+        <ul class="why-list">
+          <li class="wi"><div class="wi-ic">💎</div><div><div class="wi-t">Premium Materials Only</div><p class="wi-d">Professional-grade polyaspartic/polyurea hybrid — 6× stronger than hardware store epoxy kits. We never compromise on product quality.</p></div></li>
+          <li class="wi"><div class="wi-ic">🔬</div><div><div class="wi-t">Diamond Grinding — Standard</div><p class="wi-d">Every single install starts with full diamond grinding. It's the #1 reason floors fail when skipped. We don't cut corners.</p></div></li>
+          <li class="wi"><div class="wi-ic">🤝</div><div><div class="wi-t">Local &amp; Owner-Operated</div><p class="wi-d">We're a Southwest Missouri company, not a franchise. When you call, you talk to the people who will actually show up and do the work.</p></div></li>
+          <li class="wi"><div class="wi-ic">🛡️</div><div><div class="wi-t">15-Year Warranty, In Writing</div><p class="wi-d">Covers fading, peeling, and yellowing for 15 full years on every project. Our promise, backed in writing.</p></div></li>
+          <li class="wi"><div class="wi-ic">⚡</div><div><div class="wi-t">Same-Day Completion</div><p class="wi-d">Most projects completed in one day. Drive on it in 24 hours. No week-long projects, no disruption to your life.</p></div></li>
+        </ul>
+      </div>
+      <div class="rev">
+        <div class="why-vis">
+          <img src="hero-bg.png" alt="Premium Epoxy Floor - Lamborghini Showroom - Springfield MO" loading="lazy"/>
+          <div class="why-badge">🏆 Trusted by Springfield's Premier Sports Cars</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER / GALLERY PREVIEW -->
+<section class="sec sec-dk">
+  <div class="inner">
+    <div class="sec-split rev">
+      <div>
+        <span class="sec-label">Recent Work</span>
+        <h2 class="sec-title">Real Projects.<br/>Real Results.</h2>
+      </div>
+      <a href="/gallery.html" class="btn btn-outline">View Full Gallery →</a>
+    </div>
+    <div class="ba-grid rev">
+      <div class="ba-card">
+        <img src="https://ozarksconcretecoatings.com/wp-content/uploads/2023/04/Ozarks-Concrete-Coatings-Epoxy-Flooring-in-Springfield-Missouri-15.jpg" alt="Garage Floor Coating Springfield MO"/>
+        <div class="ba-label">Garage Floor</div>
+        <div class="ba-info"><div class="ba-info-t">Full Flake Garage — Springfield</div><div class="ba-info-d">2-car garage · Tidal Wave flake blend · Completed in 1 day</div></div>
+      </div>
+      <div class="ba-card">
+        <img src="https://ozarksconcretecoatings.com/wp-content/uploads/2023/04/Ozarks-Concrete-Coatings-Epoxy-Flooring-in-Springfield-Missouri-23.jpg" alt="Basement Floor Coating Nixa MO"/>
+        <div class="ba-label">Basement</div>
+        <div class="ba-info"><div class="ba-info-t">Basement Floor — Nixa, MO</div><div class="ba-info-d">Home gym / entertainment room · Domino flake</div></div>
+      </div>
+      <div class="ba-card">
+        <img src="hero-bg.png" alt="Commercial Epoxy Floor Springfield MO - Premier Sports Cars"/>
+        <div class="ba-label">Commercial</div>
+        <div class="ba-info"><div class="ba-info-t">Auto Showroom — Springfield, MO</div><div class="ba-info-d">Premier Sports Cars · Full flake commercial system</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <h2>What Will Your Floor Look Like?</h2>
+  <p>Get a real price estimate online — no phone call required</p>
+  <a href="#quote-form" class="btn btn-white">Get My Free Quote Now</a>
+  <a href="tel:4174026821" class="btn btn-blk">📞 Call 417.402.6821</a>
+</div>
+
+<!-- SERVICE AREAS -->
+<section class="sec sec-dk">
+  <div class="inner">
+    <div class="rev" style="text-align:center">
+      <span class="sec-label">Service Coverage</span>
+      <h2 class="sec-title">We Cover All of<br/>Southwest Missouri</h2>
+      <p class="sec-desc" style="margin:14px auto 0;text-align:center">75-mile service radius around Springfield, MO. If you're in SW Missouri, we come to you.</p>
+    </div>
+    <div class="areas-g rev">
+      <a href="/springfield-mo.html" class="area-p">Springfield</a>
+      <a href="/nixa-mo.html" class="area-p">Nixa</a>
+      <a href="/ozark-mo.html" class="area-p">Ozark</a>
+      <a href="/republic-mo.html" class="area-p">Republic</a>
+      <a href="/branson-mo.html" class="area-p">Branson</a>
+      <a href="/joplin-mo.html" class="area-p">Joplin</a>
+      <a href="/carthage-mo.html" class="area-p">Carthage</a>
+      <a href="/webb-city-mo.html" class="area-p">Webb City</a>
+      <a href="/neosho-mo.html" class="area-p">Neosho</a>
+      <a href="/monett-mo.html" class="area-p">Monett</a>
+      <a href="/aurora-mo.html" class="area-p">Aurora</a>
+      <a href="/willard-mo.html" class="area-p">Willard</a>
+      <a href="/battlefield-mo.html" class="area-p">Battlefield</a>
+      <a href="/rogersville-mo.html" class="area-p">Rogersville</a>
+      <a href="/strafford-mo.html" class="area-p">Strafford</a>
+      <a href="/bolivar-mo.html" class="area-p">Bolivar</a>
+      <a href="/lebanon-mo.html" class="area-p">Lebanon</a>
+      <a href="/cassville-mo.html" class="area-p">Cassville</a>
+      <a href="/hollister-mo.html" class="area-p">Hollister</a>
+      <a href="/forsyth-mo.html" class="area-p">Forsyth</a>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec sec-dkr">
+  <div class="inner">
+    <div class="sec-split rev">
+      <div>
+        <span class="sec-label">Customer Reviews</span>
+        <h2 class="sec-title">What SW Missouri<br/>Homeowners Say</h2>
+      </div>
+      <a href="/reviews.html" class="btn btn-outline">See All Reviews →</a>
+    </div>
+    <div class="google-badge rev">
+      <span class="stars">★★★★★</span>
+      <span><strong>5.0 Google Rating</strong> — Verified #1 Epoxy Contractor in Southwest Missouri</span>
+    </div>
+    <div class="rev-grid rev">
+      <div class="rc"><div class="rc-stars">★★★★★</div><p class="rc-txt">"Absolutely love our new garage floor. The team was professional, showed up on time, finished in one day exactly as promised. Looks better than I could have imagined. Worth every penny."</p><div class="rc-auth">Mike T.<span class="rc-loc">&nbsp;— Springfield, MO</span></div></div>
+      <div class="rc"><div class="rc-stars">★★★★★</div><p class="rc-txt">"Had our basement done and the transformation was unreal. You can tell they take pride in their work. The diamond grinding prep alone separates them from every other quote we got. These guys are legit."</p><div class="rc-auth">Sarah K.<span class="rc-loc">&nbsp;— Nixa, MO</span></div></div>
+      <div class="rc"><div class="rc-stars">★★★★★</div><p class="rc-txt">"Called Monday, quoted same day, floor done by Wednesday. I've had flaky epoxy jobs before from other guys. These guys were thorough, professional, and the floor is gorgeous. Highly recommend."</p><div class="rc-auth">Dave R.<span class="rc-loc">&nbsp;— Ozark, MO</span></div></div>
+      <div class="rc"><div class="rc-stars">★★★★★</div><p class="rc-txt">"Did our commercial shop floor. They handled it like pros — prepped it right, no shortcuts, and the floor has held up perfectly through heavy equipment and daily use. Cannot recommend enough."</p><div class="rc-auth">Jason W.<span class="rc-loc">&nbsp;— Republic, MO</span></div></div>
+      <div class="rc"><div class="rc-stars">★★★★★</div><p class="rc-txt">"The metallic floor they installed in our man cave is an absolute showstopper. Every single person who comes over asks about it. These guys are artists on top of being great contractors."</p><div class="rc-auth">Chris M.<span class="rc-loc">&nbsp;— Branson, MO</span></div></div>
+      <div class="rc"><div class="rc-stars">★★★★★</div><p class="rc-txt">"Honest pricing, zero pressure, did exactly what they said they would. The 15-year warranty was a huge factor for us. Floor looks brand new a year later. Ozarks Concrete Coatings is the real deal."</p><div class="rc-auth">Linda H.<span class="rc-loc">&nbsp;— Joplin, MO</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec sec-dk">
+  <div class="inner">
+    <div class="sec-split rev">
+      <div>
+        <span class="sec-label">Common Questions</span>
+        <h2 class="sec-title">Frequently Asked<br/>Questions</h2>
+      </div>
+      <a href="/faq.html" class="btn btn-outline">View All FAQs →</a>
+    </div>
+    <div class="faq-list rev" id="faqList">
+      <div class="fi"><div class="fq">How long does an epoxy garage floor last?<span class="arr">▾</span></div><div class="fa"><div class="fa-in">With professional-grade polyaspartic coatings and full diamond grinding prep, expect 15–25 years of durability. Our system is backed by a written 15-year warranty against fading, peeling, and yellowing.</div></div></div>
+      <div class="fi"><div class="fq">Is polyaspartic better than regular epoxy?<span class="arr">▾</span></div><div class="fa"><div class="fa-in">Significantly. Polyaspartic/polyurea hybrid coatings are up to 6× stronger than standard epoxy, UV stable (won't yellow in sunlight), more flexible (won't crack with temperature swings), and cure far faster. It's the professional-grade option we use on every install.</div></div></div>
+      <div class="fi"><div class="fq">How long before I can drive on my new floor?<span class="arr">▾</span></div><div class="fa"><div class="fa-in">Because we use polyaspartic coatings, your floor is typically ready for foot traffic within hours and vehicle traffic within 24 hours. Most jobs are done in a single day start to finish.</div></div></div>
+      <div class="fi"><div class="fq">Why do some epoxy floors peel and fail?<span class="arr">▾</span></div><div class="fa"><div class="fa-in">The #1 cause of floor failure is skipping or cutting corners on surface preparation. Most cheap installers skip diamond grinding or use acid etching, which doesn't create enough profile for proper adhesion. We use full diamond grinding on every job — no exceptions, ever.</div></div></div>
+      <div class="fi"><div class="fq">How much does an epoxy garage floor cost in Missouri?<span class="arr">▾</span></div><div class="fa"><div class="fa-in">Pricing depends on square footage, floor condition, and system chosen. A typical 2-car garage (400–600 sq ft) ranges from $1,800–$3,500. We provide free quotes with honest pricing and no surprises. Use our form above to get your estimate.</div></div></div>
+      <div class="fi"><div class="fq">Do you repair cracks and damage before coating?<span class="arr">▾</span></div><div class="fa"><div class="fa-in">Yes. All cracks and surface damage are filled and leveled as part of our standard prep process before any coating is applied. We fix problems — we don't coat over them.</div></div></div>
+      <div class="fi"><div class="fq">Can you install coatings in the winter?<span class="arr">▾</span></div><div class="fa"><div class="fa-in">Yes, with proper conditions. We install year-round in most situations. Concrete surface temperature must meet a minimum threshold. We evaluate conditions on every project and advise accordingly.</div></div></div>
+      <div class="fi"><div class="fq">What flake colors and coating systems do you offer?<span class="arr">▾</span></div><div class="fa"><div class="fa-in">We carry dozens of flake blends including Tidal Wave, Orbit, Outback, Nightfall, Domino, Gravel, and many more. We also offer metallic epoxy systems, solid colors, and commercial broadcast systems. Visit our Colors page to see all options.</div></div></div>
+      <div class="fi"><div class="fq">Do you serve areas outside Springfield?<span class="arr">▾</span></div><div class="fa"><div class="fa-in">Absolutely. We serve a full 75-mile radius around Springfield, MO — including Nixa, Ozark, Branson, Republic, Joplin, Carthage, Neosho, Bolivar, Lebanon, and many more communities throughout Southwest Missouri.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="sec sec-dkr">
+  <div class="inner">
+    <div class="sec-split rev">
+      <div>
+        <span class="sec-label">Tips &amp; Education</span>
+        <h2 class="sec-title">From the<br/>OCC Blog</h2>
+      </div>
+      <a href="/blog.html" class="btn btn-outline">View All Posts →</a>
+    </div>
+    <div class="blog-grid rev">
+      <div class="bc">
+        <div class="bc-img" style="font-size:42px">💰</div>
+        <div class="bc-body">
+          <div class="bc-cat">Buyer's Guide</div>
+          <div class="bc-meta">May 2025 · 6 min read</div>
+          <div class="bc-t">How Much Does an Epoxy Garage Floor Cost in Missouri?</div>
+          <p class="bc-d">Real pricing breakdowns for SW Missouri homeowners — 1-car, 2-car, 3-car garages, basements, and commercial. What to expect and what to watch out for.</p>
+          <a href="/blog/epoxy-garage-floor-cost-missouri.html" class="bc-lnk">Read Article →</a>
+        </div>
+      </div>
+      <div class="bc">
+        <div class="bc-img" style="font-size:42px">⚔️</div>
+        <div class="bc-body">
+          <div class="bc-cat">Product Comparison</div>
+          <div class="bc-meta">April 2025 · 8 min read</div>
+          <div class="bc-t">Polyaspartic vs Epoxy: Which Is Actually Better?</div>
+          <p class="bc-d">An honest side-by-side comparison of standard epoxy and polyaspartic/polyurea coatings — durability, UV stability, cure time, cost, and long-term performance.</p>
+          <a href="/blog/polyaspartic-vs-epoxy.html" class="bc-lnk">Read Article →</a>
+        </div>
+      </div>
+      <div class="bc">
+        <div class="bc-img" style="font-size:42px">⚠️</div>
+        <div class="bc-body">
+          <div class="bc-cat">Homeowner Education</div>
+          <div class="bc-meta">March 2025 · 5 min read</div>
+          <div class="bc-t">Why Garage Floor Coatings Fail (And How to Avoid It)</div>
+          <p class="bc-d">The truth about peeling floors, failed DIY kits, and cheap installs — what causes them and what proper professional installation actually looks like.</p>
+          <a href="/blog/why-garage-floors-fail.html" class="bc-lnk">Read Article →</a>
+        </div>
+      </div>
+      <div class="bc">
+        <div class="bc-img" style="font-size:42px">🌡️</div>
+        <div class="bc-body">
+          <div class="bc-cat">Missouri Climate</div>
+          <div class="bc-meta">February 2025 · 4 min read</div>
+          <div class="bc-t">Best Garage Floor Coating for Missouri's Weather</div>
+          <p class="bc-d">Missouri's freeze/thaw cycles, brutal summers, and humidity create unique challenges for floor coatings. Here's what actually holds up long-term in the Ozarks.</p>
+          <a href="/blog/best-garage-floor-coating-missouri-weather.html" class="bc-lnk">Read Article →</a>
+        </div>
+      </div>
+      <div class="bc">
+        <div class="bc-img" style="font-size:42px">🔨</div>
+        <div class="bc-body">
+          <div class="bc-cat">DIY Warning</div>
+          <div class="bc-meta">January 2025 · 6 min read</div>
+          <div class="bc-t">The Truth About DIY Epoxy Kits From Home Depot</div>
+          <p class="bc-d">They look appealing at $200, but the results rarely last. We break down exactly why big-box epoxy kits fail and what professional installation actually involves.</p>
+          <a href="/blog/diy-epoxy-kits-truth.html" class="bc-lnk">Read Article →</a>
+        </div>
+      </div>
+      <div class="bc">
+        <div class="bc-img" style="font-size:42px">🏠</div>
+        <div class="bc-body">
+          <div class="bc-cat">Home Value</div>
+          <div class="bc-meta">December 2024 · 5 min read</div>
+          <div class="bc-t">Does an Epoxy Garage Floor Increase Home Value?</div>
+          <p class="bc-d">A finished garage floor is one of the highest ROI home upgrades you can make. Here's what real estate agents and appraisers say about coated garage floors.</p>
+          <a href="/blog/epoxy-floor-home-value.html" class="bc-lnk">Read Article →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec sec-dk" id="contact">
+  <div class="inner">
+    <div class="contact-g">
+      <div class="rev">
+        <span class="sec-label">Get In Touch</span>
+        <h2 class="sec-title">Ready to<br/>Transform Your<br/>Floor?</h2>
+        <div class="divider"></div>
+        <p class="sec-desc">Reach out any way that works for you. We respond fast — usually same day.</p>
+        <div class="ci-block">
+          <div class="ci-item"><div class="ci-ic">📞</div><div><div class="ci-lbl">Phone</div><div class="ci-val"><a href="tel:4174026821">417.402.6821</a></div></div></div>
+          <div class="ci-item"><div class="ci-ic">✉️</div><div><div class="ci-lbl">Email</div><div class="ci-val"><a href="mailto:OzarksConcreteCoatings@gmail.com">OzarksConcreteCoatings@gmail.com</a></div></div></div>
+          <div class="ci-item"><div class="ci-ic">📍</div><div><div class="ci-lbl">Based In</div><div class="ci-val">Springfield, MO — 75-Mile Service Radius</div></div></div>
+          <div class="ci-item"><div class="ci-ic">🕐</div><div><div class="ci-lbl">Hours</div><div class="ci-val">Monday–Friday · 9:00am – 5:00pm</div></div></div>
+        </div>
+      </div>
+      <div class="rev">
+        <div class="big-form">
+          <div class="bf-t">Send a Message</div>
+          <p class="bf-s">We'll respond within 1 business day.</p>
+          <div class="frow">
+            <div class="fg"><label>First Name</label><input type="text" placeholder="John"/></div>
+            <div class="fg"><label>Last Name</label><input type="text" placeholder="Smith"/></div>
+          </div>
+          <div class="fg"><label>Phone</label><input type="tel" placeholder="417-555-0000"/></div>
+          <div class="fg"><label>Email</label><input type="email" placeholder="you@email.com"/></div>
+          <div class="fg">
+            <label>Service</label>
+            <select>
+              <option value="">Select...</option>
+              <option>Garage Floor</option>
+              <option>Basement Floor</option>
+              <option>Metallic Epoxy</option>
+              <option>Commercial</option>
+              <option>Patio / Outdoor</option>
+              <option>Church or School</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="fg"><label>Message</label><textarea placeholder="Tell us about your project..."></textarea></div>
+          <button class="btn btn-red fsub" onclick="submitForm()">Send Message →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-in">
+    <div class="footer-top">
+      <div class="fl">
+        <img src="Logo_with_number_black.png" alt="Ozarks Concrete Coatings"/>
+        <p class="fl-tag">Southwest Missouri's premier polyaspartic &amp; epoxy floor coating contractor. Serving a 75-mile radius around Springfield, MO.</p>
+        <div class="fl-soc">
+          <a href="https://www.facebook.com/ozarksconcretecoatings" class="fs-a" target="_blank">f</a>
+          <a href="https://www.instagram.com/ozarksconcretecoatings/" class="fs-a" target="_blank">ig</a>
+          <a href="https://www.tiktok.com/@ozarksconcretecoatings" class="fs-a" target="_blank">tt</a>
+          <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x87cf674402116c75:0x49ad633ad1cd078f" class="fs-a" target="_blank">G</a>
+        </div>
+      </div>
+      <div>
+        <div class="fc-t">Services</div>
+        <ul class="fl-links">
+          <li><a href="/garage-floors.html">Epoxy Garage Floors</a></li>
+          <li><a href="/basement-floors.html">Basement Floor Coatings</a></li>
+          <li><a href="/metallic-epoxy.html">Metallic Epoxy Floors</a></li>
+          <li><a href="/patio-coatings.html">Patio &amp; Outdoor</a></li>
+          <li><a href="/commercial.html">Commercial Flooring</a></li>
+          <li><a href="/mancave-shop.html">ManCaves &amp; Shops</a></li>
+          <li><a href="/churches-schools.html">Churches &amp; Schools</a></li>
+          <li><a href="/auto-shop-floors.html">Auto Shop Floors</a></li>
+          <li><a href="/concrete-repair.html">Concrete Repair</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fc-t">Company</div>
+        <ul class="fl-links">
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/gallery.html">Project Gallery</a></li>
+          <li><a href="/reviews.html">Customer Reviews</a></li>
+          <li><a href="/colors.html">Color Options</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/financing.html">Financing</a></li>
+          <li><a href="/warranty.html">Warranty</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fc-t">Service Areas</div>
+        <ul class="fl-links">
+          <li><a href="/springfield-mo.html">Springfield, MO</a></li>
+          <li><a href="/nixa-mo.html">Nixa, MO</a></li>
+          <li><a href="/ozark-mo.html">Ozark, MO</a></li>
+          <li><a href="/branson-mo.html">Branson, MO</a></li>
+          <li><a href="/republic-mo.html">Republic, MO</a></li>
+          <li><a href="/joplin-mo.html">Joplin, MO</a></li>
+          <li><a href="/carthage-mo.html">Carthage, MO</a></li>
+          <li><a href="/neosho-mo.html">Neosho, MO</a></li>
+          <li><a href="/bolivar-mo.html">Bolivar, MO</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fc-t">Contact</div>
+        <ul class="fl-links" style="gap:14px">
+          <li style="list-style:none;display:flex;align-items:center;gap:8px"><span style="color:var(--red);font-size:16px">📞</span><a href="tel:4174026821" style="font-size:15px;font-weight:700;font-family:var(--font-c)">417.402.6821</a></li>
+          <li style="list-style:none;display:flex;align-items:center;gap:8px"><span style="color:var(--red);font-size:15px">✉</span><a href="mailto:OzarksConcreteCoatings@gmail.com" style="font-size:12px;font-family:var(--font-c);word-break:break-all">OzarksConcreteCoatings<br/>@gmail.com</a></li>
+          <li style="list-style:none;margin-top:8px"><a href="/contact.html" class="btn btn-red" style="font-size:14px;padding:12px 20px;display:inline-block">Get Free Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>© 2025 Ozarks Concrete Coatings — All Rights Reserved</span>
+      <span>Springfield, MO · 417.402.6821</span>
+      <a href="/privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE -->
+<div class="sticky-mob">
+  <a href="tel:4174026821" class="s-call">📞 Call Now</a>
+  <a href="#quote-form" class="s-quote">Get Free Quote</a>
+</div>
+
+<script>
+  // Hamburger
+  document.getElementById('hbtn').addEventListener('click',()=>document.getElementById('mmenu').classList.toggle('open'));
+
+  // FAQ
+  document.querySelectorAll('.fq').forEach(q=>{
+    q.addEventListener('click',()=>{
+      const item=q.closest('.fi');
+      const open=item.classList.contains('open');
+      document.querySelectorAll('.fi').forEach(i=>i.classList.remove('open'));
+      if(!open)item.classList.add('open');
+    });
+  });
+
+  // Scroll reveal
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target);}});
+  },{threshold:0.08});
+  document.querySelectorAll('.rev').forEach(r=>obs.observe(r));
+
+  // Form
+  function submitForm(){
+    alert("Thank you! We'll be in touch within 1 business day.\n\nFor immediate assistance call 417.402.6821");
+  }
+</script>
+</body>
+</html>

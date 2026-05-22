@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Gallery | Ozarks Concrete Coatings | Epoxy Floors Springfield MO</title>
+  <meta name="description" content="Browse our full project gallery — epoxy garage floors, metallic floors, commercial coatings, patios, basements and mancaves across Southwest Missouri. Real work, real results."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--red:#cc202f;--red-dark:#a01824;--red-glow:rgba(204,32,47,.15);--black:#000;--bg:#090909;--bg2:#111;--bg3:#181818;--bg4:#222;--border:rgba(255,255,255,.07);--gray:#888;--gray-light:#bbb;--white:#fff;--font-d:'Bebas Neue',sans-serif;--font-c:'Barlow Condensed',sans-serif;--font-b:'Barlow',sans-serif;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--white);font-family:var(--font-b);overflow-x:hidden}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+
+    .topbar{background:var(--red);padding:7px 32px;display:flex;justify-content:space-between;align-items:center;font-family:var(--font-c);font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;flex-wrap:wrap;gap:8px}
+    .topbar a:hover{opacity:.8}
+    .topbar-l{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+    .topbar-r{display:flex;gap:16px;align-items:center}
+
+    nav{background:var(--black);border-bottom:2px solid var(--red);padding:0 36px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:1000;height:70px}
+    .nav-logo img{height:50px;width:auto}
+    .nav-links{display:flex;gap:26px;list-style:none;font-family:var(--font-c);font-weight:700;font-size:14px;letter-spacing:.07em;text-transform:uppercase}
+    .nav-links a{color:var(--gray-light);transition:color .2s;padding:4px 0;border-bottom:2px solid transparent}
+    .nav-links a:hover,.nav-links a.active{color:var(--white);border-bottom-color:var(--red)}
+    .nav-cta{background:var(--red)!important;color:var(--white)!important;padding:9px 20px!important;border-radius:4px!important;border-bottom:none!important;font-weight:900!important}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px}
+    .hamburger span{display:block;width:24px;height:2px;background:var(--white);border-radius:2px}
+    .mob-menu{display:none;flex-direction:column;background:var(--black);border-top:1px solid var(--border);padding:18px 24px;gap:0;font-family:var(--font-c);font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+    .mob-menu a{color:var(--gray-light);padding:11px 0;border-bottom:1px solid var(--border);display:block}
+    .mob-menu a:last-child{border-bottom:none;color:var(--red)}
+    .mob-menu.open{display:flex}
+
+    .page-hero{background:var(--bg2);border-bottom:1px solid var(--border);padding:60px 40px}
+    .ph-inner{max-width:1300px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px}
+    .sec-label{font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:8px;display:block}
+    .ph-h1{font-family:var(--font-d);font-size:clamp(52px,6vw,90px);line-height:.93}
+    .ph-sub{font-family:var(--font-c);font-size:17px;font-weight:600;color:var(--gray-light);letter-spacing:.04em;margin-top:12px;text-transform:uppercase}
+
+    .btn{display:inline-block;font-family:var(--font-c);font-weight:900;letter-spacing:.1em;text-transform:uppercase;border-radius:5px;cursor:pointer;transition:all .2s;border:none}
+    .btn-red{background:var(--red);color:var(--white);padding:13px 26px;font-size:14px;box-shadow:0 4px 18px rgba(204,32,47,.35)}
+    .btn-red:hover{background:var(--red-dark);transform:translateY(-2px)}
+
+    /* FILTER TABS */
+    .filter-bar{background:var(--black);border-bottom:1px solid var(--border);padding:0 40px;position:sticky;top:70px;z-index:900}
+    .filter-inner{max-width:1300px;margin:0 auto;display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .filter-inner::-webkit-scrollbar{display:none}
+    .ftab{font-family:var(--font-c);font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:16px 22px;color:var(--gray);border-bottom:3px solid transparent;white-space:nowrap;cursor:pointer;transition:color .2s,border-color .2s;background:none;border-top:none;border-left:none;border-right:none}
+    .ftab:hover{color:var(--white)}
+    .ftab.active{color:var(--white);border-bottom-color:var(--red)}
+
+    /* GALLERY SECTIONS */
+    .gallery-section{padding:60px 40px}
+    .gallery-section:nth-child(even){background:var(--bg2)}
+    .gs-inner{max-width:1300px;margin:0 auto}
+    .gs-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px;flex-wrap:wrap;gap:16px}
+    .gs-title{font-family:var(--font-d);font-size:clamp(32px,4vw,52px);line-height:.95}
+    .gs-count{font-family:var(--font-c);font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gray)}
+
+    /* MASONRY-STYLE GRID */
+    .photo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .photo-grid.wide{grid-template-columns:repeat(3,1fr)}
+    .pg-item{border-radius:8px;overflow:hidden;border:1px solid var(--border);position:relative;cursor:pointer;transition:border-color .25s,transform .25s;background:var(--bg3)}
+    .pg-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s;aspect-ratio:1/1}
+    .pg-item.tall img{aspect-ratio:3/4}
+    .pg-item.wide img{aspect-ratio:4/3}
+    .pg-item:hover{border-color:rgba(204,32,47,.5);transform:scale(1.02);box-shadow:0 12px 36px rgba(0,0,0,.5)}
+    .pg-item:hover img{transform:scale(1.07)}
+    .pg-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,.9),transparent);padding:14px 16px;opacity:0;transition:opacity .3s}
+    .pg-item:hover .pg-overlay{opacity:1}
+    .pg-caption{font-family:var(--font-c);font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--white)}
+
+    /* TEAM GRID */
+    .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .tc{border-radius:10px;overflow:hidden;border:1px solid var(--border);background:var(--bg3);transition:border-color .25s,transform .25s}
+    .tc:hover{border-color:rgba(204,32,47,.4);transform:translateY(-4px)}
+    .tc img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center top;display:block}
+    .tc-body{padding:16px}
+    .tc-name{font-family:var(--font-c);font-size:18px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
+    .tc-role{font-family:var(--font-c);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
+
+    /* FLAKE COLORS GRID */
+    .colors-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+    .color-card{border-radius:8px;overflow:hidden;border:1px solid var(--border);background:var(--bg3);transition:border-color .25s,transform .25s;cursor:pointer}
+    .color-card:hover{border-color:rgba(204,32,47,.5);transform:translateY(-3px)}
+    .color-card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+    .color-name{padding:10px 12px;font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;text-align:center;color:var(--gray-light)}
+
+    /* LIGHTBOX */
+    .lightbox{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.95);align-items:center;justify-content:center;padding:20px}
+    .lightbox.open{display:flex}
+    .lb-img{max-width:90vw;max-height:90vh;border-radius:8px;object-fit:contain}
+    .lb-close{position:absolute;top:20px;right:24px;font-size:36px;color:var(--white);cursor:pointer;line-height:1;opacity:.8;transition:opacity .2s;background:none;border:none;font-family:inherit}
+    .lb-close:hover{opacity:1}
+    .lb-nav{position:absolute;top:50%;transform:translateY(-50%);font-size:40px;color:var(--white);cursor:pointer;opacity:.7;transition:opacity .2s;background:none;border:none;font-family:inherit;padding:10px}
+    .lb-prev{left:16px}
+    .lb-next{right:16px}
+    .lb-nav:hover{opacity:1}
+    .lb-counter{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);font-family:var(--font-c);font-size:14px;font-weight:700;letter-spacing:.1em;color:var(--gray-light);text-transform:uppercase}
+
+    /* CTA BAND */
+    .cta-band{background:var(--red);padding:52px 40px;text-align:center;position:relative;overflow:hidden}
+    .cta-band::before{content:'OCC';position:absolute;font-family:var(--font-d);font-size:260px;color:rgba(0,0,0,.1);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;white-space:nowrap}
+    .cta-band h2{font-family:var(--font-d);font-size:clamp(32px,4.5vw,58px);margin-bottom:10px;position:relative}
+    .cta-band p{font-family:var(--font-c);font-size:16px;font-weight:600;letter-spacing:.06em;opacity:.9;margin-bottom:24px;text-transform:uppercase;position:relative}
+    .btn-white{background:var(--white);color:var(--red);padding:14px 32px;font-size:15px;box-shadow:0 4px 18px rgba(0,0,0,.3);display:inline-block;font-family:var(--font-c);font-weight:900;letter-spacing:.1em;text-transform:uppercase;border-radius:5px;position:relative}
+    .btn-white:hover{transform:translateY(-2px)}
+
+    footer{background:var(--black);border-top:2px solid var(--red);padding:40px 40px 24px}
+    .footer-in{max-width:1300px;margin:0 auto}
+    .footer-bot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--gray);font-family:var(--font-c);letter-spacing:.04em;padding-top:20px;border-top:1px solid var(--border)}
+    .footer-bot a{color:var(--gray)}
+    .footer-bot a:hover{color:var(--red)}
+    .footer-top{display:grid;grid-template-columns:260px 1fr 1fr 1fr;gap:36px;margin-bottom:32px}
+    .fl img{height:50px;width:auto;margin-bottom:11px}
+    .fl-tag{font-size:13px;color:var(--gray);line-height:1.65;margin-bottom:14px}
+    .fl-soc{display:flex;gap:8px}
+    .fs-a{width:32px;height:32px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;transition:background .2s}
+    .fs-a:hover{background:var(--red)}
+    .fc-t{font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+    .fl-links{list-style:none;display:flex;flex-direction:column;gap:8px}
+    .fl-links a{font-size:13px;color:var(--gray-light);transition:color .2s;display:flex;align-items:center;gap:5px}
+    .fl-links a::before{content:'›';color:var(--red);font-size:14px}
+    .fl-links a:hover{color:var(--white)}
+
+    .sticky-mob{display:none;position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--black);border-top:2px solid var(--red);padding:10px 14px;gap:9px}
+    .sticky-mob a{flex:1;text-align:center;padding:12px;border-radius:5px;font-family:var(--font-c);font-size:14px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+    .s-call{background:var(--red);color:var(--white)}
+    .s-quote{background:var(--bg3);color:var(--white);border:1px solid var(--border)}
+
+    .rev{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+    .rev.vis{opacity:1;transform:translateY(0)}
+
+    @media(max-width:1100px){
+      .photo-grid{grid-template-columns:repeat(3,1fr)}
+      .team-grid{grid-template-columns:repeat(3,1fr)}
+      .colors-grid{grid-template-columns:repeat(4,1fr)}
+      .footer-top{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:768px){
+      nav{padding:0 18px}
+      .nav-links{display:none}
+      .hamburger{display:flex}
+      .topbar{display:none}
+      .sticky-mob{display:flex}
+      body{padding-bottom:70px}
+      .page-hero{padding:44px 20px}
+      .gallery-section{padding:44px 18px}
+      .filter-bar{padding:0 18px}
+      .photo-grid{grid-template-columns:repeat(2,1fr)}
+      .team-grid{grid-template-columns:repeat(2,1fr)}
+      .colors-grid{grid-template-columns:repeat(3,1fr)}
+      .footer-top{grid-template-columns:1fr}
+      .footer-bot{flex-direction:column;text-align:center}
+      .cta-band{padding:44px 20px}
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-l">
+    <span>📞 <a href="tel:4174026821">417.402.6821</a></span>
+    <span style="opacity:.5">|</span>
+    <span>✉ <a href="mailto:OzarksConcreteCoatings@gmail.com">OzarksConcreteCoatings@gmail.com</a></span>
+  </div>
+  <div class="topbar-r"><span style="opacity:.8">SW Missouri's #1 Rated Floor Contractor</span></div>
+</div>
+
+<nav>
+  <a href="/index.html" class="nav-logo"><img src="Logo_with_number.png" alt="Ozarks Concrete Coatings"/></a>
+  <ul class="nav-links">
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/residential.html">Residential</a></li>
+    <li><a href="/commercial.html">Commercial</a></li>
+    <li><a href="/gallery.html" class="active">Gallery</a></li>
+    <li><a href="/colors.html">Colors</a></li>
+    <li><a href="/blog.html">Blog</a></li>
+    <li><a href="/reviews.html">Reviews</a></li>
+    <li><a href="/contact.html" class="nav-cta">Free Quote</a></li>
+  </ul>
+  <div class="hamburger" id="hbtn"><span></span><span></span><span></span></div>
+</nav>
+<div class="mob-menu" id="mmenu">
+  <a href="/index.html">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/residential.html">Residential</a>
+  <a href="/commercial.html">Commercial</a>
+  <a href="/colors.html">Colors</a>
+  <a href="/blog.html">Blog</a>
+  <a href="/reviews.html">Reviews</a>
+  <a href="/contact.html">Get Free Quote →</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="ph-inner">
+    <div>
+      <span class="sec-label">Our Work</span>
+      <h1 class="ph-h1">Project Gallery</h1>
+      <p class="ph-sub">Real Floors · Real Projects · Southwest Missouri</p>
+    </div>
+    <a href="/contact.html" class="btn btn-red">Get Your Free Quote →</a>
+  </div>
+</div>
+
+<!-- FILTER TABS -->
+<div class="filter-bar">
+  <div class="filter-inner">
+    <button class="ftab active" onclick="filterGallery('all')">All Projects</button>
+    <button class="ftab" onclick="filterGallery('garages')">Garage Floors</button>
+    <button class="ftab" onclick="filterGallery('basements')">Basements &amp; ManCaves</button>
+    <button class="ftab" onclick="filterGallery('commercial')">Commercial</button>
+    <button class="ftab" onclick="filterGallery('metallics')">Metallic Floors</button>
+    <button class="ftab" onclick="filterGallery('patios')">Patios</button>
+    <button class="ftab" onclick="filterGallery('colors')">Flake Colors</button>
+    <button class="ftab" onclick="filterGallery('team')">Our Team</button>
+  </div>
+</div>
+
+<!-- GARAGES -->
+<section class="gallery-section" id="sec-garages">
+  <div class="gs-inner">
+    <div class="gs-header rev">
+      <div>
+        <span class="sec-label">Residential</span>
+        <h2 class="gs-title">Garage Floors</h2>
+      </div>
+      <span class="gs-count">29 Projects</span>
+    </div>
+    <div class="photo-grid rev" id="grid-garages">
+      <!-- 29 garage photos -->
+      <div class="pg-item wide" onclick="openLB('garages',0)"><img src="epoxy-garage-floor-springfield-mo-1.jpg" alt="Epoxy garage floor Springfield MO — Ozarks Concrete Coatings" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',1)"><img src="epoxy-garage-floor-springfield-mo-2.jpg" alt="Polyaspartic garage floor coating Springfield Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',2)"><img src="epoxy-garage-floor-springfield-mo-3.jpg" alt="Full flake epoxy garage floor Nixa MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Nixa, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',3)"><img src="epoxy-garage-floor-springfield-mo-4.jpg" alt="Full flake garage floor coating Ozark Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Ozark, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',4)"><img src="epoxy-garage-floor-springfield-mo-5.jpg" alt="Polyaspartic garage floor Republic MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Republic, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',5)"><img src="epoxy-garage-floor-springfield-mo-6.jpg" alt="Epoxy flake garage floor coating Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',6)"><img src="epoxy-garage-floor-springfield-mo-7.jpg" alt="Professional garage floor coating Springfield MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',7)"><img src="epoxy-garage-floor-springfield-mo-8.jpg" alt="2-car garage epoxy floor Branson Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Branson, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',8)"><img src="epoxy-garage-floor-springfield-mo-9.jpg" alt="Garage floor coating Willard MO — Ozarks Concrete Coatings" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Willard, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',9)"><img src="epoxy-garage-floor-springfield-mo-10.jpg" alt="Full flake polyaspartic garage floor Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',10)"><img src="epoxy-garage-floor-springfield-mo-11.jpg" alt="Epoxy garage floor coating Rogersville MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Rogersville, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',11)"><img src="epoxy-garage-floor-springfield-mo-12.jpg" alt="Residential garage floor Springfield Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',12)"><img src="epoxy-garage-floor-springfield-mo-13.jpg" alt="3-car garage floor coating Southwest Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">3-Car Garage — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',13)"><img src="epoxy-garage-floor-springfield-mo-14.jpg" alt="Garage floor epoxy coating Battlefield MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Battlefield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',14)"><img src="epoxy-garage-floor-springfield-mo-15.jpg" alt="Full flake garage floor Ozarks Concrete Coatings" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',15)"><img src="epoxy-garage-floor-springfield-mo-16.jpg" alt="Polyaspartic floor coating Nixa Missouri garage" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Nixa, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',16)"><img src="epoxy-garage-floor-springfield-mo-17.jpg" alt="Residential garage coating Springfield MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',17)"><img src="epoxy-garage-floor-springfield-mo-18.jpg" alt="Epoxy floor coating Strafford MO garage" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Strafford, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',18)"><img src="epoxy-garage-floor-springfield-mo-19.jpg" alt="Full flake epoxy garage floor Southwest Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',19)"><img src="epoxy-garage-floor-springfield-mo-20.jpg" alt="Garage floor coating Ozark Missouri residential" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Ozark, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',20)"><img src="epoxy-garage-floor-springfield-mo-21.jpg" alt="Epoxy garage floor Republic Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Republic, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',21)"><img src="epoxy-garage-floor-springfield-mo-22.jpg" alt="Polyaspartic coating Springfield MO 2-car garage" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',22)"><img src="epoxy-garage-floor-springfield-mo-23.jpg" alt="Professional epoxy floor coating SW Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',23)"><img src="epoxy-garage-floor-springfield-mo-24.jpg" alt="Garage floor epoxy Joplin MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Joplin, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',24)"><img src="epoxy-garage-floor-springfield-mo-25.jpg" alt="Full flake garage coating Branson Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Branson, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',25)"><img src="epoxy-garage-floor-springfield-mo-26.jpg" alt="Epoxy floor coating Nixa MO residential garage" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Nixa, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',26)"><img src="epoxy-garage-floor-springfield-mo-27.jpg" alt="Polyaspartic garage floor Springfield Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',27)"><img src="epoxy-garage-floor-springfield-mo-28.jpg" alt="Full flake garage coating Southwest Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('garages',28)"><img src="epoxy-garage-floor-springfield-mo-29.jpg" alt="Epoxy garage floor coating Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Garage Floor — SW Missouri</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BASEMENTS & MANCAVES -->
+<section class="gallery-section" id="sec-basements">
+  <div class="gs-inner">
+    <div class="gs-header rev">
+      <div>
+        <span class="sec-label">Residential</span>
+        <h2 class="gs-title">Basements &amp; ManCaves</h2>
+      </div>
+      <span class="gs-count">12 Projects</span>
+    </div>
+    <div class="photo-grid wide rev" id="grid-basements">
+      <div class="pg-item wide" onclick="openLB('basements',0)"><img src="basement-mancave-floor-coating-springfield-mo-1.jpg" alt="Basement floor coating Springfield MO — Ozarks Concrete Coatings" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Basement Floor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('basements',1)"><img src="basement-mancave-floor-coating-springfield-mo-2.jpg" alt="ManCave floor coating Southwest Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">ManCave Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('basements',2)"><img src="basement-mancave-floor-coating-springfield-mo-3.jpg" alt="Basement floor epoxy coating Nixa MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Basement Floor — Nixa, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('basements',3)"><img src="basement-mancave-floor-coating-springfield-mo-4.jpg" alt="Mancave floor coating Ozark Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">ManCave — Ozark, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('basements',4)"><img src="basement-mancave-floor-coating-springfield-mo-5.jpg" alt="Polyaspartic basement floor Springfield Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Basement Floor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('basements',5)"><img src="basement-mancave-floor-coating-springfield-mo-6.jpg" alt="Flake floor coating mancave SW Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">ManCave Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('basements',6)"><img src="basement-mancave-floor-coating-springfield-mo-7.jpg" alt="Basement epoxy floor coating Republic MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Basement Floor — Republic, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('basements',7)"><img src="basement-mancave-floor-coating-springfield-mo-8.jpg" alt="Custom mancave floor Springfield Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Custom ManCave — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('basements',8)"><img src="basement-mancave-floor-coating-springfield-mo-9.jpg" alt="Home gym floor coating Southwest Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Home Gym Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('basements',9)"><img src="basement-mancave-floor-coating-springfield-mo-10.jpg" alt="Basement floor polyaspartic coating Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Basement Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('basements',10)"><img src="basement-mancave-floor-coating-springfield-mo-11.jpg" alt="Mancave epoxy floor coating Springfield MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">ManCave — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('basements',11)"><img src="basement-mancave-floor-coating-springfield-mo-12.jpg" alt="She shed or workshop floor coating Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Shop Floor — SW Missouri</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMERCIAL -->
+<section class="gallery-section" id="sec-commercial">
+  <div class="gs-inner">
+    <div class="gs-header rev">
+      <div>
+        <span class="sec-label">Commercial &amp; Industrial</span>
+        <h2 class="gs-title">Commercial Floors</h2>
+      </div>
+      <span class="gs-count">44 Projects</span>
+    </div>
+    <div class="photo-grid rev" id="grid-commercial">
+      <!-- Commercial photos 1-44 -->
+      <div class="pg-item wide" onclick="openLB('commercial',0)"><img src="commercial-floor-coating-springfield-mo-1.jpg" alt="Commercial floor coating Springfield MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',1)"><img src="commercial-floor-coating-springfield-mo-2.jpg" alt="Commercial epoxy floor Missouri business" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',2)"><img src="commercial-floor-coating-springfield-mo-3.jpg" alt="Industrial floor coating Springfield MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Industrial Floor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',3)"><img src="commercial-floor-coating-springfield-mo-4.jpg" alt="Warehouse floor coating Southwest Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Warehouse — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',4)"><img src="commercial-floor-coating-springfield-mo-5.jpg" alt="Restaurant floor coating Springfield MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',5)"><img src="commercial-floor-coating-springfield-mo-6.jpg" alt="Auto shop floor coating Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Auto Shop — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',6)"><img src="commercial-floor-coating-springfield-mo-7.jpg" alt="Commercial polyaspartic floor Springfield" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial Floor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',7)"><img src="commercial-floor-coating-springfield-mo-8.jpg" alt="Business floor coating Southwest Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',8)"><img src="commercial-floor-coating-springfield-mo-9.jpg" alt="Commercial epoxy floor Joplin MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — Joplin, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',9)"><img src="commercial-floor-coating-springfield-mo-10.jpg" alt="Retail store floor coating Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Retail Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',10)"><img src="commercial-floor-coating-springfield-mo-11.jpg" alt="Commercial floor coating Ozark MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — Ozark, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',11)"><img src="commercial-floor-coating-springfield-mo-12.jpg" alt="Industrial polyaspartic floor coating Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Industrial — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',12)"><img src="commercial-floor-coating-springfield-mo-13.jpg" alt="Commercial building floor Springfield MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',13)"><img src="commercial-floor-coating-springfield-mo-14.jpg" alt="Epoxy floor commercial property Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',14)"><img src="commercial-floor-coating-springfield-mo-15.jpg" alt="Church floor coating Springfield MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Church Floor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',15)"><img src="commercial-floor-coating-springfield-mo-16.jpg" alt="School floor coating Southwest Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">School — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',16)"><img src="commercial-floor-coating-springfield-mo-17.jpg" alt="Commercial floor coating Nixa MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — Nixa, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',17)"><img src="commercial-floor-coating-springfield-mo-18.jpg" alt="Industrial floor epoxy Southwest Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Industrial — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',18)"><img src="commercial-floor-coating-springfield-mo-19.jpg" alt="Commercial polyaspartic Branson Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — Branson, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',19)"><img src="commercial-floor-coating-springfield-mo-20.jpg" alt="Business floor coating Missouri commercial" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',20)"><img src="commercial-floor-coating-springfield-mo-21.jpg" alt="Commercial epoxy floor Republic MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — Republic, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',21)"><img src="commercial-floor-coating-springfield-mo-22.jpg" alt="Warehouse floor coating Springfield Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Warehouse — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',22)"><img src="commercial-floor-coating-springfield-mo-23.jpg" alt="Commercial floor coating SW Missouri business" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',23)"><img src="commercial-floor-coating-springfield-mo-24.jpg" alt="Auto shop floor epoxy Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Auto Shop — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',24)"><img src="commercial-floor-coating-springfield-mo-25.jpg" alt="Commercial building floor coating Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',25)"><img src="commercial-floor-coating-springfield-mo-26.jpg" alt="Industrial epoxy floor Southwest Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Industrial — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',26)"><img src="commercial-floor-coating-springfield-mo-27.jpg" alt="Commercial floor Springfield MO polyaspartic" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',27)"><img src="commercial-floor-coating-springfield-mo-28.jpg" alt="Business floor coating Ozark Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — Ozark, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',28)"><img src="commercial-floor-coating-springfield-mo-29.jpg" alt="Commercial epoxy floor coating SW Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',29)"><img src="commercial-floor-coating-springfield-mo-30.jpg" alt="Retail floor coating Springfield Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Retail — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',30)"><img src="commercial-floor-coating-springfield-mo-31.jpg" alt="Commercial polyaspartic floor Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',31)"><img src="commercial-floor-coating-springfield-mo-32.jpg" alt="Industrial floor coating Joplin MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Industrial — Joplin, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',32)"><img src="commercial-floor-coating-springfield-mo-33.jpg" alt="Commercial floor coating SW Missouri business" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',33)"><img src="commercial-floor-coating-springfield-mo-34.jpg" alt="Epoxy floor commercial Springfield Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',34)"><img src="commercial-floor-coating-springfield-mo-35.jpg" alt="Commercial building polyaspartic floor Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',35)"><img src="commercial-floor-coating-springfield-mo-36.jpg" alt="Warehouse epoxy floor coating Southwest Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Warehouse — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',36)"><img src="commercial-floor-coating-springfield-mo-37.jpg" alt="Commercial floor Ozarks Concrete Coatings" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',37)"><img src="commercial-floor-coating-springfield-mo-38.jpg" alt="Business floor coating Republic Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — Republic, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',38)"><img src="commercial-floor-coating-springfield-mo-39.jpg" alt="Commercial floor coating Nixa Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — Nixa, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',39)"><img src="commercial-floor-coating-springfield-mo-40.jpg" alt="Industrial polyaspartic floor Springfield MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Industrial — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',40)"><img src="commercial-floor-coating-springfield-mo-41.jpg" alt="Commercial building floor coating Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',41)"><img src="commercial-floor-coating-springfield-mo-42.jpg" alt="Epoxy commercial floor Branson Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — Branson, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',42)"><img src="commercial-floor-coating-springfield-mo-43.jpg" alt="Commercial floor coating SW Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Commercial — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('commercial',43)"><img src="commercial-floor-coating-springfield-mo-44.jpg" alt="Industrial epoxy floor coating Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Industrial — SW Missouri</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- METALLICS -->
+<section class="gallery-section" id="sec-metallics">
+  <div class="gs-inner">
+    <div class="gs-header rev">
+      <div>
+        <span class="sec-label">Premium</span>
+        <h2 class="gs-title">Metallic Epoxy Floors</h2>
+      </div>
+      <span class="gs-count">16 Projects</span>
+    </div>
+    <div class="photo-grid wide rev" id="grid-metallics">
+      <div class="pg-item wide" onclick="openLB('metallics',0)"><img src="metallic-epoxy-floor-springfield-mo-1.jpg" alt="Metallic epoxy floor Springfield MO — Ozarks Concrete Coatings" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Metallic Floor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('metallics',1)"><img src="metallic-epoxy-floor-springfield-mo-2.jpg" alt="Metallic epoxy garage floor Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Metallic Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('metallics',2)"><img src="metallic-epoxy-floor-springfield-mo-3.jpg" alt="Custom metallic floor coating Nixa MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Metallic Floor — Nixa, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('metallics',3)"><img src="metallic-epoxy-floor-springfield-mo-4.jpg" alt="Luxury metallic epoxy floor Ozark Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Metallic Floor — Ozark, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('metallics',4)"><img src="metallic-epoxy-floor-springfield-mo-5.jpg" alt="Showroom metallic floor Springfield Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Showroom Metallic — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('metallics',5)"><img src="metallic-epoxy-floor-springfield-mo-6.jpg" alt="Metallic epoxy basement floor Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Metallic Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('metallics',6)"><img src="metallic-epoxy-floor-springfield-mo-7.jpg" alt="Custom metallic pour epoxy Springfield MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Metallic Floor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('metallics',7)"><img src="metallic-epoxy-floor-springfield-mo-8.jpg" alt="Metallic epoxy mancave floor Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Metallic ManCave — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('metallics',8)"><img src="metallic-epoxy-floor-springfield-mo-9.jpg" alt="Luxury metallic floor coating Southwest Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Metallic Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('metallics',9)"><img src="metallic-epoxy-floor-springfield-mo-10.jpg" alt="Metallic epoxy floor Branson Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Metallic Floor — Branson, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('metallics',10)"><img src="metallic-epoxy-floor-springfield-mo-11.jpg" alt="Metallic garage floor coating Republic MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Metallic Floor — Republic, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('metallics',11)"><img src="metallic-epoxy-floor-springfield-mo-12.jpg" alt="Custom metallic epoxy pour Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Metallic Floor — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('metallics',12)"><img src="metallic-epoxy-floor-springfield-mo-13.jpg" alt="Metallic floor coating Springfield Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Metallic Floor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('metallics',13)"><img src="metallic-epoxy-floor-springfield-mo-14.jpg" alt="Luxury metallic epoxy floor Joplin MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Metallic Floor — Joplin, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('metallics',14)"><img src="metallic-epoxy-floor-springfield-mo-15.jpg" alt="Metallic epoxy showroom floor Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Metallic Showroom — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('metallics',15)"><img src="metallic-epoxy-floor-springfield-mo-16.jpg" alt="Custom metallic floor Ozarks Concrete Coatings" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Metallic Floor — SW Missouri</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PATIOS -->
+<section class="gallery-section" id="sec-patios">
+  <div class="gs-inner">
+    <div class="gs-header rev">
+      <div>
+        <span class="sec-label">Outdoor</span>
+        <h2 class="gs-title">Patios &amp; Outdoor Coatings</h2>
+      </div>
+      <span class="gs-count">22 Projects</span>
+    </div>
+    <div class="photo-grid rev" id="grid-patios">
+      <div class="pg-item wide" onclick="openLB('patios',0)"><img src="patio-concrete-coating-springfield-mo-1.jpg" alt="Patio concrete coating Springfield MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Patio — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',1)"><img src="patio-concrete-coating-springfield-mo-2.jpg" alt="Outdoor patio coating Southwest Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Patio — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',2)"><img src="patio-concrete-coating-springfield-mo-3.jpg" alt="Pool deck coating Springfield MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Pool Deck — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',3)"><img src="patio-concrete-coating-springfield-mo-4.jpg" alt="Patio floor coating Nixa Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Patio — Nixa, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',4)"><img src="patio-concrete-coating-springfield-mo-5.jpg" alt="Outdoor concrete coating Ozark MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Outdoor — Ozark, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',5)"><img src="patio-concrete-coating-springfield-mo-6.jpg" alt="Porch concrete coating Springfield Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Porch — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',6)"><img src="patio-concrete-coating-springfield-mo-7.jpg" alt="Pool deck polyaspartic coating Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Pool Deck — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',7)"><img src="patio-concrete-coating-springfield-mo-8.jpg" alt="Patio coating Republic Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Patio — Republic, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',8)"><img src="patio-concrete-coating-springfield-mo-9.jpg" alt="Outdoor patio floor coating SW Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Patio — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',9)"><img src="patio-concrete-coating-springfield-mo-10.jpg" alt="Backyard patio concrete coating Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Patio — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',10)"><img src="patio-concrete-coating-springfield-mo-11.jpg" alt="Patio coating Branson Missouri outdoor" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Patio — Branson, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',11)"><img src="patio-concrete-coating-springfield-mo-12.jpg" alt="Outdoor concrete coating Springfield Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Outdoor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',12)"><img src="patio-concrete-coating-springfield-mo-13.jpg" alt="Patio concrete sealing SW Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Patio — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',13)"><img src="patio-concrete-coating-springfield-mo-14.jpg" alt="Porch floor coating Nixa MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Porch — Nixa, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',14)"><img src="patio-concrete-coating-springfield-mo-15.jpg" alt="Outdoor patio coating Ozark Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Patio — Ozark, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',15)"><img src="patio-concrete-coating-springfield-mo-16.jpg" alt="Pool deck concrete coating Springfield MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Pool Deck — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',16)"><img src="patio-concrete-coating-springfield-mo-17.jpg" alt="Patio floor coating Southwest Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Patio — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',17)"><img src="patio-concrete-coating-springfield-mo-18.jpg" alt="Outdoor concrete coating Republic Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Outdoor — Republic, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',18)"><img src="patio-concrete-coating-springfield-mo-19.jpg" alt="Patio polyaspartic coating Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Patio — SW Missouri</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',19)"><img src="patio-concrete-coating-springfield-mo-20.jpg" alt="Outdoor floor coating Springfield Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Outdoor — Springfield, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',20)"><img src="patio-concrete-coating-springfield-mo-21.jpg" alt="Patio concrete coating Branson MO" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Patio — Branson, MO</div></div></div>
+      <div class="pg-item wide" onclick="openLB('patios',21)"><img src="patio-concrete-coating-springfield-mo-22.jpg" alt="Patio and pool deck coating SW Missouri" loading="lazy"/><div class="pg-overlay"><div class="pg-caption">Patio — SW Missouri</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FLAKE COLORS -->
+<section class="gallery-section" id="sec-colors">
+  <div class="gs-inner">
+    <div class="gs-header rev">
+      <div>
+        <span class="sec-label">Color Options</span>
+        <h2 class="gs-title">Flake Color Choices</h2>
+        <p style="font-size:15px;color:var(--gray-light);margin-top:10px;max-width:600px">Every floor is fully customizable. Choose from 25+ flake blends — or mix your own. We bring samples to every free quote appointment.</p>
+      </div>
+      <a href="/colors.html" class="btn btn-red">View All Colors →</a>
+    </div>
+    <div class="colors-grid rev" id="grid-colors">
+      <div class="color-card"><img src="epoxy-flake-color-option-1.jpg" alt="Epoxy flake color option 1 — Ozarks Concrete Coatings Springfield MO" loading="lazy"/><div class="color-name">Color Option 1</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-2.jpg" alt="Epoxy flake color option 2 Missouri" loading="lazy"/><div class="color-name">Color Option 2</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-3.jpg" alt="Epoxy flake color option 3 Springfield" loading="lazy"/><div class="color-name">Color Option 3</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-4.jpg" alt="Epoxy flake color option 4 Missouri" loading="lazy"/><div class="color-name">Color Option 4</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-5.jpg" alt="Epoxy flake color option 5 Springfield MO" loading="lazy"/><div class="color-name">Color Option 5</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-6.jpg" alt="Epoxy flake color option 6 Missouri" loading="lazy"/><div class="color-name">Color Option 6</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-7.jpg" alt="Epoxy flake color option 7 Springfield" loading="lazy"/><div class="color-name">Color Option 7</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-8.jpg" alt="Epoxy flake color option 8 Missouri" loading="lazy"/><div class="color-name">Color Option 8</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-9.jpg" alt="Epoxy flake color option 9 SW Missouri" loading="lazy"/><div class="color-name">Color Option 9</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-10.jpg" alt="Epoxy flake color option 10 Springfield MO" loading="lazy"/><div class="color-name">Color Option 10</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-11.jpg" alt="Epoxy flake color option 11 Missouri" loading="lazy"/><div class="color-name">Color Option 11</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-12.jpg" alt="Epoxy flake color option 12 Springfield" loading="lazy"/><div class="color-name">Color Option 12</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-13.jpg" alt="Epoxy flake color option 13 Missouri" loading="lazy"/><div class="color-name">Color Option 13</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-14.jpg" alt="Epoxy flake color option 14 SW Missouri" loading="lazy"/><div class="color-name">Color Option 14</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-15.jpg" alt="Epoxy flake color option 15 Springfield MO" loading="lazy"/><div class="color-name">Color Option 15</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-16.jpg" alt="Epoxy flake color option 16 Missouri" loading="lazy"/><div class="color-name">Color Option 16</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-17.jpg" alt="Epoxy flake color option 17 Springfield" loading="lazy"/><div class="color-name">Color Option 17</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-18.jpg" alt="Epoxy flake color option 18 Missouri" loading="lazy"/><div class="color-name">Color Option 18</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-19.jpg" alt="Epoxy flake color option 19 SW Missouri" loading="lazy"/><div class="color-name">Color Option 19</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-20.jpg" alt="Epoxy flake color option 20 Springfield MO" loading="lazy"/><div class="color-name">Color Option 20</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-21.jpg" alt="Epoxy flake color option 21 Missouri" loading="lazy"/><div class="color-name">Color Option 21</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-22.jpg" alt="Epoxy flake color option 22 Springfield" loading="lazy"/><div class="color-name">Color Option 22</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-23.jpg" alt="Epoxy flake color option 23 Missouri" loading="lazy"/><div class="color-name">Color Option 23</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-24.jpg" alt="Epoxy flake color option 24 SW Missouri" loading="lazy"/><div class="color-name">Color Option 24</div></div>
+      <div class="color-card"><img src="epoxy-flake-color-option-25.jpg" alt="Epoxy flake color option 25 Springfield MO" loading="lazy"/><div class="color-name">Color Option 25</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="gallery-section" id="sec-team">
+  <div class="gs-inner">
+    <div class="gs-header rev">
+      <div>
+        <span class="sec-label">Who We Are</span>
+        <h2 class="gs-title">Meet the Team</h2>
+        <p style="font-size:15px;color:var(--gray-light);margin-top:10px;max-width:600px">Real people, real work, real Southwest Missouri. When you hire Ozarks Concrete Coatings, these are the professionals who show up at your door.</p>
+      </div>
+      <a href="/about.html" class="btn btn-red">About Us →</a>
+    </div>
+    <div class="team-grid rev" id="grid-team">
+      <div class="tc"><img src="ozarks-concrete-coatings-team-1.png" alt="Ozarks Concrete Coatings team member Springfield MO" loading="lazy"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Floor Coating Specialist</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-2.png" alt="OCC crew member epoxy installer Southwest Missouri" loading="lazy"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Installation Technician</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-3.png" alt="Ozarks Concrete Coatings installer Springfield MO" loading="lazy"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Floor Coating Specialist</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-4.png" alt="OCC professional floor installer Missouri" loading="lazy"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Installation Technician</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-5.png" alt="Ozarks Concrete Coatings crew Springfield Missouri" loading="lazy"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Floor Coating Specialist</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-6.png" alt="OCC team epoxy floor installer SW Missouri" loading="lazy"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Installation Technician</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-7.png" alt="Ozarks Concrete Coatings professional Springfield MO" loading="lazy"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Floor Coating Specialist</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-8.png" alt="OCC installer Southwest Missouri floor coating" loading="lazy"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Installation Technician</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-9.png" alt="Ozarks Concrete Coatings crew member Missouri" loading="lazy"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Floor Coating Specialist</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-10.png" alt="OCC professional floor installer Springfield" loading="lazy"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Installation Technician</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-11.png" alt="Ozarks Concrete Coatings installer Missouri" loading="lazy"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Floor Coating Specialist</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-12.png" alt="OCC crew member epoxy flooring SW Missouri" loading="lazy"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Installation Technician</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-13.png" alt="Ozarks Concrete Coatings team Springfield MO" loading="lazy"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Floor Coating Specialist</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-14.png" alt="OCC professional floor coating installer Missouri" loading="lazy"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Installation Technician</div></div></div>
+    </div>
+    <div style="background:var(--bg3);border:1px solid rgba(204,32,47,.3);border-radius:8px;padding:20px 24px;margin-top:28px;font-family:var(--font-c);font-size:14px;color:var(--gray-light);font-style:italic">
+      💡 <strong style="color:var(--white)">Note for Stephen:</strong> Update each team member's name and role in the HTML above — find <code style="background:var(--bg4);padding:2px 6px;border-radius:3px;font-size:12px">tc-name</code> and <code style="background:var(--bg4);padding:2px 6px;border-radius:3px;font-size:12px">tc-role</code> inside each card.
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band">
+  <h2>Love What You See?</h2>
+  <p>Get a free quote for your garage, basement, patio, or commercial space</p>
+  <a href="/contact.html" class="btn-white">Get My Free Quote →</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-in">
+    <div class="footer-top">
+      <div class="fl">
+        <img src="Logo_with_number.png" alt="Ozarks Concrete Coatings Springfield MO"/>
+        <p class="fl-tag">Southwest Missouri's premier polyaspartic &amp; epoxy floor coating contractor.</p>
+        <div class="fl-soc">
+          <a href="https://www.facebook.com/ozarksconcretecoatings" class="fs-a" target="_blank">f</a>
+          <a href="https://www.instagram.com/ozarksconcretecoatings/" class="fs-a" target="_blank">ig</a>
+          <a href="https://www.tiktok.com/@ozarksconcretecoatings" class="fs-a" target="_blank">tt</a>
+        </div>
+      </div>
+      <div>
+        <div class="fc-t">Services</div>
+        <ul class="fl-links">
+          <li><a href="/garage-floors.html">Epoxy Garage Floors</a></li>
+          <li><a href="/basement-floors.html">Basement Floors</a></li>
+          <li><a href="/metallic-epoxy.html">Metallic Epoxy</a></li>
+          <li><a href="/patio-coatings.html">Patio Coatings</a></li>
+          <li><a href="/commercial.html">Commercial</a></li>
+          <li><a href="/mancave-shop.html">ManCaves &amp; Shops</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fc-t">Gallery</div>
+        <ul class="fl-links">
+          <li><a href="#sec-garages">Garage Floors</a></li>
+          <li><a href="#sec-basements">Basements &amp; ManCaves</a></li>
+          <li><a href="#sec-commercial">Commercial</a></li>
+          <li><a href="#sec-metallics">Metallic Floors</a></li>
+          <li><a href="#sec-patios">Patios</a></li>
+          <li><a href="#sec-team">Meet the Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fc-t">Contact</div>
+        <ul class="fl-links" style="gap:12px">
+          <li style="list-style:none"><a href="tel:4174026821" style="font-size:16px;font-weight:700;font-family:var(--font-c)">📞 417.402.6821</a></li>
+          <li style="list-style:none"><a href="mailto:OzarksConcreteCoatings@gmail.com" style="font-size:12px">✉ OzarksConcreteCoatings@gmail.com</a></li>
+          <li style="list-style:none;margin-top:10px"><a href="/contact.html" class="btn btn-red" style="font-size:13px;padding:10px 18px;display:inline-block">Free Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>© 2025 Ozarks Concrete Coatings — All Rights Reserved</span>
+      <span>Springfield, MO · 417.402.6821</span>
+      <a href="/privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-mob">
+  <a href="tel:4174026821" class="s-call">📞 Call Now</a>
+  <a href="/contact.html" class="s-quote">Free Quote</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" onclick="closeLB()">×</button>
+  <button class="lb-nav lb-prev" onclick="navLB(-1)">‹</button>
+  <img class="lb-img" id="lb-img" src="" alt=""/>
+  <button class="lb-nav lb-next" onclick="navLB(1)">›</button>
+  <div class="lb-counter" id="lb-counter"></div>
+</div>
+
+<script>
+  // Nav
+  document.getElementById('hbtn').addEventListener('click',()=>document.getElementById('mmenu').classList.toggle('open'));
+
+  // Filter tabs
+  const sections = {
+    garages: 'sec-garages',
+    basements: 'sec-basements',
+    commercial: 'sec-commercial',
+    metallics: 'sec-metallics',
+    patios: 'sec-patios',
+    colors: 'sec-colors',
+    team: 'sec-team'
+  };
+  function filterGallery(cat) {
+    document.querySelectorAll('.ftab').forEach(t=>t.classList.remove('active'));
+    event.target.classList.add('active');
+    if(cat === 'all') {
+      Object.values(sections).forEach(id=>{
+        const el = document.getElementById(id);
+        if(el) el.style.display = '';
+      });
+    } else {
+      Object.entries(sections).forEach(([key,id])=>{
+        const el = document.getElementById(id);
+        if(el) el.style.display = (key === cat) ? '' : 'none';
+      });
+      const target = document.getElementById(sections[cat]);
+      if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+    }
+  }
+
+  // Lightbox
+  let lbImages = [], lbIdx = 0;
+  function buildImageList(cat) {
+    const grid = document.getElementById('grid-' + cat);
+    if (!grid) return [];
+    return Array.from(grid.querySelectorAll('img')).map(img => ({src: img.src, alt: img.alt}));
+  }
+  function openLB(cat, idx) {
+    lbImages = buildImageList(cat);
+    lbIdx = idx;
+    showLBImage();
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function showLBImage() {
+    const img = document.getElementById('lb-img');
+    const counter = document.getElementById('lb-counter');
+    img.src = lbImages[lbIdx].src;
+    img.alt = lbImages[lbIdx].alt;
+    counter.textContent = `${lbIdx + 1} / ${lbImages.length}`;
+  }
+  function navLB(dir) {
+    lbIdx = (lbIdx + dir + lbImages.length) % lbImages.length;
+    showLBImage();
+  }
+  function closeLB() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if(e.target === this) closeLB();
+  });
+  document.addEventListener('keydown', function(e) {
+    const lb = document.getElementById('lightbox');
+    if(!lb.classList.contains('open')) return;
+    if(e.key === 'Escape') closeLB();
+    if(e.key === 'ArrowRight') navLB(1);
+    if(e.key === 'ArrowLeft') navLB(-1);
+  });
+
+  // Reveal
+  const obs = new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');obs.unobserve(x.target);}});},{threshold:0.05});
+  document.querySelectorAll('.rev').forEach(r=>obs.observe(r));
+</script>
+</body>
+</html>
