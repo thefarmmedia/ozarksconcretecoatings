@@ -141,7 +141,8 @@
     .rev{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.rev.vis{opacity:1;transform:translateY(0)}
 
     @media(max-width:1100px){.colors-grid{grid-template-columns:repeat(4,1fr)}.picker-grid{grid-template-columns:repeat(4,1fr)}.installed-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:768px){nav{padding:0 18px}.nav-links{display:none}.hamburger{display:flex}.topbar{display:none}.sticky-mob{display:flex}body{padding-bottom:70px}.sec{padding:50px 18px}.page-hero{padding:44px 18px}.colors-grid{grid-template-columns:repeat(3,1fr)}.picker-grid{grid-template-columns:repeat(3,1fr)}.installed-grid{grid-template-columns:1fr}.frow{grid-template-columns:1fr}.footer-bot{flex-direction:column;text-align:center}.request-section{padding:52px 18px}}
+    @media(max-width:768px){nav{padding:0 18px}.nav-links{display:none}.hamburger{display:flex}.topbar{display:none}.sticky-mob{display:flex}body{padding-bottom:70px}.sec{padding:50px 18px}.page-hero{padding:44px 18px}.colors-grid{grid-template-columns:repeat(3,1fr)}.picker-grid{grid-template-columns:repeat(3,1fr)}.installed-grid{grid-template-columns:1fr}.frow{grid-template-columns:1fr}.footer-bot{flex-direction:column;text-align:center}.request-section{padding:52px 18px}
+    .layer-grid{grid-template-columns:1fr!important}}
   </style>
 </head>
 <body>
@@ -200,168 +201,518 @@
 <!-- MAIN COLOR GRID -->
 <section class="sec sec-dkr">
   <div class="inner">
+
+    <!-- STANDARD 1/4 INCH FLAKE -->
     <div class="rev" style="margin-bottom:8px">
-      <span class="sec-label">Our Signature Collection</span>
-      <h2 class="sec-title">25 Flake Color Blends</h2>
-      <p class="sec-desc">Every color is available as a full-broadcast flake system on any surface we coat. Can't find exactly what you want? We can create custom blends. We bring physical samples to every free quote appointment so you can see them in your actual space and lighting.</p>
+      <span class="sec-label">Standard Collection</span>
+      <h2 class="sec-title">Traditional ¼" Flake</h2>
+      <p class="sec-desc">Our most popular system. Full-broadcast ¼" flake in 18 signature color blends — textured, slip-resistant, and built to last 15+ years. Included in all standard installs.</p>
+    </div>
+    <div class="colors-grid rev" style="margin-bottom:72px">
+
+      <div class="color-card" data-num="1" data-name="Arrowhead" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-1.jpg" alt="Arrowhead epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Arrowhead</div></div>
+      </div>
+
+      <div class="color-card" data-num="2" data-name="Houndstooth" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-2.jpg" alt="Houndstooth epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Houndstooth</div></div>
+      </div>
+
+      <div class="color-card" data-num="10" data-name="Feather Grey" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-10.jpg" alt="Feather Grey epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Feather Grey</div></div>
+      </div>
+
+      <div class="color-card" data-num="11" data-name="Gravel" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-11.jpg" alt="Gravel epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Gravel</div></div>
+      </div>
+
+      <div class="color-card" data-num="12" data-name="Coyote" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-12.jpg" alt="Coyote epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Coyote</div></div>
+      </div>
+
+      <div class="color-card" data-num="13" data-name="Mushroom" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-13.jpg" alt="Mushroom epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Mushroom</div></div>
+      </div>
+
+      <div class="color-card" data-num="14" data-name="Nightfall" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-14.jpg" alt="Nightfall epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Nightfall</div></div>
+      </div>
+
+      <div class="color-card" data-num="15" data-name="Outback" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-15.jpg" alt="Outback epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Outback</div></div>
+      </div>
+
+      <div class="color-card" data-num="16" data-name="Ozark" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-16.jpg" alt="Ozark epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Ozark</div></div>
+      </div>
+
+      <div class="color-card" data-num="17" data-name="Tidal Wave" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-17.jpg" alt="Tidal Wave epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Tidal Wave</div></div>
+      </div>
+
+      <div class="color-card" data-num="18" data-name="Wombat" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-18.jpg" alt="Wombat epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Wombat</div></div>
+      </div>
+
+      <div class="color-card" data-num="19" data-name="Creekbed" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-19.jpg" alt="Creekbed epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Creekbed</div></div>
+      </div>
+
+      <div class="color-card" data-num="20" data-name="Domino" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-20.jpg" alt="Domino epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Domino</div></div>
+      </div>
+
+      <div class="color-card" data-num="21" data-name="Carbon" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-21.jpg" alt="Carbon epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Carbon</div></div>
+      </div>
+
+      <div class="color-card" data-num="22" data-name="Safari" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-22.jpg" alt="Safari epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Safari</div></div>
+      </div>
+
+      <div class="color-card" data-num="23" data-name="Shoreline" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-23.jpg" alt="Shoreline epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Shoreline</div></div>
+      </div>
+
+      <div class="color-card" data-num="24" data-name="Comet" data-type="standard" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <img src="epoxy-flake-color-option-24.jpg" alt="Comet epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Comet</div></div>
+      </div>
+
+    </div>
+
+    <!-- DIVIDER -->
+    <div style="border-top:2px solid var(--border);margin-bottom:56px;position:relative">
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--bg);padding:0 20px;white-space:nowrap">
+        <span style="font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gray)">Also Available</span>
+      </div>
+    </div>
+
+    <!-- HYBRID FLAKE -->
+    <div class="rev" style="margin-bottom:8px">
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:12px">
+        <span class="sec-label" style="margin-bottom:0">Premium Collection</span>
+        <span style="background:var(--red);color:var(--white);font-family:var(--font-c);font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:4px">Small Upcharge</span>
+      </div>
+      <h2 class="sec-title">Hybrid Flake</h2>
+      <p class="sec-desc">Our hybrid flake system blends multiple flake sizes for a richer, more dimensional look with added depth and texture. Available for a small upcharge — ask us at your free quote appointment.</p>
     </div>
     <div class="colors-grid rev">
+
+      <div class="color-card" data-num="3" data-name="Agate" data-type="hybrid" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <div style="position:absolute;top:10px;left:10px;background:var(--red);border-radius:4px;padding:3px 8px;font-family:var(--font-c);font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--white);z-index:2">Hybrid</div>
+        <img src="epoxy-flake-color-option-3.jpg" alt="Agate hybrid epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Agate</div></div>
+      </div>
+
+      <div class="color-card" data-num="4" data-name="Cascade" data-type="hybrid" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <div style="position:absolute;top:10px;left:10px;background:var(--red);border-radius:4px;padding:3px 8px;font-family:var(--font-c);font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--white);z-index:2">Hybrid</div>
+        <img src="epoxy-flake-color-option-4.jpg" alt="Cascade hybrid epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Cascade</div></div>
+      </div>
+
+      <div class="color-card" data-num="5" data-name="Europa" data-type="hybrid" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <div style="position:absolute;top:10px;left:10px;background:var(--red);border-radius:4px;padding:3px 8px;font-family:var(--font-c);font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--white);z-index:2">Hybrid</div>
+        <img src="epoxy-flake-color-option-5.jpg" alt="Europa hybrid epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Europa</div></div>
+      </div>
+
+      <div class="color-card" data-num="6" data-name="Husky" data-type="hybrid" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <div style="position:absolute;top:10px;left:10px;background:var(--red);border-radius:4px;padding:3px 8px;font-family:var(--font-c);font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--white);z-index:2">Hybrid</div>
+        <img src="epoxy-flake-color-option-6.jpg" alt="Husky hybrid epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Husky</div></div>
+      </div>
+
+      <div class="color-card" data-num="7" data-name="Yukon" data-type="hybrid" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <div style="position:absolute;top:10px;left:10px;background:var(--red);border-radius:4px;padding:3px 8px;font-family:var(--font-c);font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--white);z-index:2">Hybrid</div>
+        <img src="epoxy-flake-color-option-7.jpg" alt="Yukon hybrid epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Yukon</div></div>
+      </div>
+
+      <div class="color-card" data-num="8" data-name="Denali" data-type="hybrid" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <div style="position:absolute;top:10px;left:10px;background:var(--red);border-radius:4px;padding:3px 8px;font-family:var(--font-c);font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--white);z-index:2">Hybrid</div>
+        <img src="epoxy-flake-color-option-8.jpg" alt="Denali hybrid epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Denali</div></div>
+      </div>
+
+      <div class="color-card" data-num="9" data-name="Yosemite" data-type="hybrid" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <div style="position:absolute;top:10px;left:10px;background:var(--red);border-radius:4px;padding:3px 8px;font-family:var(--font-c);font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--white);z-index:2">Hybrid</div>
+        <img src="epoxy-flake-color-option-9.jpg" alt="Yosemite hybrid epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Yosemite</div></div>
+      </div>
+
+      <div class="color-card" data-num="25" data-name="Slate" data-type="hybrid" onclick="selectColor(this)">
+        <div class="color-select-badge">✓</div>
+        <div style="position:absolute;top:10px;left:10px;background:var(--red);border-radius:4px;padding:3px 8px;font-family:var(--font-c);font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--white);z-index:2">Hybrid</div>
+        <img src="epoxy-flake-color-option-25.jpg" alt="Slate hybrid epoxy flake — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
+        <div class="color-info"><div class="color-name">Slate</div></div>
+      </div>
+
+    </div>
+
+    <!-- HYBRID EXPLAINER -->
+    <div style="background:linear-gradient(135deg,rgba(204,32,47,.08) 0%,var(--bg3) 60%);border:1px solid rgba(204,32,47,.25);border-radius:10px;padding:24px 28px;margin-top:28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap" class="rev">
+      <div style="font-size:32px">💎</div>
+      <div>
+        <div style="font-family:var(--font-c);font-size:16px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px">What Makes Hybrid Flake Different?</div>
+        <p style="font-size:14px;color:var(--gray-light);line-height:1.7;margin:0;max-width:780px">Hybrid flake blends multiple chip sizes — typically ¼" standard flake mixed with smaller and larger sizes — creating a richer, more layered visual with greater depth and dimension. The result is a more premium, high-end look. Available for a small upcharge over our standard ¼" system. Ask us at your free quote appointment and we'll show you samples of both side by side.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
       <div class="color-card" data-num="1" data-name="Arrowhead" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-1.jpg" alt="Arrowhead epoxy flake color — Ozarks Concrete Coatings Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Arrowhead</div><div class="color-num">Color 01</div></div>
+        <div class="color-info"><div class="color-name">Arrowhead</div></div>
       </div>
 
       <div class="color-card" data-num="2" data-name="Houndstooth" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-2.jpg" alt="Houndstooth epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Houndstooth</div><div class="color-num">Color 02</div></div>
+        <div class="color-info"><div class="color-name">Houndstooth</div></div>
       </div>
 
       <div class="color-card" data-num="3" data-name="Agate" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-3.jpg" alt="Agate epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Agate</div><div class="color-num">Color 03</div></div>
+        <div class="color-info"><div class="color-name">Agate</div></div>
       </div>
 
       <div class="color-card" data-num="4" data-name="Cascade" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-4.jpg" alt="Cascade epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Cascade</div><div class="color-num">Color 04</div></div>
+        <div class="color-info"><div class="color-name">Cascade</div></div>
       </div>
 
       <div class="color-card" data-num="5" data-name="Europa" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-5.jpg" alt="Europa epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Europa</div><div class="color-num">Color 05</div></div>
+        <div class="color-info"><div class="color-name">Europa</div></div>
       </div>
 
       <div class="color-card" data-num="6" data-name="Husky" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-6.jpg" alt="Husky epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Husky</div><div class="color-num">Color 06</div></div>
+        <div class="color-info"><div class="color-name">Husky</div></div>
       </div>
 
       <div class="color-card" data-num="7" data-name="Yukon" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-7.jpg" alt="Yukon epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Yukon</div><div class="color-num">Color 07</div></div>
+        <div class="color-info"><div class="color-name">Yukon</div></div>
       </div>
 
       <div class="color-card" data-num="8" data-name="Denali" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-8.jpg" alt="Denali epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Denali</div><div class="color-num">Color 08</div></div>
+        <div class="color-info"><div class="color-name">Denali</div></div>
       </div>
 
       <div class="color-card" data-num="9" data-name="Yosemite" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-9.jpg" alt="Yosemite epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Yosemite</div><div class="color-num">Color 09</div></div>
+        <div class="color-info"><div class="color-name">Yosemite</div></div>
       </div>
 
       <div class="color-card" data-num="10" data-name="Feather Grey" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-10.jpg" alt="Feather Grey epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Feather Grey</div><div class="color-num">Color 10</div></div>
+        <div class="color-info"><div class="color-name">Feather Grey</div></div>
       </div>
 
       <div class="color-card" data-num="11" data-name="Gravel" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-11.jpg" alt="Gravel epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Gravel</div><div class="color-num">Color 11</div></div>
+        <div class="color-info"><div class="color-name">Gravel</div></div>
       </div>
 
       <div class="color-card" data-num="12" data-name="Coyote" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-12.jpg" alt="Coyote epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Coyote</div><div class="color-num">Color 12</div></div>
+        <div class="color-info"><div class="color-name">Coyote</div></div>
       </div>
 
       <div class="color-card" data-num="13" data-name="Mushroom" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-13.jpg" alt="Mushroom epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Mushroom</div><div class="color-num">Color 13</div></div>
+        <div class="color-info"><div class="color-name">Mushroom</div></div>
       </div>
 
       <div class="color-card" data-num="14" data-name="Nightfall" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-14.jpg" alt="Nightfall epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Nightfall</div><div class="color-num">Color 14</div></div>
+        <div class="color-info"><div class="color-name">Nightfall</div></div>
       </div>
 
       <div class="color-card" data-num="15" data-name="Outback" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-15.jpg" alt="Outback epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Outback</div><div class="color-num">Color 15</div></div>
+        <div class="color-info"><div class="color-name">Outback</div></div>
       </div>
 
       <div class="color-card" data-num="16" data-name="Ozark" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-16.jpg" alt="Ozark epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Ozark</div><div class="color-num">Color 16</div></div>
+        <div class="color-info"><div class="color-name">Ozark</div></div>
       </div>
 
       <div class="color-card" data-num="17" data-name="Tidal Wave" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-17.jpg" alt="Tidal Wave epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Tidal Wave</div><div class="color-num">Color 17</div></div>
+        <div class="color-info"><div class="color-name">Tidal Wave</div></div>
       </div>
 
       <div class="color-card" data-num="18" data-name="Wombat" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-18.jpg" alt="Wombat epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Wombat</div><div class="color-num">Color 18</div></div>
+        <div class="color-info"><div class="color-name">Wombat</div></div>
       </div>
 
       <div class="color-card" data-num="19" data-name="Creekbed" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-19.jpg" alt="Creekbed epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Creekbed</div><div class="color-num">Color 19</div></div>
+        <div class="color-info"><div class="color-name">Creekbed</div></div>
       </div>
 
       <div class="color-card" data-num="20" data-name="Domino" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-20.jpg" alt="Domino epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Domino</div><div class="color-num">Color 20</div></div>
+        <div class="color-info"><div class="color-name">Domino</div></div>
       </div>
 
       <div class="color-card" data-num="21" data-name="Carbon" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-21.jpg" alt="Carbon epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Carbon</div><div class="color-num">Color 21</div></div>
+        <div class="color-info"><div class="color-name">Carbon</div></div>
       </div>
 
       <div class="color-card" data-num="22" data-name="Safari" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-22.jpg" alt="Safari epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Safari</div><div class="color-num">Color 22</div></div>
+        <div class="color-info"><div class="color-name">Safari</div></div>
       </div>
 
       <div class="color-card" data-num="23" data-name="Shoreline" onclick="selectColor(this)">
         <div class="color-select-badge">✓</div>
         <img src="epoxy-flake-color-option-23.jpg" alt="Shoreline epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Shoreline</div><div class="color-num">Color 23</div></div>
-      </div>
+<!-- METALLIC PIGMENTS SECTION -->
+<section class="sec" style="background:var(--bg);border-top:2px solid var(--border)">
+  <div class="inner">
 
-      <div class="color-card" data-num="24" data-name="Comet" onclick="selectColor(this)">
-        <div class="color-select-badge">✓</div>
-        <img src="epoxy-flake-color-option-24.jpg" alt="Comet epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Comet</div><div class="color-num">Color 24</div></div>
-      </div>
-
-      <div class="color-card" data-num="25" data-name="Slate" onclick="selectColor(this)">
-        <div class="color-select-badge">✓</div>
-        <img src="epoxy-flake-color-option-25.jpg" alt="Slate epoxy flake color Springfield MO" loading="lazy"/>
-        <div class="color-info"><div class="color-name">Slate</div><div class="color-num">Color 25</div></div>
-      </div>
-
+    <!-- HEADER -->
+    <div class="rev" style="text-align:center;max-width:780px;margin:0 auto 52px">
+      <span class="sec-label">Premium Metallic System</span>
+      <h2 class="sec-title">Metallic Epoxy<br/><span style="color:var(--red)">Pigment Colors</span></h2>
+      <p style="font-size:16px;color:var(--gray-light);line-height:1.78;margin-top:12px">Our metallic epoxy system uses pure pigment powders suspended in polyaspartic resin — poured, manipulated, and sealed to create a one-of-a-kind liquid-metal floor. No two metallic floors are ever identical. Available in 59 signature pigments across two collections.</p>
     </div>
+
+    <!-- METALLIC EXPLAINER CARD -->
+    <div style="background:linear-gradient(135deg,rgba(204,32,47,.1) 0%,var(--bg3) 60%);border:1px solid rgba(204,32,47,.3);border-radius:12px;padding:28px 32px;display:flex;align-items:center;gap:24px;margin-bottom:52px;flex-wrap:wrap" class="rev">
+      <div style="font-size:42px;flex-shrink:0">🌊</div>
+      <div>
+        <div style="font-family:var(--font-c);font-size:18px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">Every Metallic Floor Is a One-of-a-Kind Work of Art</div>
+        <p style="font-size:14px;color:var(--gray-light);line-height:1.7;margin:0;max-width:860px">Metallic pigments are manipulated during installation — swirled, blended, and layered — to create depth and movement impossible to replicate. Colors can be mixed and blended. Samples are brought to every free quote appointment. Ask us about custom blends and two-tone pours.</p>
+      </div>
+    </div>
+
+    <!-- CHART IMAGES -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:52px" class="rev">
+      <div style="border-radius:10px;overflow:hidden;border:1px solid var(--border)">
+        <img src="metallic-pigments-chart-1.png" alt="Metallic epoxy pigment colors chart 1 — Ozarks Concrete Coatings Springfield MO" style="width:100%;display:block"/>
+      </div>
+      <div style="border-radius:10px;overflow:hidden;border:1px solid var(--border)">
+        <img src="metallic-pigments-chart-2.png" alt="Metallic epoxy pigment colors chart 2 — Ozarks Concrete Coatings Springfield MO" style="width:100%;display:block"/>
+      </div>
+    </div>
+
+    <!-- NEUTRALS & METALS -->
+    <div class="rev" style="margin-bottom:14px">
+      <div style="font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:8px">Collection 1 — Whites, Grays &amp; Metals</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:44px" class="rev">
+      <div style="background:#e8e8e8;border-radius:8px;padding:14px 10px;text-align:center;border:1px solid rgba(255,255,255,.15)"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#f0f0f0,#d0d0d0);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.3)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#111">Bright White</div></div>
+      <div style="background:#c8c8c8;border-radius:8px;padding:14px 10px;text-align:center;border:1px solid rgba(255,255,255,.1)"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#d8d8d8,#b0b0b0);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.3)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#111">Pearl</div></div>
+      <div style="background:#b0b0a8;border-radius:8px;padding:14px 10px;text-align:center;border:1px solid rgba(255,255,255,.1)"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#c0c0b8,#989890);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.3)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#111">Oyster</div></div>
+      <div style="background:#a0a8b0;border-radius:8px;padding:14px 10px;text-align:center;border:1px solid rgba(255,255,255,.1)"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#b0b8c0,#888fa0);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.3)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#111">Aluminum</div></div>
+      <div style="background:#888888;border-radius:8px;padding:14px 10px;text-align:center;border:1px solid rgba(255,255,255,.08)"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#999,#666);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Smoke Gray</div></div>
+      <div style="background:#606060;border-radius:8px;padding:14px 10px;text-align:center;border:1px solid rgba(255,255,255,.07)"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#707070,#484848);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Graphite</div></div>
+      <div style="background:#444;border-radius:8px;padding:14px 10px;text-align:center;border:1px solid rgba(255,255,255,.07)"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#555,#2a2a2a);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.5)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Charcoal</div></div>
+      <div style="background:#222;border-radius:8px;padding:14px 10px;text-align:center;border:1px solid rgba(255,255,255,.06)"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#333,#0a0a0a);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.6)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Black Pearl</div></div>
+    </div>
+
+    <!-- GOLDS & EARTHS -->
+    <div class="rev" style="margin-bottom:14px">
+      <div style="font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:8px">Collection 2 — Golds, Browns &amp; Earth Tones</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:44px" class="rev">
+      <div style="background:#c8a020;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#d4ae28,#a08010);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Gold Rush</div></div>
+      <div style="background:#c8c020;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#d4cc28,#a0a010);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Aztec Gold</div></div>
+      <div style="background:#d07818;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#dc8820,#a05808);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Marigold</div></div>
+      <div style="background:#c06030;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#cc7040,#a04818);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Copper</div></div>
+      <div style="background:#8b4010;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#a05018,#6a2c08);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Chestnut Brown</div></div>
+      <div style="background:#6b4820;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#7a5528,#4a3010);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Walnut Brown</div></div>
+      <div style="background:#7a5030;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#886040,#5a3818);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Mocha Brown</div></div>
+      <div style="background:#7a6030;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#887040,#5a4810);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Bronze</div></div>
+      <div style="background:#c8c830;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#d4d440,#a0a018);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#333">Lemonade</div></div>
+      <div style="background:#7a8830;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#8a9840,#5a6818);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Olive</div></div>
+      <div style="background:#e07818;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#ec8820,#b85808);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Bright Orange</div></div>
+    </div>
+
+    <!-- GREENS -->
+    <div class="rev" style="margin-bottom:14px">
+      <div style="font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:8px">Collection 3 — Greens &amp; Teals</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:44px" class="rev">
+      <div style="background:#80d040;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#90e050,#60a828);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Lime</div></div>
+      <div style="background:#70c030;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#80d040,#509818);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Apple Green</div></div>
+      <div style="background:#88c878;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#98d888,#68a858);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#333">Pistachio</div></div>
+      <div style="background:#48c8a0;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#58d8b0,#28a880);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Sea Green</div></div>
+      <div style="background:#38b888;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#48c898,#18986 8);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Minter Green</div></div>
+      <div style="background:#28a870;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#38b880,#108850);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Jade</div></div>
+      <div style="background:#50a870;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#60b880,#308850);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Sage Green</div></div>
+      <div style="background:#20c0b0;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#30d0c0,#00a090);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Turquoise</div></div>
+      <div style="background:#20a8c0;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#30b8d0,#0088a0);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Peacock</div></div>
+      <div style="background:#109898;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#20a8a8,#007878);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Teal Green</div></div>
+      <div style="background:#107050;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#208060,#005030);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Dark Emerald</div></div>
+    </div>
+
+    <!-- BLUES -->
+    <div class="rev" style="margin-bottom:14px">
+      <div style="font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:8px">Collection 4 — Blues</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:44px" class="rev">
+      <div style="background:#2890e0;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#38a0f0,#0870c0);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Luster Blue</div></div>
+      <div style="background:#3098d0;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#40a8e0,#1078b0);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Surf Blue</div></div>
+      <div style="background:#60a8c8;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#70b8d8,#4088a8);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Shimmer Blue</div></div>
+      <div style="background:#1060d0;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#2070e0,#0040b0);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Electric Blue</div></div>
+      <div style="background:#1048c0;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#2058d0,#0030a0);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Cobalt</div></div>
+      <div style="background:#2038c0;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#3048d0,#0820a0);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Royal Blue</div></div>
+      <div style="background:#3040a8;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#4050b8,#182888);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Twilight Blue</div></div>
+      <div style="background:#1828a0;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#2838b0,#081880);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Sapphire</div></div>
+    </div>
+
+    <!-- REDS PINKS & PURPLES -->
+    <div class="rev" style="margin-bottom:14px">
+      <div style="font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:8px">Collection 5 — Reds, Pinks &amp; Purples</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:44px" class="rev">
+      <div style="background:#c02020;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#d03030,#a00808);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Crimson</div></div>
+      <div style="background:#c03040;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#d04050,#a01020);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Red Blossom</div></div>
+      <div style="background:#c84060;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#d85070,#a02040);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Rose</div></div>
+      <div style="background:#d02840;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#e03850,#b00820);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Scarlet</div></div>
+      <div style="background:#900830;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#a01840,#700018);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Cabernet</div></div>
+      <div style="background:#980830;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#a81840,#780018);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Merlot</div></div>
+      <div style="background:#c86080;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#d87090,#a84060);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Pink</div></div>
+      <div style="background:#c020a0;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#d030b0,#a00080);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Magenta</div></div>
+      <div style="background:#8020c0;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#9030d0,#6000a0);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Violet</div></div>
+      <div style="background:#a0a0d0;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#b0b0e0,#8080b0);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#333">Lavender</div></div>
+      <div style="background:#7020c0;border-radius:8px;padding:14px 10px;text-align:center"><div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#8030d0,#5000a0);margin:0 auto 8px;box-shadow:0 2px 8px rgba(0,0,0,.4)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Purple</div></div>
+    </div>
+
+    <!-- NEONS -->
+    <div class="rev" style="margin-bottom:14px">
+      <div style="font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:8px">Collection 6 — Neon Pigments</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:36px" class="rev">
+      <div style="background:#e0f020;border-radius:8px;padding:14px 10px;text-align:center;box-shadow:0 0 20px rgba(224,240,32,.3)"><div style="width:40px;height:40px;border-radius:50%;background:#e0f020;margin:0 auto 8px;box-shadow:0 0 14px rgba(224,240,32,.6)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#333">Neon Yellow</div></div>
+      <div style="background:#f0a000;border-radius:8px;padding:14px 10px;text-align:center;box-shadow:0 0 20px rgba(240,160,0,.3)"><div style="width:40px;height:40px;border-radius:50%;background:#f0a000;margin:0 auto 8px;box-shadow:0 0 14px rgba(240,160,0,.6)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Neon Orange Yellow</div></div>
+      <div style="background:#f07010;border-radius:8px;padding:14px 10px;text-align:center;box-shadow:0 0 20px rgba(240,112,16,.3)"><div style="width:40px;height:40px;border-radius:50%;background:#f07010;margin:0 auto 8px;box-shadow:0 0 14px rgba(240,112,16,.6)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Neon Orange</div></div>
+      <div style="background:#f02010;border-radius:8px;padding:14px 10px;text-align:center;box-shadow:0 0 20px rgba(240,32,16,.3)"><div style="width:40px;height:40px;border-radius:50%;background:#f02010;margin:0 auto 8px;box-shadow:0 0 14px rgba(240,32,16,.6)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Neon Red</div></div>
+      <div style="background:#e010e0;border-radius:8px;padding:14px 10px;text-align:center;box-shadow:0 0 20px rgba(224,16,224,.3)"><div style="width:40px;height:40px;border-radius:50%;background:#e010e0;margin:0 auto 8px;box-shadow:0 0 14px rgba(224,16,224,.6)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Neon Purple</div></div>
+      <div style="background:#f010c0;border-radius:8px;padding:14px 10px;text-align:center;box-shadow:0 0 20px rgba(240,16,192,.3)"><div style="width:40px;height:40px;border-radius:50%;background:#f010c0;margin:0 auto 8px;box-shadow:0 0 14px rgba(240,16,192,.6)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Neon Bright Red</div></div>
+      <div style="background:#f010a0;border-radius:8px;padding:14px 10px;text-align:center;box-shadow:0 0 20px rgba(240,16,160,.3)"><div style="width:40px;height:40px;border-radius:50%;background:#f010a0;margin:0 auto 8px;box-shadow:0 0 14px rgba(240,16,160,.6)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Neon Pink</div></div>
+      <div style="background:#f020e0;border-radius:8px;padding:14px 10px;text-align:center;box-shadow:0 0 20px rgba(240,32,224,.3)"><div style="width:40px;height:40px;border-radius:50%;background:#f020e0;margin:0 auto 8px;box-shadow:0 0 14px rgba(240,32,224,.6)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff">Neon Magenta</div></div>
+      <div style="background:#30f040;border-radius:8px;padding:14px 10px;text-align:center;box-shadow:0 0 20px rgba(48,240,64,.3)"><div style="width:40px;height:40px;border-radius:50%;background:#30f040;margin:0 auto 8px;box-shadow:0 0 14px rgba(48,240,64,.6)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#333">Neon Green</div></div>
+      <div style="background:#10d0f0;border-radius:8px;padding:14px 10px;text-align:center;box-shadow:0 0 20px rgba(16,208,240,.3)"><div style="width:40px;height:40px;border-radius:50%;background:#10d0f0;margin:0 auto 8px;box-shadow:0 0 14px rgba(16,208,240,.6)"></div><div style="font-family:var(--font-c);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#333">Neon Blue</div></div>
+    </div>
+
+    <!-- METALLIC CTA -->
+    <div style="background:var(--bg3);border:1px solid rgba(204,32,47,.3);border-radius:10px;padding:28px 32px;text-align:center" class="rev">
+      <div style="font-family:var(--font-d);font-size:38px;line-height:.95;margin-bottom:10px">Want to See Metallic Floors in Person?</div>
+      <p style="font-size:15px;color:var(--gray-light);max-width:600px;margin:0 auto 20px;line-height:1.7">We bring metallic pigment samples and photos of completed metallic installs to every free quote appointment. Colors can be blended for custom two-tone pours.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a href="/contact.html" class="btn btn-red">Schedule Free Quote →</a>
+        <a href="/metallic-epoxy.html" class="btn btn-outline">See Metallic Gallery →</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <!-- INFO STRIP -->
+<div style="background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:64px 40px">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center" class="layer-grid">
+    <div class="rev">
+      <span class="sec-label">What You're Getting</span>
+      <h2 class="sec-title">A 4-Layer Professional<br/>Coating System</h2>
+      <p style="font-size:16px;color:var(--gray-light);line-height:1.78;margin-bottom:20px">Every floor we install is a complete 4-layer system — not just a coat of paint rolled on top. This is what separates a floor that lasts 15+ years from one that peels in 18 months.</p>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;gap:12px;align-items:flex-start">
+          <div style="width:32px;height:32px;min-width:32px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:var(--font-c);font-size:13px;font-weight:900;color:var(--white)">1</div>
+          <div><div style="font-family:var(--font-c);font-size:15px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">Diamond Ground Concrete</div><p style="font-size:13px;color:var(--gray-light);line-height:1.6;margin:0">Mechanically abraded to create the profile needed for permanent adhesion. No acid etching. Ever.</p></div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:flex-start">
+          <div style="width:32px;height:32px;min-width:32px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:var(--font-c);font-size:13px;font-weight:900;color:var(--white)">2</div>
+          <div><div style="font-family:var(--font-c);font-size:15px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">Polyaspartic Primer Coat</div><p style="font-size:13px;color:var(--gray-light);line-height:1.6;margin:0">Penetrates deep into the concrete, locks out moisture, and creates the bond layer for the full system.</p></div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:flex-start">
+          <div style="width:32px;height:32px;min-width:32px;background:var(--red-glow);border:1px solid rgba(204,32,47,.4);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:var(--font-c);font-size:13px;font-weight:900;color:var(--red)">3</div>
+          <div><div style="font-family:var(--font-c);font-size:15px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">Full Broadcast Flake Layer</div><p style="font-size:13px;color:var(--gray-light);line-height:1.6;margin:0">Your chosen color blend is broadcast into the wet base coat at 100% coverage — corner to corner, no bare spots.</p></div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:flex-start">
+          <div style="width:32px;height:32px;min-width:32px;background:var(--red-glow);border:1px solid rgba(204,32,47,.4);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:var(--font-c);font-size:13px;font-weight:900;color:var(--red)">4</div>
+          <div><div style="font-family:var(--font-c);font-size:15px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:2px">UV-Stable Polyaspartic Topcoat</div><p style="font-size:13px;color:var(--gray-light);line-height:1.6;margin:0">The protective clear layer. Scratch-resistant, chemical-resistant, UV-stable. This is what the 15-year warranty covers.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="rev">
+      <img src="Epoxy-Coating-in-Springfield-MO.png" alt="Epoxy coating layer system diagram — Ozarks Concrete Coatings Springfield MO" style="width:100%;max-width:480px;margin:0 auto;display:block;filter:drop-shadow(0 20px 60px rgba(0,0,0,.6))"/>
+    </div>
+  </div>
+</div>
+
 <div class="info-strip">
   <h2>Can't Decide? We Bring Samples to You.</h2>
   <p>Every free quote includes physical color samples in your actual space and lighting</p>
@@ -682,7 +1033,10 @@
     btn.disabled = true;
     btn.textContent = 'Sending...';
 
-    // Fire to GHL webhook
+    // Determine if hybrid flake
+    var pickedCard = document.querySelector('.color-card[data-num="' + pickedNum + '"]');
+    var isHybrid = pickedCard && pickedCard.dataset.type === 'hybrid';
+
     var payload = {
       firstName: first,
       lastName: last,
@@ -692,6 +1046,7 @@
       source: 'Ozarks Concrete Coatings - Color Photo Request',
       color_requested: pickedName,
       color_number: pickedNum,
+      color_type: isHybrid ? 'Hybrid Flake (small upcharge)' : 'Standard 1/4" Flake',
       space_type: space,
       notes: notes,
       page: window.location.href,
@@ -704,10 +1059,9 @@
       body: JSON.stringify(payload)
     }).catch(function(e) { console.error('Webhook error:', e); });
 
-    // Show success
     setTimeout(function() {
       document.getElementById('requestForm').style.display = 'none';
-      document.getElementById('successColorName').textContent = pickedName;
+      document.getElementById('successColorName').textContent = pickedName + (isHybrid ? ' (Hybrid Flake)' : '');
       document.getElementById('successMsg').classList.add('show');
       btn.disabled = false;
     }, 600);
