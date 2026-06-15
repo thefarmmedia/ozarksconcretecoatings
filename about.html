@@ -19,7 +19,7 @@
     .topbar a:hover{opacity:.8}
     .topbar-l{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
     nav{background:var(--black);border-bottom:2px solid var(--red);padding:0 36px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:1000;height:70px}
-    .nav-logo img{height:50px;width:auto;mix-blend-mode:screen}
+    .nav-logo img{height:50px;width:auto}
     .nav-links{display:flex;gap:26px;list-style:none;font-family:var(--font-c);font-weight:700;font-size:14px;letter-spacing:.07em;text-transform:uppercase}
     .nav-links a{color:var(--gray-light);transition:color .2s;padding:4px 0;border-bottom:2px solid transparent}
     .nav-links a:hover,.nav-links a.active{color:var(--white);border-bottom-color:var(--red)}
@@ -101,7 +101,8 @@
     .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
     .tc{background:var(--bg3);border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:border-color .25s,transform .25s}
     .tc:hover{border-color:rgba(204,32,47,.4);transform:translateY(-4px)}
-    .tc img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center top;display:block}
+    .tc img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center top;display:block;transition:transform .4s}
+    .tc:hover img{transform:scale(1.04)}
     .tc-body{padding:16px 18px}
     .tc-name{font-family:var(--font-c);font-size:18px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px}
     .tc-role{font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
@@ -132,7 +133,7 @@
     footer{background:var(--black);border-top:2px solid var(--red);padding:52px 40px 26px}
     .footer-in{max-width:1300px;margin:0 auto}
     .footer-top{display:grid;grid-template-columns:260px 1fr 1fr 1fr;gap:36px;margin-bottom:40px}
-    .fl img{height:50px;width:auto;margin-bottom:11px;mix-blend-mode:screen}
+    .fl img{height:50px;width:auto;margin-bottom:11px}
     .fl-tag{font-size:13px;color:var(--gray);line-height:1.65;margin-bottom:14px}
     .fl-soc{display:flex;gap:8px}
     .fs-a{width:32px;height:32px;background:var(--bg3);border:1px solid var(--border);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;transition:background .2s,border-color .2s}
@@ -357,23 +358,67 @@
       <a href="/gallery.html" class="btn btn-outline">Full Gallery →</a>
     </div>
     <div class="team-grid rev">
-      <div class="tc"><img src="ozarks-concrete-coatings-team-1.png" alt="Ozarks Concrete Coatings team member Springfield MO"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Floor Coating Specialist</div></div></div>
-      <div class="tc"><img src="ozarks-concrete-coatings-team-2.png" alt="OCC installer Southwest Missouri"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Installation Technician</div></div></div>
-      <div class="tc"><img src="ozarks-concrete-coatings-team-3.png" alt="Ozarks Concrete Coatings crew Springfield"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Floor Coating Specialist</div></div></div>
-      <div class="tc"><img src="ozarks-concrete-coatings-team-4.png" alt="OCC professional installer Missouri"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Installation Technician</div></div></div>
-      <div class="tc"><img src="ozarks-concrete-coatings-team-5.png" alt="Ozarks Concrete Coatings team Missouri"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Floor Coating Specialist</div></div></div>
-      <div class="tc"><img src="ozarks-concrete-coatings-team-6.png" alt="OCC crew member epoxy floor installer"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Installation Technician</div></div></div>
-      <div class="tc"><img src="ozarks-concrete-coatings-team-7.png" alt="Ozarks Concrete Coatings professional Springfield MO"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Floor Coating Specialist</div></div></div>
-      <div class="tc"><img src="ozarks-concrete-coatings-team-8.png" alt="OCC installer SW Missouri floor coating"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Installation Technician</div></div></div>
-      <div class="tc"><img src="ozarks-concrete-coatings-team-9.png" alt="Ozarks Concrete Coatings crew member"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Floor Coating Specialist</div></div></div>
-      <div class="tc"><img src="ozarks-concrete-coatings-team-10.png" alt="OCC professional floor installer Springfield"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Installation Technician</div></div></div>
-      <div class="tc"><img src="ozarks-concrete-coatings-team-11.png" alt="Ozarks Concrete Coatings installer Missouri"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Floor Coating Specialist</div></div></div>
-      <div class="tc"><img src="ozarks-concrete-coatings-team-12.png" alt="OCC crew epoxy flooring SW Missouri"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Installation Technician</div></div></div>
-      <div class="tc"><img src="ozarks-concrete-coatings-team-13.png" alt="Ozarks Concrete Coatings team Springfield"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Floor Coating Specialist</div></div></div>
-      <div class="tc"><img src="ozarks-concrete-coatings-team-14.png" alt="OCC professional floor coating installer"/><div class="tc-body"><div class="tc-name">Team Member</div><div class="tc-role">Installation Technician</div></div></div>
-    </div>
-    <div style="background:var(--bg3);border:1px solid rgba(204,32,47,.3);border-radius:8px;padding:18px 22px;margin-top:24px;font-family:var(--font-c);font-size:14px;color:var(--gray-light)">
-      💡 <strong style="color:var(--white)">Stephen:</strong> Replace "Team Member" and role titles with actual names — find <code style="background:var(--bg4);padding:2px 6px;border-radius:3px;font-size:12px">tc-name</code> and <code style="background:var(--bg4);padding:2px 6px;border-radius:3px;font-size:12px">tc-role</code> in each card above.
+
+      <!-- DERICK MOORE - FOUNDER -->
+      <div class="tc" style="border-color:rgba(204,32,47,.4);grid-column:span 1">
+        <img src="team-derick-moore.png" alt="Derick Moore — Founder and Owner, Ozarks Concrete Coatings Springfield MO"/>
+        <div class="tc-body">
+          <div class="tc-name">Derick Moore</div>
+          <div class="tc-role">Founder &amp; Owner</div>
+          <p style="font-size:13px;color:var(--gray-light);line-height:1.65;margin-top:8px">Derick founded Ozarks Concrete Coatings in 2020 and has spent every year since raising the standard for quality and professionalism in the Springfield market. A relentless work ethic, creative vision, and a heart for his community — including a renown haunted trail he built for the kids. Husband. Father of four. All-in, every job.</p>
+        </div>
+      </div>
+
+      <!-- JARRAD PREDMORE - OPERATIONS MANAGER -->
+      <div class="tc">
+        <img src="team-jarrad-predmore.png" alt="Jarrad Predmore — Operations Manager, Ozarks Concrete Coatings"/>
+        <div class="tc-body">
+          <div class="tc-name">Jarrad Predmore</div>
+          <div class="tc-role">Operations Manager</div>
+          <p style="font-size:13px;color:var(--gray-light);line-height:1.65;margin-top:8px">A driving force on the team since the early days. Leads by example with relentless work ethic and contagious energy. Never backs down from a challenge, tackles every project with precision and dedication — all while keeping the team laughing.</p>
+        </div>
+      </div>
+
+      <!-- TANNER KROUTIL - METALLIC SPECIALIST -->
+      <div class="tc">
+        <img src="team-tanner-kroutil.png" alt="Tanner Kroutil — Metallic Epoxy Specialist, Ozarks Concrete Coatings"/>
+        <div class="tc-body">
+          <div class="tc-name">Tanner Kroutil</div>
+          <div class="tc-role">Metallic Epoxy Specialist</div>
+          <p style="font-size:13px;color:var(--gray-light);line-height:1.65;margin-top:8px">With OCC since the very beginning as one of the first crew members. A specialist in metallic epoxy finishes, Tanner has trained with top industry leaders across the U.S. mastering advanced application techniques that produce truly one-of-a-kind floors.</p>
+        </div>
+      </div>
+
+      <!-- STEVEN NEITZEL - LEAD INSTALLER -->
+      <div class="tc">
+        <img src="team-steven-neitzel.png" alt="Steven Neitzel — Lead Installer, Ozarks Concrete Coatings"/>
+        <div class="tc-body">
+          <div class="tc-name">Steven Neitzel</div>
+          <div class="tc-role">Lead Installer</div>
+          <p style="font-size:13px;color:var(--gray-light);line-height:1.65;margin-top:8px">Bringing serious strength, skill, and dedication to every job. From garages to patios, Steven gets it done right every time. Known for his work ethic, attention to detail, and the muscle behind some of the team's toughest installs.</p>
+        </div>
+      </div>
+
+      <!-- PABLO - INSTALLER -->
+      <div class="tc">
+        <img src="team-pablo.jpg" alt="Pablo — Floor Coating Installer, Ozarks Concrete Coatings Springfield MO" style="object-position:center top"/>
+        <div class="tc-body">
+          <div class="tc-name">Pablo</div>
+          <div class="tc-role">Floor Coating Installer</div>
+          <p style="font-size:13px;color:var(--gray-light);line-height:1.65;margin-top:8px">A skilled and dedicated member of the OCC crew. Pablo brings precision and hustle to every project — the kind of guy you want on your floor install.</p>
+        </div>
+      </div>
+
+      <!-- REMAINING CREW MEMBERS -->
+      <div class="tc"><img src="ozarks-concrete-coatings-team-1.png" alt="OCC crew member Springfield MO"/><div class="tc-body"><div class="tc-name">OCC Crew</div><div class="tc-role">Floor Coating Specialist</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-2.png" alt="OCC installer Southwest Missouri"/><div class="tc-body"><div class="tc-name">OCC Crew</div><div class="tc-role">Installation Technician</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-3.png" alt="OCC crew Springfield MO"/><div class="tc-body"><div class="tc-name">OCC Crew</div><div class="tc-role">Floor Coating Specialist</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-5.png" alt="OCC team Missouri"/><div class="tc-body"><div class="tc-name">OCC Crew</div><div class="tc-role">Floor Coating Specialist</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-6.png" alt="OCC crew member"/><div class="tc-body"><div class="tc-name">OCC Crew</div><div class="tc-role">Installation Technician</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-7.png" alt="OCC professional Springfield MO"/><div class="tc-body"><div class="tc-name">OCC Crew</div><div class="tc-role">Floor Coating Specialist</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-8.png" alt="OCC installer SW Missouri"/><div class="tc-body"><div class="tc-name">OCC Crew</div><div class="tc-role">Installation Technician</div></div></div>
+      <div class="tc"><img src="ozarks-concrete-coatings-team-9.png" alt="OCC crew member"/><div class="tc-body"><div class="tc-name">OCC Crew</div><div class="tc-role">Floor Coating Specialist</div></div></div>
+
     </div>
   </div>
 </section>

@@ -32,7 +32,7 @@
 
     /* NAV */
     nav{background:var(--black);border-bottom:2px solid var(--red);padding:0 36px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:1000;height:70px}
-    .nav-logo img{height:50px;width:auto;mix-blend-mode:screen}
+    .nav-logo img{height:50px;width:auto}
     .nav-links{display:flex;gap:26px;list-style:none;font-family:var(--font-c);font-weight:700;font-size:14px;letter-spacing:.07em;text-transform:uppercase}
     .nav-links a{color:var(--gray-light);transition:color .2s;padding:4px 0;border-bottom:2px solid transparent}
     .nav-links a:hover{color:var(--white);border-bottom-color:var(--red)}
@@ -65,7 +65,7 @@
     .ps-caption{display:inline-flex;align-items:center;gap:8px;background:rgba(0,0,0,.2);border-radius:4px;padding:8px 14px;font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;position:relative}
     .hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--red-glow);border:1px solid var(--red);border-radius:4px;padding:5px 13px;font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:18px}
     .hero-logo{margin-bottom:22px;animation:fsu .7s ease both}
-    .hero-logo img{height:80px;width:auto;mix-blend-mode:screen;filter:drop-shadow(0 4px 24px rgba(204,32,47,.45))}
+    .hero-logo img{height:80px;width:auto;mix-blend-mode:screen}
     .hero-h1{font-family:var(--font-d);font-size:clamp(50px,6vw,90px);line-height:.93;letter-spacing:.01em;margin-bottom:10px;animation:fsu .7s .1s ease both}
     .hero-h1 .r{color:var(--red)}
     .hero-sub{font-family:var(--font-c);font-size:clamp(15px,2vw,20px);font-weight:600;color:var(--gray-light);letter-spacing:.05em;text-transform:uppercase;margin-bottom:26px;animation:fsu .7s .17s ease both}
@@ -309,8 +309,8 @@
       .frow{grid-template-columns:1fr}
       .trust-logos{gap:20px}
       .btn-blk{margin-left:0;margin-top:10px;display:inline-block}
-      .photo-showcase-in{grid-template-columns:1fr}
-      .ps-img-wrap{min-height:300px}
+      .photo-showcase-in{grid-template-columns:1fr !important}
+      .ps-img-wrap{min-height:260px}
       .ps-content{padding:36px 22px}
     }
   </style>
@@ -445,20 +445,23 @@
 
 <!-- PHOTO SHOWCASE — Premier Sports Cars Lamborghini -->
 <div class="photo-showcase">
-  <div class="photo-showcase-in">
+  <div class="photo-showcase-in" style="grid-template-columns:1fr 1fr 1fr">
     <div class="ps-img-wrap">
       <img src="hero-bg.png" alt="Premier Sports Cars Springfield MO - Ozarks Concrete Coatings Epoxy Floor - Lamborghini Huracan on Full Flake Polyaspartic Floor" />
     </div>
-    <div class="ps-content">
-      <div class="ps-eyebrow">📍 Springfield, Missouri — Featured Project</div>
-      <div class="ps-title">When Your Floor Has to Be as Nice as What's Parked on It</div>
+    <div class="ps-img-wrap">
+      <img src="commercial-floor-coating-springfield-mo-42.jpg" alt="White Lamborghini Aventador on full flake polyaspartic floor — Premier Sports Cars Springfield MO — Ozarks Concrete Coatings" />
+    </div>
+    <div class="ps-content" style="background:var(--black);padding:52px 44px;display:flex;flex-direction:column;justify-content:center">
+      <span class="sec-label">Featured Commercial Install</span>
+      <h2 class="ps-title" style="font-family:var(--font-d);font-size:clamp(34px,4vw,52px);line-height:.95;margin-bottom:16px">Premier Sports Cars<br/><span style="color:var(--red)">Springfield, MO</span></h2>
       <p class="ps-body">Premier Sports Cars of Springfield trusted Ozarks Concrete Coatings to coat their showroom floor — the same floor that holds Lamborghinis, Ferraris, and some of the most prized vehicles in Southwest Missouri. Our full flake polyaspartic system delivered a showroom-quality finish that's as tough as it is stunning.</p>
       <div class="ps-caption">🏆 Premier Sports Cars · Springfield, MO · Commercial Full Flake System</div>
-      <div style="margin-top:22px;position:relative">
-        <a href="/gallery.html" class="btn btn-white" style="font-size:14px;padding:12px 26px">View Full Gallery →</a>
-      </div>
+      <a href="/commercial.html" class="btn btn-outline" style="margin-top:22px;display:inline-block;align-self:flex-start">See Commercial Work →</a>
     </div>
   </div>
+</div>
+    </div>
 </div>
 
 <!-- TRUST LOGOS -->
@@ -809,7 +812,7 @@
           <div class="bc-meta">May 2025 · 6 min read</div>
           <div class="bc-t">How Much Does an Epoxy Garage Floor Cost in Missouri?</div>
           <p class="bc-d">Real pricing breakdowns for SW Missouri homeowners — 1-car, 2-car, 3-car garages, basements, and commercial. What to expect and what to watch out for.</p>
-          <a href="/blog/epoxy-garage-floor-cost-missouri.html" class="bc-lnk">Read Article →</a>
+          <a href="/epoxy-garage-floor-cost-missouri.html" class="bc-lnk">Read Article →</a>
         </div>
       </div>
       <div class="bc">
@@ -819,7 +822,7 @@
           <div class="bc-meta">April 2025 · 8 min read</div>
           <div class="bc-t">Polyaspartic vs Epoxy: Which Is Actually Better?</div>
           <p class="bc-d">An honest side-by-side comparison of standard epoxy and polyaspartic/polyurea coatings — durability, UV stability, cure time, cost, and long-term performance.</p>
-          <a href="/blog/polyaspartic-vs-epoxy.html" class="bc-lnk">Read Article →</a>
+          <a href="/polyaspartic-vs-epoxy.html" class="bc-lnk">Read Article →</a>
         </div>
       </div>
       <div class="bc">
@@ -829,7 +832,7 @@
           <div class="bc-meta">March 2025 · 5 min read</div>
           <div class="bc-t">Why Garage Floor Coatings Fail (And How to Avoid It)</div>
           <p class="bc-d">The truth about peeling floors, failed DIY kits, and cheap installs — what causes them and what proper professional installation actually looks like.</p>
-          <a href="/blog/why-garage-floors-fail.html" class="bc-lnk">Read Article →</a>
+          <a href="/why-garage-floors-fail.html" class="bc-lnk">Read Article →</a>
         </div>
       </div>
       <div class="bc">
@@ -839,7 +842,7 @@
           <div class="bc-meta">February 2025 · 4 min read</div>
           <div class="bc-t">Best Garage Floor Coating for Missouri's Weather</div>
           <p class="bc-d">Missouri's freeze/thaw cycles, brutal summers, and humidity create unique challenges for floor coatings. Here's what actually holds up long-term in the Ozarks.</p>
-          <a href="/blog/best-garage-floor-coating-missouri-weather.html" class="bc-lnk">Read Article →</a>
+          <a href="/best-garage-floor-coating-missouri-weather.html" class="bc-lnk">Read Article →</a>
         </div>
       </div>
       <div class="bc">
@@ -849,7 +852,7 @@
           <div class="bc-meta">January 2025 · 6 min read</div>
           <div class="bc-t">The Truth About DIY Epoxy Kits From Home Depot</div>
           <p class="bc-d">They look appealing at $200, but the results rarely last. We break down exactly why big-box epoxy kits fail and what professional installation actually involves.</p>
-          <a href="/blog/diy-epoxy-kits-truth.html" class="bc-lnk">Read Article →</a>
+          <a href="/diy-epoxy-kits-truth.html" class="bc-lnk">Read Article →</a>
         </div>
       </div>
       <div class="bc">
@@ -859,7 +862,7 @@
           <div class="bc-meta">December 2024 · 5 min read</div>
           <div class="bc-t">Does an Epoxy Garage Floor Increase Home Value?</div>
           <p class="bc-d">A finished garage floor is one of the highest ROI home upgrades you can make. Here's what real estate agents and appraisers say about coated garage floors.</p>
-          <a href="/blog/epoxy-floor-home-value.html" class="bc-lnk">Read Article →</a>
+          <a href="/epoxy-floor-home-value.html" class="bc-lnk">Read Article →</a>
         </div>
       </div>
     </div>
