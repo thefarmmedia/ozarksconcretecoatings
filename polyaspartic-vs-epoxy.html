@@ -61,6 +61,15 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:32px 40px
 @media(max-width:768px){nav{padding:0 18px}.nav-links{display:none}.hamburger{display:flex}.sec{padding:48px 18px}.topbar{display:none}.sticky-mob{display:flex}body{padding-bottom:70px}.page-hero{padding:44px 18px}.footer-bot{flex-direction:column;text-align:center}}
 
 /* NAV DROPDOWNS */
+.nav-links{gap:12px!important}
+.nav-links a{white-space:nowrap}
+@media(max-width:1300px){.nav-links{gap:9px!important}.nav-links a{font-size:12.5px}nav{padding:0 20px}}
+
+.nav-links{align-items:center}
+.nav-links li{display:flex;align-items:center;height:100%}
+.nav-drop{height:100%}
+.nav-drop>a{height:100%}
+
 .nav-links{gap:15px!important}
 .nav-drop{position:relative}
 .nav-drop>a{display:flex;align-items:center;gap:3px;cursor:pointer}
@@ -95,7 +104,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:32px 40px
         <a href="/concrete-repair.html">Concrete Repair</a>
       </div>
     </li>
-    <li class="nav-drop"><a href="/service-areas.html">Areas We Serve ▾</a>
+    <li class="nav-drop"><a href="/service-areas.html">Service Areas ▾</a>
       <div class="nav-drop-menu nav-drop-wide">
         <a href="/springfield-mo.html">Springfield</a>
         <a href="/nixa-mo.html">Nixa</a>
@@ -134,7 +143,6 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:32px 40px
     <li><a href="/colors.html">Colors</a></li>
     <li><a href="/blog.html">Blog</a></li>
     <li><a href="/reviews.html">Reviews</a></li>
-    <li><a href="/instant-quote.html" style="color:var(--red)">Instant Quote</a></li>
     <li><a href="/contact.html" class="nav-cta">Free Quote</a></li>
   </ul>
 <div class="hamburger" id="hbtn"><span></span><span></span><span></span></div></nav>
@@ -231,7 +239,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:32px 40px
 </div>
 
 <footer><div class="footer-bot"><span>&#169; 2025 Ozarks Concrete Coatings &#8212; All Rights Reserved &#183; Springfield, MO</span><span><a href="tel:4174026821">417.402.6821</a></span><a href="/privacy.html">Privacy Policy</a></div></footer>
-<div class="sticky-mob"><a href="tel:4174026821" class="s-call">&#128222; Call Now</a><a href="/contact.html" class="s-quote">Free Quote</a></div>
+<div class="sticky-mob"><a href="tel:4174026821" class="s-call">&#128222; 417.402.6821</a><a href="/contact.html" class="s-quote">Free Quote</a></div>
 <script>document.getElementById("hbtn").addEventListener("click",function(){document.getElementById("mmenu").classList.toggle("open");});var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("vis");obs.unobserve(x.target);}});},{threshold:0.08});document.querySelectorAll(".rev").forEach(function(r){obs.observe(r);});</script>
 </body>
 </html>
