@@ -459,14 +459,14 @@
     <div class="hform" id="quote-form">
       <div class="hform-head">Get Your Free Quote<span class="sub">No obligation · Fast response · Local experts</span></div>
       <div class="frow">
-        <div class="fg"><label>First Name</label><input type="text" placeholder="John"/></div>
-        <div class="fg"><label>Last Name</label><input type="text" placeholder="Smith"/></div>
+        <div class="fg"><label>First Name</label><input type="text" placeholder="John" name="firstName"/></div>
+        <div class="fg"><label>Last Name</label><input type="text" placeholder="Smith" name="lastName"/></div>
       </div>
-      <div class="fg"><label>Phone Number</label><input type="tel" placeholder="417-555-0000"/></div>
-      <div class="fg"><label>Email Address</label><input type="email" placeholder="you@email.com"/></div>
+      <div class="fg"><label>Phone Number</label><input type="tel" placeholder="417-555-0000" name="phone"/></div>
+      <div class="fg"><label>Email Address</label><input type="email" placeholder="you@email.com" name="email"/></div>
       <div class="fg">
         <label>Service Needed</label>
-        <select>
+        <select name="service">
           <option value="">Select a service...</option>
           <option>Epoxy Garage Floor</option>
           <option>Polyaspartic Floor Coating</option>
@@ -482,7 +482,7 @@
       </div>
       <div class="fg">
         <label>Approximate Square Footage</label>
-        <select>
+        <select name="squareFootage">
           <option value="">Select range...</option>
           <option>Under 300 sq ft</option>
           <option>300–500 sq ft</option>
@@ -492,9 +492,9 @@
           <option>2,000+ sq ft (Commercial)</option>
         </select>
       </div>
-      <div class="fg"><label>Your City / Zip</label><input type="text" placeholder="Springfield, MO or 65804"/></div>
-      <div class="fg"><label>Tell Us About Your Project</label><textarea placeholder="Current floor condition, cracks, project goals..."></textarea></div>
-      <button class="btn btn-red fsub" onclick="submitForm()">Submit Free Quote Request →</button>
+      <div class="fg"><label>Your City / Zip</label><input type="text" placeholder="Springfield, MO or 65804" name="cityZip"/></div>
+      <div class="fg"><label>Tell Us About Your Project</label><textarea placeholder="Current floor condition, cracks, project goals..." name="message"></textarea></div>
+      <button class="btn btn-red fsub" onclick="submitForm(this)">Submit Free Quote Request →</button>
       <p class="fnote">🔒 Private &amp; secure. No spam. Response within 1 business day.</p>
     </div>
   </div>
@@ -960,14 +960,14 @@
           <div class="bf-t">Send a Message</div>
           <p class="bf-s">We'll respond within 1 business day.</p>
           <div class="frow">
-            <div class="fg"><label>First Name</label><input type="text" placeholder="John"/></div>
-            <div class="fg"><label>Last Name</label><input type="text" placeholder="Smith"/></div>
+            <div class="fg"><label>First Name</label><input type="text" placeholder="John" name="firstName"/></div>
+            <div class="fg"><label>Last Name</label><input type="text" placeholder="Smith" name="lastName"/></div>
           </div>
-          <div class="fg"><label>Phone</label><input type="tel" placeholder="417-555-0000"/></div>
-          <div class="fg"><label>Email</label><input type="email" placeholder="you@email.com"/></div>
+          <div class="fg"><label>Phone</label><input type="tel" placeholder="417-555-0000" name="phone"/></div>
+          <div class="fg"><label>Email</label><input type="email" placeholder="you@email.com" name="email"/></div>
           <div class="fg">
             <label>Service</label>
-            <select>
+            <select name="service">
               <option value="">Select...</option>
               <option>Garage Floor</option>
               <option>Basement Floor</option>
@@ -978,8 +978,8 @@
               <option>Other</option>
             </select>
           </div>
-          <div class="fg"><label>Message</label><textarea placeholder="Tell us about your project..."></textarea></div>
-          <button class="btn btn-red fsub" onclick="submitForm()">Send Message →</button>
+          <div class="fg"><label>Message</label><textarea placeholder="Tell us about your project..." name="message"></textarea></div>
+          <button class="btn btn-red fsub" onclick="submitForm(this)">Send Message →</button>
         </div>
       </div>
     </div>
@@ -1220,9 +1220,7 @@
   document.querySelectorAll('.rev').forEach(r=>obs.observe(r));
 
   // Form
-  function submitForm(){
-    alert("Thank you! We'll be in touch within 1 business day.\n\nFor immediate assistance call 417.402.6821");
-  }
+  function submitForm(btn){var card=btn.closest('#quote-form, .sform, .contact-form-card, .big-form, .hform');if(!card)return;var fields=card.querySelectorAll('input[name], select[name], textarea[name]');var data={};fields.forEach(function(f){data[f.name]=f.value.trim();});if(!data.firstName&&!data.phone){alert('Please enter your name and phone number so we can reach you.');return;}data.page_url=location.href;data.page_title=document.title;var origText=btn.textContent;btn.disabled=true;btn.textContent='Sending...';fetch('https://services.leadconnectorhq.com/hooks/89Z35Kec8GmMXb7deCkL/webhook-trigger/71ba41c7-fff3-428f-8d43-834c5bbcb359',{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(data).toString()}).then(function(){alert("Thank you! We'll be in touch within 1 business day. For immediate help call 417.402.6821");fields.forEach(function(f){f.value='';});}).catch(function(){alert("We couldn't submit your request online. Please call us directly at 417.402.6821.");}).finally(function(){btn.disabled=false;btn.textContent=origText;});}
 </script>
 <script>document.querySelectorAll(".cur-yr").forEach(function(e){e.textContent=new Date().getFullYear();});</script>
 </body>

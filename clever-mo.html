@@ -196,12 +196,12 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:32px 40px
     </div>
     <div class="sform" id="quote-form">
       <div class="sf-head">Free Quote &#8212; Clever, MO<span class="sf-sub">No obligation &#183; Same-day response</span></div>
-      <div class="frow"><div class="fg"><label>First Name</label><input type="text" placeholder="John"/></div><div class="fg"><label>Last Name</label><input type="text" placeholder="Smith"/></div></div>
-      <div class="fg"><label>Phone</label><input type="tel" placeholder="417-555-0000"/></div>
-      <div class="fg"><label>Email</label><input type="email" placeholder="you@email.com"/></div>
-      <div class="fg"><label>Service</label><select><option value="">Select...</option><option>Garage Floor</option><option>Basement/ManCave</option><option>Metallic Epoxy</option><option>Patio/Outdoor</option><option>Commercial</option><option>Other</option></select></div>
-      <div class="fg"><label>Project Details</label><textarea placeholder="Tell us about your floor..."></textarea></div>
-      <button class="btn btn-red fsub" onclick="submitForm()">Submit Quote Request</button>
+      <div class="frow"><div class="fg"><label>First Name</label><input type="text" placeholder="John" name="firstName"/></div><div class="fg"><label>Last Name</label><input type="text" placeholder="Smith" name="lastName"/></div></div>
+      <div class="fg"><label>Phone</label><input type="tel" placeholder="417-555-0000" name="phone"/></div>
+      <div class="fg"><label>Email</label><input type="email" placeholder="you@email.com" name="email"/></div>
+      <div class="fg"><label>Service</label><select name="service"><option value="">Select...</option><option>Garage Floor</option><option>Basement/ManCave</option><option>Metallic Epoxy</option><option>Patio/Outdoor</option><option>Commercial</option><option>Other</option></select></div>
+      <div class="fg"><label>Project Details</label><textarea placeholder="Tell us about your floor..." name="message"></textarea></div>
+      <button class="btn btn-red fsub" onclick="submitForm(this)">Submit Quote Request</button>
       <p class="fnote">&#128274; Private. No spam. Response same day.</p>
     </div>
   </div>
@@ -271,7 +271,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:32px 40px
 document.getElementById("hbtn").addEventListener("click",function(){document.getElementById("mmenu").classList.toggle("open");});
 var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("vis");obs.unobserve(x.target);}});},{threshold:0.08});
 document.querySelectorAll(".rev").forEach(function(r){obs.observe(r);});
-function submitForm(){alert("Thank you! We will be in touch within 1 business day.\n\nFor immediate help call 417.402.6821");}
+function submitForm(btn){var card=btn.closest('#quote-form, .sform, .contact-form-card, .big-form, .hform');if(!card)return;var fields=card.querySelectorAll('input[name], select[name], textarea[name]');var data={};fields.forEach(function(f){data[f.name]=f.value.trim();});if(!data.firstName&&!data.phone){alert('Please enter your name and phone number so we can reach you.');return;}data.page_url=location.href;data.page_title=document.title;var origText=btn.textContent;btn.disabled=true;btn.textContent='Sending...';fetch('https://services.leadconnectorhq.com/hooks/89Z35Kec8GmMXb7deCkL/webhook-trigger/71ba41c7-fff3-428f-8d43-834c5bbcb359',{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(data).toString()}).then(function(){alert("Thank you! We'll be in touch within 1 business day. For immediate help call 417.402.6821");fields.forEach(function(f){f.value='';});}).catch(function(){alert("We couldn't submit your request online. Please call us directly at 417.402.6821.");}).finally(function(){btn.disabled=false;btn.textContent=origText;});}
 </script>
 <script>document.querySelectorAll(".cur-yr").forEach(function(e){e.textContent=new Date().getFullYear();});</script>
 </body>

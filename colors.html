@@ -818,20 +818,20 @@
       <div style="font-family:var(--font-c);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:14px">Step 3 — Your Contact Info</div>
       <div class="request-form" id="requestForm">
         <div class="frow">
-          <div class="fg"><label>First Name</label><input type="text" id="reqFirst" placeholder="John"/></div>
-          <div class="fg"><label>Last Name</label><input type="text" id="reqLast" placeholder="Smith"/></div>
+          <div class="fg"><label>First Name</label><input type="text" id="reqFirst" placeholder="John" name="firstName"/></div>
+          <div class="fg"><label>Last Name</label><input type="text" id="reqLast" placeholder="Smith" name="lastName"/></div>
         </div>
         <div class="frow">
-          <div class="fg"><label>Phone Number</label><input type="tel" id="reqPhone" placeholder="417-555-0000"/></div>
-          <div class="fg"><label>Email Address</label><input type="email" id="reqEmail" placeholder="you@email.com"/></div>
+          <div class="fg"><label>Phone Number</label><input type="tel" id="reqPhone" placeholder="417-555-0000" name="phone"/></div>
+          <div class="fg"><label>Email Address</label><input type="email" id="reqEmail" placeholder="you@email.com" name="email"/></div>
         </div>
         <div class="fg">
           <label>What type of space are you coating?</label>
-          <input type="text" id="reqSpace" placeholder="e.g. 2-car garage, basement, patio..."/>
+          <input type="text" id="reqSpace" placeholder="e.g. 2-car garage, basement, patio..." name="message"/>
         </div>
         <div class="fg">
           <label>Any other notes or questions?</label>
-          <textarea id="reqNotes" placeholder="Optional — tell us anything else about your project..."></textarea>
+          <textarea id="reqNotes" placeholder="Optional — tell us anything else about your project..." name="message"></textarea>
         </div>
         <button class="form-submit" id="reqSubmitBtn" onclick="submitPhotoRequest()">
           📸 Send Me Project Photos for <span id="submitColorName">This Color</span>
