@@ -1,4 +1,75 @@
 [[redirects]]
+  from = "https://www.ozarksconcretecoatings.com/*"
+  to = "https://ozarksconcretecoatings.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.ozarksconcretecoatings.com/*"
+  to = "https://ozarksconcretecoatings.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://ozarksconcretecoatings.com/*"
+  to = "https://ozarksconcretecoatings.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.ozarksconcrete.com/*"
+  to = "https://ozarksconcretecoatings.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://ozarksconcrete.com/*"
+  to = "https://ozarksconcretecoatings.com/:splat"
+  status = 301
+  force = true
+
+# Legacy WordPress URL migration (old trailing-slash routes -> current pages)
+[[redirects]]
+  from = "/about/"
+  to = "/about.html"
+  status = 301
+
+[[redirects]]
+  from = "/reviews/"
+  to = "/reviews.html"
+  status = 301
+
+[[redirects]]
+  from = "/residential/"
+  to = "/residential.html"
+  status = 301
+
+[[redirects]]
+  from = "/commercial/"
+  to = "/commercial.html"
+  status = 301
+
+[[redirects]]
+  from = "/churches-schools/"
+  to = "/churches-schools.html"
+  status = 301
+
+[[redirects]]
+  from = "/contact/"
+  to = "/contact.html"
+  status = 301
+
+[[redirects]]
+  from = "/color-pick/"
+  to = "/colors.html"
+  status = 301
+
+[[redirects]]
+  from = "/privacy-policy/"
+  to = "/privacy.html"
+  status = 301
+
+[[redirects]]
   from = "/"
   to = "/index.html"
   status = 200
