@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Instant Quote Calculator | Ozarks Concrete Coatings | Springfield, MO</title>
-  <meta name="description" content="Get an instant price range for your garage floor, basement, or patio coating in Springfield, MO. Or call to book an on-site estimate. Ozarks Concrete Coatings — 417.402.6821."/>
+  <meta name="description" content="Get an instant price range for your garage floor, basement, or patio coating in Springfield, MO. Ozarks Concrete Coatings — 417.402.6821."/>
   <link rel="canonical" href="https://ozarksconcretecoatings.com/instant-quote.html"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -53,44 +53,46 @@
     .mob-menu a:last-child { border-bottom: none; color: var(--red); }
     .mob-menu.open { display: flex; }
 
-    /* ── PAGE HERO ── */
-    .page-hero { background: linear-gradient(135deg, rgba(204,32,47,.12) 0%, transparent 50%), var(--bg2); border-bottom: 1px solid var(--border); padding: 64px 40px 56px; }
-    .hero-inner { max-width: 1200px; margin: 0 auto; }
-    .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--red-glow); border: 1px solid var(--red); border-radius: 4px; padding: 5px 14px; font-family: var(--font-c); font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--red); margin-bottom: 18px; }
-    .hero-h1 { font-family: var(--font-d); font-size: clamp(48px, 6vw, 86px); line-height: .93; margin-bottom: 14px; }
-    .hero-h1 .r { color: var(--red); }
-    .hero-sub { font-family: var(--font-c); font-size: 18px; font-weight: 600; color: var(--gray-light); letter-spacing: .04em; text-transform: uppercase; margin-bottom: 28px; max-width: 700px; }
+    /* ── CALC HERO ── */
+    .calc-hero {
+      background: linear-gradient(135deg, rgba(204,32,47,.15) 0%, transparent 50%), var(--bg2);
+      border-bottom: 1px solid var(--border);
+      padding: 70px 40px 64px;
+    }
+    .ch-inner {
+      max-width: 1260px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 52px; align-items: start;
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--red-glow); border: 1px solid var(--red);
+      border-radius: 4px; padding: 5px 14px;
+      font-family: var(--font-c); font-size: 12px; font-weight: 700;
+      letter-spacing: .12em; text-transform: uppercase; color: var(--red);
+      margin-bottom: 18px;
+    }
+    .ch-h1 { font-family: var(--font-d); font-size: clamp(44px, 5.5vw, 74px); line-height: .93; margin-bottom: 16px; }
+    .ch-h1 .r { color: var(--red); }
+    .ch-sub { font-size: 16px; color: var(--gray-light); line-height: 1.7; margin-bottom: 24px; max-width: 540px; }
+    .hero-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+    .hero-pill {
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08);
+      border-radius: 999px; padding: 9px 16px;
+      font-family: var(--font-c); font-size: 13px; font-weight: 700;
+      letter-spacing: .05em; text-transform: uppercase; color: var(--gray-light);
+    }
+    .hero-stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .hero-stat {
+      background: rgba(255,255,255,.04); border: 1px solid var(--border);
+      border-radius: 10px; padding: 16px; text-align: center;
+    }
+    .hero-stat strong { display: block; font-family: var(--font-d); font-size: 22px; margin-bottom: 4px; }
+    .hero-stat span { font-family: var(--font-c); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gray); }
 
-    /* ── DUAL PATH CHOICE ── */
-    .path-choice { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1200px; margin: 0 auto; padding: 48px 40px 0; }
-    .path-card { background: var(--bg3); border: 2px solid var(--border); border-radius: 12px; padding: 32px 30px; display: flex; flex-direction: column; align-items: flex-start; transition: border-color .25s, transform .2s, box-shadow .25s; cursor: pointer; }
-    .path-card:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(0,0,0,.5); }
-    .path-card.path-call { border-color: rgba(255,255,255,.15); }
-    .path-card.path-call:hover { border-color: rgba(255,255,255,.4); }
-    .path-card.path-calc { border-color: rgba(204,32,47,.4); background: linear-gradient(135deg, rgba(204,32,47,.08) 0%, var(--bg3) 60%); }
-    .path-card.path-calc:hover { border-color: var(--red); box-shadow: 0 14px 40px rgba(204,32,47,.2); }
-    .path-icon { font-size: 42px; margin-bottom: 14px; }
-    .path-tag { font-family: var(--font-c); font-size: 11px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; margin-bottom: 8px; }
-    .path-tag.red { color: var(--red); }
-    .path-tag.wht { color: var(--gray-light); }
-    .path-title { font-family: var(--font-d); font-size: 32px; line-height: .95; margin-bottom: 10px; }
-    .path-desc { font-size: 14px; color: var(--gray-light); line-height: 1.65; margin-bottom: 20px; flex: 1; }
-    .path-btn { font-family: var(--font-c); font-weight: 900; letter-spacing: .1em; text-transform: uppercase; border-radius: 5px; border: none; cursor: pointer; transition: all .2s; padding: 13px 24px; font-size: 14px; display: inline-block; width: 100%; text-align: center; }
-    .pb-red { background: var(--red); color: var(--white); box-shadow: 0 4px 18px rgba(204,32,47,.35); }
-    .pb-red:hover { background: var(--red-dark); transform: translateY(-2px); }
-    .pb-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,.25); }
-    .pb-outline:hover { border-color: var(--white); background: rgba(255,255,255,.06); }
-    .path-divider { display: flex; align-items: center; justify-content: center; }
-    .or-bubble { background: var(--bg4); border: 1px solid var(--border); border-radius: 50%; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; font-family: var(--font-c); font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gray); }
-
-    /* ── CALCULATOR SECTION ── */
-    .calc-section { padding: 56px 40px 80px; max-width: 1200px; margin: 0 auto; display: none; }
-    .calc-section.visible { display: block; }
-
-    /* STEPS */
-    .steps-bar { display: flex; align-items: center; gap: 0; margin-bottom: 36px; }
-    .step-item { display: flex; align-items: center; gap: 10px; font-family: var(--font-c); font-size: 14px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--gray); flex: 1; }
-    .step-num { width: 32px; height: 32px; border-radius: 50%; background: var(--bg4); border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 900; flex-shrink: 0; transition: all .3s; }
+    /* ── STEPS ── */
+    .steps-bar { display: flex; align-items: center; gap: 0; margin-bottom: 24px; }
+    .step-item { display: flex; align-items: center; gap: 10px; font-family: var(--font-c); font-size: 13px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--gray); flex: 1; }
+    .step-num { width: 30px; height: 30px; border-radius: 50%; background: var(--bg4); border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 900; flex-shrink: 0; transition: all .3s; }
     .step-item.active .step-num { background: var(--red); border-color: var(--red); color: var(--white); }
     .step-item.active { color: var(--white); }
     .step-item.done .step-num { background: #2a6e2a; border-color: #2a6e2a; color: var(--white); }
@@ -98,66 +100,79 @@
     .step-connector { height: 2px; background: var(--border); flex: 1; max-width: 60px; margin: 0 8px; }
     .step-connector.done { background: var(--red); }
 
-    /* CALC GRID */
-    .calc-grid { display: grid; grid-template-columns: 1fr 400px; gap: 32px; align-items: start; }
-
-    /* FORM PANEL */
-    .calc-panel { background: var(--bg3); border: 1px solid var(--border); border-radius: 10px; padding: 32px; }
-    .calc-panel h2 { font-family: var(--font-d); font-size: 38px; line-height: .95; margin-bottom: 8px; }
-    .calc-panel .sub { font-size: 14px; color: var(--gray); margin-bottom: 26px; }
+    /* ── FORM PANEL ── */
+    .calc-panel { background: var(--bg3); border: 1px solid var(--border); border-radius: 10px; padding: 28px; }
+    .calc-panel h2 { font-family: var(--font-d); font-size: 34px; line-height: .95; margin-bottom: 8px; }
+    .calc-panel .sub { font-size: 13px; color: var(--gray); margin-bottom: 22px; }
     .fg { margin-bottom: 16px; }
     .fg label { display: block; font-family: var(--font-c); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--gray); margin-bottom: 6px; }
     .fg input, .fg select, .fg textarea { width: 100%; background: var(--bg4); border: 1px solid var(--border); border-radius: 6px; color: var(--white); font-family: var(--font-b); font-size: 15px; padding: 12px 14px; outline: none; transition: border-color .2s; -webkit-appearance: none; }
     .fg input:focus, .fg select:focus, .fg textarea:focus { border-color: var(--red); box-shadow: 0 0 0 3px rgba(204,32,47,.12); }
     .fg select option { background: var(--bg4); }
-    .fg textarea { resize: vertical; min-height: 80px; }
     .frow { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 
-    /* SQFT BUTTONS */
+    /* ── SQFT BUTTONS ── */
     .sqft-btns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; margin-bottom: 6px; }
     .sqft-btn { background: var(--bg4); border: 1px solid var(--border); border-radius: 6px; padding: 10px; font-family: var(--font-c); font-size: 13px; font-weight: 700; letter-spacing: .05em; text-align: center; cursor: pointer; transition: all .2s; color: var(--gray-light); }
     .sqft-btn:hover, .sqft-btn.active { background: var(--red-glow); border-color: var(--red); color: var(--white); }
     .sqft-or { font-family: var(--font-c); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--gray); margin: 8px 0; text-align: center; }
 
-    /* OPTION CARDS */
+    /* ── OPTION CARDS ── */
     .option-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
     .opt-card { background: var(--bg4); border: 1px solid var(--border); border-radius: 8px; padding: 14px; cursor: pointer; transition: all .2s; }
     .opt-card:hover, .opt-card.active { background: var(--red-glow); border-color: var(--red); }
-    .opt-card .opt-icon { font-size: 22px; margin-bottom: 6px; }
-    .opt-card .opt-title { font-family: var(--font-c); font-size: 14px; font-weight: 900; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 3px; }
-    .opt-card .opt-desc { font-size: 12px; color: var(--gray-light); line-height: 1.5; }
+    .opt-card .opt-icon { font-size: 20px; margin-bottom: 5px; }
+    .opt-card .opt-title { font-family: var(--font-c); font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 2px; }
+    .opt-card .opt-desc { font-size: 11px; color: var(--gray-light); line-height: 1.5; }
 
-    /* LIVE PREVIEW SIDEBAR */
-    .preview-sidebar { position: sticky; top: 90px; display: flex; flex-direction: column; gap: 16px; }
-    .preview-card { background: var(--bg3); border: 1px solid rgba(204,32,47,.35); border-radius: 10px; padding: 24px; background: linear-gradient(135deg, rgba(204,32,47,.08) 0%, var(--bg3) 70%); }
-    .preview-label { font-family: var(--font-c); font-size: 11px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--gray); margin-bottom: 6px; }
-    .preview-range { font-family: var(--font-d); font-size: 52px; line-height: 1; color: var(--white); margin-bottom: 8px; filter: blur(8px); transition: filter .4s; }
+    /* ── LOCKED PREVIEW ── */
+    .locked-preview-box {
+      margin: 16px 0; padding: 18px 20px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, rgba(204,32,47,.10) 0%, var(--bg3) 70%);
+      border: 1px solid rgba(204,32,47,.28);
+    }
+    .lpb-badge {
+      display: inline-block; padding: 4px 10px; border-radius: 999px;
+      font-family: var(--font-c); font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+      background: rgba(204,32,47,.15); border: 1px solid rgba(204,32,47,.35); color: var(--white);
+      margin-bottom: 8px;
+    }
+    .lpb-label { font-family: var(--font-c); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--gray); margin-bottom: 4px; }
+    .lpb-range-wrap { position: relative; margin-bottom: 8px; }
+    .preview-range { font-family: var(--font-d); font-size: 44px; line-height: 1; color: var(--white); filter: blur(8px); transition: filter .4s; }
     .preview-range.visible { filter: blur(0); }
-    .preview-disclaimer { font-size: 12px; color: var(--gray); line-height: 1.55; margin-top: 10px; }
-    .preview-includes { margin-top: 16px; display: flex; flex-direction: column; gap: 7px; }
-    .pi-item { display: flex; align-items: center; gap: 8px; font-family: var(--font-c); font-size: 13px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--gray-light); }
-    .pi-check { color: #4caf50; font-size: 14px; }
-    .lock-overlay { display: flex; align-items: center; gap: 8px; background: rgba(204,32,47,.12); border: 1px solid rgba(204,32,47,.3); border-radius: 6px; padding: 10px 14px; font-family: var(--font-c); font-size: 13px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--gray-light); margin-top: 12px; }
+    .lock-overlay {
+      display: flex; align-items: center; gap: 8px;
+      background: rgba(204,32,47,.1); border: 1px solid rgba(204,32,47,.3);
+      border-radius: 6px; padding: 8px 12px;
+      font-family: var(--font-c); font-size: 12px; font-weight: 700;
+      letter-spacing: .05em; text-transform: uppercase; color: var(--gray-light);
+      margin-top: 8px;
+    }
+    .lpb-note { font-size: 12px; color: var(--gray); margin-top: 8px; }
     .live-tag { display: inline-flex; align-items: center; gap: 6px; background: rgba(76,175,80,.12); border: 1px solid rgba(76,175,80,.3); border-radius: 4px; padding: 4px 10px; font-family: var(--font-c); font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #4caf50; margin-bottom: 12px; }
     .live-dot { width: 7px; height: 7px; background: #4caf50; border-radius: 50%; animation: pulse 1.5s infinite; }
     @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .4; } }
 
-    /* UNLOCK FORM */
-    .unlock-section { background: var(--bg3); border: 1px solid rgba(204,32,47,.4); border-radius: 10px; padding: 30px; }
-    .unlock-title { font-family: var(--font-d); font-size: 34px; line-height: .95; margin-bottom: 8px; }
-    .unlock-sub { font-size: 14px; color: var(--gray-light); line-height: 1.65; margin-bottom: 22px; }
-    .sms-note { background: var(--bg4); border: 1px solid var(--border); border-radius: 6px; padding: 12px 14px; font-size: 12px; color: var(--gray); line-height: 1.6; margin-bottom: 16px; }
+    /* ── BUTTONS ── */
     .btn-main { background: var(--red); color: var(--white); width: 100%; padding: 15px; font-family: var(--font-c); font-size: 16px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; border-radius: 6px; border: none; cursor: pointer; transition: all .2s; box-shadow: 0 4px 20px rgba(204,32,47,.35); }
     .btn-main:hover { background: var(--red-dark); transform: translateY(-2px); }
     .btn-main:disabled { opacity: .6; cursor: not-allowed; transform: none; }
     .btn-reset { background: transparent; color: var(--gray); width: 100%; padding: 12px; font-family: var(--font-c); font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; border-radius: 6px; border: 1px solid var(--border); cursor: pointer; transition: all .2s; margin-top: 10px; }
     .btn-reset:hover { color: var(--white); border-color: rgba(255,255,255,.25); }
 
-    /* RESULT */
-    .result-card { background: linear-gradient(135deg, rgba(204,32,47,.12) 0%, var(--bg3) 60%); border: 1px solid rgba(204,32,47,.4); border-radius: 10px; padding: 30px; display: none; }
+    /* ── UNLOCK FORM ── */
+    .unlock-section { background: var(--bg3); border: 1px solid rgba(204,32,47,.4); border-radius: 10px; padding: 28px; }
+    .unlock-title { font-family: var(--font-d); font-size: 32px; line-height: .95; margin-bottom: 8px; }
+    .unlock-sub { font-size: 14px; color: var(--gray-light); line-height: 1.65; margin-bottom: 20px; }
+    .sms-note { background: var(--bg4); border: 1px solid var(--border); border-radius: 6px; padding: 12px 14px; font-size: 12px; color: var(--gray); line-height: 1.6; margin-bottom: 16px; }
+
+    /* ── RESULT ── */
+    .result-card { background: linear-gradient(135deg, rgba(204,32,47,.12) 0%, var(--bg3) 60%); border: 1px solid rgba(204,32,47,.4); border-radius: 10px; padding: 28px; display: none; }
     .result-card.show { display: block; }
     .result-label { font-family: var(--font-c); font-size: 12px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; }
-    .result-range { font-family: var(--font-d); font-size: 62px; line-height: 1; color: var(--white); margin-bottom: 12px; }
+    .result-range { font-family: var(--font-d); font-size: 58px; line-height: 1; color: var(--white); margin-bottom: 12px; }
     .result-desc { font-size: 15px; color: var(--gray-light); line-height: 1.7; margin-bottom: 20px; }
     .result-includes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
     .ri-item { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--gray-light); }
@@ -170,9 +185,15 @@
     .rc-outline:hover { border-color: var(--white); }
     .result-disclaimer { font-size: 12px; color: var(--gray); line-height: 1.6; margin-top: 16px; border-top: 1px solid var(--border); padding-top: 14px; }
 
-    /* WHY SECTION */
+    /* ── TRUST BAR ── */
+    .trust-bar { background: var(--black); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 22px 40px; }
+    .trust-inner { max-width: 1260px; margin: 0 auto; display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px; }
+    .tb-item { display: flex; align-items: center; gap: 10px; font-family: var(--font-c); font-size: 14px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--gray-light); }
+    .tb-item .tb-icon { font-size: 20px; }
+
+    /* ── WHY SECTION ── */
     .why-section { background: var(--bg2); padding: 64px 40px; border-top: 1px solid var(--border); }
-    .why-inner { max-width: 1200px; margin: 0 auto; }
+    .why-inner { max-width: 1260px; margin: 0 auto; }
     .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 32px; }
     .why-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 8px; padding: 26px; }
     .why-icon { font-size: 32px; margin-bottom: 12px; }
@@ -181,28 +202,35 @@
     .sec-label { font-family: var(--font-c); font-size: 12px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--red); margin-bottom: 8px; display: block; }
     .sec-title { font-family: var(--font-d); font-size: clamp(34px, 4.5vw, 52px); line-height: .95; }
 
-    /* TRUST BAR */
-    .trust-bar { background: var(--black); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 22px 40px; }
-    .trust-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 20px; }
-    .tb-item { display: flex; align-items: center; gap: 10px; font-family: var(--font-c); font-size: 14px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--gray-light); }
-    .tb-item .tb-icon { font-size: 20px; }
-
-    /* FOOTER */
+    /* ── FOOTER ── */
     footer { background: var(--black); border-top: 2px solid var(--red); padding: 28px 40px; }
-    .footer-bot { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 12px; color: var(--gray); font-family: var(--font-c); letter-spacing: .04em; }
+    .footer-bot { max-width: 1260px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 12px; color: var(--gray); font-family: var(--font-c); letter-spacing: .04em; }
     .footer-bot a { color: var(--gray); transition: color .2s; }
     .footer-bot a:hover { color: var(--red); }
 
-    /* STICKY MOBILE */
+    /* ── STICKY MOBILE ── */
     .sticky-mob { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; background: var(--black); border-top: 2px solid var(--red); padding: 10px 14px; gap: 9px; }
     .sticky-mob a { flex: 1; text-align: center; padding: 12px; border-radius: 5px; font-family: var(--font-c); font-size: 14px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
     .s-call { background: var(--red); color: var(--white); }
     .s-quote { background: var(--bg3); color: var(--white); border: 1px solid var(--border); }
 
-    /* RESPONSIVE */
+    /* ── NAV DROPDOWNS ── */
+    .nav-links { gap: 12px !important; align-items: center; }
+    .nav-links a { white-space: nowrap; }
+    .nav-links li { display: flex; align-items: center; height: 100%; }
+    .nav-drop { position: relative; height: 100%; }
+    .nav-drop > a { display: flex; align-items: center; gap: 3px; cursor: pointer; height: 100%; }
+    .nav-drop-menu { position: absolute; top: 100%; left: 0; margin-top: 2px; background: var(--black); border: 1px solid var(--border); border-top: 2px solid var(--red); border-radius: 0 0 8px 8px; padding: 10px; min-width: 220px; display: none; flex-direction: column; gap: 1px; box-shadow: 0 24px 48px rgba(0,0,0,.55); z-index: 1001; }
+    .nav-drop-menu a { padding: 9px 14px; font-size: 12px; letter-spacing: .04em; border-radius: 5px; white-space: nowrap; color: var(--gray-light) !important; border-bottom: none !important; text-transform: uppercase; font-weight: 700; display: block; }
+    .nav-drop-menu a:hover { background: var(--bg3); color: var(--white) !important; }
+    .nav-drop:hover .nav-drop-menu { display: flex; }
+    .nav-drop-wide { display: none; grid-template-columns: repeat(3,1fr); min-width: 600px; gap: 1px 10px; left: auto; right: 0; }
+    .nav-drop:hover .nav-drop-wide { display: grid; }
+
+    /* ── RESPONSIVE ── */
     @media (max-width: 1100px) {
-      .calc-grid { grid-template-columns: 1fr; }
-      .preview-sidebar { position: static; }
+      .ch-inner { grid-template-columns: 1fr; gap: 36px; }
+      .hero-stats-row { grid-template-columns: repeat(3, 1fr); }
     }
     @media (max-width: 768px) {
       nav { padding: 0 18px; }
@@ -211,13 +239,10 @@
       .topbar { display: none; }
       .sticky-mob { display: flex; }
       body { padding-bottom: 70px; }
-      .page-hero { padding: 44px 20px 36px; }
-      .path-choice { grid-template-columns: 1fr; padding: 32px 18px 0; }
-      .path-divider { display: none; }
-      .calc-section { padding: 40px 18px 60px; }
+      .calc-hero { padding: 44px 18px 48px; }
       .why-section { padding: 52px 18px; }
       .why-grid { grid-template-columns: 1fr; }
-      .trust-bar { padding: 18px 18px; }
+      .trust-bar { padding: 18px; }
       .frow { grid-template-columns: 1fr; }
       .sqft-btns { grid-template-columns: repeat(2, 1fr); }
       .option-grid { grid-template-columns: 1fr; }
@@ -225,29 +250,15 @@
       .result-ctas { grid-template-columns: 1fr; }
       footer { padding: 24px 18px; }
       .footer-bot { flex-direction: column; text-align: center; }
+      .hero-stats-row { grid-template-columns: 1fr; }
+      .nav-drop-wide { min-width: 340px; grid-template-columns: 1fr 1fr; }
     }
-  
-/* NAV DROPDOWNS */
-.nav-links{gap:12px!important}
-.nav-links a{white-space:nowrap}
-@media(max-width:1300px){.nav-links{gap:9px!important}.nav-links a{font-size:12.5px}nav{padding:0 20px}}
-
-.nav-links{align-items:center}
-.nav-links li{display:flex;align-items:center;height:100%}
-.nav-drop{height:100%}
-.nav-drop>a{height:100%}
-
-.nav-links{gap:15px!important}
-.nav-drop{position:relative}
-.nav-drop>a{display:flex;align-items:center;gap:3px;cursor:pointer}
-.nav-drop-menu{position:absolute;top:100%;left:0;margin-top:2px;background:var(--black);border:1px solid var(--border);border-top:2px solid var(--red);border-radius:0 0 8px 8px;padding:10px;min-width:220px;display:none;flex-direction:column;gap:1px;box-shadow:0 24px 48px rgba(0,0,0,.55);z-index:1001}
-.nav-drop-menu a{padding:9px 14px;font-size:12px;letter-spacing:.04em;border-radius:5px;white-space:nowrap;color:var(--gray-light)!important;border-bottom:none!important;text-transform:uppercase;font-weight:700;display:block}
-.nav-drop-menu a:hover{background:var(--bg3);color:var(--white)!important}
-.nav-drop:hover .nav-drop-menu{display:flex}
-.nav-drop-wide{display:none;grid-template-columns:repeat(3,1fr);min-width:600px;gap:1px 10px;left:auto;right:0}
-.nav-drop:hover .nav-drop-wide{display:grid}
-@media(max-width:1300px){.nav-drop-wide{min-width:520px}}
-</style>
+    @media (max-width: 1300px) {
+      .nav-links { gap: 9px !important; }
+      .nav-links a { font-size: 12.5px; }
+      nav { padding: 0 20px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -334,89 +345,49 @@
   <a href="/contact.html">Get Free Quote →</a>
 </div>
 
-<!-- PAGE HERO -->
-<div class="page-hero">
-  <div class="hero-inner">
-    <div class="hero-badge">📍 Serving Springfield, MO &amp; All of SW Missouri</div>
-    <h1 class="hero-h1">How Would You Like<br/>Your <span class="r">Free Quote?</span></h1>
-    <p class="hero-sub">Call to book an on-site estimate — or get an instant price range online right now</p>
-  </div>
-</div>
+<!-- CALC HERO -->
+<section class="calc-hero">
+  <div class="ch-inner">
 
-<!-- TRUST BAR -->
-<div class="trust-bar">
-  <div class="trust-inner">
-    <div class="tb-item"><span class="tb-icon">⭐</span>5.0 Rating &middot; 179 Google Reviews</div>
-    <div class="tb-item"><span class="tb-icon">🛡️</span>Lifetime Written Warranty</div>
-    <div class="tb-item"><span class="tb-icon">💎</span>Diamond Grinding Standard</div>
-    <div class="tb-item"><span class="tb-icon">⚡</span>1-Day Installation</div>
-    <div class="tb-item"><span class="tb-icon">📍</span>75-Mile Service Radius</div>
-  </div>
-</div>
-
-<!-- DUAL PATH CHOICE -->
-<div class="path-choice">
-
-  <!-- CALL PATH -->
-  <div class="path-card path-call" onclick="window.location.href='tel:4174026821'">
-    <div class="path-icon">📞</div>
-    <div class="path-tag wht">Most Popular · Recommended</div>
-    <div class="path-title">Call to Book an On-Site Estimate</div>
-    <p class="path-desc">Talk directly to our team, get your questions answered, and schedule a free on-site visit. We'll come to your property, measure your space, assess the concrete, and give you a written quote — zero pressure, zero obligation.</p>
-    <div style="margin-bottom:16px;display:flex;flex-direction:column;gap:7px">
-      <div style="display:flex;align-items:center;gap:8px;font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--gray-light)"><span style="color:#4caf50">✓</span>Accurate quote based on real measurements</div>
-      <div style="display:flex;align-items:center;gap:8px;font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--gray-light)"><span style="color:#4caf50">✓</span>See color samples in your actual space</div>
-      <div style="display:flex;align-items:center;gap:8px;font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--gray-light)"><span style="color:#4caf50">✓</span>Talk to the people who do the work</div>
-      <div style="display:flex;align-items:center;gap:8px;font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--gray-light)"><span style="color:#4caf50">✓</span>No commitment required</div>
+    <!-- LEFT: COPY -->
+    <div class="ch-left">
+      <div class="hero-eyebrow">📍 Ozarks Concrete Coatings · Instant Project Calculator</div>
+      <h1 class="ch-h1">Get a Fast <span class="r">Ballpark Price</span> for Your Floor Project</h1>
+      <p class="ch-sub">Enter your project details and get an estimated price range in under a minute — based on your square footage, concrete condition, and coating choice. Built for Southwest Missouri homeowners.</p>
+      <div class="hero-pills">
+        <div class="hero-pill">Fast Estimate</div>
+        <div class="hero-pill">Built for SW Missouri</div>
+        <div class="hero-pill">Prep Included</div>
+        <div class="hero-pill">Available 24/7</div>
+      </div>
+      <div class="hero-stats-row">
+        <div class="hero-stat"><strong>Under 1 Min</strong><span>to get a ballpark range</span></div>
+        <div class="hero-stat"><strong>Prep Included</strong><span>diamond grinding &amp; repairs</span></div>
+        <div class="hero-stat"><strong>SW Missouri</strong><span>local crew, local pricing</span></div>
+      </div>
     </div>
-    <a href="tel:4174026821" class="path-btn pb-outline" style="margin-bottom:10px">📞 Call 417.402.6821</a>
-    <button class="path-btn pb-outline" onclick="openBooking()" style="margin-top:0;border-color:rgba(204,32,47,.4);color:var(--red)">📅 Book Online Instead</button>
-  </div>
 
-  <div class="path-divider"><div class="or-bubble">OR</div></div>
+    <!-- RIGHT: CALCULATOR -->
+    <div id="calcSection">
 
-  <!-- CALCULATOR PATH -->
-  <div class="path-card path-calc" onclick="openCalculator()">
-    <div class="path-icon">⚡</div>
-    <div class="path-tag red">Instant · Online Right Now</div>
-    <div class="path-title">Get an Instant Price Range Online</div>
-    <p class="path-desc">Not ready to call? No problem. Use our instant calculator to get a real ballpark price range in under 60 seconds — based on your project type, square footage, and floor condition. No phone call needed.</p>
-    <div style="margin-bottom:16px;display:flex;flex-direction:column;gap:7px">
-      <div style="display:flex;align-items:center;gap:8px;font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--gray-light)"><span style="color:var(--red)">→</span>Real price range in under 60 seconds</div>
-      <div style="display:flex;align-items:center;gap:8px;font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--gray-light)"><span style="color:var(--red)">→</span>Based on your actual project details</div>
-      <div style="display:flex;align-items:center;gap:8px;font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--gray-light)"><span style="color:var(--red)">→</span>No phone call required</div>
-      <div style="display:flex;align-items:center;gap:8px;font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--gray-light)"><span style="color:var(--red)">→</span>Available 24/7 — even nights &amp; weekends</div>
-    </div>
-    <button class="path-btn pb-red" onclick="openCalculator()">⚡ Get My Instant Price Range</button>
-  </div>
+      <!-- STEPS BAR -->
+      <div class="steps-bar">
+        <div class="step-item active" id="step1Item">
+          <div class="step-num" id="step1Num">1</div>
+          <span>Project Details</span>
+        </div>
+        <div class="step-connector" id="conn1"></div>
+        <div class="step-item" id="step2Item">
+          <div class="step-num" id="step2Num">2</div>
+          <span>Unlock Your Price</span>
+        </div>
+        <div class="step-connector" id="conn2"></div>
+        <div class="step-item" id="step3Item">
+          <div class="step-num" id="step3Num">3</div>
+          <span>Your Price Range</span>
+        </div>
+      </div>
 
-</div>
-
-<!-- CALCULATOR -->
-<div class="calc-section" id="calcSection">
-
-  <!-- STEPS -->
-  <div class="steps-bar">
-    <div class="step-item active" id="step1Item">
-      <div class="step-num" id="step1Num">1</div>
-      <span>Project Details</span>
-    </div>
-    <div class="step-connector" id="conn1"></div>
-    <div class="step-item" id="step2Item">
-      <div class="step-num" id="step2Num">2</div>
-      <span>Unlock Your Price</span>
-    </div>
-    <div class="step-connector" id="conn2"></div>
-    <div class="step-item" id="step3Item">
-      <div class="step-num" id="step3Num">3</div>
-      <span>Your Price Range</span>
-    </div>
-  </div>
-
-  <div class="calc-grid">
-
-    <!-- LEFT: FORM -->
-    <div>
       <!-- STEP 1 -->
       <div id="step1Panel">
         <div class="calc-panel">
@@ -424,7 +395,7 @@
           <p class="sub">Tell us about your project and we'll calculate your price range in real time.</p>
 
           <!-- PROJECT TYPE -->
-          <div class="fg" style="margin-bottom:20px">
+          <div class="fg" style="margin-bottom:18px">
             <label>Project Type</label>
             <div class="option-grid">
               <div class="opt-card active" data-group="type" data-val="garage" onclick="selectOption(this,'type')">
@@ -435,7 +406,7 @@
               <div class="opt-card" data-group="type" data-val="basement" onclick="selectOption(this,'type')">
                 <div class="opt-icon">🏋️</div>
                 <div class="opt-title">Basement / ManCave</div>
-                <div class="opt-desc">Any below-grade or interior space</div>
+                <div class="opt-desc">Interior below-grade space</div>
               </div>
               <div class="opt-card" data-group="type" data-val="patio" onclick="selectOption(this,'type')">
                 <div class="opt-icon">🌤️</div>
@@ -466,7 +437,7 @@
           </div>
 
           <!-- COATING SYSTEM -->
-          <div class="fg" style="margin-bottom:20px">
+          <div class="fg" style="margin-bottom:18px">
             <label>Coating System</label>
             <div class="option-grid">
               <div class="opt-card active" data-group="system" data-val="flake" onclick="selectOption(this,'system')">
@@ -493,7 +464,7 @@
           </div>
 
           <!-- CONDITION -->
-          <div class="fg" style="margin-bottom:20px">
+          <div class="fg" style="margin-bottom:18px">
             <label>Current Concrete Condition</label>
             <div class="option-grid">
               <div class="opt-card active" data-group="condition" data-val="good" onclick="selectOption(this,'condition')">
@@ -529,7 +500,18 @@
             </select>
           </div>
 
-          <button class="btn-main" onclick="proceedToUnlock()" style="margin-top:8px">
+          <!-- LOCKED PREVIEW -->
+          <div class="locked-preview-box">
+            <div class="lpb-badge">🔒 Live Estimate Preview</div>
+            <div class="lpb-label">Your Estimated Price Range</div>
+            <div class="lpb-range-wrap">
+              <div class="preview-range" id="previewRange">$—</div>
+            </div>
+            <div class="lock-overlay" id="lockOverlay">🔒 Enter sq ft above to start calculating</div>
+            <div class="lpb-note">Enter your info in the next step to reveal your exact ballpark price.</div>
+          </div>
+
+          <button class="btn-main" onclick="proceedToUnlock()" style="margin-top:16px">
             Continue → Unlock Your Price Range
           </button>
           <button class="btn-reset" onclick="resetCalc()">Reset Calculator</button>
@@ -585,39 +567,24 @@
 
         <button class="btn-reset" style="margin-top:16px" onclick="resetCalc()">Start Over</button>
       </div>
-    </div>
 
-    <!-- RIGHT: LIVE PREVIEW SIDEBAR -->
-    <div class="preview-sidebar" id="previewSidebar">
-      <div class="preview-card">
-        <div class="live-tag"><div class="live-dot"></div>Live Preview</div>
-        <div class="preview-label">Your Estimated Price Range</div>
-        <div class="preview-range" id="previewRange">$—</div>
-        <div class="lock-overlay" id="lockOverlay">🔒 Unlock your exact range below</div>
-        <div class="preview-disclaimer">Based on your project details. Exact pricing confirmed after free on-site assessment.</div>
-        <div class="preview-includes">
-          <div class="pi-item"><span class="pi-check">✓</span>Diamond Grinding Included</div>
-          <div class="pi-item"><span class="pi-check">✓</span>Crack Repair Included</div>
-          <div class="pi-item"><span class="pi-check">✓</span>Lifetime Warranty</div>
-          <div class="pi-item"><span class="pi-check">✓</span>1-Day Installation</div>
-        </div>
-      </div>
+    </div><!-- end #calcSection -->
+  </div><!-- end .ch-inner -->
+</section>
 
-      <!-- CALL CTA IN SIDEBAR -->
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:22px;text-align:center">
-        <div style="font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gray);margin-bottom:8px">Prefer to Talk?</div>
-        <div style="font-family:var(--font-d);font-size:28px;line-height:.95;margin-bottom:10px">Call Us Now</div>
-        <p style="font-size:13px;color:var(--gray-light);line-height:1.6;margin-bottom:16px">Talk to the people who do the work. Get your questions answered and schedule a free on-site estimate.</p>
-        <a href="tel:4174026821" style="display:block;background:var(--bg4);border:2px solid rgba(255,255,255,.2);border-radius:6px;padding:13px;font-family:var(--font-c);font-size:16px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;text-align:center;transition:all .2s;margin-bottom:10px" onmouseover="this.style.borderColor='white'" onmouseout="this.style.borderColor='rgba(255,255,255,.2)'">📞 417.402.6821</a>
-        <button onclick="openBooking()" style="display:block;width:100%;background:var(--red-glow);border:1px solid rgba(204,32,47,.4);border-radius:6px;padding:12px;font-family:var(--font-c);font-size:14px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;text-align:center;color:var(--red);cursor:pointer;transition:all .2s" onmouseover="this.style.background='rgba(204,32,47,.25)'" onmouseout="this.style.background='var(--red-glow)'">📅 Book Estimate Online</button>
-      </div>
-    </div>
-
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="tb-item"><span class="tb-icon">⭐</span>5.0 Rating &middot; 179 Google Reviews</div>
+    <div class="tb-item"><span class="tb-icon">🛡️</span>Lifetime Written Warranty</div>
+    <div class="tb-item"><span class="tb-icon">💎</span>Diamond Grinding Standard</div>
+    <div class="tb-item"><span class="tb-icon">⚡</span>1-Day Installation</div>
+    <div class="tb-item"><span class="tb-icon">📍</span>75-Mile Service Radius</div>
   </div>
 </div>
 
-<!-- BOOKING SECTION — shown after price reveal and standalone -->
-<div id="bookingSection" style="display:none;padding:0 40px 60px;max-width:1200px;margin:0 auto">
+<!-- BOOKING SECTION — shown after price reveal -->
+<div id="bookingSection" style="display:none;padding:60px 40px;max-width:1260px;margin:0 auto">
   <div style="background:var(--bg3);border:1px solid rgba(204,32,47,.35);border-radius:12px;padding:36px;background:linear-gradient(135deg,rgba(204,32,47,.08) 0%,var(--bg3) 60%)">
     <div style="text-align:center;margin-bottom:30px">
       <div style="font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:8px">📅 Free On-Site Estimate</div>
@@ -630,7 +597,6 @@
       <div style="display:flex;align-items:center;gap:8px;font-family:var(--font-c);font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gray-light)"><span style="color:#4caf50">✓</span>Bring color samples</div>
       <div style="display:flex;align-items:center;gap:8px;font-family:var(--font-c);font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gray-light)"><span style="color:#4caf50">✓</span>Written quote — no pressure</div>
     </div>
-    <!-- GHL CALENDAR EMBED -->
     <div style="background:var(--bg2);border-radius:10px;overflow:hidden;border:1px solid var(--border);padding:8px">
       <iframe src="https://api.leadconnectorhq.com/widget/booking/ZDeMJsGxm1DmsNDqVrII"
         style="width:100%;border:none;overflow:hidden;min-height:700px;background:transparent"
@@ -645,7 +611,7 @@
   </div>
 </div>
 
-<!-- BOOKING MODAL (triggered from path card and result) -->
+<!-- BOOKING MODAL -->
 <div id="bookingModal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.92);align-items:center;justify-content:center;padding:20px">
   <div style="background:var(--bg2);border:1px solid rgba(204,32,47,.4);border-radius:12px;max-width:800px;width:100%;max-height:90vh;overflow-y:auto;padding:28px;position:relative">
     <button onclick="closeBooking()" style="position:absolute;top:16px;right:18px;background:none;border:none;color:var(--white);font-size:28px;cursor:pointer;line-height:1;opacity:.7;transition:opacity .2s" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=.7">×</button>
@@ -724,11 +690,9 @@
     document.getElementById('mmenu').classList.toggle('open');
   });
 
-  // ── OPEN CALCULATOR ──────────────────────────────────────────────────────
+  // ── openCalculator: no-op (calc always visible) ───────────────────────────
   function openCalculator() {
-    const sec = document.getElementById('calcSection');
-    sec.classList.add('visible');
-    sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    document.getElementById('calcSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   // ── SELECT OPTION CARDS ──────────────────────────────────────────────────
@@ -757,31 +721,29 @@
     if (!state.sqft) {
       document.getElementById('previewRange').textContent = '$—';
       document.getElementById('previewRange').classList.remove('visible');
+      document.getElementById('lockOverlay').textContent = '🔒 Enter sq ft above to start calculating';
       return;
     }
 
     const est = calcEstimate();
     document.getElementById('previewRange').textContent =
       `$${est.low.toLocaleString()} – $${est.high.toLocaleString()}`;
+    document.getElementById('lockOverlay').textContent = '🔒 Enter your info in Step 2 to unlock your exact price';
     document.getElementById('previewRange').classList.remove('visible'); // stays blurred until unlocked
   }
 
   function calcEstimate() {
     const sqft = state.sqft || 0;
 
-    // Base rates per sq ft
     let lowRate = 5.50;
     let highRate = 7.50;
 
-    // System modifier
     if (state.system === 'metallic') { lowRate += 1.00; highRate += 1.50; }
     if (state.system === 'commercial') { lowRate += 0.50; highRate += 1.00; }
 
-    // Condition modifier
     if (state.condition === 'average' || state.condition === 'unknown') { lowRate += 0.50; highRate += 0.50; }
     if (state.condition === 'rough') { lowRate += 0.75; highRate += 1.00; }
 
-    // Layout modifier
     if (state.layout === 'medium') { lowRate += 0.25; highRate += 0.25; }
     if (state.layout === 'complex') { lowRate += 0.75; highRate += 1.00; }
 
@@ -797,12 +759,10 @@
       alert('Please enter or select your approximate square footage.');
       return;
     }
-    // Show step 2
     document.getElementById('step1Panel').style.display = 'none';
     document.getElementById('step2Panel').style.display = 'block';
     document.getElementById('resultCard').classList.remove('show');
 
-    // Update steps
     document.getElementById('step1Item').classList.remove('active');
     document.getElementById('step1Item').classList.add('done');
     document.getElementById('step1Num').textContent = '✓';
@@ -863,7 +823,6 @@
       estimate_range: `$${est.low.toLocaleString()} - $${est.high.toLocaleString()}`
     };
 
-    // Fire to GHL webhook
     try {
       await fetch(WEBHOOK_URL, {
         method: 'POST',
@@ -874,7 +833,6 @@
       console.error('Webhook error:', err);
     }
 
-    // Show result
     showResult(est);
 
     btn.disabled = false;
@@ -882,13 +840,11 @@
   }
 
   function showResult(est) {
-    // Unlock preview
     const previewEl = document.getElementById('previewRange');
     previewEl.textContent = `$${est.low.toLocaleString()} – $${est.high.toLocaleString()}`;
     previewEl.classList.add('visible');
     document.getElementById('lockOverlay').style.display = 'none';
 
-    // Set result card
     document.getElementById('resultRange').textContent =
       `$${est.low.toLocaleString()} – $${est.high.toLocaleString()}`;
 
@@ -908,11 +864,9 @@
     document.getElementById('resultDesc').innerHTML =
       `Based on <strong>${est.sqft.toLocaleString()} sq ft</strong>, your ${typeLabels[state.type] || 'floor coating'} using a <strong>${systemLabels[state.system] || 'polyaspartic system'}</strong>, your project currently falls in the range above. The next step is a free on-site visit where we measure your space, assess the concrete, and give you a written quote.`;
 
-    // Show result, hide unlock form
     document.getElementById('step2Panel').style.display = 'none';
     document.getElementById('resultCard').classList.add('show');
 
-    // Update steps
     document.getElementById('step2Item').classList.remove('active');
     document.getElementById('step2Item').classList.add('done');
     document.getElementById('step2Num').textContent = '✓';
@@ -943,6 +897,7 @@
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeBooking();
   });
+
   function resetCalc() {
     state = { type: 'garage', sqft: null, system: 'flake', condition: 'good', layout: 'standard' };
     savedLead = null;
@@ -962,7 +917,6 @@
     document.getElementById('email').value = '';
     document.getElementById('zip').value = '';
 
-    // Reset step UI
     ['step1Item','step2Item','step3Item'].forEach(id => {
       document.getElementById(id).classList.remove('active','done');
     });
@@ -980,6 +934,7 @@
     document.getElementById('previewRange').textContent = '$—';
     document.getElementById('previewRange').classList.remove('visible');
     document.getElementById('lockOverlay').style.display = '';
+    document.getElementById('lockOverlay').textContent = '🔒 Enter sq ft above to start calculating';
 
     document.getElementById('calcSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
