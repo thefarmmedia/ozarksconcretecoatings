@@ -110,77 +110,78 @@ nav{background:rgba(0,0,0,.97);border-bottom:1.5px solid var(--red);padding:0 36
 .nav-drop-wide{display:none;grid-template-columns:repeat(3,1fr);min-width:560px;gap:1px 8px;left:auto;right:0}
 .nav-drop:hover .nav-drop-wide{display:grid}
 
-/* ── HERO ───────────────────────────────────────────── */
-.hero-scene{position:relative;min-height:100vh;background:var(--bg);overflow:hidden;display:flex;align-items:center}
+/* ── HERO : car layered THROUGH the type ──────────────── */
+.hero-scene{position:relative;height:calc(100svh - 105px);min-height:560px;background:var(--bg);overflow:hidden;
+  display:flex;flex-direction:column;align-items:center;justify-content:center}
+.hero-scene::after{content:'';position:absolute;left:0;right:0;bottom:0;height:34%;z-index:4;pointer-events:none;
+  background:linear-gradient(to bottom,transparent,var(--bg) 88%)}
 
-.hero-backdrop{position:absolute;inset:0;z-index:0;overflow:hidden}
-.hero-backdrop img{
-  width:100%;height:100%;object-fit:cover;object-position:60% center;opacity:.52;
-  animation:fadeIn 1.4s .2s ease both;
-  transform-origin:60% center;will-change:transform;
-}
-.hero-backdrop::after{content:'';position:absolute;inset:0;
-  background:linear-gradient(105deg,rgba(7,7,7,1) 0%,rgba(7,7,7,.97) 28%,rgba(7,7,7,.72) 50%,rgba(7,7,7,.2) 75%,rgba(7,7,7,.05) 100%)}
+.hero-stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
 
-.hero-inner{position:relative;z-index:2;max-width:1360px;margin:0 auto;width:100%;padding:80px 48px 64px;display:grid;grid-template-columns:1fr 390px;gap:52px;align-items:center}
+/* the giant type, drawn twice: once behind the car, once in front */
+.ht{position:absolute;left:0;right:0;top:44%;transform:translateY(-50%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-family:var(--font-d);font-size:clamp(52px,12.4vw,208px);line-height:.8;
+  letter-spacing:.015em;color:var(--text);text-align:center;pointer-events:none;
+  will-change:transform;text-wrap:balance}
+.ht i{display:block;overflow:hidden;font-style:normal;padding-bottom:.06em}
+.ht span{display:block}
+.ht-red{color:var(--red)}
+.ht-back{z-index:1}
+/* front copy: only the LAST line shows, so it lands in front of the car */
+.ht-front{z-index:3;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,transparent 63%,#000 69%,#000 100%);
+  mask-image:linear-gradient(to bottom,transparent 0%,transparent 63%,#000 69%,#000 100%)}
 
-.hero-eyebrow{
-  display:inline-flex;align-items:center;gap:8px;font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin-bottom:18px;
-  animation:eyebrowIn .7s .5s cubic-bezier(.16,1,.3,1) both;
-}
-.hero-eyebrow::before{content:'';display:block;width:26px;height:1.5px;background:var(--red)}
+/* the car — masked out of its garage so it reads as a cut-out */
+.hero-car{position:absolute;z-index:2;width:min(1080px,94vw);will-change:transform}
+.hero-car img{width:100%;height:auto;display:block;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 24%,#000 74%,transparent 95%),
+    radial-gradient(ellipse 60% 78% at 50% 56%,#000 48%,transparent 84%);
+  mask-image:linear-gradient(to bottom,transparent 0%,#000 24%,#000 74%,transparent 95%),
+    radial-gradient(ellipse 60% 78% at 50% 56%,#000 48%,transparent 84%);
+  -webkit-mask-composite:source-in;mask-composite:intersect;
+  filter:contrast(1.06) saturate(1.05)}
 
-/* headline — each word clips on slide-up */
-.hero-display{
-  font-family:var(--font-d);
-  font-size:clamp(66px,10.8vw,158px);
-  line-height:.86;
-  letter-spacing:.01em;
-  margin-bottom:4px;
-}
-.hw-wrap{display:block;overflow:hidden;line-height:.95;padding-bottom:.08em}
-.hw{
-  display:block;
-  background-image:url('hero-bg.png');
-  background-size:200% auto;
-  background-position:30% 55%;
-  -webkit-background-clip:text;
-  background-clip:text;
-  -webkit-text-fill-color:transparent;
-  color:rgba(255,255,255,.9);
-  filter:brightness(1.6) contrast(1.1) saturate(1.15);
-  animation:lineUp .9s cubic-bezier(.16,1,.3,1) both;
-}
-.hw-wrap:nth-child(1) .hw{animation-delay:.55s}
-.hw-wrap:nth-child(2) .hw{animation-delay:.72s}
-.hw-wrap:nth-child(3) .hw{animation-delay:.89s}
-.hw-wrap:nth-child(4) .hw{animation-delay:1.06s}
-.hw-wrap:nth-child(5) .hw{animation-delay:1.23s}
+/* foreground copy + CTAs */
+.hero-fg{position:absolute;left:0;right:0;bottom:64px;z-index:5;text-align:center;padding:0 24px;
+  will-change:transform}
+.hero-h1{font-family:var(--font-c);font-size:clamp(13px,1.5vw,17px);font-weight:600;color:var(--muted-lt);
+  letter-spacing:.06em;text-transform:uppercase;max-width:560px;margin:0 auto;line-height:1.4}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-c);font-size:11px;
+  font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:24px;height:1.5px;background:var(--red)}
+.hero-eyebrow{margin-bottom:10px}
+.hero-ctas{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:18px}
+.scroll-cue{position:absolute;bottom:22px;right:30px;z-index:6;
+  font-family:var(--font-c);font-size:10px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:7px}
+.scroll-cue::after{content:'';width:1px;height:34px;background:linear-gradient(var(--red),transparent);
+  animation:cue 1.9s ease-in-out infinite}
+@keyframes cue{0%,100%{opacity:.25;transform:scaleY(.45);transform-origin:top}50%{opacity:1;transform:scaleY(1);transform-origin:top}}
 
-.hw-red{
-  background:none!important;
-  -webkit-background-clip:unset!important;
-  background-clip:unset!important;
-  -webkit-text-fill-color:var(--red)!important;
-  color:var(--red)!important;
-  filter:none!important;
-}
-
-.hero-tagline{
-  font-family:var(--font-c);font-size:clamp(12px,1.4vw,16px);font-weight:600;color:var(--muted-lt);letter-spacing:.07em;text-transform:uppercase;margin-top:20px;margin-bottom:26px;
-  animation:fadeUp .7s 1.5s cubic-bezier(.16,1,.3,1) both;
-}
-.hero-pills{
-  display:flex;gap:9px;flex-wrap:wrap;margin-bottom:30px;
-  animation:fadeUp .7s 1.65s cubic-bezier(.16,1,.3,1) both;
-}
-.h-pill{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:3px;padding:6px 11px;font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted-lt);
-  transition:background .25s,border-color .25s,color .25s}
+/* quote form section (moved out of the hero) */
+.quote-sec{background:var(--bg2);border-top:1px solid var(--border);padding:70px 48px}
+.quote-wrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:56px;align-items:center}
+.quote-copy h2{font-family:var(--font-d);font-size:clamp(40px,5.4vw,74px);line-height:.92;margin-bottom:16px}
+.quote-copy h2 em{font-style:normal;color:var(--red)}
+.quote-copy p{color:var(--muted-lt);max-width:44ch;margin-bottom:22px}
+.quote-pills{display:flex;gap:9px;flex-wrap:wrap}
+.h-pill{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.05);border:1px solid var(--border);
+  border-radius:3px;padding:7px 12px;font-family:var(--font-c);font-size:11px;font-weight:700;
+  letter-spacing:.07em;text-transform:uppercase;color:var(--muted-lt);transition:background .25s,border-color .25s,color .25s}
 .h-pill:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.18);color:var(--text)}
-.h-pill .ico{width:20px;height:20px;background:var(--red-glow);border:1px solid rgba(204,32,47,.3);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:11px}
-.hero-ctas{
-  display:flex;gap:9px;flex-wrap:wrap;
-  animation:fadeUp .7s 1.8s cubic-bezier(.16,1,.3,1) both;
+.h-pill .ico{width:20px;height:20px;background:var(--red-glow);border:1px solid rgba(204,32,47,.3);border-radius:2px;
+  display:flex;align-items:center;justify-content:center;font-size:11px}
+
+@media(max-width:900px){
+  .quote-wrap{grid-template-columns:1fr;gap:32px}
+  .hero-scene{height:calc(100svh - 68px);min-height:520px}
+  .hero-fg{bottom:34px}
+  .hero-ctas .btn{padding:11px 16px;font-size:12.5px}
+  .scroll-cue{display:none}
+  .ht-front{-webkit-mask-image:linear-gradient(to bottom,transparent 0%,transparent 66%,#000 72%,#000 100%);
+    mask-image:linear-gradient(to bottom,transparent 0%,transparent 66%,#000 72%,#000 100%)}
 }
 
 .hform{
@@ -428,8 +429,8 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
 .s-quote{background:var(--bg3);color:var(--text);border:1px solid var(--border)}
 
 /* SCROLL REVEAL */
-.rev{opacity:0;transform:translateY(32px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
-.rev.vis{opacity:1;transform:translateY(0)}
+.rev{opacity:1}
+
 .stagger .rev:nth-child(1){transition-delay:.05s}
 .stagger .rev:nth-child(2){transition-delay:.15s}
 .stagger .rev:nth-child(3){transition-delay:.25s}
@@ -496,12 +497,15 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
   .pillars{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){
-  .rev{opacity:1;transform:none;transition:none}
-  .hw{animation:none;transform:none}
+  .rev{opacity:1;transform:none}
+  .ht i span{transform:none}
   .st-n{opacity:1;transform:none;transition:none}
   *{animation-duration:.01ms!important;animation-delay:.01ms!important;transition-duration:.01ms!important}
 }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
 </head>
 <body>
 
@@ -588,30 +592,42 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
 
 <!-- HERO -->
 <section class="hero-scene" id="heroScene">
-  <div class="hero-backdrop" id="heroBackdrop">
-    <img src="hero-bg.png" id="heroBgImg" alt="Premier epoxy garage floor coating — Lamborghini showroom — Ozarks Concrete Coatings Springfield MO" fetchpriority="high"/>
+  <div class="hero-stage">
+    <div class="ht ht-back" id="typeBack" aria-hidden="true">
+      <i><span>OZARKS</span></i><i><span>CONCRETE</span></i><i><span class="ht-red">COATINGS</span></i>
+    </div>
+    <div class="hero-car" id="heroCar">
+      <img src="hero-bg.png" id="heroBgImg" fetchpriority="high"
+        alt="Lamborghini on a finished epoxy flake garage floor installed by Ozarks Concrete Coatings in Springfield MO"/>
+    </div>
+    <div class="ht ht-front" id="typeFront" aria-hidden="true">
+      <i><span>OZARKS</span></i><i><span>CONCRETE</span></i><i><span class="ht-red">COATINGS</span></i>
+    </div>
   </div>
-  <div class="hero-inner">
-    <div class="hero-left">
-      <div class="hero-eyebrow">⭐ 5.0 Rating · 179 Five-Star Google Reviews</div>
-      <h1 class="hero-display" id="heroDisplay">
-        <div class="hw-wrap"><div class="hw">SOUTHWEST</div></div>
-        <div class="hw-wrap"><div class="hw">MISSOURI'S</div></div>
-        <div class="hw-wrap"><div class="hw hw-red">PREMIER</div></div>
-        <div class="hw-wrap"><div class="hw">FLOOR</div></div>
-        <div class="hw-wrap"><div class="hw">COATINGS</div></div>
-      </h1>
-      <p class="hero-tagline">Springfield · Nixa · Ozark · Branson · Republic · Joplin &amp; 75-Mile Radius</p>
-      <div class="hero-pills">
-        <div class="h-pill"><span class="ico">🛡️</span>Lifetime Warranty</div>
-        <div class="h-pill"><span class="ico">⚡</span>1-Day Install</div>
-        <div class="h-pill"><span class="ico">💎</span>Diamond Ground Prep</div>
-        <div class="h-pill"><span class="ico">💪</span>Epoxy-Polyurea Hybrid</div>
-      </div>
-      <div class="hero-ctas">
-        <a href="#quote-form" class="btn btn-red">🚀 Get Free Quote</a>
-        <a href="/instant-quote.html" class="btn btn-ghost">⚡ Instant Price Calculator</a>
-        <a href="tel:4174026821" class="btn btn-ghost">📞 417.402.6821</a>
+
+  <div class="hero-fg" id="heroFg">
+    <div class="hero-eyebrow">5.0 Rating · 179 Five-Star Google Reviews</div>
+    <h1 class="hero-h1">Southwest Missouri&rsquo;s premier epoxy &amp; polyaspartic floor coatings</h1>
+    <div class="hero-ctas">
+      <a href="#quote-form" class="btn btn-red">Get My Free Quote</a>
+      <a href="/gallery.html" class="btn btn-ghost">View Our Work</a>
+      <a href="tel:4174026821" class="btn btn-ghost">417.402.6821</a>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">Scroll</div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote-sec">
+  <div class="quote-wrap">
+    <div class="quote-copy rev">
+      <h2>We don&rsquo;t paint concrete.<br/><em>We transform it.</em></h2>
+      <p>Diamond-ground prep, an epoxy-polyurea hybrid basecoat and a polyaspartic topcoat &mdash; installed in one day and backed for life. Tell us about your floor and we&rsquo;ll get you a real number.</p>
+      <div class="quote-pills">
+        <div class="h-pill"><span class="ico">&#128737;</span>Lifetime Warranty</div>
+        <div class="h-pill"><span class="ico">&#9889;</span>1-Day Install</div>
+        <div class="h-pill"><span class="ico">&#128142;</span>Diamond Ground Prep</div>
+        <div class="h-pill"><span class="ico">&#128170;</span>Epoxy-Polyurea Hybrid</div>
       </div>
     </div>
     <div class="hform" id="quote-form">
@@ -1248,13 +1264,7 @@ document.querySelectorAll('.fq').forEach(q=>{
   });
 })();
 
-// Scroll reveal
-const revObs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){e.target.classList.add('vis');revObs.unobserve(e.target);}
-  });
-},{threshold:0,rootMargin:'0px 0px -40px 0px'});
-document.querySelectorAll('.rev').forEach(r=>revObs.observe(r));
+// Scroll reveals are handled by GSAP ScrollTrigger (see motion system).
 
 // Stats counter
 (function(){
@@ -1288,6 +1298,7 @@ document.querySelectorAll('.rev').forEach(r=>revObs.observe(r));
 // Mouse parallax on hero backdrop
 (function(){
   const scene=document.getElementById('heroScene');
+  const _bd=document.getElementById('heroBackdrop'); if(!_bd)return;
   const img=document.getElementById('heroBgImg');
   if(!scene||!img)return;
   let tX=0,tY=0,cX=0,cY=0,raf=null;
@@ -1337,6 +1348,67 @@ async function submitForm(btn){
 
 // Copyright year
 document.querySelectorAll('.cur-yr').forEach(e=>e.textContent=new Date().getFullYear());
+</script>
+
+<script>
+/* ── CINEMATIC MOTION SYSTEM ───────────────────────────── */
+window.addEventListener('load', function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !window.gsap || !window.ScrollTrigger) return;
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* smooth scroll — the "premium" feel */
+  if (window.Lenis) {
+    var lenis = new Lenis({ duration: 1.15, smoothWheel: true, wheelMultiplier: 0.95 });
+    lenis.on('scroll', ScrollTrigger.update);
+    /* native smooth-scroll fights Lenis — hand anchors to Lenis instead */
+    document.documentElement.style.scrollBehavior = 'auto';
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(ev){
+        var t = document.querySelector(a.getAttribute('href'));
+        if (t) { ev.preventDefault(); lenis.scrollTo(t, { offset:-80 }); }
+      });
+    });
+    gsap.ticker.add(function(t){ lenis.raf(t * 1000); });
+    gsap.ticker.lagSmoothing(0);
+  }
+
+  /* ENTRANCE — type clips up, car pushes in behind it */
+  gsap.timeline({ defaults:{ ease:'expo.out' } })
+    .from('.ht i span', { yPercent:118, duration:1.25, stagger:0.12 })
+    .from('#heroCar',   { scale:1.22, opacity:0, duration:1.5 }, '-=1.0')
+    .from('#heroFg',    { y:44, opacity:0, duration:1.0 }, '-=0.85')
+    .from('.scroll-cue',{ opacity:0, duration:0.7 }, '-=0.5');
+
+  /* SCROLL SCRUB — layers separate at different rates, then hand off */
+  gsap.timeline({
+    scrollTrigger:{ trigger:'#heroScene', start:'top top', end:'+=115%', scrub:1, pin:true, anticipatePin:1 }
+  })
+    .to('#typeBack', { yPercent:-30, scale:1.09 }, 0)
+    .to('#heroCar',  { yPercent:14,  scale:1.18 }, 0)
+    .to('#typeFront',{ yPercent:-13 }, 0)
+    .to('#heroFg',   { y:-80, opacity:0 }, 0)
+    .to('.scroll-cue',{ opacity:0 }, 0);
+
+  /* section reveals via GSAP (replaces the plain IO fade) */
+  gsap.utils.toArray('.rev').forEach(function(el){
+    gsap.from(el, {
+      y:38, opacity:0, duration:0.95, ease:'expo.out',
+      scrollTrigger:{ trigger:el, start:'top 88%', once:true }
+    });
+  });
+
+  /* project photos drift while scrolling */
+  gsap.utils.toArray('.showcase-img img, .proj-img img').forEach(function(img){
+    gsap.fromTo(img, { yPercent:-6 }, {
+      yPercent:6, ease:'none',
+      scrollTrigger:{ trigger:img, start:'top bottom', end:'bottom top', scrub:true }
+    });
+  });
+
+  ScrollTrigger.refresh();
+});
 </script>
 </body>
 </html>
