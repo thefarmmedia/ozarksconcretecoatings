@@ -141,14 +141,7 @@ nav{background:rgba(0,0,0,.97);border-bottom:1.5px solid var(--red);padding:0 36
 .hw-wrap{display:block;overflow:hidden;line-height:.95;padding-bottom:.08em}
 .hw{
   display:block;
-  background-image:url('hero-bg.png');
-  background-size:200% auto;
-  background-position:30% 55%;
-  -webkit-background-clip:text;
-  background-clip:text;
-  -webkit-text-fill-color:transparent;
-  color:rgba(255,255,255,.9);
-  filter:brightness(1.6) contrast(1.1) saturate(1.15);
+  color:var(--text);
   animation:lineUp .9s cubic-bezier(.16,1,.3,1) both;
 }
 .hw-wrap:nth-child(1) .hw{animation-delay:.55s}
@@ -158,12 +151,7 @@ nav{background:rgba(0,0,0,.97);border-bottom:1.5px solid var(--red);padding:0 36
 .hw-wrap:nth-child(5) .hw{animation-delay:1.23s}
 
 .hw-red{
-  background:none!important;
-  -webkit-background-clip:unset!important;
-  background-clip:unset!important;
-  -webkit-text-fill-color:var(--red)!important;
   color:var(--red)!important;
-  filter:none!important;
 }
 
 .hero-tagline{
