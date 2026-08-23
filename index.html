@@ -503,9 +503,9 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
   *{animation-duration:.01ms!important;animation-delay:.01ms!important;transition-duration:.01ms!important}
 }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="/vendor/gsap.min.js" defer></script>
+<script src="/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/vendor/lenis.min.js" defer></script>
 </head>
 <body>
 
@@ -1383,12 +1383,12 @@ window.addEventListener('load', function(){
 
   /* SCROLL SCRUB — layers separate at different rates, then hand off */
   gsap.timeline({
-    scrollTrigger:{ trigger:'#heroScene', start:'top top', end:'+=115%', scrub:1, pin:true, anticipatePin:1 }
+    scrollTrigger:{ trigger:'#heroScene', start:'top top', end:'+=150%', scrub:0.8, pin:true, anticipatePin:1 }
   })
-    .to('#typeBack', { yPercent:-30, scale:1.09 }, 0)
-    .to('#heroCar',  { yPercent:14,  scale:1.18 }, 0)
-    .to('#typeFront',{ yPercent:-13 }, 0)
-    .to('#heroFg',   { y:-80, opacity:0 }, 0)
+    .to('#typeBack', { yPercent:-58, scale:1.20, opacity:0.55 }, 0)
+    .to('#heroCar',  { yPercent:26,  scale:1.34 }, 0)
+    .to('#typeFront',{ yPercent:-24, opacity:0.85 }, 0)
+    .to('#heroFg',   { y:-110, opacity:0 }, 0)
     .to('.scroll-cue',{ opacity:0 }, 0);
 
   /* section reveals via GSAP (replaces the plain IO fade) */
