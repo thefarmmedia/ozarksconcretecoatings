@@ -428,6 +428,29 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
 .s-call{background:var(--red);color:var(--text)}
 .s-quote{background:var(--bg3);color:var(--text);border:1px solid var(--border)}
 
+
+/* ── PROCESS TIMELINE (pattern adapted from Relume Timeline 7) ───── */
+.pstl{max-width:940px;margin:44px auto 0;display:grid;grid-template-columns:34px 1fr;gap:0 26px}
+.pstl-rail{position:relative;width:3px;justify-self:center;height:100%;background:rgba(255,255,255,.10);border-radius:2px}
+.pstl-fill{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(var(--red),var(--red-dark));
+  border-radius:2px;transform:scaleY(0);transform-origin:top;will-change:transform}
+.pspstl-items{display:flex;flex-direction:column;gap:44px}
+.pstl-item{position:relative;padding-bottom:2px}
+.pspstl-dot{position:absolute;left:-40px;top:7px;width:13px;height:13px;border-radius:50%;
+  background:var(--bg3);border:2px solid rgba(255,255,255,.18);
+  box-shadow:0 0 0 6px var(--bg);transition:background .3s ease,border-color .3s ease,transform .3s ease}
+.pstl-item.on .pspstl-dot{background:var(--red);border-color:var(--red);transform:scale(1.18)}
+.pstl-num{font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:5px;transition:color .3s ease}
+.pstl-item.on .pstl-num{color:var(--red)}
+.pstl-t{font-family:var(--font-d);font-size:clamp(26px,3.2vw,40px);line-height:1;margin-bottom:8px;color:var(--text)}
+.pstl-d{color:var(--muted-lt);max-width:56ch;margin:0}
+@media(max-width:700px){
+  .pstl{grid-template-columns:20px 1fr;gap:0 18px}
+  .pspstl-dot{left:-31px;top:5px;width:11px;height:11px;box-shadow:0 0 0 5px var(--bg)}
+  .pspstl-items{gap:34px}
+}
+
 /* SCROLL REVEAL */
 .rev{opacity:1}
 
@@ -829,12 +852,15 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
       <h2 class="sec-title">Our Proven 5-Step Process</h2>
       <p class="sec-body" style="margin:14px auto 0;text-align:center">Every install follows the same meticulous process. No shortcuts. No skipped steps. That's why our floors last a lifetime.</p>
     </div>
-    <div class="proc-grid stagger">
-      <div class="ps rev"><div class="ps-num">1</div><div class="ps-t">Surface Prep</div><p class="ps-d">Diamond grinding removes all coatings, oils, and imperfections. Cracks filled and leveled. This step is everything.</p></div>
-      <div class="ps rev"><div class="ps-num">2</div><div class="ps-t">Primer Coat</div><p class="ps-d">Specialized primer applied for maximum adhesion between the coating system and your concrete substrate.</p></div>
-      <div class="ps rev"><div class="ps-num">3</div><div class="ps-t">Base Coat</div><p class="ps-d">High-performance polyaspartic base coat spread evenly across the floor creating a flawless, bonded foundation.</p></div>
-      <div class="ps rev"><div class="ps-num">4</div><div class="ps-t">Decorative Layer</div><p class="ps-d">Color flakes, metallic pigments, or solid tones broadcast into the wet base. Your floor, your look.</p></div>
-      <div class="ps rev"><div class="ps-num">5</div><div class="ps-t">Topcoat Seal</div><p class="ps-d">UV-stable, chemical-resistant topcoat locks it all in. Gorgeous, easy to maintain. Drive on it in 24 hours.</p></div>
+    <div class="pstl" id="procTl">
+      <div class="pstl-rail"><div class="pstl-fill" id="pstlFill"></div></div>
+      <div class="pspstl-items">
+        <div class="pstl-item"><span class="pspstl-dot"></span><div class="pstl-num">Step 01</div><h3 class="pstl-t">Surface Prep</h3><p class="pstl-d">Diamond grinding removes all coatings, oils, and imperfections. Cracks filled and leveled. This step is everything.</p></div>
+        <div class="pstl-item"><span class="pspstl-dot"></span><div class="pstl-num">Step 02</div><h3 class="pstl-t">Primer Coat</h3><p class="pstl-d">Specialized primer applied for maximum adhesion between the coating system and your concrete substrate.</p></div>
+        <div class="pstl-item"><span class="pspstl-dot"></span><div class="pstl-num">Step 03</div><h3 class="pstl-t">Base Coat</h3><p class="pstl-d">High-performance polyaspartic base coat spread evenly across the floor creating a flawless, bonded foundation.</p></div>
+        <div class="pstl-item"><span class="pspstl-dot"></span><div class="pstl-num">Step 04</div><h3 class="pstl-t">Decorative Layer</h3><p class="pstl-d">Color flakes, metallic pigments, or solid tones broadcast into the wet base. Your floor, your look.</p></div>
+        <div class="pstl-item"><span class="pspstl-dot"></span><div class="pstl-num">Step 05</div><h3 class="pstl-t">Topcoat Seal</h3><p class="pstl-d">UV-stable, chemical-resistant topcoat locks it all in. Gorgeous, easy to maintain. Drive on it in 24 hours.</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -1406,6 +1432,23 @@ window.addEventListener('load', function(){
       scrollTrigger:{ trigger:img, start:'top bottom', end:'bottom top', scrub:true }
     });
   });
+
+  /* process timeline: rail fills with scroll, dots light as you pass them */
+  var tl = document.getElementById('procTl');
+  if (tl) {
+    gsap.to('#pstlFill', {
+      scaleY: 1, ease: 'none',
+      scrollTrigger: { trigger: tl, start: 'top 72%', end: 'bottom 78%', scrub: 0.5 }
+    });
+    gsap.utils.toArray('.pstl-item').forEach(function(item){
+      ScrollTrigger.create({
+        trigger: item, start: 'top 72%', end: 'bottom 20%',
+        onEnter:     function(){ item.classList.add('on'); },
+        onEnterBack: function(){ item.classList.add('on'); },
+        onLeaveBack: function(){ item.classList.remove('on'); }
+      });
+    });
+  }
 
   ScrollTrigger.refresh();
 });
