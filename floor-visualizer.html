@@ -1,0 +1,2907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Epoxy Floor Visualizer | See Your Garage Floor Before You Buy | Ozarks Concrete Coatings</title>
+<meta name="description" content="Preview 27 real epoxy flake colors on a garage floor photo — or upload your own. Free interactive floor visualizer from Ozarks Concrete Coatings, serving Springfield, Nixa, Ozark, Branson &amp; a 75-mile radius."/>
+<link rel="canonical" href="https://ozarksconcretecoatings.com/floor-visualizer.html"/>
+<meta property="og:title" content="Epoxy Floor Visualizer | Ozarks Concrete Coatings"/>
+<meta property="og:description" content="Preview 27 real epoxy flake colors on your own garage photo before you buy. Free, instant, and private — your photo never leaves your device."/>
+<meta property="og:url" content="https://ozarksconcretecoatings.com/floor-visualizer.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://ozarksconcretecoatings.com/bare-concrete-garage-floor-before-epoxy-coating-missouri.webp"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ozarksconcretecoatings.com/"},{"@type":"ListItem","position":2,"name":"Floor Visualizer","item":"https://ozarksconcretecoatings.com/floor-visualizer.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Epoxy Floor Visualizer","description":"Interactive tool to compare Ozarks Concrete Coatings garage floor coating colors and flake finishes before installation.","url":"https://ozarksconcretecoatings.com/floor-visualizer.html","provider":{"@type":"LocalBusiness","name":"Ozarks Concrete Coatings","telephone":"+14174026821","sameAs":["https://www.facebook.com/ozarksconcretecoatings","https://www.instagram.com/ozarksconcretecoatings/"]}}</script>
+<style>
+:root{
+  --bg:#070707;--bg2:#100f0f;--bg3:#181616;--bg4:#221f1f;
+  --red:#cc202f;--red-dark:#a01824;--red-glow:rgba(204,32,47,.18);
+  --black:#000;--text:#edeae5;--muted:#8a8480;--muted-lt:#bbb8b3;
+  --border:rgba(255,255,255,.08);
+  --font-d:'Bebas Neue',sans-serif;
+  --font-c:'Barlow Condensed',sans-serif;
+  --font-b:'Barlow',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--font-b);overflow-x:hidden;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* ── HERO ENTRANCE ANIMATIONS ──────────────────────── */
+@keyframes eyebrowIn{
+  from{opacity:0;transform:translateX(-18px)}
+  to{opacity:1;transform:translateX(0)}
+}
+@keyframes lineUp{
+  from{transform:translateY(105%)}
+  to{transform:translateY(0)}
+}
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(28px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes fadeRight{
+  from{opacity:0;transform:translateX(36px)}
+  to{opacity:1;transform:translateX(0)}
+}
+@keyframes fadeIn{
+  from{opacity:0}
+  to{opacity:1}
+}
+@keyframes slideReveal{
+  from{clip-path:inset(0 100% 0 0)}
+  to{clip-path:inset(0 0% 0 0)}
+}
+
+/* TOPBAR */
+.topbar{background:var(--red);padding:7px 32px;display:flex;justify-content:space-between;align-items:center;font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;flex-wrap:wrap;gap:8px;
+  animation:fadeIn .4s ease both}
+.topbar a{transition:opacity .2s}.topbar a:hover{opacity:.75}
+.topbar-l{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.topbar-r{display:flex;gap:12px;align-items:center}
+.t-social{display:flex;gap:6px}
+.t-social a{width:24px;height:24px;background:rgba(0,0,0,.25);border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;transition:background .2s}
+.t-social a:hover{background:rgba(0,0,0,.45)}
+
+/* NAV */
+nav{background:rgba(0,0,0,.97);border-bottom:1.5px solid var(--red);padding:0 36px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:1000;height:68px;
+  animation:fadeIn .5s .1s ease both}
+.nav-logo img{height:46px;width:auto}
+.nav-links{display:flex;gap:2px;list-style:none;font-family:var(--font-c);font-weight:700;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;align-items:center}
+.nav-links li{display:flex;align-items:center;height:68px}
+.nav-links a{color:var(--muted-lt);transition:color .2s;padding:4px 7px;border-bottom:2px solid transparent;display:flex;align-items:center;height:100%;white-space:nowrap}
+.nav-links a:hover{color:var(--text);border-bottom-color:var(--red)}
+.nav-cta{background:var(--red)!important;color:var(--text)!important;padding:8px 16px!important;border-radius:3px!important;border-bottom:none!important;font-weight:900!important;letter-spacing:.1em;box-shadow:0 2px 12px rgba(204,32,47,.35);transition:background .2s,transform .15s!important;height:auto!important}
+.nav-cta:hover{background:var(--red-dark)!important;transform:translateY(-1px)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px}
+.hamburger span{display:block;width:24px;height:2px;background:var(--text);border-radius:2px;transition:all .3s}
+.mob-menu{display:none;flex-direction:column;background:var(--black);border-top:1px solid var(--border);padding:18px 24px;gap:0;font-family:var(--font-c);font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.mob-menu a{color:var(--muted-lt);padding:11px 0;border-bottom:1px solid var(--border);display:block}
+.mob-menu a:last-child{border-bottom:none;color:var(--red)}
+.mob-menu.open{display:flex}
+.nav-drop{position:relative;height:100%}
+.nav-drop>a{height:100%;display:flex;align-items:center}
+.nav-drop-menu{position:absolute;top:100%;left:0;margin-top:0;background:var(--black);border:1px solid var(--border);border-top:2px solid var(--red);border-radius:0 0 6px 6px;padding:8px;min-width:210px;display:none;flex-direction:column;gap:1px;box-shadow:0 24px 48px rgba(0,0,0,.7);z-index:1001}
+.nav-drop-menu a{padding:8px 12px;font-size:12px;letter-spacing:.04em;border-radius:4px;white-space:nowrap;color:var(--muted-lt)!important;border-bottom:none!important;text-transform:uppercase;font-weight:700;display:block;height:auto!important}
+.nav-drop-menu a:hover{background:var(--bg3);color:var(--text)!important}
+.nav-drop:hover .nav-drop-menu{display:flex}
+.nav-drop-wide{display:none;grid-template-columns:repeat(3,1fr);min-width:560px;gap:1px 8px;left:auto;right:0}
+.nav-drop:hover .nav-drop-wide{display:grid}
+
+/* ── HERO : car layered THROUGH the type ──────────────── */
+.hero-scene{position:relative;height:calc(100svh - 105px);min-height:560px;background:var(--bg);overflow:hidden;
+  display:flex;flex-direction:column;align-items:center;justify-content:center}
+.hero-scene::after{content:'';position:absolute;left:0;right:0;bottom:0;height:34%;z-index:4;pointer-events:none;
+  background:linear-gradient(to bottom,transparent,var(--bg) 88%)}
+
+.hero-stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+
+/* the giant type, drawn twice: once behind the car, once in front */
+.ht{position:absolute;left:0;right:0;top:44%;transform:translateY(-50%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-family:var(--font-d);font-size:clamp(52px,12.4vw,208px);line-height:.8;
+  letter-spacing:.015em;color:var(--text);text-align:center;pointer-events:none;
+  will-change:transform;text-wrap:balance}
+.ht i{display:block;overflow:hidden;font-style:normal;padding-bottom:.06em}
+.ht span{display:block}
+.ht-red{color:var(--red)}
+.ht-back{z-index:1}
+/* front copy: only the LAST line shows, so it lands in front of the car */
+.ht-front{z-index:3;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,transparent 63%,#000 69%,#000 100%);
+  mask-image:linear-gradient(to bottom,transparent 0%,transparent 63%,#000 69%,#000 100%)}
+
+/* the car — masked out of its garage so it reads as a cut-out */
+.hero-car{position:absolute;z-index:2;width:min(1080px,94vw);will-change:transform}
+.hero-car img{width:100%;height:auto;display:block;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 24%,#000 74%,transparent 95%),
+    radial-gradient(ellipse 60% 78% at 50% 56%,#000 48%,transparent 84%);
+  mask-image:linear-gradient(to bottom,transparent 0%,#000 24%,#000 74%,transparent 95%),
+    radial-gradient(ellipse 60% 78% at 50% 56%,#000 48%,transparent 84%);
+  -webkit-mask-composite:source-in;mask-composite:intersect;
+  filter:contrast(1.06) saturate(1.05)}
+
+/* foreground copy + CTAs */
+.hero-fg{position:absolute;left:0;right:0;bottom:64px;z-index:5;text-align:center;padding:0 24px;
+  will-change:transform}
+.hero-h1{font-family:var(--font-c);font-size:clamp(13px,1.5vw,17px);font-weight:600;color:var(--muted-lt);
+  letter-spacing:.06em;text-transform:uppercase;max-width:560px;margin:0 auto;line-height:1.4}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-c);font-size:11px;
+  font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:24px;height:1.5px;background:var(--red)}
+.hero-eyebrow{margin-bottom:10px}
+.hero-ctas{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:18px}
+.scroll-cue{position:absolute;bottom:22px;right:30px;z-index:6;
+  font-family:var(--font-c);font-size:10px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:7px}
+.scroll-cue::after{content:'';width:1px;height:34px;background:linear-gradient(var(--red),transparent);
+  animation:cue 1.9s ease-in-out infinite}
+@keyframes cue{0%,100%{opacity:.25;transform:scaleY(.45);transform-origin:top}50%{opacity:1;transform:scaleY(1);transform-origin:top}}
+
+/* quote form section (moved out of the hero) */
+.quote-sec{background:var(--bg2);border-top:1px solid var(--border);padding:70px 48px}
+.quote-wrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:56px;align-items:center}
+.quote-copy h2{font-family:var(--font-d);font-size:clamp(40px,5.4vw,74px);line-height:.92;margin-bottom:16px}
+.quote-copy h2 em{font-style:normal;color:var(--red)}
+.quote-copy p{color:var(--muted-lt);max-width:44ch;margin-bottom:22px}
+.quote-pills{display:flex;gap:9px;flex-wrap:wrap}
+.h-pill{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.05);border:1px solid var(--border);
+  border-radius:3px;padding:7px 12px;font-family:var(--font-c);font-size:11px;font-weight:700;
+  letter-spacing:.07em;text-transform:uppercase;color:var(--muted-lt);transition:background .25s,border-color .25s,color .25s}
+.h-pill:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.18);color:var(--text)}
+.h-pill .ico{width:20px;height:20px;background:var(--red-glow);border:1px solid rgba(204,32,47,.3);border-radius:2px;
+  display:flex;align-items:center;justify-content:center;font-size:11px}
+
+@media(max-width:900px){
+  .quote-wrap{grid-template-columns:1fr;gap:32px}
+  .hero-scene{height:calc(100svh - 68px);min-height:520px}
+  .hero-fg{bottom:34px}
+  .hero-ctas .btn{padding:11px 16px;font-size:12.5px}
+  .scroll-cue{display:none}
+  .ht-front{-webkit-mask-image:linear-gradient(to bottom,transparent 0%,transparent 66%,#000 72%,#000 100%);
+    mask-image:linear-gradient(to bottom,transparent 0%,transparent 66%,#000 72%,#000 100%)}
+}
+
+.hform{
+  background:rgba(9,9,9,.96);border:1px solid rgba(204,32,47,.28);border-radius:6px;padding:26px 22px;
+  box-shadow:0 32px 80px rgba(0,0,0,.85),0 0 0 1px rgba(255,255,255,.03);
+  animation:fadeRight .9s .8s cubic-bezier(.16,1,.3,1) both;
+}
+.hform-head{font-family:var(--font-c);font-size:18px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;border-bottom:1.5px solid var(--red);padding-bottom:10px;margin-bottom:14px;line-height:1.2}
+.hform-head .sub{font-size:10.5px;font-weight:600;color:var(--muted);display:block;margin-top:3px;letter-spacing:.07em}
+.fg{margin-bottom:9px}
+.fg label{display:block;font-family:var(--font-c);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.fg input,.fg select,.fg textarea{width:100%;background:var(--bg3);border:1px solid var(--border);border-radius:3px;color:var(--text);font-family:var(--font-b);font-size:13px;padding:8px 11px;outline:none;transition:border-color .2s;-webkit-appearance:none}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--red)}
+.fg select option{background:var(--bg3)}
+.fg textarea{resize:vertical;min-height:60px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.fsub{width:100%;margin-top:3px}
+.fnote{font-size:10px;color:var(--muted);text-align:center;margin-top:6px;font-family:var(--font-c)}
+
+/* BUTTONS */
+.btn{display:inline-block;font-family:var(--font-c);font-weight:900;letter-spacing:.1em;text-transform:uppercase;border-radius:3px;cursor:pointer;transition:all .22s;border:none}
+.btn-red{background:var(--red);color:var(--text);padding:14px 26px;font-size:14px;box-shadow:0 4px 18px rgba(204,32,47,.35)}
+.btn-red:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 8px 28px rgba(204,32,47,.45)}
+.btn-ghost{background:transparent;color:var(--text);padding:13px 22px;font-size:14px;border:1.5px solid rgba(255,255,255,.2)}
+.btn-ghost:hover{border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.05)}
+.btn-white{background:var(--text);color:var(--red);padding:14px 30px;font-size:15px;box-shadow:0 4px 20px rgba(0,0,0,.35)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.45)}
+.btn-dark{background:var(--black);color:var(--text);padding:13px 26px;font-size:14px;border:1.5px solid rgba(255,255,255,.2)}
+.btn-dark:hover{border-color:rgba(255,255,255,.4);background:var(--bg3)}
+
+/* STATS */
+.stats-strip{background:var(--black);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:20px 48px}
+.stats-in{max-width:1360px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+.st{text-align:center;padding:12px 8px;border-right:1px solid var(--border)}
+.st:last-child{border-right:none}
+.st-n{font-family:var(--font-d);font-size:44px;color:var(--red);line-height:1;margin-bottom:2px;font-variant-numeric:tabular-nums;
+  opacity:0;transform:translateY(12px);transition:opacity .5s,transform .5s}
+.st-n.counted{opacity:1;transform:translateY(0)}
+.st-l{font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-lt)}
+
+/* SECTIONS */
+.sec{padding:96px 48px}
+.sec-dk{background:var(--bg2)}
+.sec-dkr{background:var(--bg)}
+.inner{max-width:1360px;margin:0 auto}
+.sec-eyebrow{font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.sec-eyebrow::before{content:'';display:block;width:22px;height:1.5px;background:var(--red)}
+.sec-title{font-family:var(--font-d);font-size:clamp(40px,5.5vw,72px);line-height:.92;text-wrap:balance}
+.sec-body{font-size:15px;color:var(--muted-lt);max-width:560px;line-height:1.78;margin-top:14px}
+.sec-split{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:52px;gap:24px;flex-wrap:wrap}
+.sec-rule{width:44px;height:2px;background:var(--red);border-radius:1px;margin:14px 0 20px}
+
+/* SHOWCASE */
+.showcase{background:var(--black);overflow:hidden}
+.showcase-grid{display:grid;grid-template-columns:1fr 1fr 1fr;min-height:520px}
+.showcase-img{position:relative;overflow:hidden}
+.showcase-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease;display:block}
+.showcase-img:hover img{transform:scale(1.05)}
+.showcase-panel{background:var(--bg);padding:52px 42px;display:flex;flex-direction:column;justify-content:center;border-left:1px solid var(--border)}
+.sp-eyebrow{font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.sp-eyebrow::before{content:'';width:18px;height:1.5px;background:var(--red)}
+.sp-title{font-family:var(--font-d);font-size:clamp(30px,3.4vw,50px);line-height:.92;margin-bottom:16px;text-wrap:balance}
+.sp-body{font-size:14px;color:var(--muted-lt);line-height:1.78;margin-bottom:26px}
+.sp-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:3px;padding:6px 11px;font-family:var(--font-c);font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-lt)}
+
+/* TRUST BAR */
+.trust-bar{background:var(--bg3);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:18px 48px}
+.trust-bar-in{max-width:1360px;margin:0 auto}
+.trust-bar p{font-family:var(--font-c);font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;text-align:center}
+.trust-logos{display:flex;justify-content:center;align-items:center;gap:32px;flex-wrap:wrap}
+.tl-item{font-family:var(--font-c);font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted-lt);display:flex;align-items:center;gap:6px}
+.tl-badge{background:var(--red);color:var(--text);font-size:8.5px;padding:2px 5px;border-radius:2px;letter-spacing:.1em}
+
+/* SERVICES */
+.services-layout{display:grid;grid-template-columns:1fr 1fr;min-height:600px;border:1px solid var(--border);border-radius:6px;overflow:hidden}
+.svc-list{border-right:1px solid var(--border)}
+.svc-item{display:flex;align-items:center;justify-content:space-between;padding:20px 28px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .2s;position:relative;gap:14px}
+.svc-item:last-child{border-bottom:none}
+.svc-item:hover,.svc-item.active{background:var(--bg3)}
+.svc-item.active::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--red);animation:fadeIn .2s ease}
+.svc-num{font-family:var(--font-d);font-size:26px;color:var(--bg4);line-height:1;min-width:34px;transition:color .25s}
+.svc-item.active .svc-num,.svc-item:hover .svc-num{color:var(--red)}
+.svc-info{flex:1}
+.svc-tag{font-family:var(--font-c);font-size:9.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.svc-name{font-family:var(--font-c);font-size:17px;font-weight:900;text-transform:uppercase;letter-spacing:.03em;color:var(--text)}
+.svc-arrow{font-size:15px;color:var(--muted);transition:color .22s,transform .22s}
+.svc-item:hover .svc-arrow,.svc-item.active .svc-arrow{color:var(--red);transform:translateX(5px)}
+.svc-preview{position:relative;overflow:hidden;background:var(--bg4)}
+.svc-preview-img{position:absolute;inset:0;opacity:0;transition:opacity .45s ease}
+.svc-preview-img.vis{opacity:1}
+.svc-preview-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.svc-preview-img.vis img{transform:scale(1.03)}
+.svc-overlay{position:absolute;bottom:0;left:0;right:0;padding:28px;background:linear-gradient(to top,rgba(7,7,7,.92) 0%,transparent 100%);opacity:0;transition:opacity .4s .1s}
+.svc-preview-img.vis .svc-overlay{opacity:1}
+.svc-overlay-title{font-family:var(--font-d);font-size:34px;line-height:.95;margin-bottom:8px}
+.svc-overlay-link{font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);display:inline-flex;align-items:center;gap:5px}
+.svc-default{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;transition:opacity .3s}
+.svc-default.hide{opacity:0;pointer-events:none}
+.svc-default-txt{font-family:var(--font-d);font-size:64px;color:var(--bg3);line-height:1;text-align:center}
+
+/* PILLARS */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border:1px solid var(--border);border-radius:6px;overflow:hidden}
+.pillar{background:var(--bg2);padding:38px 32px;transition:background .3s;position:relative;overflow:hidden}
+.pillar:hover{background:var(--bg3)}
+.pillar-ghost{position:absolute;top:8px;right:14px;font-family:var(--font-d);font-size:76px;color:var(--red);opacity:.07;line-height:1;pointer-events:none;transition:opacity .3s}
+.pillar:hover .pillar-ghost{opacity:.12}
+.pillar-icon{font-size:36px;margin-bottom:12px;display:block}
+.pillar-bar{width:34px;height:2px;background:var(--red);border-radius:1px;margin-bottom:12px;transition:width .3s}
+.pillar:hover .pillar-bar{width:52px}
+.pillar-t{font-family:var(--font-c);font-size:21px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px}
+.pillar-d{font-size:13.5px;color:var(--muted-lt);line-height:1.7}
+
+/* PROCESS */
+.proc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;position:relative}
+.proc-grid::before{content:'';position:absolute;top:38px;left:10%;right:10%;height:1.5px;background:linear-gradient(to right,var(--red),var(--bg4));z-index:0}
+.ps{text-align:center;padding:0 10px;position:relative;z-index:1}
+.ps-num{width:76px;height:76px;background:var(--bg2);border:1.5px solid var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:30px;color:var(--red);margin:0 auto 18px;
+  box-shadow:0 0 0 6px var(--bg2),0 0 20px var(--red-glow);transition:box-shadow .3s,transform .3s}
+.ps:hover .ps-num{box-shadow:0 0 0 6px var(--bg2),0 0 36px rgba(204,32,47,.45);transform:scale(1.06)}
+.ps-t{font-family:var(--font-c);font-size:14px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;margin-bottom:7px}
+.ps-d{font-size:12.5px;color:var(--muted);line-height:1.6}
+
+/* WHY OCC */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.why-list{list-style:none;display:flex;flex-direction:column;gap:20px;margin-top:26px}
+.wi{display:flex;gap:15px;align-items:flex-start}
+.wi-ic{width:44px;height:44px;min-width:44px;background:var(--red-glow);border:1px solid rgba(204,32,47,.3);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:20px;
+  transition:background .25s,border-color .25s,transform .25s}
+.wi:hover .wi-ic{background:rgba(204,32,47,.25);border-color:rgba(204,32,47,.5);transform:scale(1.08)}
+.wi-t{font-family:var(--font-c);font-size:15px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}
+.wi-d{font-size:13px;color:var(--muted-lt);line-height:1.65}
+.why-vis{border-radius:6px;overflow:hidden;border:1px solid var(--border);position:relative}
+.why-vis img{width:100%;display:block;transition:transform .8s ease}
+.why-vis:hover img{transform:scale(1.03)}
+.why-badge{position:absolute;bottom:16px;left:16px;background:var(--red);border-radius:4px;padding:9px 14px;font-family:var(--font-c);font-weight:900;font-size:13px;text-transform:uppercase;letter-spacing:.05em}
+
+/* GALLERY */
+.ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ba-card{border-radius:6px;overflow:hidden;border:1px solid var(--border);background:var(--bg3);position:relative;transition:transform .3s cubic-bezier(.16,1,.3,1),border-color .3s,box-shadow .3s}
+.ba-card:hover{transform:translateY(-6px);border-color:rgba(204,32,47,.35);box-shadow:0 24px 48px rgba(0,0,0,.5)}
+.ba-card img{width:100%;height:220px;object-fit:cover;display:block;transition:transform .6s ease}
+.ba-card:hover img{transform:scale(1.06)}
+.ba-lbl{position:absolute;top:11px;left:11px;background:var(--red);font-family:var(--font-c);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:2px}
+.ba-info{padding:14px 17px}
+.ba-info-t{font-family:var(--font-c);font-size:15px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:3px}
+.ba-info-d{font-size:12px;color:var(--muted)}
+
+/* CTA BAND */
+.cta-band{position:relative;overflow:hidden;background:var(--black);border-top:1.5px solid var(--red);border-bottom:1.5px solid var(--red)}
+.cta-band-bg{position:absolute;inset:0;z-index:0}
+.cta-band-bg img{width:100%;height:100%;object-fit:cover;opacity:.1;transition:transform .8s ease}
+.cta-band:hover .cta-band-bg img{transform:scale(1.04)}
+.cta-band-inner{position:relative;z-index:1;max-width:1360px;margin:0 auto;padding:80px 48px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+.cta-eyebrow{font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin-bottom:12px;display:flex;align-items:center;gap:9px}
+.cta-eyebrow::before{content:'';width:22px;height:1.5px;background:var(--red)}
+.cta-title{font-family:var(--font-d);font-size:clamp(44px,6vw,86px);line-height:.9;text-wrap:balance}
+.cta-sub{font-family:var(--font-c);font-size:15px;font-weight:600;letter-spacing:.04em;color:var(--muted-lt);margin-top:14px}
+.cta-actions{display:flex;flex-direction:column;gap:11px;align-items:flex-start;min-width:210px}
+
+/* TESTIMONIALS */
+.testi-top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;flex-wrap:wrap;gap:20px}
+.google-badge{display:inline-flex;align-items:center;gap:9px;background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:11px 17px;font-family:var(--font-c);font-weight:700;font-size:12.5px;letter-spacing:.04em}
+.google-badge .stars{color:#ffc107;font-size:15px;letter-spacing:2px}
+.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.tc{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:34px 30px;position:relative;transition:border-color .25s,transform .25s,box-shadow .25s;display:flex;flex-direction:column}
+.tc:hover{border-color:rgba(204,32,47,.28);transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.tc-big{grid-column:1;grid-row:1/3}
+.tq-mark{font-family:var(--font-d);font-size:84px;color:var(--red);line-height:.65;margin-bottom:12px;opacity:.32}
+.tc-stars{color:#ffc107;font-size:14px;letter-spacing:2px;margin-bottom:12px}
+.tc-txt{font-size:14.5px;color:var(--muted-lt);line-height:1.8;font-style:italic;flex:1}
+.tc-txt-lg{font-size:16.5px;line-height:1.78}
+.tc-auth{margin-top:22px;display:flex;align-items:center;gap:9px;font-family:var(--font-c);font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.tc-auth::before{content:'';width:22px;height:2px;background:var(--red)}
+.tc-loc{color:var(--muted);font-weight:400}
+
+/* AREAS */
+.areas-g{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:34px}
+.area-p{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:10px 12px;font-family:var(--font-c);font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted-lt);display:flex;align-items:center;gap:6px;transition:border-color .2s,color .2s,background .2s,transform .2s}
+.area-p:hover{border-color:var(--red);color:var(--text);background:var(--bg4);transform:translateY(-2px)}
+.area-p::before{content:'›';color:var(--red);font-size:15px}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:3px}
+.fi{border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:border-color .2s}
+.fi.open{border-color:rgba(204,32,47,.3)}
+.fq{padding:16px 20px;font-family:var(--font-c);font-size:16px;font-weight:700;letter-spacing:.03em;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;background:var(--bg3);transition:background .2s;user-select:none}
+.fq:hover{background:var(--bg4)}
+.fq .arr{font-size:15px;color:var(--red);transition:transform .3s;flex-shrink:0}
+.fi.open .fq .arr{transform:rotate(180deg)}
+.fa{max-height:0;overflow:hidden;transition:max-height .38s ease;background:var(--bg2)}
+.fa-in{padding:0 20px;font-size:14px;color:var(--muted-lt);line-height:1.75}
+.fi.open .fa{max-height:300px}
+.fi.open .fa-in{padding:16px 20px}
+
+/* BLOG */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.bc{background:var(--bg3);border:1px solid var(--border);border-radius:6px;overflow:hidden;transition:border-color .25s,transform .25s,box-shadow .25s;display:flex;flex-direction:column}
+.bc:hover{border-color:rgba(204,32,47,.35);transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,.45)}
+.bc-img{height:164px;overflow:hidden;background:var(--bg4)}
+.bc-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s;display:block}
+.bc:hover .bc-img img{transform:scale(1.07)}
+.bc-body{padding:17px;flex:1;display:flex;flex-direction:column}
+.bc-cat{font-family:var(--font-c);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:5px}
+.bc-meta{font-size:10px;color:var(--muted);font-family:var(--font-c);letter-spacing:.05em;text-transform:uppercase;margin-bottom:6px}
+.bc-t{font-family:var(--font-c);font-size:16px;font-weight:900;text-transform:uppercase;letter-spacing:.03em;margin-bottom:7px;line-height:1.2;flex:1}
+.bc-d{font-size:12px;color:var(--muted-lt);line-height:1.65}
+.bc-lnk{display:inline-flex;align-items:center;gap:5px;font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--red);margin-top:11px;transition:gap .2s}
+.bc-lnk:hover{gap:9px}
+
+/* CONTACT */
+.contact-g{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.ci-block{display:flex;flex-direction:column;gap:18px;margin-top:20px}
+.ci-item{display:flex;gap:13px;align-items:flex-start}
+.ci-ic{width:42px;height:42px;min-width:42px;background:var(--red);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:18px;transition:transform .25s}
+.ci-item:hover .ci-ic{transform:scale(1.1)}
+.ci-lbl{font-family:var(--font-c);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.ci-val{font-family:var(--font-c);font-size:17px;font-weight:700}
+.ci-val a:hover{color:var(--red);transition:color .2s}
+.big-form{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:30px}
+.big-form-t{font-family:var(--font-d);font-size:30px;margin-bottom:4px}
+.big-form-s{font-size:12.5px;color:var(--muted);margin-bottom:18px}
+
+/* FOOTER */
+footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48px 26px}
+.footer-in{max-width:1360px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:250px 1fr 1fr 1fr 1fr;gap:34px;margin-bottom:42px}
+.fl img{height:46px;width:auto;margin-bottom:11px}
+.fl-tag{font-size:12.5px;color:var(--muted);line-height:1.65;margin-bottom:15px}
+.fl-soc{display:flex;gap:6px}
+.fs-a{width:31px;height:31px;background:var(--bg3);border:1px solid var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:700;transition:background .2s,border-color .2s,transform .2s}
+.fs-a:hover{background:var(--red);border-color:var(--red);transform:translateY(-2px)}
+.fc-t{font-family:var(--font-c);font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:13px}
+.fl-links{list-style:none;display:flex;flex-direction:column;gap:7px}
+.fl-links a{font-size:12px;color:var(--muted-lt);transition:color .2s,padding-left .2s;display:flex;align-items:center;gap:4px}
+.fl-links a::before{content:'›';color:var(--red);font-size:13px}
+.fl-links a:hover{color:var(--text);padding-left:4px}
+.footer-bot{border-top:1px solid var(--border);padding-top:18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:11px;color:var(--muted);font-family:var(--font-c);letter-spacing:.04em}
+.footer-bot a{color:var(--muted);transition:color .2s}
+.footer-bot a:hover{color:var(--red)}
+
+/* STICKY MOB */
+.sticky-mob{display:none;position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--black);border-top:1.5px solid var(--red);padding:9px 13px;gap:8px}
+.sticky-mob a{flex:1;text-align:center;padding:11px;border-radius:3px;font-family:var(--font-c);font-size:13px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.s-call{background:var(--red);color:var(--text)}
+.s-quote{background:var(--bg3);color:var(--text);border:1px solid var(--border)}
+
+
+/* ── PROCESS TIMELINE (pattern adapted from Relume Timeline 7) ───── */
+.pstl{max-width:940px;margin:44px auto 0;display:grid;grid-template-columns:34px 1fr;gap:0 26px}
+.pstl-rail{position:relative;width:3px;justify-self:center;height:100%;background:rgba(255,255,255,.10);border-radius:2px}
+.pstl-fill{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(var(--red),var(--red-dark));
+  border-radius:2px;transform:scaleY(0);transform-origin:top;will-change:transform}
+.pspstl-items{display:flex;flex-direction:column;gap:44px}
+.pstl-item{position:relative;padding-bottom:2px}
+.pspstl-dot{position:absolute;left:-40px;top:7px;width:13px;height:13px;border-radius:50%;
+  background:var(--bg3);border:2px solid rgba(255,255,255,.18);
+  box-shadow:0 0 0 6px var(--bg);transition:background .3s ease,border-color .3s ease,transform .3s ease}
+.pstl-item.on .pspstl-dot{background:var(--red);border-color:var(--red);transform:scale(1.18)}
+.pstl-num{font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:5px;transition:color .3s ease}
+.pstl-item.on .pstl-num{color:var(--red)}
+.pstl-t{font-family:var(--font-d);font-size:clamp(26px,3.2vw,40px);line-height:1;margin-bottom:8px;color:var(--text)}
+.pstl-d{color:var(--muted-lt);max-width:56ch;margin:0}
+@media(max-width:700px){
+  .pstl{grid-template-columns:20px 1fr;gap:0 18px}
+  .pspstl-dot{left:-31px;top:5px;width:11px;height:11px;box-shadow:0 0 0 5px var(--bg)}
+  .pspstl-items{gap:34px}
+}
+
+/* SCROLL REVEAL */
+.rev{opacity:1}
+
+.stagger .rev:nth-child(1){transition-delay:.05s}
+.stagger .rev:nth-child(2){transition-delay:.15s}
+.stagger .rev:nth-child(3){transition-delay:.25s}
+.stagger .rev:nth-child(4){transition-delay:.35s}
+.stagger .rev:nth-child(5){transition-delay:.45s}
+
+/* ALL AREAS */
+.all-areas{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.city-a{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:15px 13px;display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center;transition:all .25s cubic-bezier(.16,1,.3,1);text-decoration:none}
+.city-a:hover{border-color:var(--red);background:rgba(204,32,47,.07);transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,0,0,.4)}
+.city-a .ci{font-size:19px}
+.city-a .cn{font-family:var(--font-c);font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;color:var(--text)}
+.city-a .cc{font-family:var(--font-c);font-size:9.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.city-a-red{background:var(--red)!important;border-color:var(--red)!important}
+.city-a-red:hover{background:var(--red-dark)!important;border-color:var(--red-dark)!important}
+
+/* RESPONSIVE */
+@media(max-width:1200px){
+  .hero-inner{grid-template-columns:1fr;padding:52px 28px}
+  .hform{max-width:520px}
+  .services-layout{grid-template-columns:1fr}
+  .svc-preview{min-height:300px}
+  .svc-list{border-right:none;border-bottom:1px solid var(--border)}
+  .blog-grid{grid-template-columns:repeat(2,1fr)}
+  .testi-grid{grid-template-columns:1fr}
+  .tc-big{grid-column:auto;grid-row:auto}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .all-areas{grid-template-columns:repeat(4,1fr)}
+  .areas-g{grid-template-columns:repeat(4,1fr)}
+  .stats-in{grid-template-columns:repeat(3,1fr)}
+  .ba-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-g{grid-template-columns:1fr}
+  .cta-band-inner{grid-template-columns:1fr}
+  .cta-actions{flex-direction:row}
+  .showcase-grid{grid-template-columns:1fr 1fr}
+  .showcase-grid>.showcase-img:first-child{display:none}
+  .why-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  nav{padding:0 18px}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .topbar{display:none}
+  .sec{padding:54px 18px}
+  .stats-strip{padding:14px 18px}
+  .stats-in{grid-template-columns:repeat(3,1fr)}
+  .hero-inner{padding:34px 18px}
+  .proc-grid{grid-template-columns:repeat(2,1fr)}
+  .proc-grid::before{display:none}
+  .blog-grid{grid-template-columns:1fr}
+  .ba-grid{grid-template-columns:1fr}
+  .areas-g{grid-template-columns:repeat(2,1fr)}
+  .all-areas{grid-template-columns:repeat(2,1fr)}
+  .footer-top{grid-template-columns:1fr}
+  .footer-bot{flex-direction:column;text-align:center}
+  .sticky-mob{display:flex}
+  body{padding-bottom:64px}
+  .frow{grid-template-columns:1fr}
+  .trust-logos{gap:14px}
+  .testi-grid{grid-template-columns:1fr}
+  .cta-band-inner{padding:52px 18px}
+  .showcase-grid{grid-template-columns:1fr}
+  .showcase-grid>.showcase-img{display:none}
+  .pillars{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  .rev{opacity:1;transform:none}
+  .ht i span{transform:none}
+  .st-n{opacity:1;transform:none;transition:none}
+  *{animation-duration:.01ms!important;animation-delay:.01ms!important;transition-duration:.01ms!important}
+}
+.fv-hero{background:linear-gradient(135deg,#cc202f 0%,#cc202f 60%,#e03446 100%);padding:48px 0 36px;position:relative;overflow:hidden}
+.fv-hero::after{position:absolute;right:-10px;top:50%;transform:translateY(-50%);font-family:var(--cond);font-size:180px;font-weight:900;color:rgba(255,255,255,.03);line-height:1;pointer-events:none}
+.fv-hero .wrap{position:relative;z-index:1;text-align:center}
+.fv-eyebrow{font-size:12px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.fv-h1{font-family:var(--cond);font-size:40px;font-weight:900;color:#fff;line-height:1.08;margin-bottom:14px;letter-spacing:.3px}
+.fv-sub{font-size:16px;color:rgba(255,255,255,.75);max-width:600px;margin:0 auto;line-height:1.65}
+
+.fv-picker-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+.fv-pill{border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.06);color:#fff;font-family:var(--font);font-size:13px;font-weight:700;padding:9px 18px;border-radius:24px;cursor:pointer;transition:all .15s;white-space:nowrap}
+.fv-pill:hover:not(.fv-pill-disabled){border-color:var(--gold);background:rgba(204,32,47,.14)}
+.fv-pill.fv-pill-active{background:var(--gold);border-color:var(--gold);color:#070707}
+.fv-pill-disabled{opacity:.45;cursor:not-allowed}
+.fv-pill-badge{font-size:9px;font-weight:800;background:rgba(255,255,255,.18);padding:2px 6px;border-radius:8px;margin-left:6px;letter-spacing:.4px}
+
+.fv-main{padding:36px 0 56px;background:var(--gray-50)}
+.fv-layout{display:grid;grid-template-columns:1fr;gap:28px}
+
+.fv-stage-card{background:#100f0f;border-radius:var(--rl);padding:16px;box-shadow:var(--shm)}
+.fv-stage{position:relative;width:100%;aspect-ratio:4/3;border-radius:10px;overflow:hidden;touch-action:none;user-select:none;background:#070707}
+.fv-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.fv-after-wrap{position:absolute;inset:0;overflow:hidden;will-change:clip-path}
+.fv-after-wrap .fv-img{transition:opacity .15s ease}
+.fv-rendering-indicator{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);background:rgba(7,7,7,.88);color:#fff;font-size:12px;font-weight:700;padding:7px 16px;border-radius:20px;z-index:6;opacity:0;pointer-events:none;transition:opacity .15s ease}
+.fv-rendering-indicator.fv-rendering-show{opacity:1}
+
+/* ---- upload + corner calibration ---- */
+.fv-pill-upload{display:inline-flex;align-items:center;gap:6px}
+.fv-calibrate{position:absolute;inset:0;z-index:20;touch-action:none;display:flex;align-items:center;justify-content:center;background:#000;overflow:hidden}
+.fv-calibrate-img{max-width:100%;max-height:100%;width:auto;height:auto;display:block;pointer-events:none}
+.fv-calibrate-svg{position:absolute;left:0;top:0;width:0;height:0;pointer-events:none}
+.fv-calibrate-handle{position:absolute;left:0;top:0;width:28px;height:28px;margin:-14px 0 0 -14px;border-radius:50%;background:var(--gold);border:3px solid #070707;box-shadow:0 2px 8px rgba(0,0,0,.4);cursor:grab;touch-action:none;z-index:21}
+.fv-calibrate-handle:active{cursor:grabbing}
+.fv-calibrate-hint{position:absolute;top:10px;left:50%;transform:translateX(-50%);background:rgba(7,7,7,.88);color:#fff;font-size:12px;font-weight:700;padding:7px 16px;border-radius:20px;white-space:nowrap}
+.fv-privacy-note{text-align:center;font-size:12px;color:var(--gray-500);margin-top:10px}
+.fv-disclaimer{margin-top:16px;padding:12px 16px;border:1px solid var(--gray-200);border-left:3px solid var(--gold);border-radius:8px;background:var(--gray-50)}
+.fv-disclaimer p{font-size:12px;line-height:1.6;color:var(--gray-600);margin:0}
+.fv-disclaimer strong{color:var(--navy)}
+.fv-divider{position:absolute;top:0;bottom:0;width:0;border-left:3px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.25);cursor:ew-resize;z-index:5;touch-action:none}
+.fv-divider::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:#fff;box-shadow:var(--shm);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23134db4' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 7l-5 5 5 5M16 7l5 5-5 5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:center}
+.fv-tag{position:absolute;top:12px;padding:6px 12px;border-radius:20px;font-size:11px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:#fff;z-index:3;pointer-events:none}
+.fv-tag-before{left:12px;background:rgba(0,0,0,.55)}
+.fv-tag-after{right:12px;background:rgba(204,32,47,.9)}
+
+.fv-toggle-row{display:flex;gap:8px;justify-content:center;margin-top:14px;flex-wrap:wrap}
+.fv-toggle-btn{border:1.5px solid rgba(255,255,255,.25);background:transparent;color:#fff;font-family:var(--font);font-weight:700;font-size:13px;padding:9px 20px;border-radius:24px;cursor:pointer;transition:all .15s}
+.fv-toggle-btn.fv-toggle-active{background:var(--gold);border-color:var(--gold);color:#070707}
+
+.fv-current-color{text-align:center;margin-top:18px}
+.fv-current-label{font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--gray-500)}
+.fv-current-name{font-family:var(--cond);font-size:30px;font-weight:900;color:var(--navy);margin-top:2px}
+
+.fv-cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+.fv-cta-card{border-radius:var(--rl);padding:24px;text-align:center}
+.fv-cta-primary{background:linear-gradient(135deg,var(--navy-dark),var(--navy));color:#fff}
+.fv-cta-primary h3{font-family:var(--cond);font-size:22px;font-weight:900;margin-bottom:6px;letter-spacing:.3px}
+.fv-cta-primary p{font-size:14px;color:rgba(255,255,255,.75);margin-bottom:16px;line-height:1.6}
+.fv-btn-gold{display:inline-block;background:var(--gold);color:#070707;font-weight:800;font-size:15px;padding:14px 28px;border-radius:var(--r);text-decoration:none;border:none;cursor:pointer;font-family:var(--font)}
+.fv-cta-secondary{background:#fff;border:1.5px solid var(--gray-200)}
+.fv-cta-secondary h3{font-family:var(--cond);font-size:22px;font-weight:900;color:var(--navy);margin-bottom:6px}
+.fv-cta-secondary p{font-size:14px;color:var(--gray-600);margin-bottom:16px;line-height:1.6}
+.fv-btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1.5px solid var(--navy);color:var(--navy);font-weight:700;font-size:14px;padding:12px 22px;border-radius:var(--r);text-decoration:none;cursor:pointer;font-family:var(--font)}
+@media(max-width:700px){.fv-cta-grid{grid-template-columns:1fr}}
+
+.fv-share-row{display:flex;justify-content:center;gap:10px;margin-top:16px}
+.fv-share-btn{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--gray-200);color:var(--gray-700);font-weight:700;font-size:13px;padding:10px 18px;border-radius:24px;cursor:pointer;font-family:var(--font)}
+.fv-share-btn:hover{border-color:var(--navy);color:var(--navy)}
+
+.fv-section-head{text-align:center;max-width:640px;margin:52px auto 24px}
+.fv-section-eyebrow{font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--navy);margin-bottom:8px}
+.fv-section-title{font-family:var(--cond);font-size:30px;font-weight:900;color:var(--gray-800)}
+
+.fv-color-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.fv-color-card{position:relative;background:#fff;border:2px solid var(--gray-200);border-radius:var(--rl);overflow:hidden;cursor:pointer;transition:transform .15s,border-color .15s;text-align:left}
+.fv-color-card:hover{transform:translateY(-3px);border-color:var(--navy)}
+.fv-color-card.fv-color-selected{border-color:var(--gold);box-shadow:0 0 0 2px var(--gold)}
+.fv-color-card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.fv-color-info{padding:10px 12px}
+.fv-color-name{font-size:13px;font-weight:800;color:var(--gray-800)}
+.fv-color-selected .fv-color-name{color:var(--navy)}
+.fv-fav-btn{position:absolute;top:8px;right:8px;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.92);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:15px;z-index:2;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.fv-fav-btn.fv-fav-active{background:var(--gold)}
+.fv-selected-check{position:absolute;bottom:8px;right:8px;width:22px;height:22px;border-radius:50%;background:var(--gold);color:#070707;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;z-index:2}
+@media(max-width:900px){.fv-color-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:560px){.fv-color-grid{grid-template-columns:repeat(3,1fr);gap:10px}}
+
+.fv-favorites{margin-top:52px;padding:28px;background:#fff;border:1.5px dashed var(--gray-300);border-radius:var(--rl)}
+.fv-favorites-empty{font-size:14px;color:var(--gray-500);text-align:center;padding:12px 0}
+.fv-fav-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:480px;margin:0 auto}
+.fv-fav-item{text-align:center}
+.fv-fav-item img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r);display:block;margin-bottom:6px;cursor:pointer;border:2px solid transparent}
+.fv-fav-item img:hover{border-color:var(--navy)}
+.fv-fav-item div{font-size:12px;font-weight:700;color:var(--gray-700)}
+
+.fv-internal-links{margin-top:52px;padding:24px;background:var(--gray-100);border-radius:var(--rl);font-size:14px;color:var(--gray-600);line-height:1.8}
+.fv-internal-links a{color:var(--navy);font-weight:600}
+
+.fv-faq-wrap{max-width:800px;margin:0 auto}
+
+.fv-toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:#070707;color:#fff;font-size:14px;font-weight:600;padding:12px 22px;border-radius:24px;box-shadow:var(--shm);opacity:0;pointer-events:none;transition:all .25s;z-index:500}
+.fv-toast.fv-toast-show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media(max-width:640px){
+  .fv-h1{font-size:30px}
+  .fv-sub{font-size:14px}
+  .fv-current-name{font-size:24px}
+  .fv-stage-card{padding:8px;border-radius:var(--r)}
+}
+
+/* ---- visualizer: OCC dark theme + layout shims ---- */
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+:root{
+  --navy:#cc202f;--navy-dark:#a01824;
+  --gold:#edeae5;--gold-light:#ffffff;
+  --gray-50:#0d0c0c;--gray-100:#141212;--gray-200:rgba(255,255,255,.10);
+  --gray-300:rgba(255,255,255,.17);--gray-400:#6f6a66;--gray-500:#8a8480;
+  --gray-600:#a5a09b;--gray-700:#c9c5c0;--gray-800:#edeae5;
+  --font:'Barlow',sans-serif;--cond:'Barlow Condensed',sans-serif;
+  --r:6px;--rl:12px;--sh:0 2px 12px rgba(0,0,0,.5);--shm:0 10px 34px rgba(0,0,0,.6);
+}
+body{background:var(--bg);color:var(--text)}
+.fv-hero{background:linear-gradient(135deg,#191515 0%,#0c0b0b 58%,#171011 100%);
+  border-bottom:1px solid var(--border)}
+.fv-hero::after{color:rgba(255,255,255,.028)}
+.fv-eyebrow{color:var(--red)}
+.fv-main{background:var(--bg)}
+.fv-cta-secondary{background:var(--bg2);border-color:var(--border)}
+.fv-color-card{background:var(--bg2);border-color:var(--border)}
+.fv-color-card:hover{border-color:var(--red)}
+.fv-share-btn{background:var(--bg2);border-color:var(--border);color:var(--muted-lt)}
+.fv-share-btn:hover{border-color:var(--red);color:var(--text)}
+.fv-favorites{background:var(--bg2);border-color:rgba(255,255,255,.18)}
+.fv-fav-btn{background:rgba(10,10,10,.84)}
+.fv-internal-links{background:var(--bg2);color:var(--muted-lt)}
+.fv-internal-links a{color:var(--red)}
+.fv-disclaimer{background:var(--bg2);border:1px solid var(--border)}
+.fv-section-title,.fv-current-name{color:var(--text)}
+.fv-color-name{color:var(--muted-lt)}
+.fv-color-selected .fv-color-name{color:var(--text)}
+.fv-toast{background:var(--red)}
+.fv-btn-gold{background:var(--red);color:#fff}
+.fv-btn-gold:hover{background:var(--red-dark)}
+.fv-btn-outline{border-color:rgba(255,255,255,.28);color:var(--text)}
+.fv-btn-outline:hover{border-color:var(--red);color:var(--red)}
+.fv-privacy-note{color:var(--muted)}
+.acc-body p{color:var(--muted-lt)}
+.fv-breadcrumb{background:var(--bg2);border-bottom:1px solid var(--border);padding:10px 0;
+  font-size:13px;color:var(--muted)}
+.fv-breadcrumb a{color:var(--red);text-decoration:none}
+.fv-breadcrumb span{margin:0 6px;color:var(--muted)}
+@media(prefers-reduced-motion:reduce){
+  .fv-color-card,.fv-color-card:hover{transition:none;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-l">
+    <span>📞 <a href="tel:4174026821">417.402.6821</a></span>
+    <span style="opacity:.5">|</span>
+    <span>✉ <a href="mailto:OzarksConcreteCoatings@gmail.com">OzarksConcreteCoatings@gmail.com</a></span>
+  </div>
+  <div class="topbar-r">
+    <span style="opacity:.8">SW Missouri's #1 Rated Floor Contractor &nbsp;·&nbsp; Mon–Fri 9am–5pm</span>
+    <div class="t-social">
+      <a href="https://www.facebook.com/ozarksconcretecoatings" target="_blank" rel="noopener">f</a>
+      <a href="https://www.instagram.com/ozarksconcretecoatings/" target="_blank" rel="noopener">ig</a>
+      <a href="https://www.tiktok.com/@ozarksconcretecoatings" target="_blank" rel="noopener">tt</a>
+      <a href="https://maps.app.goo.gl/nGC9TuSDfHgqtx8Y9" target="_blank" rel="noopener">G</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo"><img src="Logo_with_number.png" alt="Ozarks Concrete Coatings" width="180" height="46"/></a>
+  <ul class="nav-links">
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li class="nav-drop"><a href="/residential.html">Residential ▾</a>
+      <div class="nav-drop-menu">
+        <a href="/garage-floors.html">Epoxy Garage Floors</a>
+        <a href="/basement-floors.html">Basement Floors</a>
+        <a href="/metallic-epoxy.html">Metallic Epoxy</a>
+        <a href="/mancave-shop.html">ManCaves &amp; Shops</a>
+        <a href="/patio-coatings.html">Patio &amp; Outdoor</a>
+        <a href="/floor-maintenance.html" style="color:var(--red)!important">Floor Maintenance Plans</a>
+      </div>
+    </li>
+    <li class="nav-drop"><a href="/commercial.html">Commercial ▾</a>
+      <div class="nav-drop-menu">
+        <a href="/commercial.html">Commercial Flooring</a>
+        <a href="/churches-schools.html">Churches &amp; Schools</a>
+        <a href="/concrete-repair.html">Concrete Repair</a>
+      </div>
+    </li>
+    <li class="nav-drop"><a href="/service-areas.html">Service Areas ▾</a>
+      <div class="nav-drop-menu nav-drop-wide">
+        <a href="/springfield-mo.html">Springfield</a><a href="/nixa-mo.html">Nixa</a>
+        <a href="/ozark-mo.html">Ozark</a><a href="/republic-mo.html">Republic</a>
+        <a href="/branson-mo.html">Branson</a><a href="/joplin-mo.html">Joplin</a>
+        <a href="/carthage-mo.html">Carthage</a><a href="/webb-city-mo.html">Webb City</a>
+        <a href="/neosho-mo.html">Neosho</a><a href="/monett-mo.html">Monett</a>
+        <a href="/aurora-mo.html">Aurora</a><a href="/willard-mo.html">Willard</a>
+        <a href="/bolivar-mo.html">Bolivar</a><a href="/lebanon-mo.html">Lebanon</a>
+        <a href="/hollister-mo.html">Hollister</a>
+        <a href="/service-areas.html" style="grid-column:1/-1;border-top:1px solid var(--border);margin-top:4px;padding-top:9px;color:var(--red)!important">View All 50 Areas →</a>
+      </div>
+    </li>
+    <li><a href="/gallery.html">Gallery</a></li>
+    <li><a href="/colors.html">Colors</a></li>
+    <li><a href="/floor-visualizer.html">Visualizer</a></li>
+    <li><a href="/blog.html">Blog</a></li>
+    <li><a href="/reviews.html">Reviews</a></li>
+    <li><a href="/contact.html" class="nav-cta">Free Quote</a></li>
+  </ul>
+  <div class="hamburger" id="hbtn" aria-label="Menu"><span></span><span></span><span></span></div>
+</nav>
+<div class="mob-menu" id="mmenu">
+  <a href="/index.html">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/residential.html">Residential</a>
+  <a href="/garage-floors.html" style="padding-left:26px;font-size:13.5px;color:var(--muted)">↳ Garage Floors</a>
+  <a href="/basement-floors.html" style="padding-left:26px;font-size:13.5px;color:var(--muted)">↳ Basement Floors</a>
+  <a href="/metallic-epoxy.html" style="padding-left:26px;font-size:13.5px;color:var(--muted)">↳ Metallic Epoxy</a>
+  <a href="/mancave-shop.html" style="padding-left:26px;font-size:13.5px;color:var(--muted)">↳ ManCaves &amp; Shops</a>
+  <a href="/patio-coatings.html" style="padding-left:26px;font-size:13.5px;color:var(--muted)">↳ Patio &amp; Outdoor</a>
+  <a href="/commercial.html">Commercial</a>
+  <a href="/service-areas.html">Service Areas (50 Cities)</a>
+  <a href="/gallery.html">Gallery</a>
+  <a href="/colors.html">Colors</a>
+  <a href="/floor-visualizer.html">Floor Visualizer</a>
+  <a href="/blog.html">Blog</a>
+  <a href="/reviews.html">Reviews</a>
+  <a href="/instant-quote.html" style="color:var(--red)">⚡ Instant Price Calculator</a>
+  <a href="/contact.html">Get Free Quote →</a>
+</div>
+<main>
+<input type="file" id="fvUploadInput" accept="image/*" capture="environment" style="display:none">
+<div class="fv-breadcrumb"><div class="wrap"><a href="/">Home</a><span>›</span><strong>Floor Visualizer</strong></div></div>
+
+<!-- HERO -->
+<section class="fv-hero">
+  <div class="wrap">
+    <div class="fv-eyebrow">Ozarks Concrete Coatings — Interactive Floor Visualizer</div>
+    <h1 class="fv-h1">See Your New Floor Before We Install It</h1>
+    <p class="fv-sub">Explore our most popular floor finishes and see how each color can transform your garage, basement, or shop.</p>
+
+    <!-- ROOM SELECTOR (rendered from ROOMS config) -->
+    <div style="margin-top:30px">
+      <div style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:10px">Choose Your Space</div>
+      <div class="fv-picker-row" id="fvRoomPicker"></div>
+    </div>
+
+    <!-- FLOOR SYSTEM SELECTOR (rendered from FLOOR_SYSTEMS config) -->
+    <div style="margin-top:18px">
+      <div style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:10px">Choose Your Floor</div>
+      <div class="fv-picker-row" id="fvSystemPicker"></div>
+    </div>
+  </div>
+</section>
+
+<!-- VISUALIZER STAGE -->
+<section class="fv-main">
+  <div class="wrap">
+    <div class="fv-layout">
+      <div>
+        <div class="fv-stage-card">
+          <div class="fv-stage" id="fvStage">
+            <img class="fv-img" id="fvImgBefore" src="" alt="" loading="eager">
+            <div class="fv-tag fv-tag-before">Before</div>
+            <div class="fv-after-wrap" id="fvAfterWrap">
+              <img class="fv-img" id="fvImgAfter" src="" alt="" loading="eager">
+            </div>
+            <div class="fv-tag fv-tag-after">After</div>
+            <div class="fv-divider" id="fvDivider"></div>
+            <div class="fv-rendering-indicator" id="fvRenderingIndicator">Rendering your floor…</div>
+
+            <!-- CALIBRATION OVERLAY: shown right after a customer uploads their own photo -->
+            <div class="fv-calibrate" id="fvCalibrate" style="display:none">
+              <img class="fv-calibrate-img" id="fvCalibrateImg" src="" alt="Your uploaded photo — drag the points onto the edge of your floor">
+              <svg class="fv-calibrate-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon id="fvCalibratePoly" points="" fill="rgba(235,251,59,.28)" stroke="#ebfb3b" stroke-width="0.6" vector-effect="non-scaling-stroke"></polygon>
+              </svg>
+              <div id="fvHandles"></div>
+              <div class="fv-calibrate-hint" id="fvCalibrateHint">Drag the points onto your floor's edges</div>
+            </div>
+          </div>
+          <div class="fv-toggle-row" id="fvToggleRow">
+            <button type="button" class="fv-toggle-btn" id="fvBtnBefore" onclick="fvSetReveal(0)">Before</button>
+            <button type="button" class="fv-toggle-btn" id="fvBtnSplit" onclick="fvSetReveal(50)">Split</button>
+            <button type="button" class="fv-toggle-btn" id="fvBtnAfter" onclick="fvSetReveal(100)">After</button>
+          </div>
+          <div class="fv-toggle-row" id="fvCalibrateRow" style="display:none">
+            <button type="button" class="fv-toggle-btn" onclick="fvAddCalibrationPoint()">+ Add Point</button>
+            <button type="button" class="fv-toggle-btn" onclick="fvRemoveCalibrationPoint()">− Remove Point</button>
+            <button type="button" class="fv-toggle-btn" onclick="fvResetCalibration()">↺ Reset</button>
+            <button type="button" class="fv-toggle-btn fv-toggle-active" onclick="fvConfirmCalibration()">✓ Looks Good — Show My Floor</button>
+            <button type="button" class="fv-toggle-btn" onclick="fvCancelCalibration()">Cancel</button>
+          </div>
+          <p class="fv-privacy-note" id="fvPrivacyNote" style="display:none">🔒 Your photo stays on your device — nothing is uploaded or stored anywhere.</p>
+        </div>
+
+        <div class="fv-disclaimer">
+          <p><strong>Preview only — not an exact match.</strong> This is a digital simulation built from photos of our real flake blends. Your finished floor will differ: screen colors vary by device and brightness, every room lights differently, and the concrete underneath affects the final look. Flake is hand-broadcast, so no two floors are identical. Use this to narrow down a color direction, then confirm your choice with a physical sample at your free on-site quote. Nothing shown here is a quote or a guarantee of appearance.</p>
+        </div>
+
+        <div class="fv-current-color">
+          <div class="fv-current-label">Your Floor</div>
+          <div class="fv-current-name" id="fvCurrentName">—</div>
+        </div>
+
+        <div class="fv-share-row">
+          <button type="button" class="fv-share-btn" onclick="fvShare()">🔗 Share This Floor</button>
+          <button type="button" class="fv-fav-btn" style="position:static;width:auto;height:auto;padding:10px 18px;border-radius:24px;border:1.5px solid var(--gray-200);gap:8px;display:inline-flex;align-items:center" id="fvSaveFavBtn" onclick="fvToggleCurrentFavorite()">🤍 Save This Color</button>
+        </div>
+
+        <div class="fv-cta-grid">
+          <div class="fv-cta-card fv-cta-primary">
+            <h3>Love This Floor?</h3>
+            <p>See what a professionally installed floor like this could cost in your space.</p>
+            <a href="/instant-quote.html" id="fvQuoteBtn" class="fv-btn-gold">Get My Instant Price →</a>
+          </div>
+          <div class="fv-cta-card fv-cta-secondary">
+            <h3>Not Sure Which Color?</h3>
+            <p>Have one of our coating experts help you choose the right finish for your space.</p>
+            <a href="tel:4174026821" class="fv-btn-outline" onclick="fvTrack('floor_visualizer_expert_call_clicked',{color:fvState.color.slug})">📞 417.402.6821</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLOR SELECTOR -->
+    <div class="fv-section-head">
+      <div class="fv-section-eyebrow">Flake Floor Colors</div>
+      <h2 class="fv-section-title">Pick a Blend to Preview</h2>
+    </div>
+    <div class="fv-color-grid" id="fvColorGrid"></div>
+
+    <!-- FAVORITES -->
+    <div class="fv-favorites">
+      <div class="fv-section-eyebrow" style="text-align:center">Your Favorites</div>
+      <div id="fvFavoritesWrap"><div class="fv-favorites-empty">Tap "Save This Color" above to keep up to 3 favorites for this session.</div></div>
+    </div>
+
+    <!-- INTERNAL LINKS -->
+    <div class="fv-internal-links">
+      Ready to go further? Browse the full <a href="/colors.html">epoxy flake color catalog</a>, check out real <a href="/gallery.html">finished floor photos</a> in our project gallery, learn more about our <a href="/type-flake.html">flake system floors</a>, or get a real ballpark with the <a href="/instant-quote.html">epoxy flooring cost calculator</a>. Serving <a href="/area-jefferson-city.html">Jefferson City</a>, <a href="/area-columbia.html">Columbia</a>, and <a href="/area-lake-ozarks.html">Lake of the Ozarks</a>, MO.
+    </div>
+
+    <!-- FAQ -->
+    <div class="fv-section-head">
+      <div class="fv-section-eyebrow">Common Questions</div>
+      <h2 class="fv-section-title">Floor Visualizer FAQ</h2>
+    </div>
+    <div class="fv-faq-wrap">
+      <div class="accordion">
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" onclick="toggleAcc(this)" aria-expanded="false">
+            <span class="acc-q">Can I see different epoxy colors before choosing?</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body"><p>Yes. The Floor Visualizer above lets you preview our most popular flake color blends on a real garage floor photo before you request a quote. For an even truer look, we also bring physical flake samples to every free on-site quote.</p></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" onclick="toggleAcc(this)" aria-expanded="false">
+            <span class="acc-q">How accurate are the floor visualizer colors?</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body"><p>The visualizer uses real photos of our actual flake color blends, so it gives a strong sense of the overall look, contrast, and tone. That said, screen colors vary by device and lighting, so it's a guide — not a perfect match. Bringing physical samples to your free quote is still the most accurate way to see a color in your space.</p></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" onclick="toggleAcc(this)" aria-expanded="false">
+            <span class="acc-q">Will my finished floor look exactly like the visualizer?</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body"><p>It will be very close, but no two rooms have identical lighting, and every slab has its own texture and condition. The visualizer is meant to help you narrow down a color family and direction — your installer will confirm the exact look with a physical sample before your project starts.</p></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" onclick="toggleAcc(this)" aria-expanded="false">
+            <span class="acc-q">What are the most popular garage floor colors?</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body"><p>Houndstooth (black, gray, white &amp; red) is our most requested blend for garages — it's a clean, classic look that hides dirt and tire marks well. Safari and Ozark are popular warmer, earth-tone alternatives, and Outback or Carbon are common choices for a bold, high-contrast commercial look.</p></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" onclick="toggleAcc(this)" aria-expanded="false">
+            <span class="acc-q">Can Ozarks Concrete Coatings help me choose a color?</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body"><p>Absolutely. Use the "Not Sure Which Color?" button on this page to call or request a quote, and one of our coating experts will help you pick a finish based on your space, lighting, and style — no pressure.</p></div>
+        </div>
+        <div class="acc-item">
+          <button type="button" class="acc-trigger" onclick="toggleAcc(this)" aria-expanded="false">
+            <span class="acc-q">Can I get an instant price for the floor I select?</span>
+            <span class="acc-icon">+</span>
+          </button>
+          <div class="acc-body"><p>Yes. Once you've picked a color, click "Get My Instant Price" to jump straight into our Pricing Calculator with that color already selected, so you can get a real ballpark price range in under a minute.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="fv-toast" id="fvToast"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-in">
+    <div class="footer-top">
+      <div class="fl">
+        <img src="Logo_with_number.png" alt="Ozarks Concrete Coatings" width="180" height="46"/>
+        <p class="fl-tag">Southwest Missouri's premier polyaspartic &amp; epoxy floor coating contractor. Serving a 75-mile radius around Springfield, MO.</p>
+        <div class="fl-soc">
+          <a href="https://www.facebook.com/ozarksconcretecoatings" class="fs-a" target="_blank" rel="noopener">f</a>
+          <a href="https://www.instagram.com/ozarksconcretecoatings/" class="fs-a" target="_blank" rel="noopener">ig</a>
+          <a href="https://www.tiktok.com/@ozarksconcretecoatings" class="fs-a" target="_blank" rel="noopener">tt</a>
+          <a href="https://maps.app.goo.gl/nGC9TuSDfHgqtx8Y9" class="fs-a" target="_blank" rel="noopener">G</a>
+          <a href="https://www.bbb.org/us/mo/nixa/profile/concrete/ozarks-concrete-coatings-llc-0734-1000032591" class="fs-a" target="_blank" rel="noopener">bbb</a>
+        </div>
+      </div>
+      <div>
+        <div class="fc-t">Services</div>
+        <ul class="fl-links">
+          <li><a href="/garage-floors.html">Epoxy Garage Floors</a></li>
+          <li><a href="/basement-floors.html">Basement Floor Coatings</a></li>
+          <li><a href="/metallic-epoxy.html">Metallic Epoxy Floors</a></li>
+          <li><a href="/patio-coatings.html">Patio &amp; Outdoor</a></li>
+          <li><a href="/commercial.html">Commercial Flooring</a></li>
+          <li><a href="/mancave-shop.html">ManCaves &amp; Shops</a></li>
+          <li><a href="/churches-schools.html">Churches &amp; Schools</a></li>
+          <li><a href="/concrete-repair.html">Concrete Repair</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fc-t">Company</div>
+        <ul class="fl-links">
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/gallery.html">Project Gallery</a></li>
+          <li><a href="/reviews.html">Customer Reviews</a></li>
+          <li><a href="/colors.html">Color Options</a></li>
+          <li><a href="/floor-visualizer.html">Floor Visualizer</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/financing.html">Financing</a></li>
+          <li><a href="/warranty.html">Warranty</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fc-t">Service Areas</div>
+        <ul class="fl-links">
+          <li><a href="/springfield-mo.html">Springfield, MO</a></li>
+          <li><a href="/nixa-mo.html">Nixa, MO</a></li>
+          <li><a href="/ozark-mo.html">Ozark, MO</a></li>
+          <li><a href="/republic-mo.html">Republic, MO</a></li>
+          <li><a href="/branson-mo.html">Branson, MO</a></li>
+          <li><a href="/joplin-mo.html">Joplin, MO</a></li>
+          <li><a href="/carthage-mo.html">Carthage, MO</a></li>
+          <li><a href="/webb-city-mo.html">Webb City, MO</a></li>
+          <li><a href="/neosho-mo.html">Neosho, MO</a></li>
+          <li><a href="/monett-mo.html">Monett, MO</a></li>
+          <li><a href="/service-areas.html" style="color:var(--red);font-weight:700">View All 50 Areas →</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fc-t">Contact</div>
+        <ul class="fl-links" style="gap:12px">
+          <li style="list-style:none;display:flex;align-items:center;gap:7px"><span style="color:var(--red);font-size:15px">📞</span><a href="tel:4174026821" style="font-size:14px;font-weight:700;font-family:var(--font-c)">417.402.6821</a></li>
+          <li style="list-style:none;display:flex;align-items:center;gap:7px"><span style="color:var(--red);font-size:14px">✉</span><a href="mailto:OzarksConcreteCoatings@gmail.com" style="font-size:11.5px;font-family:var(--font-c);word-break:break-all">OzarksConcreteCoatings<br/>@gmail.com</a></li>
+          <li style="list-style:none;margin-top:8px"><a href="/contact.html" class="btn btn-red" style="font-size:13px;padding:11px 18px;display:inline-block">Get Free Quote</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>© <span class="cur-yr">2025</span> Ozarks Concrete Coatings LLC — All Rights Reserved</span>
+      <span>Springfield, MO · 417.402.6821</span>
+      <a href="/privacy.html">Privacy Policy</a>
+<script>
+// ---------- ROOMS ----------
+// floorClipPath: polygon() points (percent of the photo's width/height) outlining
+// the visible concrete floor area in `image`. This is used both as a canvas clip
+// region (to composite a recolored floor from the real photo) and as a fallback
+// CSS clip-path. Recalibrate whenever `image` changes: temporarily draw the
+// polygon in fvComposite with a solid red fillStyle instead of the texture,
+// reload, adjust the points until it hugs the floor edges, then revert.
+var ROOMS = {
+  garage: {
+    label: 'Garage',
+    image: '/bare-concrete-garage-floor-before-epoxy-coating-missouri.webp',
+    alt: 'Garage floor room for the Ozarks Concrete Coatings Floor Visualizer',
+    floorClipPath: 'polygon(0% 21.3%, 86.5% 21.1%, 88.8% 21.83%, 90.4% 22.17%, 92.1% 22.67%, 93.8% 22.92%, 95.4% 23.33%, 97.1% 23.75%, 98.8% 24.08%, 100% 24.35%, 100% 100%, 0% 100%)',
+    // horizonY (eye-level vanishing line, % of image height) may be set
+    // per room, but is normally left off: the estimate derived from the
+    // floor outline is tuned to keep flake detail readable all the way to
+    // the back wall while still foreshortening clearly. Setting it too
+    // close to the floor's far edge crushes the back of the room to flat
+    // grey, which is what an earlier hardcoded value did here.
+    available: true
+  },
+  basement: {
+    label: 'Basement',
+    // TODO: replace with a real basement room photo, then set available:true
+    image: '/visualizer-room-basement.webp',
+    alt: 'Basement floor room for the Ozarks Concrete Coatings Floor Visualizer',
+    floorClipPath: 'polygon(0% 30%, 100% 30%, 100% 100%, 0% 100%)',
+    available: false
+  },
+  shop: {
+    label: 'Shop',
+    // TODO: replace with a real shop/outbuilding room photo, then set available:true
+    image: '/visualizer-room-shop.webp',
+    alt: 'Shop floor room for the Ozarks Concrete Coatings Floor Visualizer',
+    floorClipPath: 'polygon(0% 28%, 100% 24%, 100% 100%, 0% 100%)',
+    available: false
+  }
+  // Add Patio / Commercial / Man Cave / Pool Deck here later — same shape as above.
+};
+var ROOM_ORDER = ['garage', 'basement', 'shop'];
+
+// ---------- FLOOR SYSTEMS ----------
+const FLAKE_COLORS = [
+  {"slug": "Houndstooth", "name": "Houndstooth", "desc": "Black, gray, white & red \u2014 clean, classic, most popular blend", "thumb": "visualizer-swatch-houndstooth.webp", "texture": "visualizer-texture-houndstooth.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+  {"slug": "Arrowhead", "name": "Arrowhead", "desc": "Charcoal, gray, white & red \u2014 bold contrast, great for garages", "thumb": "visualizer-swatch-arrowhead.webp", "texture": "visualizer-texture-arrowhead.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+  {"slug": "Mushroom", "name": "Mushroom", "desc": "Gray, brown, red & white \u2014 warm, natural earth tones", "thumb": "visualizer-swatch-mushroom.webp", "texture": "visualizer-texture-mushroom.webp", "baseCoat": "tan", "baseCoatColor": "#8A7358"},
+  {"slug": "Nightfall", "name": "Nightfall", "desc": "Dark charcoal, gray & white \u2014 dramatic, sleek finish", "thumb": "visualizer-swatch-nightfall.webp", "texture": "visualizer-texture-nightfall.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+  {"slug": "Outback", "name": "Outback", "desc": "Deep black \u2014 bold, high-contrast commercial look", "thumb": "visualizer-swatch-outback.webp", "texture": "visualizer-texture-outback.webp", "baseCoat": "tan", "baseCoatColor": "#8A7358"},
+  {"slug": "Ozark", "name": "Ozark", "desc": "Brown, tan, gold, gray & white \u2014 earthy Missouri feel", "thumb": "visualizer-swatch-ozark.webp", "texture": "visualizer-texture-ozark.webp", "baseCoat": "tan", "baseCoatColor": "#8A7358"},
+  {"slug": "Tidal-Wave", "name": "Tidal Wave", "desc": "Light blue, gray & white \u2014 cool, airy, show-stopping finish", "thumb": "visualizer-swatch-tidal-wave.webp", "texture": "visualizer-texture-tidal-wave.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+  {"slug": "Wombat", "name": "Wombat", "desc": "Gray, black & white \u2014 clean with a bold contrast", "thumb": "visualizer-swatch-wombat.webp", "texture": "visualizer-texture-wombat.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+  {"slug": "Creekbed", "name": "Creekbed", "desc": "Tan, brown, gold & gray \u2014 warm, rustic, natural look", "thumb": "visualizer-swatch-creekbed.webp", "texture": "visualizer-texture-creekbed.webp", "baseCoat": "tan", "baseCoatColor": "#8A7358"},
+  {"slug": "Domino", "name": "Domino", "desc": "Black, white & gray \u2014 bold, dramatic floor", "thumb": "visualizer-swatch-domino.webp", "texture": "visualizer-texture-domino.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+  {"slug": "Carbon", "name": "Carbon", "desc": "Pure black flake \u2014 deep, sleek, high-contrast look", "thumb": "visualizer-swatch-carbon.webp", "texture": "visualizer-texture-carbon.webp", "baseCoat": "black", "baseCoatColor": "#17171A"},
+  {"slug": "Safari", "name": "Safari", "desc": "Tan, cream, gray & black \u2014 warm neutral, very popular", "thumb": "visualizer-swatch-safari.webp", "texture": "visualizer-texture-safari.webp", "baseCoat": "tan", "baseCoatColor": "#8A7358"},
+  {"slug": "Shoreline", "name": "Shoreline", "desc": "Tan, beige & cream \u2014 warm, inviting, light feel", "thumb": "visualizer-swatch-shoreline.webp", "texture": "visualizer-texture-shoreline.webp", "baseCoat": "tan", "baseCoatColor": "#8A7358"},
+  {"slug": "Orbit", "name": "Orbit", "desc": "Blue, gray, black & white \u2014 cool tones, show-stopping finish", "thumb": "visualizer-swatch-orbit.webp", "texture": "visualizer-texture-orbit.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+  {"slug": "Feather-Grey", "name": "Feather Grey", "desc": "White, gray & black \u2014 subtle, clean, premium look", "thumb": "visualizer-swatch-feather-grey.webp", "texture": "visualizer-texture-feather-grey.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+  {"slug": "Gravel", "name": "Gravel", "desc": "Light gray, white & black \u2014 cool, sophisticated finish", "thumb": "visualizer-swatch-gravel.webp", "texture": "visualizer-texture-gravel.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+  {"slug": "Coyote", "name": "Coyote", "desc": "White, gray & brown blend \u2014 warm neutral stone appearance", "thumb": "visualizer-swatch-coyote.webp", "texture": "visualizer-texture-coyote.webp", "baseCoat": "tan", "baseCoatColor": "#8A7358"},
+  {"slug": "Raven", "name": "Raven", "desc": "Black & dark gray \u2014 bold, industrial look", "thumb": "visualizer-swatch-raven.webp", "texture": "visualizer-texture-raven.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+  {"slug": "Glacier", "name": "Glacier", "desc": "Soft blue, gray & white \u2014 crisp, cool-tone finish", "thumb": "visualizer-swatch-glacier.webp", "texture": "visualizer-texture-glacier.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+  {"slug": "Cascade", "name": "Cascade", "desc": "White, tan, gray & brick red \u2014 light neutral with warm accents", "thumb": "visualizer-swatch-cascade.webp", "texture": "visualizer-texture-cascade.webp", "baseCoat": "tan", "baseCoatColor": "#8A7358"},
+  {"slug": "Agate", "name": "Agate", "desc": "Mixed silver, gray & white \u2014 granite-like stone appearance", "thumb": "visualizer-swatch-agate.webp", "texture": "visualizer-texture-agate.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+  {"slug": "Denali", "name": "Denali", "desc": "Gray, beige, white & black hybrid \u2014 rich dimensional look", "thumb": "visualizer-swatch-denali.webp", "texture": "visualizer-texture-denali.webp", "baseCoat": "tan", "baseCoatColor": "#8A7358"},
+  {"slug": "Europa", "name": "Europa", "desc": "Dark gray & black hybrid \u2014 sleek, deep, premium finish", "thumb": "visualizer-swatch-europa.webp", "texture": "visualizer-texture-europa.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+  {"slug": "Husky", "name": "Husky", "desc": "Light gray, white & black \u2014 bold cold-climate style", "thumb": "visualizer-swatch-husky.webp", "texture": "visualizer-texture-husky.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+  {"slug": "Yukon", "name": "Yukon", "desc": "Dark gray, black & white hybrid \u2014 dramatic, layered depth", "thumb": "visualizer-swatch-yukon.webp", "texture": "visualizer-texture-yukon.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+  {"slug": "Yosemite", "name": "Yosemite", "desc": "Gray, tan, cream & black hybrid \u2014 organic stone appearance", "thumb": "visualizer-swatch-yosemite.webp", "texture": "visualizer-texture-yosemite.webp", "baseCoat": "tan", "baseCoatColor": "#8A7358"},
+  {"slug": "Slate", "name": "Slate", "desc": "Gray, white & tan hybrid \u2014 smooth, sophisticated finish", "thumb": "visualizer-swatch-slate.webp", "texture": "visualizer-texture-slate.webp", "baseCoat": "gray", "baseCoatColor": "#6F7276"},
+];
+
+var FLOOR_SYSTEMS = {
+  flake: { label: 'Flake Floor', colors: FLAKE_COLORS, available: true },
+  metallic: { label: 'Metallic Floor', colors: [], available: false }, // TODO: add real metallic texture photos, then populate colors + available:true
+  solid: { label: 'Solid Color', colors: [], available: false } // TODO: add real solid-color texture photos, then populate colors + available:true
+};
+var SYSTEM_ORDER = ['flake', 'metallic', 'solid'];
+
+var DEFAULT_ROOM = 'garage';
+var DEFAULT_SYSTEM = 'flake';
+var FAVORITES_KEY = 'occ_visualizer_favorites';
+var MAX_FAVORITES = 3;
+
+var fvState = {
+  room: DEFAULT_ROOM,
+  system: DEFAULT_SYSTEM,
+  color: FLOOR_SYSTEMS[DEFAULT_SYSTEM].colors[0],
+  reveal: 50
+};
+
+// ---------- analytics (uses window.dataLayer, the standard GTM/GA4 convention —
+// no analytics provider is installed on this site today, so nothing is loaded;
+// these events will flow automatically the moment GTM/GA4 is added later) ----------
+function fvTrack(eventName, params){
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push(Object.assign({event: eventName}, params || {}));
+}
+
+// ---------- room / system pickers ----------
+function fvRenderPickers(){
+  var roomWrap = document.getElementById('fvRoomPicker');
+  roomWrap.innerHTML = '';
+  ROOM_ORDER.forEach(function(key){
+    var room = ROOMS[key];
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'fv-pill' + (key === fvState.room ? ' fv-pill-active' : '') + (room.available ? '' : ' fv-pill-disabled');
+    btn.innerHTML = room.label + (room.available ? '' : '<span class="fv-pill-badge">Coming Soon</span>');
+    if (room.available) {
+      btn.onclick = function(){ fvSelectRoom(key); };
+    } else {
+      btn.disabled = true;
+    }
+    roomWrap.appendChild(btn);
+  });
+
+  // "Upload Your Own Photo" — not a preset room, so it lives outside ROOM_ORDER.
+  // Before upload: one pill that opens the file picker. After upload+calibration:
+  // a normal selectable "My Photo" pill, plus a small pill to swap in a new photo.
+  if (ROOMS.custom) {
+    var myBtn = document.createElement('button');
+    myBtn.type = 'button';
+    myBtn.className = 'fv-pill fv-pill-upload' + (fvState.room === 'custom' ? ' fv-pill-active' : '');
+    myBtn.innerHTML = '📸 My Photo';
+    myBtn.onclick = function(){ fvSelectRoom('custom'); };
+    roomWrap.appendChild(myBtn);
+
+    var newBtn = document.createElement('button');
+    newBtn.type = 'button';
+    newBtn.className = 'fv-pill fv-pill-upload';
+    newBtn.innerHTML = '↻ New Photo';
+    newBtn.onclick = fvOpenUpload;
+    roomWrap.appendChild(newBtn);
+  } else {
+    var upBtn = document.createElement('button');
+    upBtn.type = 'button';
+    upBtn.className = 'fv-pill fv-pill-upload';
+    upBtn.innerHTML = '📸 Upload Your Photo';
+    upBtn.onclick = fvOpenUpload;
+    roomWrap.appendChild(upBtn);
+  }
+
+  var sysWrap = document.getElementById('fvSystemPicker');
+  sysWrap.innerHTML = '';
+  SYSTEM_ORDER.forEach(function(key){
+    var sys = FLOOR_SYSTEMS[key];
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'fv-pill' + (key === fvState.system ? ' fv-pill-active' : '') + (sys.available ? '' : ' fv-pill-disabled');
+    btn.innerHTML = sys.label + (sys.available ? '' : '<span class="fv-pill-badge">Coming Soon</span>');
+    if (sys.available) {
+      btn.onclick = function(){ fvSelectSystem(key); };
+    } else {
+      btn.disabled = true;
+    }
+    sysWrap.appendChild(btn);
+  });
+}
+
+function fvSelectRoom(key){
+  if (!ROOMS[key] || !ROOMS[key].available) return;
+  fvState.room = key;
+  fvRenderPickers();
+  fvApplyRoom();
+  fvApplyColor(true);
+}
+
+// ---------- upload your own photo + corner calibration ----------
+// Everything here stays in the browser: FileReader reads the chosen file
+// locally, a canvas downscales it, and the result is only ever held in
+// memory / localStorage on this device — nothing is uploaded anywhere,
+// there's no server to receive it, and no paid service is involved.
+// Starts at 5 points so an L-shaped room, an angled wall, or a step in the
+// floor can be traced without first having to add one — corners can still
+// be added or removed to match any floor shape exactly.
+// Seven draggable points by default, walking the floor perimeter
+// clockwise: back-left, back-middle, back-right, right-middle,
+// front-right, front-left, left-middle. Five was not enough for real
+// garages — the extra mid-edge points on the left and right sides are
+// what let an angled side wall, a bump-out, a step down or a doorway
+// return be traced without having to add points first. More can still
+// be inserted with "+ Add Point", or by tapping directly on an edge.
+var FV_CALIBRATE_DEFAULT = [
+  { x: 8,   y: 55 },
+  { x: 50,  y: 50 },
+  { x: 92,  y: 55 },
+  { x: 100, y: 76 },
+  { x: 100, y: 100 },
+  { x: 0,   y: 100 },
+  { x: 0,   y: 76 }
+];
+var FV_MIN_POINTS = 3;
+var FV_MAX_POINTS = 16;
+var fvCalibratePoints = null;
+var fvCalibrateImageUrl = null;
+
+function fvOpenUpload(){
+  document.getElementById('fvUploadInput').click();
+}
+
+document.getElementById('fvUploadInput').addEventListener('change', function(e){
+  var file = e.target.files && e.target.files[0];
+  e.target.value = ''; // allow re-selecting the same file later
+  if (!file) return;
+  if (!/^image\//.test(file.type)) {
+    fvShowToast('Please choose an image file.');
+    return;
+  }
+  if (file.size > 15 * 1024 * 1024) {
+    fvShowToast('That photo is a bit large — try one under 15MB.');
+    return;
+  }
+  fvTrack('floor_visualizer_photo_uploaded', {});
+  fvDownscaleImage(file, 1400, function(dataUrl){
+    fvStartCalibration(dataUrl);
+  });
+});
+
+function fvDownscaleImage(file, maxDim, callback){
+  var reader = new FileReader();
+  reader.onload = function(){
+    var img = new Image();
+    img.onload = function(){
+      var scale = Math.min(1, maxDim / Math.max(img.naturalWidth, img.naturalHeight));
+      var w = Math.round(img.naturalWidth * scale);
+      var h = Math.round(img.naturalHeight * scale);
+      var canvas = document.createElement('canvas');
+      canvas.width = w; canvas.height = h;
+      canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+      callback(canvas.toDataURL('image/jpeg', 0.9));
+    };
+    img.onerror = function(){ fvShowToast('That image could not be read — try a different photo.'); };
+    img.src = reader.result;
+  };
+  reader.onerror = function(){ fvShowToast('That image could not be read — try a different photo.'); };
+  reader.readAsDataURL(file);
+}
+
+function fvStartCalibration(dataUrl){
+  fvCalibrateImageUrl = dataUrl;
+  fvCalibratePoints = FV_CALIBRATE_DEFAULT.map(function(p){ return { x: p.x, y: p.y }; });
+  var img = document.getElementById('fvCalibrateImg');
+  document.getElementById('fvCalibrate').style.display = 'flex';
+  document.getElementById('fvToggleRow').style.display = 'none';
+  document.getElementById('fvCalibrateRow').style.display = 'flex';
+  img.onload = function(){
+    fvRenderCalibrationPoints();
+    document.getElementById('fvStage').scrollIntoView({behavior: 'smooth', block: 'center'});
+  };
+  img.src = dataUrl;
+}
+
+// Percent-based points (0-100) are relative to the IMAGE's own rendered box,
+// not the surrounding stage — this keeps calibration correct even though the
+// stage is a fixed 4:3 box while an uploaded photo can be any aspect ratio.
+function fvCalibrateFrameRect(){
+  var container = document.getElementById('fvCalibrate');
+  var img = document.getElementById('fvCalibrateImg');
+  var cRect = container.getBoundingClientRect();
+  var iRect = img.getBoundingClientRect();
+  return {
+    left: iRect.left - cRect.left,
+    top: iRect.top - cRect.top,
+    width: iRect.width,
+    height: iRect.height
+  };
+}
+
+// Handles are rebuilt each render since the point count can change (add /
+// remove corner) — cheap for the handful of points a floor outline needs.
+function fvRenderCalibrationPoints(){
+  var frame = fvCalibrateFrameRect();
+  var handlesWrap = document.getElementById('fvHandles');
+  handlesWrap.innerHTML = '';
+  fvCalibratePoints.forEach(function(p, i){
+    var h = document.createElement('div');
+    h.className = 'fv-calibrate-handle';
+    h.dataset.i = i;
+    h.style.left = (frame.left + p.x / 100 * frame.width) + 'px';
+    h.style.top = (frame.top + p.y / 100 * frame.height) + 'px';
+    handlesWrap.appendChild(h);
+  });
+  var svg = document.querySelector('.fv-calibrate-svg');
+  svg.style.left = frame.left + 'px';
+  svg.style.top = frame.top + 'px';
+  svg.style.width = frame.width + 'px';
+  svg.style.height = frame.height + 'px';
+  document.getElementById('fvCalibratePoly').setAttribute(
+    'points',
+    fvCalibratePoints.map(function(p){ return p.x + ',' + p.y; }).join(' ')
+  );
+  document.getElementById('fvCalibrateHint').textContent =
+    'Drag the ' + fvCalibratePoints.length + ' points onto your floor’s edges · tap an edge to add another';
+}
+
+(function initCalibrationDrag(){
+  var dragIndex = null;
+
+  function pctFromEvent(e){
+    var frame = fvCalibrateFrameRect();
+    var container = document.getElementById('fvCalibrate').getBoundingClientRect();
+    var clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    var clientY = e.touches ? e.touches[0].clientY : e.clientY;
+    var x = (clientX - container.left - frame.left) / frame.width * 100;
+    var y = (clientY - container.top - frame.top) / frame.height * 100;
+    return { x: Math.max(0, Math.min(100, x)), y: Math.max(0, Math.min(100, y)) };
+  }
+
+  document.getElementById('fvHandles').addEventListener('pointerdown', function(e){
+    var target = e.target.closest('.fv-calibrate-handle');
+    if (!target) return;
+    dragIndex = parseInt(target.dataset.i, 10);
+    e.preventDefault();
+  });
+
+  // Second way to add a point: press directly ON an edge of the outline
+  // and a new point is inserted at that spot, already being dragged. For
+  // an irregular floor this is far quicker than pressing "+ Add Point"
+  // and hunting for where the new point landed.
+  function fvDistToSegment(p, a, b){
+    var vx = b.x - a.x, vy = b.y - a.y;
+    var wx = p.x - a.x, wy = p.y - a.y;
+    var L2 = vx * vx + vy * vy;
+    var t = L2 > 0 ? (wx * vx + wy * vy) / L2 : 0;
+    if (t < 0) t = 0; else if (t > 1) t = 1;
+    var qx = a.x + t * vx, qy = a.y + t * vy;
+    var dx = p.x - qx, dy = p.y - qy;
+    return { d: Math.sqrt(dx * dx + dy * dy), x: qx, y: qy };
+  }
+
+  document.getElementById('fvCalibrate').addEventListener('pointerdown', function(e){
+    if (e.target.closest('.fv-calibrate-handle')) return; // dragging an existing point
+    if (!fvCalibratePoints) return;
+    if (fvCalibratePoints.length >= FV_MAX_POINTS) return;
+    var p = pctFromEvent(e);
+    var n = fvCalibratePoints.length;
+    var bestI = -1, bestD = 1e9, bestPt = null;
+    for (var i = 0; i < n; i++) {
+      var hit = fvDistToSegment(p, fvCalibratePoints[i], fvCalibratePoints[(i + 1) % n]);
+      if (hit.d < bestD) { bestD = hit.d; bestI = i; bestPt = hit; }
+    }
+    if (bestI < 0 || bestD > 4.5) return; // only when pressing near the outline
+    fvCalibratePoints.splice(bestI + 1, 0, { x: bestPt.x, y: bestPt.y });
+    dragIndex = bestI + 1;   // grab it straight away so it can be dragged
+    fvRenderCalibrationPoints();
+    e.preventDefault();
+  });
+  window.addEventListener('pointermove', function(e){
+    if (dragIndex === null) return;
+    fvCalibratePoints[dragIndex] = pctFromEvent(e);
+    fvRenderCalibrationPoints();
+  });
+  window.addEventListener('pointerup', function(){ dragIndex = null; });
+  window.addEventListener('resize', function(){
+    if (document.getElementById('fvCalibrate').style.display !== 'none') fvRenderCalibrationPoints();
+  });
+})();
+
+function fvResetCalibration(){
+  fvCalibratePoints = FV_CALIBRATE_DEFAULT.map(function(p){ return { x: p.x, y: p.y }; });
+  fvRenderCalibrationPoints();
+}
+
+// Inserts a new point at the midpoint of the longest edge, so it lands
+// somewhere useful to drag into a notch or jog rather than stacked on an
+// existing corner.
+function fvAddCalibrationPoint(){
+  if (fvCalibratePoints.length >= FV_MAX_POINTS) {
+    fvShowToast('That’s plenty of points for any floor shape.');
+    return;
+  }
+  var n = fvCalibratePoints.length;
+  var bestI = 0, bestDist = -1;
+  for (var i = 0; i < n; i++) {
+    var a = fvCalibratePoints[i], b = fvCalibratePoints[(i + 1) % n];
+    var d = Math.hypot(b.x - a.x, b.y - a.y);
+    if (d > bestDist) { bestDist = d; bestI = i; }
+  }
+  var a = fvCalibratePoints[bestI], b = fvCalibratePoints[(bestI + 1) % n];
+  var mid = { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
+  fvCalibratePoints.splice(bestI + 1, 0, mid);
+  fvRenderCalibrationPoints();
+}
+
+function fvRemoveCalibrationPoint(){
+  if (fvCalibratePoints.length <= FV_MIN_POINTS) {
+    fvShowToast('A floor outline needs at least ' + FV_MIN_POINTS + ' points.');
+    return;
+  }
+  fvCalibratePoints.pop();
+  fvRenderCalibrationPoints();
+}
+
+function fvCancelCalibration(){
+  document.getElementById('fvCalibrate').style.display = 'none';
+  document.getElementById('fvCalibrateRow').style.display = 'none';
+  document.getElementById('fvToggleRow').style.display = 'flex';
+}
+
+function fvConfirmCalibration(){
+  var poly = 'polygon(' + fvCalibratePoints.map(function(p){ return p.x + '% ' + p.y + '%'; }).join(', ') + ')';
+  ROOMS.custom = {
+    label: 'My Photo',
+    image: fvCalibrateImageUrl,
+    alt: 'Your uploaded room photo',
+    floorClipPath: poly,
+    available: true
+  };
+  document.getElementById('fvCalibrate').style.display = 'none';
+  document.getElementById('fvCalibrateRow').style.display = 'none';
+  document.getElementById('fvToggleRow').style.display = 'flex';
+  document.getElementById('fvPrivacyNote').style.display = 'block';
+  fvSelectRoom('custom');
+}
+
+function fvSelectSystem(key){
+  if (!FLOOR_SYSTEMS[key] || !FLOOR_SYSTEMS[key].available) return;
+  fvState.system = key;
+  var colors = FLOOR_SYSTEMS[key].colors;
+  fvState.color = colors[0] || null;
+  fvRenderPickers();
+  fvRenderColorGrid();
+  fvApplyColor(true);
+}
+
+// ---------- stage rendering ----------
+// Keep the whole calibrated photograph visible, including wide phone photos.
+function fvSetStageAspect(w, h){
+  if (!w || !h) return;
+  document.getElementById('fvStage').style.aspectRatio = w / h;
+}
+
+function fvApplyRoom(){
+  var room = ROOMS[fvState.room];
+  var beforeImg = document.getElementById('fvImgBefore');
+  beforeImg.onload = function(){ fvSetStageAspect(beforeImg.naturalWidth, beforeImg.naturalHeight); };
+  beforeImg.src = room.image;
+  beforeImg.alt = room.alt;
+  if (beforeImg.complete && beforeImg.naturalWidth) fvSetStageAspect(beforeImg.naturalWidth, beforeImg.naturalHeight);
+}
+
+var fvRenderRequest = 0;
+function fvApplyColor(skipTrack){
+  var request = ++fvRenderRequest;
+  var color = fvState.color;
+  document.getElementById('fvCurrentName').textContent = color ? color.name.toUpperCase() : '—';
+  fvRenderColorGrid();
+  fvUpdateFavButton();
+  fvUpdateQuoteLink();
+  fvSyncUrl();
+  if (color) {
+    var room = ROOMS[fvState.room];
+    var indicator = document.getElementById('fvRenderingIndicator');
+    var afterImg = document.getElementById('fvImgAfter');
+    indicator.classList.add('fv-rendering-show');
+    fvComposite(room, color, function(url){
+      if (request !== fvRenderRequest) return;
+      afterImg.style.opacity = '0';
+      setTimeout(function(){
+        if (request !== fvRenderRequest) return;
+        afterImg.src = url;
+        afterImg.alt = room.alt + ' coated in ' + color.name;
+        afterImg.style.opacity = '1';
+        indicator.classList.remove('fv-rendering-show');
+      }, 100);
+    }, function(){ return request !== fvRenderRequest; });
+  }
+  if (!skipTrack && color) fvTrack('floor_color_selected', {color: color.slug});
+}
+
+// ---------- photorealistic floor recolor (canvas) ----------
+// Composites the SAME base room photo with its actual floor region recolored,
+// rather than pasting a separate texture photo on top: the selected color
+// texture is multiplied by the real photo's own floor luminance (its exact
+// shadows / highlights / unevenness), so the result reads as "this floor,
+// coated" instead of a texture swatch stuck over the picture. Same-origin
+// images only, so canvas pixel reads are never CORS-tainted.
+var fvCanvasCache = new Map();
+var fvImageCache = {};
+
+function fvCompositeKey(room, color){
+  return JSON.stringify([room.image, room.floorClipPath, room.horizonY,
+    color.texture, color.baseCoatColor]);
+}
+
+// Use each column's actual floor boundary, including angled walls and returns.
+function fvFloorContactLine(poly, minX, width){
+  var contact = new Float64Array(width).fill(Infinity);
+  for (var i = 0; i < poly.length; i++) {
+    var a = poly[i], b = poly[(i + 1) % poly.length];
+    if (a.x === b.x) continue;
+    for (var x = 0; x < width; x++) {
+      var t = (minX + x + 0.5 - a.x) / (b.x - a.x);
+      if (t < 0 || t > 1) continue;
+      contact[x] = Math.min(contact[x], a.y + (b.y - a.y) * t);
+    }
+  }
+  return contact;
+}
+
+function fvInsideFloor(x, y, poly){
+  var inside = false;
+  for (var i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+    var a = poly[i], b = poly[j];
+    if ((a.y > y) !== (b.y > y) && x < (b.x - a.x) * (y - a.y) / (b.y - a.y) + a.x) inside = !inside;
+  }
+  return inside;
+}
+
+// Estimate illumination from clean pixels within the floor, never the walls.
+// A local upper percentile rejects small dark marks without expanding every
+// bright patch across the room, as the old coarse maximum filter did.
+function fvBuildLightField(source, width, poly, minX, minY, bw, bh){
+  // Keep this field deliberately broad. A dense grid transfers subtle slab
+  // discoloration as light and makes a uniform broadcast look blotchy.
+  var gw = Math.max(4, Math.min(10, Math.ceil(bw / 160)));
+  var gh = Math.max(6, Math.min(20, Math.ceil(bh / 70)));
+  var cells = new Float32Array(gw * gh).fill(NaN);
+  var sum = 0, count = 0;
+  for (var y = 0; y < gh; y++) {
+    for (var x = 0; x < gw; x++) {
+      var values = [];
+      for (var sy = 0; sy < 7; sy++) {
+        for (var sx = 0; sx < 7; sx++) {
+          var px = Math.floor(minX + (x + (sx + 0.5) / 7) * bw / gw);
+          var py = Math.floor(minY + (y + (sy + 0.5) / 7) * bh / gh);
+          if (!fvInsideFloor(px + 0.5, py + 0.5, poly)) continue;
+          var p = (py * width + px) * 4;
+          values.push(0.299 * source[p] + 0.587 * source[p + 1] + 0.114 * source[p + 2]);
+        }
+      }
+      if (!values.length) continue;
+      values.sort(function(a, b){ return a - b; });
+      var value = values[Math.floor((values.length - 1) * 0.72)];
+      cells[y * gw + x] = value;
+      sum += value * values.length; count += values.length;
+    }
+  }
+  var mean = count ? sum / count : 128;
+  var filled = new Float32Array(cells);
+  for (var i = 0; i < cells.length; i++) {
+    if (Number.isFinite(cells[i])) continue;
+    var best = Infinity, nearest = mean;
+    for (var j = 0; j < cells.length; j++) {
+      if (!Number.isFinite(cells[j])) continue;
+      var dx = i % gw - j % gw, dy = Math.floor(i / gw) - Math.floor(j / gw);
+      var distance = dx * dx + dy * dy;
+      if (distance < best) { best = distance; nearest = cells[j]; }
+    }
+    filled[i] = nearest;
+  }
+  var grid = document.createElement('canvas');
+  grid.width = gw; grid.height = gh;
+  var gx = grid.getContext('2d'), data = gx.createImageData(gw, gh);
+  for (var yy = 0; yy < gh; yy++) {
+    for (var xx = 0; xx < gw; xx++) {
+      var total = 0, weight = 0;
+      for (var dy = -1; dy <= 1; dy++) {
+        for (var dx = -1; dx <= 1; dx++) {
+          var nx = Math.max(0, Math.min(gw - 1, xx + dx));
+          var ny = Math.max(0, Math.min(gh - 1, yy + dy));
+          var k = (dx === 0 ? 2 : 1) * (dy === 0 ? 2 : 1);
+          total += filled[ny * gw + nx] * k; weight += k;
+        }
+      }
+      var p4 = (yy * gw + xx) * 4;
+      data.data[p4] = data.data[p4 + 1] = data.data[p4 + 2] = total / weight;
+      data.data[p4 + 3] = 255;
+    }
+  }
+  gx.putImageData(data, 0, 0);
+  var field = document.createElement('canvas');
+  field.width = bw; field.height = bh;
+  var fx = field.getContext('2d');
+  fx.imageSmoothingEnabled = true; fx.imageSmoothingQuality = 'high';
+  fx.drawImage(grid, 0, 0, bw, bh);
+  return { data: fx.getImageData(0, 0, bw, bh).data, mean: Math.max(0.05, mean / 255) };
+}
+
+// Blend reflected light in linear space so bright openings retain their sheen.
+var fvReflectChannel = (function(){
+  var linear = new Float32Array(256);
+  var display = new Uint8ClampedArray(4096);
+  for (var i = 0; i < 256; i++) {
+    var s = i / 255;
+    linear[i] = s <= 0.04045 ? s / 12.92 : Math.pow((s + 0.055) / 1.055, 2.4);
+  }
+  for (var j = 0; j < 4096; j++) {
+    var l = j / 4095;
+    display[j] = 255 * (l <= 0.0031308 ? 12.92 * l : 1.055 * Math.pow(l, 1 / 2.4) - 0.055);
+  }
+  return function(surface, environment, amount){
+    if (amount < 0.001) return surface;
+    var a = Math.max(0, Math.min(255, Math.round(surface)));
+    var b = Math.max(0, Math.min(255, Math.round(environment)));
+    return display[Math.round((linear[a] * (1 - amount) + linear[b] * amount) * 4095)];
+  };
+})();
+
+function fvReflectionVisibility(sourceY, fade){
+  var t = Math.max(0, Math.min(1, sourceY / Math.max(1, fade)));
+  return t * t * (3 - 2 * t);
+}
+
+function fvLoadImage(src){
+  if (fvImageCache[src]) return fvImageCache[src];
+  var p = new Promise(function(resolve, reject){
+    var img = new Image();
+    img.onload = function(){ resolve(img); };
+    img.onerror = function(error){ delete fvImageCache[src]; reject(error); };
+    img.src = src;
+  });
+  fvImageCache[src] = p;
+  return p;
+}
+
+function fvParsePolygon(clipPathStr, w, h){
+  var inner = clipPathStr.replace('polygon(', '').replace(')', '');
+  return inner.split(',').map(function(pair){
+    var parts = pair.trim().split(/\s+/);
+    return { x: parseFloat(parts[0]) / 100 * w, y: parseFloat(parts[1]) / 100 * h };
+  });
+}
+
+function fvComposite(room, color, callback, shouldCancel){
+  var cacheKey = fvCompositeKey(room, color);
+  if (fvCanvasCache.has(cacheKey)) {
+    var cached = fvCanvasCache.get(cacheKey);
+    fvCanvasCache.delete(cacheKey); fvCanvasCache.set(cacheKey, cached);
+    callback(cached); return;
+  }
+
+  Promise.all([fvLoadImage(room.image), fvLoadImage(color.texture)]).then(async function(imgs){
+    if (shouldCancel && shouldCancel()) return;
+    var baseImg = imgs[0], texImg = imgs[1];
+    var w = baseImg.naturalWidth, h = baseImg.naturalHeight;
+
+    var canvas = document.createElement('canvas');
+    canvas.width = w; canvas.height = h;
+    var ctx = canvas.getContext('2d');
+    ctx.drawImage(baseImg, 0, 0, w, h);
+
+    var poly = fvParsePolygon(room.floorClipPath, w, h);
+    var xs = poly.map(function(p){ return p.x; });
+    var ys = poly.map(function(p){ return p.y; });
+    var minX = Math.max(0, Math.floor(Math.min.apply(null, xs)));
+    var maxX = Math.min(w, Math.ceil(Math.max.apply(null, xs)));
+    var minY = Math.max(0, Math.floor(Math.min.apply(null, ys)));
+    var maxY = Math.min(h, Math.ceil(Math.max.apply(null, ys)));
+    var bw = maxX - minX, bh = maxY - minY;
+    if (bw <= 0 || bh <= 0) { callback(baseImg.src); return; }
+
+    var srcFull = ctx.getImageData(0, 0, w, h).data;
+    var light = fvBuildLightField(srcFull, w, poly, minX, minY, bw, bh);
+    var lowData = light.data, lumMean = light.mean;
+    var shadeTable = new Float32Array(256);
+    for (var sl = 0; sl < 256; sl++) {
+      // Retain the overall room lighting without exaggerating modest
+      // variations that should read as even flake coverage.
+      shadeTable[sl] = Math.max(0.64, Math.min(1.38, Math.pow(sl / 255 / lumMean, 0.58)));
+    }
+    var reflectChannel = fvReflectChannel;
+
+    // ---- OBJECT-AWARE FOREGROUND MASK -----------------------------------
+    // Things physically SITTING on the floor — a toolbox, a tyre, a bike, a
+    // bench, a cord, a mat, a car — must stay on top of the new coating,
+    // while marks that are IN the floor — stains, oil, chalk lines, tyre
+    // scuffs, patches — must be buried by it. Both deviate from clean
+    // concrete, so deviation alone cannot separate them. Three properties
+    // do, and an object has to satisfy all three:
+    //   1. It differs from the clean-floor colour, in CHROMA as much as in
+    //      brightness. Concrete and its stains are near-neutral; objects
+    //      usually are not.
+    //   2. It has a crisp boundary. A real object occludes the floor and
+    //      cuts a hard edge; a stain fades into the slab.
+    //   3. It survives an erosion. This is what separates a bench from a
+    //      chalk line or a hairline crack: thin marks disappear under a
+    //      morphological opening no matter how long or how contrasty they
+    //      are, while anything with genuine bulk survives and can then be
+    //      grown back.
+    // Anything failing any test is treated as floor and gets coated, which
+    // is the safe default: the complaint being fixed is stains showing
+    // through, so the bias is toward covering.
+    var FV_OBJ_DEV = 30;      // colour distance from the clean-floor field
+    var FV_OBJ_EDGE = 0;      // local gradient energy (0 = gate disabled)
+    var FV_OBJ_ERODE = 2;     // opening radius, low-res px
+    var FV_OBJ_MINAREA = 0.0009; // fraction of the floor a blob must cover
+    function fvObjectMask(){
+      var ow = Math.min(320, bw);
+      var oh = Math.max(8, Math.round(bh * ow / bw));
+      function shrink(srcCanvas, sw, sh){
+        var cur = srcCanvas, cw = sw, chh = sh;
+        while (cw > ow * 2 || chh > oh * 2) {
+          var nw = Math.max(ow, Math.round(cw / 2)), nh = Math.max(oh, Math.round(chh / 2));
+          var hc = document.createElement('canvas');
+          hc.width = nw; hc.height = nh;
+          var hx = hc.getContext('2d');
+          hx.imageSmoothingEnabled = true; hx.imageSmoothingQuality = 'high';
+          hx.drawImage(cur, 0, 0, cw, chh, 0, 0, nw, nh);
+          cur = hc; cw = nw; chh = nh;
+        }
+        var fc = document.createElement('canvas');
+        fc.width = ow; fc.height = oh;
+        var fx = fc.getContext('2d');
+        fx.imageSmoothingEnabled = true; fx.imageSmoothingQuality = 'high';
+        fx.drawImage(cur, 0, 0, cw, chh, 0, 0, ow, oh);
+        return fx.getImageData(0, 0, ow, oh).data;
+      }
+      var photoC = document.createElement('canvas');
+      photoC.width = bw; photoC.height = bh;
+      photoC.getContext('2d').drawImage(canvas, minX, minY, bw, bh, 0, 0, bw, bh);
+      var P = shrink(photoC, bw, bh);
+
+      var N = ow * oh;
+      // REFERENCE = a LOCAL MEAN of the photo, not the light field. The
+      // light field is a bright envelope built specifically to ignore dark
+      // marks, so measuring against it makes every stain look like a huge
+      // deviation — which is exactly backwards for telling stains from
+      // objects. A local mean instead TRACKS a stain (broad, soft, so the
+      // mean follows it and the deviation stays small) while an object,
+      // which is compact with hard edges, still stands out against its own
+      // surroundings.
+      var F = new Float64Array(N * 3);
+      var rad = Math.max(3, Math.round(ow / 14));
+      for (var by = 0; by < oh; by++) {
+        for (var bx = 0; bx < ow; bx++) {
+          var ar = 0, ag = 0, ab = 0, an = 0;
+          for (var wy = -rad; wy <= rad; wy += 2) {
+            var syy = by + wy; if (syy < 0 || syy >= oh) continue;
+            for (var wx = -rad; wx <= rad; wx += 2) {
+              var sxx = bx + wx; if (sxx < 0 || sxx >= ow) continue;
+              var q4 = (syy * ow + sxx) * 4;
+              ar += P[q4]; ag += P[q4 + 1]; ab += P[q4 + 2]; an++;
+            }
+          }
+          var o3 = (by * ow + bx) * 3;
+          F[o3] = ar / an; F[o3 + 1] = ag / an; F[o3 + 2] = ab / an;
+        }
+      }
+      var lum = new Float64Array(N);
+      var dev = new Float64Array(N);
+      for (var i = 0; i < N; i++) {
+        var pr = P[i * 4], pg = P[i * 4 + 1], pb = P[i * 4 + 2];
+        var fr = F[i * 3], fg = F[i * 3 + 1], fb = F[i * 3 + 2];
+        lum[i] = 0.299 * pr + 0.587 * pg + 0.114 * pb;
+        var dL = lum[i] - (0.299 * fr + 0.587 * fg + 0.114 * fb);
+        var ca = (pr - pg) - (fr - fg);
+        var cb = (pb - pg) - (fb - fg);
+        // Brightening and darkening are NOT the same evidence.
+        // An object standing on a floor occludes it, so it reads darker
+        // than its surroundings, or it reads coloured. A large NEUTRAL
+        // patch that is merely brighter than its surroundings is almost
+        // always light — daylight coming through the garage opening,
+        // a reflection, a specular sheen — and light belongs under the
+        // coating, not on top of it. Weighting them equally is what made
+        // the bright threshold strip beneath the door register as an
+        // object: the original photo was then restored over the finished
+        // coating there, which is exactly the hard horizontal edge that
+        // made the floor look like it stopped at the opening.
+        // Darkening still counts fully, colour still counts fully, and a
+        // bright neutral region has to be far brighter before it will
+        // register at all.
+        var dLneg = dL < 0 ? -dL : 0;
+        var dLpos = dL > 0 ? dL : 0;
+        dev[i] = 0.75 * dLneg + 0.18 * dLpos + Math.sqrt(ca * ca + cb * cb);
+      }
+      // local gradient energy
+      var edge = new Float64Array(N);
+      for (var y = 1; y < oh - 1; y++) {
+        for (var x = 1; x < ow - 1; x++) {
+          var k = y * ow + x;
+          var gxv = lum[k + 1] - lum[k - 1], gyv = lum[k + ow] - lum[k - ow];
+          edge[k] = Math.sqrt(gxv * gxv + gyv * gyv);
+        }
+      }
+      var edgeS = new Float64Array(N);
+      for (var y2 = 0; y2 < oh; y2++) {
+        for (var x2 = 0; x2 < ow; x2++) {
+          var acc = 0, cnt = 0;
+          for (var dy = -2; dy <= 2; dy++) {
+            var sy = y2 + dy; if (sy < 0 || sy >= oh) continue;
+            for (var dx = -2; dx <= 2; dx++) {
+              var sx = x2 + dx; if (sx < 0 || sx >= ow) continue;
+              acc += edge[sy * ow + sx]; cnt++;
+            }
+          }
+          edgeS[y2 * ow + x2] = acc / cnt;
+        }
+      }
+      var seed = new Uint8Array(N);
+      for (var s = 0; s < N; s++) seed[s] = (dev[s] > FV_OBJ_DEV && (FV_OBJ_EDGE <= 0 || edgeS[s] > FV_OBJ_EDGE)) ? 1 : 0;
+
+      function morph(src, r, grow){
+        var dst = new Uint8Array(N);
+        for (var y3 = 0; y3 < oh; y3++) {
+          for (var x3 = 0; x3 < ow; x3++) {
+            var hit = grow ? 0 : 1;
+            for (var dy3 = -r; dy3 <= r && (grow ? !hit : hit); dy3++) {
+              var sy3 = y3 + dy3;
+              for (var dx3 = -r; dx3 <= r; dx3++) {
+                var sx3 = x3 + dx3;
+                var v = (sy3 < 0 || sy3 >= oh || sx3 < 0 || sx3 >= ow) ? 0 : src[sy3 * ow + sx3];
+                if (grow) { if (v) { hit = 1; break; } }
+                else if (!v) { hit = 0; break; }
+              }
+            }
+            dst[y3 * ow + x3] = hit;
+          }
+        }
+        return dst;
+      }
+      var opened = morph(seed, FV_OBJ_ERODE, false);   // erode: thin marks die here
+
+      // Keep only blobs with real bulk.
+      var label = new Int32Array(N).fill(-1);
+      var stack = new Int32Array(N);
+      var keep = new Uint8Array(N);
+      var minArea = Math.max(12, Math.round(FV_OBJ_MINAREA * N));
+      for (var q = 0; q < N; q++) {
+        if (!opened[q] || label[q] !== -1) continue;
+        var sp = 0, area = 0;
+        stack[sp++] = q; label[q] = q;
+        var members = [];
+        while (sp > 0) {
+          var cur2 = stack[--sp];
+          members.push(cur2); area++;
+          var cy = (cur2 / ow) | 0, cx = cur2 - cy * ow;
+          for (var nb = 0; nb < 4; nb++) {
+            var nx = cx + (nb === 0 ? 1 : nb === 1 ? -1 : 0);
+            var ny = cy + (nb === 2 ? 1 : nb === 3 ? -1 : 0);
+            if (nx < 0 || nx >= ow || ny < 0 || ny >= oh) continue;
+            var ni = ny * ow + nx;
+            if (opened[ni] && label[ni] === -1) { label[ni] = q; stack[sp++] = ni; }
+          }
+        }
+        if (area >= minArea) for (var mi = 0; mi < members.length; mi++) keep[members[mi]] = 1;
+      }
+      var grown = morph(keep, FV_OBJ_ERODE + 1, true);  // dilate back past the erosion
+
+      var mc = document.createElement('canvas');
+      mc.width = ow; mc.height = oh;
+      var mx = mc.getContext('2d');
+      var mImg = mx.createImageData(ow, oh);
+      var any = 0;
+      for (var mj = 0; mj < N; mj++) {
+        var v2 = grown[mj] ? 255 : 0;
+        if (v2) any++;
+        mImg.data[mj * 4] = v2; mImg.data[mj * 4 + 1] = v2;
+        mImg.data[mj * 4 + 2] = v2; mImg.data[mj * 4 + 3] = 255;
+      }
+      mx.putImageData(mImg, 0, 0);
+      if (!any) return null;                            // nothing on this floor
+      var upc = document.createElement('canvas');
+      upc.width = bw; upc.height = bh;
+      var ux2 = upc.getContext('2d');
+      ux2.imageSmoothingEnabled = true; ux2.imageSmoothingQuality = 'high';
+      ux2.drawImage(mc, 0, 0, ow, oh, 0, 0, bw, bh); // upscale feathers the edge
+      return ux2.getImageData(0, 0, bw, bh).data;
+    }
+    var objData = fvObjectMask();
+
+    // ---- STEP 1: build a SEAMLESS, repeat-free flake texture ----------
+    // Earlier versions tiled the flake photo directly in screen space and
+    // every one of them failed on inspection: a plain repeat made an
+    // obvious grid; mirroring alternate tiles made a kaleidoscope; hard-
+    // edged rotated patches still showed a seam line at every patch edge.
+    // Here the texture is instead built ONCE into a square tile that is
+    // genuinely seamless, by stamping soft-edged random crops with
+    // toroidal wrap-around (a stamp that runs off the right edge is also
+    // drawn coming back in on the left, same top/bottom). Because every
+    // stamp fades out through a radial gradient, no hard edge exists
+    // anywhere, and because the stamps wrap, the tile's own borders match
+    // perfectly — so it can repeat forever with nothing to see.
+    // CHIP SCALE — this is the bug that made the flakes look enormous.
+    // The previous version cropped 270px of the source photo and drew it
+    // into 337px, i.e. it MAGNIFIED the product photo 1.25x. Source chips
+    // (~30px) became ~37px, so a 512px tile held only ~14 chips, and that
+    // tile was then stretched across ~794px of the near floor — roughly
+    // 58px per chip. Real 1/4" full-broadcast flake reads at ~12-15px at
+    // that distance. Chips are now DOWNSCALED so the tile carries ~37 of
+    // them, cutting rendered chip size by about 75%.
+    var TILE = 768;
+    var CHIPS_ACROSS_TILE = 72;
+    var SRC_CHIP_PX = 30;               // approx chip size in the product photos
+    var chipInTile = TILE / CHIPS_ACROSS_TILE;
+    var chipScale = chipInTile / SRC_CHIP_PX; // ~0.46 => a real reduction, not a magnification
+
+    var tileCanvas = document.createElement('canvas');
+    tileCanvas.width = TILE; tileCanvas.height = TILE;
+    var tileCtx = tileCanvas.getContext('2d');
+    var srcW = texImg.naturalWidth, srcH = texImg.naturalHeight;
+
+    // THE VERTICAL LINE BUG. Base coverage used to be a grid of drawImage
+    // calls stepping by baseDraw px. That was wrong two ways: it put a
+    // hard photo edge every baseDraw px INSIDE the tile, and because
+    // TILE/baseDraw was not an integer (768/185 = 4.15) the tile's own
+    // right and bottom edges ended mid-cell, so the tile did not wrap.
+    // Repeat a non-wrapping tile across a floor and every repeat boundary
+    // draws a hard vertical line — exactly the stripes reported.
+    //
+    // Base coverage is now the SOLID EPOXY BASECOAT: no internal edges at
+    // all, and being a flat colour it wraps perfectly, so the tile is
+    // genuinely seamless. It is also what should be under the flake
+    // anyway — any pixel the stamps do not reach shows basecoat, never
+    // bare concrete and never a seam.
+    tileCtx.fillStyle = color.baseCoatColor || '#6F7276';
+    tileCtx.fillRect(0, 0, TILE, TILE);
+
+    var rndSeed = 0x9e3779b9;
+    function rnd(){ // deterministic PRNG so a given color always renders identically (cacheable)
+      rndSeed ^= rndSeed << 13; rndSeed ^= rndSeed >>> 17; rndSeed ^= rndSeed << 5;
+      return ((rndSeed >>> 0) % 100000) / 100000;
+    }
+    var cropW = srcW * 0.5, cropH = srcH * 0.5;
+    var ds = Math.max(6, cropW * chipScale);        // reduced, never magnified
+    var stampSize = Math.max(8, Math.round(ds / 1.5));
+    var stampR = stampSize / 2;
+    var maxOffX = Math.max(1, srcW - cropW), maxOffY = Math.max(1, srcH - cropH);
+    var stampCanvas = document.createElement('canvas');
+    stampCanvas.width = stampSize; stampCanvas.height = stampSize;
+    var stampCtx = stampCanvas.getContext('2d');
+    // The opaque core has to be wide. With a mostly-transparent stamp the
+    // only thing holding coverage up is how many stamps happen to overlap,
+    // which is exactly what varies. A 0.72 core keeps more chip edges sharp
+    // while only the outer rim blends into the surrounding flake.
+    var featherGrad = stampCtx.createRadialGradient(stampR, stampR, stampR * 0.72, stampR, stampR, stampR);
+    featherGrad.addColorStop(0, 'rgba(0,0,0,1)');
+    featherGrad.addColorStop(1, 'rgba(0,0,0,0)');
+
+    // STAMP PLACEMENT — jittered lattice, NOT pure random.
+    // Purely random positions are Poisson, and Poisson scatter clumps: the
+    // gaps between clumps got no stamps at all, so the solid basecoat
+    // underneath showed through as flat blobs — obvious tan puddles on the
+    // warm blends and dark clouds on Carbon. More stamps does not fix that;
+    // the variance grows with the count.
+    // One stamp per cell of a lattice that divides TILE exactly, jittered
+    // up to half a cell, gives blue-noise-like coverage: still random to
+    // the eye, but every part of the tile is covered the same number of
+    // times, so there are no voids and no clumps. The lattice divides TILE
+    // evenly, so the toroidal wrap below is unaffected.
+    var cell = Math.max(4, stampSize * 0.33);
+    var G = Math.max(2, Math.round(TILE / cell));
+    cell = TILE / G;                       // exact division keeps the tile wrapping
+    var spots = [];
+    for (var gy = 0; gy < G; gy++) {
+      for (var gx = 0; gx < G; gx++) {
+        spots.push([(gx + 0.5 + (rnd() - 0.5)) * cell, (gy + 0.5 + (rnd() - 0.5)) * cell]);
+      }
+    }
+    // Shuffle the draw order. Drawing a lattice row by row would let the
+    // last row painted sit on top all the way across, which reads as a
+    // faint directional grain.
+    for (var sh = spots.length - 1; sh > 0; sh--) {
+      var sj = (rnd() * (sh + 1)) | 0;
+      var tmpSpot = spots[sh]; spots[sh] = spots[sj]; spots[sj] = tmpSpot;
+    }
+    var STAMPS = spots.length;
+    for (var si = 0; si < STAMPS; si++) {
+      stampCtx.setTransform(1, 0, 0, 1, 0, 0);
+      stampCtx.globalCompositeOperation = 'source-over';
+      stampCtx.clearRect(0, 0, stampSize, stampSize);
+      stampCtx.save();
+      stampCtx.translate(stampR, stampR);
+      stampCtx.rotate(rnd() * Math.PI * 2);
+      // Per-stamp variation so the broadcast doesn't read as one photo
+      // repeated: each patch gets its own slight scale, and its own
+      // slight brightness/saturation shift. Real flake is hand-broadcast,
+      // so chip size and colour drift across a floor; without this the
+      // eye eventually picks up machine-like uniformity.
+      var sJit = 0.90 + rnd() * 0.20;          // +/- ~10% chip size
+      var dsj = ds * sJit;
+      // Brightness/saturation drift is kept small. A whole stamp shifted 5%
+      // is a ~123px patch of the tile shifted 5%, i.e. another cloud. The
+      // high-pass below would flatten most of it anyway; keeping it tight
+      // means there is less for the high-pass to have to undo.
+      stampCtx.filter = 'brightness(' + (0.98 + rnd() * 0.04).toFixed(3) +
+                        ') saturate(' + (0.97 + rnd() * 0.06).toFixed(3) + ')';
+      stampCtx.drawImage(texImg, rnd() * maxOffX, rnd() * maxOffY, cropW, cropH, -dsj / 2, -dsj / 2, dsj, dsj);
+      stampCtx.filter = 'none';
+      stampCtx.restore();
+      stampCtx.globalCompositeOperation = 'destination-in';
+      stampCtx.fillStyle = featherGrad;
+      stampCtx.fillRect(0, 0, stampSize, stampSize);
+
+      var px = spots[si][0], py = spots[si][1];
+      for (var wx = -1; wx <= 1; wx++) {
+        for (var wy = -1; wy <= 1; wy++) {
+          var dx = px + wx * TILE, dy = py + wy * TILE;
+          if (dx + stampR < 0 || dx - stampR > TILE || dy + stampR < 0 || dy - stampR > TILE) continue;
+          tileCtx.drawImage(stampCanvas, dx - stampR, dy - stampR);
+        }
+      }
+    }
+
+    // ---- FLATTEN the tile: kill every cluster bigger than a few chips ---
+    // Each stamp is a crop of the product photo, and that photo has its own
+    // broad light and dark areas — uneven studio lighting, and places where
+    // the loose flake happened to pile up lighter or darker. A stamp is
+    // ~123px in a 768px tile, so each one drops a whole patch of that
+    // low-frequency content onto the tile, and the result reads as light
+    // and dark CLOUDS drifting across the finished floor. A real
+    // full-broadcast floor has none of that: coverage is uniform wall to
+    // wall and the only variation is chip to chip.
+    // So the tile is high-passed. A low-pass at roughly three chips across
+    // is built by halving repeatedly (768 -> 24, every step an exact 2x box
+    // filter, so a periodic tile stays periodic and no wrap seam appears),
+    // then subtracted per channel with the tile's own mean added back.
+    // Everything COARSER than ~32px is removed; everything finer — the
+    // individual chips, their edges, their colour — is untouched. This is a
+    // subtraction, not a blur: no smearing, no loss of flake detail.
+    // 24 rather than 48: going finer keeps cutting cloud energy, but the
+    // far floor is minified so heavily that the coarser tile structure is
+    // exactly what still resolves back there. At 48 the back strip lost 20%
+    // of its chip contrast and went flat grey. 24 costs it 6% and still
+    // removes 55% of the cloud energy.
+    var lpSize = TILE;
+    var lpSrc = tileCanvas;
+    while (lpSize > 24) {
+      var lpNext = Math.round(lpSize / 2);
+      var lpc = document.createElement('canvas');
+      lpc.width = lpNext; lpc.height = lpNext;
+      var lpx = lpc.getContext('2d');
+      lpx.imageSmoothingEnabled = true; lpx.imageSmoothingQuality = 'high';
+      lpx.drawImage(lpSrc, 0, 0, lpSize, lpSize, 0, 0, lpNext, lpNext);
+      lpSrc = lpc; lpSize = lpNext;
+    }
+    var lpData = lpSrc.getContext('2d').getImageData(0, 0, lpSize, lpSize).data;
+    var lpMeanR = 0, lpMeanG = 0, lpMeanB = 0;
+    for (var lpi = 0; lpi < lpData.length; lpi += 4) {
+      lpMeanR += lpData[lpi]; lpMeanG += lpData[lpi + 1]; lpMeanB += lpData[lpi + 2];
+    }
+    var lpN = lpData.length / 4;
+    lpMeanR /= lpN; lpMeanG /= lpN; lpMeanB /= lpN;
+
+    // IN-SITU EXPOSURE. The product photos are shots of LOOSE flake, and
+    // they are not exposed alike: Domino's averages luminance 150 while
+    // Carbon's averages 39, because a tray of black flake photographs very
+    // dark. Using that number as the floor's brightness is wrong — a black
+    // epoxy floor in a lit garage is not a black hole, it is a dark floor
+    // under room light, and the darkest real install in this repo still
+    // measures mean 99.6. Carbon was rendering at mean 39, far below any
+    // real photo, which is most of why it read as flat black vinyl rather
+    // than coated concrete.
+    // Very dark tiles are therefore lifted toward a plausible in-situ
+    // exposure. It is a straight multiply, so hue is untouched and the
+    // relative contrast between chips is preserved (and scaled up with it)
+    // rather than being invented. Blends already at or above the threshold
+    // are multiplied by exactly 1 and cannot be affected.
+    var FV_MIN_TILE_L = 62;
+    var FV_MAX_LIFT = 2.2;
+    var lpMeanL = 0.299 * lpMeanR + 0.587 * lpMeanG + 0.114 * lpMeanB;
+    var tileLift = lpMeanL > 1 ? (FV_MIN_TILE_L / lpMeanL) : 1;
+    if (tileLift < 1) tileLift = 1; else if (tileLift > FV_MAX_LIFT) tileLift = FV_MAX_LIFT;
+
+    var flat = tileCtx.getImageData(0, 0, TILE, TILE);
+    var flatData = flat.data;
+    var lpScale = lpSize / TILE;
+    for (var fy = 0; fy < TILE; fy++) {
+      // Bilinear sample of the low-pass, WRAPPED, so the correction itself
+      // is seamless across the tile edge.
+      var lv = fy * lpScale - 0.5;
+      var ly0 = Math.floor(lv), lfy = lv - ly0;
+      var lya = ((ly0 % lpSize) + lpSize) % lpSize, lyb = (lya + 1) % lpSize;
+      for (var fx = 0; fx < TILE; fx++) {
+        var lu = fx * lpScale - 0.5;
+        var lx0 = Math.floor(lu), lfx = lu - lx0;
+        var lxa = ((lx0 % lpSize) + lpSize) % lpSize, lxb = (lxa + 1) % lpSize;
+        var i00 = (lya * lpSize + lxa) * 4, i10 = (lya * lpSize + lxb) * 4;
+        var i01 = (lyb * lpSize + lxa) * 4, i11 = (lyb * lpSize + lxb) * 4;
+        var w00 = (1 - lfx) * (1 - lfy), w10 = lfx * (1 - lfy);
+        var w01 = (1 - lfx) * lfy, w11 = lfx * lfy;
+        var fi = (fy * TILE + fx) * 4;
+        var nr = flatData[fi] - (lpData[i00] * w00 + lpData[i10] * w10 + lpData[i01] * w01 + lpData[i11] * w11) + lpMeanR;
+        var ng = flatData[fi + 1] - (lpData[i00 + 1] * w00 + lpData[i10 + 1] * w10 + lpData[i01 + 1] * w01 + lpData[i11 + 1] * w11) + lpMeanG;
+        var nb = flatData[fi + 2] - (lpData[i00 + 2] * w00 + lpData[i10 + 2] * w10 + lpData[i01 + 2] * w01 + lpData[i11 + 2] * w11) + lpMeanB;
+        nr *= tileLift; ng *= tileLift; nb *= tileLift;
+        flatData[fi]     = nr < 0 ? 0 : (nr > 255 ? 255 : nr);
+        flatData[fi + 1] = ng < 0 ? 0 : (ng > 255 ? 255 : ng);
+        flatData[fi + 2] = nb < 0 ? 0 : (nb > 255 ? 255 : nb);
+      }
+    }
+    tileCtx.putImageData(flat, 0, 0);
+
+    // Mean tile colour, used to tame the product photo's studio-lit
+    // contrast. Under a clear coat the extremes soften; raw photo contrast
+    // is what made the coating read "harsh" versus real installs.
+    var tileProbe = tileCtx.getImageData(0, 0, TILE, TILE).data;
+    var tmR = 0, tmG = 0, tmB = 0, tmN = 0, lSum = 0, lSum2 = 0;
+    for (var ti = 0; ti < tileProbe.length; ti += 16) { // sample every 4th px, plenty
+      tmR += tileProbe[ti]; tmG += tileProbe[ti + 1]; tmB += tileProbe[ti + 2];
+      var lp = 0.299 * tileProbe[ti] + 0.587 * tileProbe[ti + 1] + 0.114 * tileProbe[ti + 2];
+      lSum += lp; lSum2 += lp * lp; tmN++;
+    }
+    tmR /= tmN; tmG /= tmN; tmB /= tmN;
+    // Match the CONTRAST of a real installed floor instead of guessing a
+    // fixed number. Measured against reference installs, a finished floor
+    // sits near a luminance stdev of ~62; the product photos (shot loose
+    // under studio light, then softened by mip filtering) come out much
+    // flatter, which is why the coating looked hazy and washed out. Each
+    // colour's tile is normalised to that target, so every blend lands
+    // with believable depth rather than one blanket multiplier that
+    // over-punches some colours and under-punches others.
+    // The upper clamp of 2.0 quietly capped the dark blends short of the
+    // target: Carbon needed 10.3x and got 2.0, landing on stdev 12 of the
+    // 62 it was asked for, which is most of why it rendered flat.
+    // The extra headroom is tied to the exposure lift rather than raised
+    // for everyone. Only a blend whose product photo was genuinely
+    // under-exposed gets more latitude to be pulled back to a realistic
+    // in-situ appearance; every blend shot at a normal exposure has
+    // tileLift exactly 1 and keeps the old 2.0 ceiling unchanged. Raising
+    // the ceiling globally instead would have moved 20 of the 27 blends,
+    // which is far more than the dark ones needed.
+    var tileStd = Math.sqrt(Math.max(1, lSum2 / tmN - (lSum / tmN) * (lSum / tmN)));
+    var FV_MAX_CONTRAST = 2.0 * tileLift;
+    var FLAKE_CONTRAST = 62 / tileStd;
+    if (FLAKE_CONTRAST < 0.75) FLAKE_CONTRAST = 0.75;
+    if (FLAKE_CONTRAST > FV_MAX_CONTRAST) FLAKE_CONTRAST = FV_MAX_CONTRAST;
+    // What the tile ACTUALLY ends up with, which is the target only when
+    // the clamp did not bind. The glint term below keys off this rather
+    // than off the target, so a blend that genuinely cannot reach 62 still
+    // gets glints scaled to the range it does have.
+    var FV_ACHIEVED_SD = Math.max(6, tileStd * FLAKE_CONTRAST);
+    var FLAKE_SAT = 0.88; // pull slightly toward neutral: a coating, not confetti
+
+    // Visible BASE COAT between the chips. Product photos are loose flake
+    // packed edge to edge with no binder showing, which renders as a
+    // crowded confetti field. A real broadcast floor always shows some
+    // coloured base between and under the chips, so a base tone derived
+    // from the blend (slightly darker and desaturated) is mixed in.
+    // SOLID EPOXY BASECOAT. Every blend is broadcast into a solid-colour
+    // basecoat, so the colour showing in the voids between chips is that
+    // basecoat — never bare concrete. The colour is declared per blend on
+    // FLAKE_COLORS (baseCoatColor): gray for cool/neutral blends, tan for
+    // warm ones, black for Carbon. Previously it was derived from the
+    // tile's own average, which just echoed the flake instead of reading
+    // as a real basecoat underneath it.
+    var bcHex = (color.baseCoatColor || '#6F7276').replace('#', '');
+    var bcR = parseInt(bcHex.substring(0, 2), 16);
+    var bcG = parseInt(bcHex.substring(2, 4), 16);
+    var bcB = parseInt(bcHex.substring(4, 6), 16);
+    var tmL = 0.299 * tmR + 0.587 * tmG + 0.114 * tmB; // mean tile luminance
+    var bcMeanL = tmL;
+    var BASE_MIX = 0.13;      // basecoat presence across the whole surface
+    var BASE_MIX_GAP = 0.30;  // extra where the texture is dark, i.e. the voids
+
+    // ---- STEP 2: mip pyramid ------------------------------------------
+    // Toward the back of the room the texture is compressed into very few
+    // pixels. Sampling the full-res tile there produces harsh sparkle/
+    // aliasing (which is what made an earlier attempt look like TV static).
+    // Pre-filtered smaller copies get sampled instead as the floor recedes.
+    var mips = [];
+    var mipSize = TILE;
+    var mipSrc = tileCanvas;
+    while (mipSize >= 8) {
+      var mc = document.createElement('canvas');
+      mc.width = mipSize; mc.height = mipSize;
+      var mctx = mc.getContext('2d');
+      mctx.imageSmoothingEnabled = true;
+      mctx.drawImage(mipSrc, 0, 0, mipSize, mipSize);
+      mips.push({ size: mipSize, data: mctx.getImageData(0, 0, mipSize, mipSize).data });
+      mipSrc = mc;
+      mipSize = Math.floor(mipSize / 2);
+    }
+
+    // ---- STEP 3: project the texture in TRUE PERSPECTIVE ---------------
+    // This is what every previous attempt was missing. A real floor
+    // recedes: flake near the camera is large, flake at the back wall is
+    // tiny, and that gradient is what makes a photo read as a floor rather
+    // than as wallpaper. For a flat plane under a camera, ground distance
+    // Z is proportional to 1 / (screenY - horizonY). Feeding that straight
+    // into the texture lookup reproduces real foreshortening exactly,
+    // per-pixel — no bands, so none of the moire the banded attempt had.
+    var polyTopY = Math.min.apply(null, ys);
+    var polyBotY = Math.max.apply(null, ys);
+    var horizonY = (room.horizonY != null)
+      ? (room.horizonY / 100) * h
+      : polyTopY - 0.16 * Math.max(1, polyBotY - polyTopY);
+    if (horizonY > polyTopY - 4) horizonY = polyTopY - 4; // keep the floor strictly below the horizon
+
+    // NEAR SCALE. One tile carries CHIPS_ACROSS_TILE chips, so the span a
+    // tile covers at the very front sets the rendered chip size there.
+    // 0.40 * floorWidth over ~37 chips lands near-camera flake at roughly
+    // 13-14px in a 1280px photo, matching the reference installs (the old
+    // 0.62 over ~14 chips gave ~58px, the "giant flake" problem).
+    var nearSpan = Math.max(90, bw * 0.40);
+    var dNear = polyBotY - horizonY;
+    var Acoef = (dNear * dNear) / nearSpan;
+    var Bcoef = dNear / nearSpan;
+    var cxImg = (minX + maxX) / 2;
+    var invDnear = 1 / dNear; // anchor for shear damping (near edge stays exact)
+
+    // ---- CLEAR POLYASPARTIC TOPCOAT ------------------------------------
+    // A gloss coat does not invent light, it MIRRORS the room. So the
+    // reflection layer is built entirely out of the uploaded photograph:
+    // whatever is actually standing above the floor — the open door, the
+    // bright driveway beyond it, the walls, a parked vehicle, shelving —
+    // gets reflected. Nothing is added that is not already in the photo,
+    // and if the space above the floor is dark then the far floor goes
+    // darker, which is what the reference installs with a closed dark back
+    // wall actually do.
+    //
+    // Approximate nearby vertical surfaces from their contact with the floor.
+    // A single photo does not contain full room depth or out-of-frame lights.
+    // For a level pinhole camera looking at a
+    // horizontal mirror, a point at height H and distance D projects to
+    //   y - horizon = f (hc - H) / D
+    // and its mirror image (H -> -H) to f (hc + H) / D. Writing g for the
+    // screen y of where that object MEETS the floor (H = 0), the reflection
+    // of a point at screen y lands at exactly 2g - y. A ground-plane
+    // reflection is therefore a plain vertical flip about the contact line
+    // — no compression factor, no fudge — so each column is mirrored about
+    // the point where the floor meets whatever is standing on it.
+    // srcFull is captured up with the light field, before any coating is
+    // drawn into ctx.
+
+    var contactY = fvFloorContactLine(poly, minX, bw);
+
+    // Mirror the photo about that line into the floor's bounding box.
+    var reflCanvas = document.createElement('canvas');
+    reflCanvas.width = bw; reflCanvas.height = bh;
+    var reflCtx = reflCanvas.getContext('2d');
+    var reflRaw = reflCtx.createImageData(bw, bh);
+    var reflRawD = reflRaw.data;
+    for (var ry = 0; ry < bh; ry++) {
+      var rImgY = minY + ry;
+      for (var rx = 0; rx < bw; rx++) {
+        if (!Number.isFinite(contactY[rx])) continue;
+        var ySrc = 2 * contactY[rx] - rImgY;
+        // The photo has no information above its top edge. Fade that missing
+        // reflection away instead of stretching its first row down the floor.
+        var visibility = fvReflectionVisibility(ySrc, h * 0.06);
+        if (ySrc < 0) ySrc = 0; else if (ySrc > h - 1) ySrc = h - 1;
+        var si = ((ySrc | 0) * w + (minX + rx)) * 4;
+        var ri = (ry * bw + rx) * 4;
+        reflRawD[ri] = srcFull[si];
+        reflRawD[ri + 1] = srcFull[si + 1];
+        reflRawD[ri + 2] = srcFull[si + 2];
+        reflRawD[ri + 3] = Math.round(255 * visibility);
+      }
+    }
+    reflCtx.putImageData(reflRaw, 0, 0);
+
+    // Blur it ANISOTROPICALLY. Polyaspartic is glossy but microscopically
+    // rough, and at the grazing angles a floor is viewed at, that roughness
+    // smears a reflection far more along the viewing direction (down the
+    // screen) than across it. That vertical streaking is the single most
+    // recognisable thing about the reference gloss photos. Shrinking harder
+    // in y than in x produces exactly that, and doing it by progressive
+    // halving keeps it a true average instead of an aliased one.
+    function fvShrinkTo(src, sw, sh, tw, th){
+      var cw = sw, ch = sh, cur = src;
+      while (cw > tw * 2 || ch > th * 2) {
+        var nw = Math.max(tw, Math.round(cw / 2)), nh = Math.max(th, Math.round(ch / 2));
+        var sc = document.createElement('canvas');
+        sc.width = nw; sc.height = nh;
+        var sxc = sc.getContext('2d');
+        sxc.imageSmoothingEnabled = true; sxc.imageSmoothingQuality = 'high';
+        sxc.drawImage(cur, 0, 0, cw, ch, 0, 0, nw, nh);
+        cur = sc; cw = nw; ch = nh;
+      }
+      var fc = document.createElement('canvas');
+      fc.width = tw; fc.height = th;
+      var fxc = fc.getContext('2d');
+      fxc.imageSmoothingEnabled = true; fxc.imageSmoothingQuality = 'high';
+      fxc.drawImage(cur, 0, 0, cw, ch, 0, 0, tw, th);
+      return fc;
+    }
+    function fvBlurBack(small){
+      var gc = document.createElement('canvas');
+      gc.width = bw; gc.height = bh;
+      var gx = gc.getContext('2d');
+      gx.imageSmoothingEnabled = true; gx.imageSmoothingQuality = 'high';
+      gx.drawImage(small, 0, 0, small.width, small.height, 0, 0, bw, bh);
+      return gx.getImageData(0, 0, bw, bh).data;
+    }
+    // Two levels: a tighter one for floor right up against whatever is
+    // reflecting, and a much looser one for floor far from the contact
+    // line, where the reflection has spread out into broad soft sheen.
+    // HORIZONTAL blur is what tames the vertical banding. Door tracks,
+    // jambs and mullions are narrow and vertical, so at bw/2.5 they came
+    // back as hard vertical stripes down the floor — mirror-like rather
+    // than coated. Blurring across x widens each stripe and drops its
+    // amplitude, turning it into the broad faint highlight a real
+    // polyaspartic floor shows, without touching the vertical smear that
+    // gives the gloss its direction.
+    var reflNear = fvBlurBack(fvShrinkTo(reflCanvas, bw, bh,
+      Math.max(6, Math.round(bw / 9)), Math.max(5, Math.round(bh / 18))));
+    var reflFar = fvBlurBack(fvShrinkTo(reflCanvas, bw, bh,
+      Math.max(3, Math.round(bw / 22)), Math.max(3, Math.round(bh / 55))));
+
+    // Fresnel. A dielectric clear coat reflects only ~4% head-on but rises
+    // steeply toward grazing, which is why a flake floor looks nearly matte
+    // underfoot and glassy toward the far wall. Schlick's approximation,
+    // with the true cosine for a ground plane: cos = depth / hypot(depth, f)
+    // where f is the focal length in pixels (the image height is a fair
+    // stand-in for a phone camera).
+    var FV_R0 = 0.04;
+    var FV_FOCAL = h;
+    var FV_GLOSS = 0.72;   // microroughness: a real floor never reaches full Fresnel
+    var FV_SPARKLE = 0.30; // glints off individual chip facets
+
+    // BACK-OF-ROOM ROLL-OFF. Schlick alone keeps climbing all the way to
+    // the horizon, so the last stretch of floor by the garage opening was
+    // reaching a reflectance that reads as glass. Real coated concrete
+    // does not: the coating has enough microroughness that the grazing
+    // reflection scatters instead of mirroring. Two things therefore ease
+    // off toward the far edge and reach full strength by mid-floor, so the
+    // middle and foreground keep exactly the gloss they had:
+    //   FV_BACK_GLOSS   - reflectance at the far edge, 0.82 = 18% less.
+    //   FV_BACK_CLARITY - how much reflection CONTRAST survives there.
+    //         Cutting intensity alone would just dim the bands; cutting
+    //         contrast is what turns them into soft broad highlights and
+    //         lets the flake keep reading through.
+    // Both are driven by a smoothstep on the same depth cosine used for
+    // Fresnel, so the falloff is continuous — there is no depth at which
+    // anything switches, and therefore no transition line.
+    var FV_BACK_GLOSS = 0.82;
+    var FV_BACK_CLARITY = 0.70;
+    var fvDepthTop = Math.max(1, polyTopY - horizonY);
+    var fvDepthMid = Math.max(2, (polyTopY + polyBotY) / 2 - horizonY);
+    var fvCosTop = fvDepthTop / Math.sqrt(fvDepthTop * fvDepthTop + FV_FOCAL * FV_FOCAL);
+    var fvCosMid = fvDepthMid / Math.sqrt(fvDepthMid * fvDepthMid + FV_FOCAL * FV_FOCAL);
+    var fvCosSpan = Math.max(1e-6, fvCosMid - fvCosTop);
+
+    var texCanvas = document.createElement('canvas');
+    texCanvas.width = bw; texCanvas.height = bh;
+    var texCtx = texCanvas.getContext('2d');
+    var out = texCtx.createImageData(bw, bh);
+    var outData = out.data;
+
+    for (var py2 = 0; py2 < bh; py2++) {
+      // Let touch/selection events run and stop obsolete previews promptly.
+      if (py2 % 24 === 0) {
+        await new Promise(function(resolve){ setTimeout(resolve, 0); });
+        if (shouldCancel && shouldCancel()) return;
+      }
+      var imgY = minY + py2;
+      var depth = imgY - horizonY;
+      if (depth < 1) depth = 1;
+      var invD = 1 / depth;
+      var vTex = Acoef * invD;
+
+      // FOOTPRINT — full Jacobian, including the shear term.
+      //   du/dx = B/d          dv/dx = 0
+      //   du/dy = -(x-cx)B/d^2 dv/dy = -A/d^2
+      // The du/dy shear is zero at the image centre and grows toward the
+      // edges (~1.9x the scale at the frame edge). A previous version
+      // integrated several samples along texture-v only; with a sheared
+      // footprint that averaging direction maps to a screen direction
+      // radiating from the vanishing point, which is exactly what turned
+      // flakes into long streaks fanning out from the back wall. Sampling
+      // is now a single isotropic lookup whose mip comes from the LARGEST
+      // footprint axis, so perspective changes flake SCALE without
+      // distorting flake SHAPE. No directional averaging anywhere.
+      // SHEAR_DAMP is 1.0, i.e. strict pinhole perspective. It used to be
+      // 0.40, which was a mistake: the intent was to damp the SHEAR (du/dy,
+      // the slight slant of chips away from the image centre), but the
+      // factor was applied to uScale — the horizontal SCALE — so horizontal
+      // foreshortening came out 1.8x to 2.1x weaker than vertical toward
+      // the back of the room. Chips ended up stretched sideways: measured
+      // at y=400 in the sample garage they rendered 3.06px wide by 0.43px
+      // tall, a 7:1 dash, and at the far edge 15:1. A field of sideways
+      // dashes is exactly the "repeated horizontal pattern near the garage
+      // opening". With the damping removed, chips shrink correctly in both
+      // axes and the far floor resolves into fine isotropic speckle like
+      // the reference installs. Horizontal-to-vertical detail ratio in the
+      // far band went 0.35 -> 0.60 against 0.76-1.04 measured on the real
+      // installation photos. The ~29 degree shear this was added to hide is
+      // genuine perspective — vertical texture lines really do converge on
+      // the vanishing point — and it is not visible now that the filtering
+      // integrates along the true footprint axis.
+      var SHEAR_DAMP = 1.00;
+      var uScale = Bcoef * (invDnear + (invD - invDnear) * SHEAR_DAMP);
+      var duX = uScale;
+      var dvY = Acoef * invD * invD;
+      var duYcoef = Bcoef * SHEAR_DAMP * invD * invD;
+      var duYbase = (minX - cxImg) * duYcoef;
+      var duYstep = duYcoef;
+
+      // Extremely light distance softening: the foreground stays defined
+      // and only the far floor picks up a touch of natural camera falloff.
+      var kDepth = dNear * invD;
+      if (kDepth < 1) kDepth = 1;
+      var distBias = 0.16 * (Math.log(kDepth) / Math.LN2);
+      if (distBias > 0.55) distBias = 0.55;
+
+      // Fresnel reflectance for this depth (Schlick). Depends only on the
+      // row, so it is computed once per row rather than per pixel.
+      var cosT = depth / Math.sqrt(depth * depth + FV_FOCAL * FV_FOCAL);
+      var om = 1 - cosT;
+      var om2 = om * om;
+      var fres = (FV_R0 + (1 - FV_R0) * om2 * om2 * om) * FV_GLOSS;
+
+      // Ease the back edge off. bk runs 0 at the far edge to 1 by
+      // mid-floor; smoothstep makes both ends flat so the roll-off starts
+      // and finishes gradually and cannot show a seam. Past mid-floor bk
+      // stays 1, so the middle and foreground are untouched.
+      var bk = (cosT - fvCosTop) / fvCosSpan;
+      if (bk < 0) bk = 0; else if (bk > 1) bk = 1;
+      bk = bk * bk * (3 - 2 * bk);
+      fres *= FV_BACK_GLOSS + (1 - FV_BACK_GLOSS) * bk;
+      var clarity = FV_BACK_CLARITY + (1 - FV_BACK_CLARITY) * bk;
+
+      var uTexBase = (minX - cxImg) * uScale;
+      var uTexStep = uScale;
+      var maxLvl = mips.length - 1;
+
+      // TAP COUNT — derived PER ROW, then held constant across the row.
+      // A fixed 4 taps was wrong at the back of the room. The mip is picked
+      // from duX * (aniso / taps), so whenever anisotropy exceeds the tap
+      // count that ratio blows up and the texture gets blurred HORIZONTALLY
+      // by it. Measured on the sample garage: anisotropy is 15.1 at the far
+      // floor edge, so 4 taps meant a 3.8x horizontal smear, which is what
+      // turned the far flake into fine horizontal combing that read as a
+      // repeated horizontal pattern near the garage opening.
+      // Taps now scale with the row's own anisotropy. It must not vary
+      // along x — that was the original vertical-seam bug — so it is
+      // computed once per row from the largest anisotropy anywhere in that
+      // row and reused for every pixel in it.
+      var duYrow = Math.max(Math.abs((minX - cxImg) * duYcoef), Math.abs((maxX - cxImg) * duYcoef));
+      var anisoRow = Math.sqrt(duYrow * duYrow + dvY * dvY) / duX;
+      var FV_ANISO_SAMPLES = Math.ceil(anisoRow);
+      if (FV_ANISO_SAMPLES < 4) FV_ANISO_SAMPLES = 4;
+      else if (FV_ANISO_SAMPLES > 24) FV_ANISO_SAMPLES = 24;
+
+      for (var px2 = 0; px2 < bw; px2++) {
+        var uTex = uTexBase + px2 * uTexStep;
+        var duY = duYbase + px2 * duYstep;
+
+        // The pixel footprint is a parallelogram spanned by
+        //   (duX, 0)      along screen x   <- the SHORT axis
+        //   (duY, dvY)    along screen y   <- the LONG axis, INCLUDING the
+        //                                    shear term that was ignored
+        // Integrating along the TRUE long axis is correct filtering and
+        // leaves flake shapes intact. The earlier bug integrated along
+        // (0, dvY) instead — dropping duY — which smeared flakes into
+        // streaks fanning out from the vanishing point. Taking the mip
+        // from the short axis keeps the foreground crisp; without this
+        // the whole floor blurs and the far field turns to mush.
+        var L = Math.sqrt(duY * duY + dvY * dvY);
+        var aniso = L / duX;
+        if (!(aniso > 1)) aniso = 1;
+
+        // THE VERTICAL SEAM BUG. The sample count used to be
+        // Math.round(aniso). aniso varies continuously across a row (duY
+        // grows with distance from the image centre), so rounding it gave
+        // an INTEGER that stepped part-way along the row — abruptly
+        // changing both how many samples were averaged and, because lvl
+        // divided by it, the mip level too. Measured on the sample photo:
+        // at y=900 the level jumped a full mip mid-row. A hard
+        // discontinuity at a fixed x is precisely a vertical line, and it
+        // repeated at every row where the threshold was crossed, reading
+        // as vertical stripes down the floor.
+        //
+        // The sample count is now FIXED, so nothing quantises along x:
+        // aniso/FV_ANISO_SAMPLES, lvl, the sample positions and the
+        // weights all vary smoothly across the whole row. No vertical
+        // boundary can form anywhere.
+        // Each tap should cover the SHORT axis; the taps together span the
+        // long one. So the mip comes from duX alone, and only widens if the
+        // taps cannot cover the long axis (aniso > taps) — clamped at 1 so
+        // it can never go BELOW the pixel footprint either, which used to
+        // under-filter the foreground.
+        var overBlur = aniso / FV_ANISO_SAMPLES;
+        if (overBlur < 1) overBlur = 1;
+        var lvl = Math.log(Math.max(duX * TILE * overBlur, 0.0001)) / Math.LN2 + distBias;
+        if (lvl < 0) lvl = 0; else if (lvl > maxLvl) lvl = maxLvl;
+        var l0 = lvl | 0;
+        var l1 = l0 < maxLvl ? l0 + 1 : l0;
+        var lf = lvl - l0;
+
+        var tr = 0, tg = 0, tb = 0;
+        var invN = 1 / FV_ANISO_SAMPLES;
+        for (var lv = 0; lv < 2; lv++) {
+          var wgt = (lv === 0 ? (1 - lf) : lf) * invN;
+          if (wgt <= 0) continue;
+          var mp = mips[lv === 0 ? l0 : l1];
+          var mS = mp.size, mD = mp.data;
+          for (var k = 0; k < FV_ANISO_SAMPLES; k++) {
+            var tt = (k + 0.5) * invN - 0.5;      // walk the long axis
+            var up = (uTex + tt * duY) * mS;
+            var vp = (vTex + tt * dvY) * mS;
+            var fxx = up - Math.floor(up), fyy = vp - Math.floor(vp);
+            var xa = ((Math.floor(up) % mS) + mS) % mS, xb = (xa + 1) % mS;
+            var ya = ((Math.floor(vp) % mS) + mS) % mS, yb = (ya + 1) % mS;
+            var ra = ya * mS, rb = yb * mS;
+            var j00 = (ra + xa) * 4, j10 = (ra + xb) * 4, j01 = (rb + xa) * 4, j11 = (rb + xb) * 4;
+            var q00 = (1 - fxx) * (1 - fyy) * wgt, q10 = fxx * (1 - fyy) * wgt;
+            var q01 = (1 - fxx) * fyy * wgt, q11 = fxx * fyy * wgt;
+            tr += mD[j00] * q00 + mD[j10] * q10 + mD[j01] * q01 + mD[j11] * q11;
+            tg += mD[j00 + 1] * q00 + mD[j10 + 1] * q10 + mD[j01 + 1] * q01 + mD[j11 + 1] * q11;
+            tb += mD[j00 + 2] * q00 + mD[j10 + 2] * q10 + mD[j01 + 2] * q01 + mD[j11 + 2] * q11;
+          }
+        }
+
+        // Soften the product photo's studio contrast, desaturate slightly,
+        // then let base-coat colour show between the chips.
+        tr = tmR + (tr - tmR) * FLAKE_CONTRAST;
+        tg = tmG + (tg - tmG) * FLAKE_CONTRAST;
+        tb = tmB + (tb - tmB) * FLAKE_CONTRAST;
+        var tl = 0.299 * tr + 0.587 * tg + 0.114 * tb;
+        tr = tl + (tr - tl) * FLAKE_SAT;
+        tg = tl + (tg - tl) * FLAKE_SAT;
+        tb = tl + (tb - tl) * FLAKE_SAT;
+        // Basecoat sits UNDER the flake: a little everywhere, and more
+        // wherever the texture is dark — those darker pixels are the voids
+        // between chips, which on a real floor are filled by the basecoat
+        // rather than showing the slab. Weighted rather than uniform so it
+        // fills the gaps without washing out the chips themselves.
+        var gap = (bcMeanL * 0.90 - tl) / (bcMeanL * 0.90 || 1);
+        if (gap < 0) gap = 0; else if (gap > 1) gap = 1;
+        var bMix = BASE_MIX + gap * BASE_MIX_GAP;
+        tr = tr + (bcR - tr) * bMix;
+        tg = tg + (bcG - tg) * bMix;
+        tb = tb + (bcB - tb) * bMix;
+
+        // ---- STEP 4: apply the room's LIGHT, and only its light --------
+        // Only the room's coarse illumination is transferred to the coating;
+        // the flake material covers the concrete's fine surface detail.
+        // Broad discoloration can still resemble a shadow in a single photo.
+        var fi = (py2 * bw + px2) * 4;
+        var lumLow = (0.299 * lowData[fi] + 0.587 * lowData[fi + 1] + 0.114 * lowData[fi + 2]) / 255;
+
+        var shade = shadeTable[lowData[fi]];
+
+        tr *= shade; tg *= shade; tb *= shade;
+
+        // ---- STEP 5: clear polyaspartic topcoat ------------------------
+        // Encapsulation. Under a clear film the voids between chips sit
+        // slightly deeper and read a touch darker, while chip faces catch
+        // the light. Without this the flake looks printed ON the floor
+        // rather than suspended in it.
+        var enc = 1 - gap * 0.11;
+        tr *= enc; tg *= enc; tb *= enc;
+
+        // The reflection blurs out with distance from whatever is doing the
+        // reflecting, so floor close to the contact line keeps a tighter
+        // image and floor far from it gets broad diffuse sheen.
+        var spread = (imgY - contactY[px2]) / (bh || 1);
+        if (spread < 0) spread = 0; else if (spread > 1) spread = 1;
+        var rNear0 = reflNear[fi], rNear1 = reflNear[fi + 1], rNear2 = reflNear[fi + 2];
+        var rFar0 = reflFar[fi], rFar1 = reflFar[fi + 1], rFar2 = reflFar[fi + 2];
+        var rr = rNear0 + (rFar0 - rNear0) * spread;
+        var rg = rNear1 + (rFar1 - rNear1) * spread;
+        var rb = rNear2 + (rFar2 - rNear2) * spread;
+
+        // Reflection CLARITY falls off with distance. The soft copy stands
+        // in for the local average, so lerping toward it compresses the
+        // reflection's contrast without blurring the flake underneath —
+        // the coating layer is untouched, only the mirrored image is
+        // flattened. Hard structures like door tracks lose their edge and
+        // survive as faint broad sheen; nearer floor keeps full clarity.
+        rr = rFar0 + (rr - rFar0) * clarity;
+        rg = rFar1 + (rg - rFar1) * clarity;
+        rb = rFar2 + (rb - rFar2) * clarity;
+
+        // Energy-conserving dielectric mix: the coating shows through
+        // (1 - F) and the mirrored room contributes F. Because F is only a
+        // few percent underfoot, foreground flake colour is essentially
+        // untouched; it climbs toward the far wall, which is exactly where
+        // the reference photos go glassy.
+        var reflAlpha = (reflNear[fi + 3] * (1 - spread) + reflFar[fi + 3] * spread) / 255;
+        var refl = fres * reflAlpha;
+        tr = reflectChannel(tr, rr, refl);
+        tg = reflectChannel(tg, rg, refl);
+        tb = reflectChannel(tb, rb, refl);
+
+        // Specular glints off individual chip facets. Keyed to the chip's
+        // own brightness AND to how bright the reflected surroundings
+        // actually are, so highlights land where the photograph's light
+        // really is and stay out of the shadows.
+        // Normalised by the blend's OWN contrast, not a fixed 90. A chip
+        // face catches the light because of how it sits, not because of how
+        // pale it is, so the brightest chips in any blend should glint
+        // alike. With a fixed divisor a dark blend never reached it —
+        // Carbon's chips span about a third of Domino's range, so its
+        // glints came out near zero and the floor lost the sparkle that
+        // makes a real black flake floor read as flake at all. The mid and
+        // light blends land on 1.4 * 62 = 87, within 4% of the old 90, so
+        // they are effectively unchanged.
+        var facet = (tl - tmL) / (1.4 * FV_ACHIEVED_SD);
+        if (facet > 0) {
+          if (facet > 1) facet = 1;
+          var envL = (0.299 * rr + 0.587 * rg + 0.114 * rb) / 255;
+          var glint = facet * facet * envL * refl * FV_SPARKLE;
+          tr += (255 - tr) * glint; tg += (255 - tg) * glint; tb += (255 - tb) * glint;
+        }
+
+        // CONTACT SHADOW. Where an object sits on the floor the photograph
+        // has a real shadow pooled against its base. The coating is opaque,
+        // so that shadow would otherwise be painted out and the object
+        // would look pasted on rather than standing on the floor. Just
+        // outside the object mask, the photo's own darkness relative to the
+        // clean-floor light field is carried across as a multiply — a
+        // shadow is a lighting fact, not slab colour, so this stays within
+        // "lighting only". Clamped so a dark object can never punch a hole
+        // in the coating.
+        if (objData) {
+          var oNear = objData[fi] / 255;
+          if (oNear > 0.02 && oNear < 0.98) {
+            var pl = (0.299 * srcFull[((minY + py2) * w + (minX + px2)) * 4]
+                    + 0.587 * srcFull[((minY + py2) * w + (minX + px2)) * 4 + 1]
+                    + 0.114 * srcFull[((minY + py2) * w + (minX + px2)) * 4 + 2]) / 255;
+            var sh2 = pl / (lumLow > 0.04 ? lumLow : 0.04);
+            if (sh2 > 1) sh2 = 1; else if (sh2 < 0.55) sh2 = 0.55;
+            var sMix = 1 - Math.abs(oNear - 0.5) * 2; // strongest just at the rim
+            var sf = 1 + (sh2 - 1) * sMix;
+            tr *= sf; tg *= sf; tb *= sf;
+          }
+        }
+
+        if (tr < 0) tr = 0; else if (tr > 255) tr = 255;
+        if (tg < 0) tg = 0; else if (tg > 255) tg = 255;
+        if (tb < 0) tb = 0; else if (tb > 255) tb = 255;
+        outData[fi] = tr; outData[fi + 1] = tg; outData[fi + 2] = tb; outData[fi + 3] = 255;
+      }
+    }
+    texCtx.putImageData(out, 0, 0);
+
+    // Mask to the floor outline with an anti-aliased path rather than a
+    // hard clip, giving the ~1px feathered edge that keeps the coating
+    // from cutting a jagged line against walls, trim, stairs and doors.
+    // Everything outside the mask is left completely untouched.
+    var maskCanvas = document.createElement('canvas');
+    maskCanvas.width = bw; maskCanvas.height = bh;
+    var maskCtx = maskCanvas.getContext('2d');
+    maskCtx.fillStyle = '#000';
+    maskCtx.beginPath();
+    maskCtx.moveTo(poly[0].x - minX, poly[0].y - minY);
+    for (var j = 1; j < poly.length; j++) maskCtx.lineTo(poly[j].x - minX, poly[j].y - minY);
+    maskCtx.closePath();
+    maskCtx.fill();
+    // Erode the mask slightly. An anti-aliased fill alone leaves partial
+    // coverage right on the boundary, which can tint the first pixel of a
+    // wall, a garage-door track or a piece of trim. Stroking the same path
+    // with destination-out pulls the coating back under the edge, so it
+    // stops just short of every vertical surface while keeping the soft
+    // ~1px transition instead of a hard cut.
+    maskCtx.globalCompositeOperation = 'destination-out';
+    maskCtx.lineWidth = 1.6;
+    maskCtx.strokeStyle = '#000';
+    maskCtx.stroke();
+    maskCtx.globalCompositeOperation = 'source-over';
+    texCtx.globalCompositeOperation = 'destination-in';
+    texCtx.drawImage(maskCanvas, 0, 0);
+    texCtx.globalCompositeOperation = 'source-over';
+
+    ctx.drawImage(texCanvas, minX, minY);
+
+    // ---- LAYER 5: objects that physically sit ON the floor --------------
+    // The coating went down opaque, so anything standing on the floor was
+    // painted over. Those pixels are now restored from the untouched
+    // photograph through the object mask, which puts them back ON TOP of
+    // the new coating at full opacity — no ghosting, no transparency. The
+    // coating stays rebuilt underneath and around them.
+    if (objData) {
+      var objCanvas = document.createElement('canvas');
+      objCanvas.width = bw; objCanvas.height = bh;
+      var objCtx = objCanvas.getContext('2d');
+      var objImg = objCtx.createImageData(bw, bh);
+      var objPix = objImg.data;
+      for (var oy = 0; oy < bh; oy++) {
+        for (var ox = 0; ox < bw; ox++) {
+          var oi = (oy * bw + ox) * 4;
+          var sidx = ((minY + oy) * w + (minX + ox)) * 4;
+          objPix[oi] = srcFull[sidx];
+          objPix[oi + 1] = srcFull[sidx + 1];
+          objPix[oi + 2] = srcFull[sidx + 2];
+          objPix[oi + 3] = objData[oi];
+        }
+      }
+      objCtx.putImageData(objImg, 0, 0);
+      // Clip the restored objects to the floor outline too, so a feathered
+      // mask edge can never paint photo pixels outside the coated area.
+      objCtx.globalCompositeOperation = 'destination-in';
+      objCtx.drawImage(maskCanvas, 0, 0);
+      objCtx.globalCompositeOperation = 'source-over';
+      ctx.drawImage(objCanvas, minX, minY);
+    }
+
+    var url = canvas.toDataURL('image/jpeg', 0.94);
+    fvCanvasCache.set(cacheKey, url);
+    // Keep a handful of full-resolution previews, including customer photos.
+    while (fvCanvasCache.size > 8) fvCanvasCache.delete(fvCanvasCache.keys().next().value);
+    callback(url);
+  }).catch(function(){
+    callback(room.image); // graceful fallback: show the unmodified room photo
+  });
+}
+
+function fvUpdateQuoteLink(){
+  var link = document.getElementById('fvQuoteBtn');
+  var color = fvState.color;
+  link.href = color ? ('/instant-quote.html?color=' + encodeURIComponent(color.slug)) : '/instant-quote.html';
+  link.onclick = function(){
+    fvTrack('floor_visualizer_quote_clicked', {color: color ? color.slug : null});
+  };
+}
+
+// ---------- before / after slider ----------
+function fvSetReveal(pct){
+  pct = Math.max(0, Math.min(100, pct));
+  fvState.reveal = pct;
+  document.getElementById('fvAfterWrap').style.clipPath = 'inset(0 0 0 ' + (100 - pct) + '%)';
+  document.getElementById('fvDivider').style.left = (100 - pct) + '%';
+  document.getElementById('fvBtnBefore').classList.toggle('fv-toggle-active', pct === 0);
+  document.getElementById('fvBtnSplit').classList.toggle('fv-toggle-active', pct > 0 && pct < 100);
+  document.getElementById('fvBtnAfter').classList.toggle('fv-toggle-active', pct === 100);
+}
+
+(function initDrag(){
+  var stage = document.getElementById('fvStage');
+  var divider = document.getElementById('fvDivider');
+  var dragging = false;
+
+  function pctFromEvent(e){
+    var rect = stage.getBoundingClientRect();
+    var x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+    return Math.max(0, Math.min(100, 100 - (x / rect.width) * 100));
+  }
+  function start(e){ dragging = true; move(e); }
+  function move(e){
+    if (!dragging) return;
+    fvSetReveal(pctFromEvent(e));
+    e.preventDefault();
+  }
+  function end(){ dragging = false; }
+
+  divider.addEventListener('pointerdown', start);
+  window.addEventListener('pointermove', move);
+  window.addEventListener('pointerup', end);
+  stage.addEventListener('pointerdown', function(e){
+    if (e.target === divider) return;
+    fvSetReveal(pctFromEvent(e));
+  });
+})();
+
+// ---------- color grid ----------
+function fvRenderColorGrid(){
+  var grid = document.getElementById('fvColorGrid');
+  var colors = FLOOR_SYSTEMS[fvState.system].colors;
+  var favs = fvGetFavorites();
+  grid.innerHTML = '';
+  colors.forEach(function(color){
+    var card = document.createElement('div');
+    card.className = 'fv-color-card' + (fvState.color && fvState.color.slug === color.slug ? ' fv-color-selected' : '');
+    var isFav = favs.indexOf(color.slug) !== -1;
+    card.innerHTML =
+      '<button type="button" class="fv-fav-btn' + (isFav ? ' fv-fav-active' : '') + '" aria-label="Save ' + color.name + ' to favorites" data-slug="' + color.slug + '">' + (isFav ? '❤️' : '🤍') + '</button>' +
+      '<img src="' + color.thumb + '" alt="Epoxy flake color ' + color.name + ' preview" loading="lazy" width="240" height="240">' +
+      '<div class="fv-color-info"><div class="fv-color-name">' + color.name + '</div></div>' +
+      (fvState.color && fvState.color.slug === color.slug ? '<div class="fv-selected-check">✓</div>' : '');
+    card.addEventListener('click', function(e){
+      if (e.target.closest('.fv-fav-btn')) return;
+      fvState.color = color;
+      fvApplyColor(false);
+    });
+    card.querySelector('.fv-fav-btn').addEventListener('click', function(e){
+      e.stopPropagation();
+      fvToggleFavorite(color);
+    });
+    grid.appendChild(card);
+  });
+}
+
+// ---------- favorites (localStorage, max 3, no account) ----------
+function fvGetFavorites(){
+  try {
+    var raw = localStorage.getItem(FAVORITES_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) { return []; }
+}
+function fvSaveFavorites(list){
+  try { localStorage.setItem(FAVORITES_KEY, JSON.stringify(list)); } catch (e) {}
+}
+function fvToggleFavorite(color){
+  var favs = fvGetFavorites();
+  var idx = favs.indexOf(color.slug);
+  if (idx !== -1) {
+    favs.splice(idx, 1);
+  } else {
+    if (favs.length >= MAX_FAVORITES) {
+      fvShowToast('You can save up to ' + MAX_FAVORITES + ' favorites — remove one first.');
+      return;
+    }
+    favs.push(color.slug);
+    fvTrack('floor_favorite_saved', {color: color.slug});
+  }
+  fvSaveFavorites(favs);
+  fvRenderColorGrid();
+  fvUpdateFavButton();
+  fvRenderFavorites();
+}
+function fvToggleCurrentFavorite(){
+  if (fvState.color) fvToggleFavorite(fvState.color);
+}
+function fvUpdateFavButton(){
+  var btn = document.getElementById('fvSaveFavBtn');
+  var favs = fvGetFavorites();
+  var isFav = fvState.color && favs.indexOf(fvState.color.slug) !== -1;
+  btn.textContent = isFav ? '❤️ Saved' : '🤍 Save This Color';
+}
+function fvRenderFavorites(){
+  var wrap = document.getElementById('fvFavoritesWrap');
+  var favs = fvGetFavorites();
+  var allColors = FLOOR_SYSTEMS.flake.colors;
+  if (!favs.length) {
+    wrap.innerHTML = '<div class="fv-favorites-empty">Tap "Save This Color" above to keep up to 3 favorites for this session.</div>';
+    return;
+  }
+  var grid = document.createElement('div');
+  grid.className = 'fv-fav-grid';
+  favs.forEach(function(slug){
+    var color = allColors.filter(function(c){ return c.slug === slug; })[0];
+    if (!color) return;
+    var item = document.createElement('div');
+    item.className = 'fv-fav-item';
+    item.innerHTML = '<img src="' + color.thumb + '" alt="Favorite epoxy flake color ' + color.name + '" loading="lazy" width="160" height="160"><div>' + color.name + '</div>';
+    item.querySelector('img').addEventListener('click', function(){
+      fvState.system = 'flake';
+      fvState.color = color;
+      fvRenderPickers();
+      fvApplyColor(false);
+      document.getElementById('fvStage').scrollIntoView({behavior: 'smooth', block: 'center'});
+    });
+    grid.appendChild(item);
+  });
+  wrap.innerHTML = '';
+  wrap.appendChild(grid);
+}
+
+// ---------- share ----------
+function fvBuildShareUrl(){
+  var color = fvState.color;
+  var base = window.location.origin + '/floor-visualizer.html';
+  return color ? (base + '?color=' + encodeURIComponent(color.slug)) : base;
+}
+function fvShare(){
+  var url = fvBuildShareUrl();
+  var color = fvState.color;
+  var text = color ? ('Check out the ' + color.name + ' floor I found on Ozarks Concrete Coatings\'s Floor Visualizer!') : 'Check out Ozarks Concrete Coatings\'s Floor Visualizer!';
+  if (navigator.share) {
+    navigator.share({title: 'Ozarks Concrete Coatings Floor Visualizer', text: text, url: url}).catch(function(){});
+  } else if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(function(){
+      fvShowToast('Link copied to clipboard!');
+    }).catch(function(){
+      window.prompt('Copy this link:', url);
+    });
+  } else {
+    window.prompt('Copy this link:', url);
+  }
+}
+function fvShowToast(msg){
+  var toast = document.getElementById('fvToast');
+  toast.textContent = msg;
+  toast.classList.add('fv-toast-show');
+  clearTimeout(fvShowToast._t);
+  fvShowToast._t = setTimeout(function(){ toast.classList.remove('fv-toast-show'); }, 2600);
+}
+
+// ---------- URL param sync (?color=Slug-Name) ----------
+function fvReadColorFromUrl(){
+  try {
+    var raw = new URLSearchParams(window.location.search).get('color');
+    if (!raw) return null;
+    var slug = decodeURIComponent(raw);
+    var allColors = FLOOR_SYSTEMS.flake.colors;
+    return allColors.filter(function(c){ return c.slug.toLowerCase() === slug.toLowerCase(); })[0] || null;
+  } catch (e) { return null; }
+}
+function fvSyncUrl(){
+  try {
+    var url = new URL(window.location.href);
+    if (fvState.color) url.searchParams.set('color', fvState.color.slug);
+    window.history.replaceState({}, '', url.toString());
+  } catch (e) {}
+}
+
+// ---------- FAQ accordion (shared across site) ----------
+function toggleAcc(btn){
+  var wasOpen = btn.classList.contains('open');
+  document.querySelectorAll('.acc-trigger.open').forEach(function(b){
+    b.classList.remove('open');
+    b.setAttribute('aria-expanded','false');
+  });
+  if(!wasOpen){
+    btn.classList.add('open');
+    btn.setAttribute('aria-expanded','true');
+  }
+}
+
+// ---------- init ----------
+(function init(){
+  var urlColor = fvReadColorFromUrl();
+  if (urlColor) fvState.color = urlColor;
+  fvRenderPickers();
+  fvApplyRoom();
+  fvRenderColorGrid();
+  fvApplyColor(true);
+  fvSetReveal(50);
+  fvRenderFavorites();
+  fvTrack('floor_visualizer_opened', {color: fvState.color ? fvState.color.slug : null});
+})();
+</script>
+
+
+<script>
+/* nav: hamburger + mobile menu (mirrors index.html) */
+(function(){
+  var b=document.getElementById('hbtn'), m=document.getElementById('mmenu');
+  if(b&&m){ b.addEventListener('click',function(){ m.classList.toggle('open'); }); }
+})();
+</script>
+</body>
+</html>
