@@ -28,7 +28,7 @@
   "email":"OzarksConcreteCoatings@gmail.com",
   "address":{"@type":"PostalAddress","addressLocality":"Springfield","addressRegion":"MO","addressCountry":"US"},
   "areaServed":{"@type":"GeoCircle","geoMidpoint":{"@type":"GeoCoordinates","latitude":37.2090,"longitude":-93.2923},"geoRadius":"120000"},
-  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"179","bestRating":"5","worstRating":"1"},
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.97","reviewCount":"186","bestRating":"5","worstRating":"1"},
   "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"}],
   "sameAs":["https://www.facebook.com/ozarksconcretecoatings","https://www.instagram.com/ozarksconcretecoatings/","https://www.tiktok.com/@ozarksconcretecoatings"]
 }
@@ -110,78 +110,33 @@ nav{background:rgba(0,0,0,.97);border-bottom:1.5px solid var(--red);padding:0 36
 .nav-drop-wide{display:none;grid-template-columns:repeat(3,1fr);min-width:560px;gap:1px 8px;left:auto;right:0}
 .nav-drop:hover .nav-drop-wide{display:grid}
 
-/* ── HERO : car layered THROUGH the type ──────────────── */
-.hero-scene{position:relative;height:calc(100svh - 105px);min-height:560px;background:var(--bg);overflow:hidden;
-  display:flex;flex-direction:column;align-items:center;justify-content:center}
-.hero-scene::after{content:'';position:absolute;left:0;right:0;bottom:0;height:34%;z-index:4;pointer-events:none;
-  background:linear-gradient(to bottom,transparent,var(--bg) 88%)}
-
-.hero-stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
-
-/* the giant type, drawn twice: once behind the car, once in front */
-.ht{position:absolute;left:0;right:0;top:44%;transform:translateY(-50%);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  font-family:var(--font-d);font-size:clamp(52px,12.4vw,208px);line-height:.8;
-  letter-spacing:.015em;color:var(--text);text-align:center;pointer-events:none;
-  will-change:transform;text-wrap:balance}
-.ht i{display:block;overflow:hidden;font-style:normal;padding-bottom:.06em}
-.ht span{display:block}
-.ht-red{color:var(--red)}
-.ht-back{z-index:1}
-/* front copy: only the LAST line shows, so it lands in front of the car */
-.ht-front{z-index:3;
-  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,transparent 63%,#000 69%,#000 100%);
-  mask-image:linear-gradient(to bottom,transparent 0%,transparent 63%,#000 69%,#000 100%)}
-
-/* the car — masked out of its garage so it reads as a cut-out */
-.hero-car{position:absolute;z-index:2;width:min(1080px,94vw);will-change:transform}
-.hero-car img{width:100%;height:auto;display:block;
-  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 24%,#000 74%,transparent 95%),
-    radial-gradient(ellipse 60% 78% at 50% 56%,#000 48%,transparent 84%);
-  mask-image:linear-gradient(to bottom,transparent 0%,#000 24%,#000 74%,transparent 95%),
-    radial-gradient(ellipse 60% 78% at 50% 56%,#000 48%,transparent 84%);
-  -webkit-mask-composite:source-in;mask-composite:intersect;
-  filter:contrast(1.06) saturate(1.05)}
-
-/* foreground copy + CTAs */
-.hero-fg{position:absolute;left:0;right:0;bottom:64px;z-index:5;text-align:center;padding:0 24px;
-  will-change:transform}
-.hero-h1{font-family:var(--font-c);font-size:clamp(13px,1.5vw,17px);font-weight:600;color:var(--muted-lt);
-  letter-spacing:.06em;text-transform:uppercase;max-width:560px;margin:0 auto;line-height:1.4}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-c);font-size:11px;
-  font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
-.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:24px;height:1.5px;background:var(--red)}
-.hero-eyebrow{margin-bottom:10px}
-.hero-ctas{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:18px}
-.scroll-cue{position:absolute;bottom:22px;right:30px;z-index:6;
-  font-family:var(--font-c);font-size:10px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;
-  color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:7px}
-.scroll-cue::after{content:'';width:1px;height:34px;background:linear-gradient(var(--red),transparent);
-  animation:cue 1.9s ease-in-out infinite}
-@keyframes cue{0%,100%{opacity:.25;transform:scaleY(.45);transform-origin:top}50%{opacity:1;transform:scaleY(1);transform-origin:top}}
-
-/* quote form section (moved out of the hero) */
-.quote-sec{background:var(--bg2);border-top:1px solid var(--border);padding:70px 48px}
-.quote-wrap{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:56px;align-items:center}
-.quote-copy h2{font-family:var(--font-d);font-size:clamp(40px,5.4vw,74px);line-height:.92;margin-bottom:16px}
-.quote-copy h2 em{font-style:normal;color:var(--red)}
-.quote-copy p{color:var(--muted-lt);max-width:44ch;margin-bottom:22px}
-.quote-pills{display:flex;gap:9px;flex-wrap:wrap}
-.h-pill{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.05);border:1px solid var(--border);
-  border-radius:3px;padding:7px 12px;font-family:var(--font-c);font-size:11px;font-weight:700;
-  letter-spacing:.07em;text-transform:uppercase;color:var(--muted-lt);transition:background .25s,border-color .25s,color .25s}
-.h-pill:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.18);color:var(--text)}
-.h-pill .ico{width:20px;height:20px;background:var(--red-glow);border:1px solid rgba(204,32,47,.3);border-radius:2px;
-  display:flex;align-items:center;justify-content:center;font-size:11px}
-
-@media(max-width:900px){
-  .quote-wrap{grid-template-columns:1fr;gap:32px}
-  .hero-scene{height:calc(100svh - 68px);min-height:520px}
-  .hero-fg{bottom:34px}
-  .hero-ctas .btn{padding:11px 16px;font-size:12.5px}
-  .scroll-cue{display:none}
-  .ht-front{-webkit-mask-image:linear-gradient(to bottom,transparent 0%,transparent 66%,#000 72%,#000 100%);
-    mask-image:linear-gradient(to bottom,transparent 0%,transparent 66%,#000 72%,#000 100%)}
+/* ── HERO (restored: pre-animation version) ─────────────── */
+/* old markup referenced --white/--gray/--gray-light; map onto current tokens */
+:root{--white:var(--text);--gray:var(--muted);--gray-light:var(--muted-lt)}
+.hero{min-height:92vh;position:relative;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center center}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.93) 0%,rgba(0,0,0,.80) 45%,rgba(0,0,0,.25) 100%)}
+.hero-inner{position:relative;z-index:1;max-width:1300px;margin:0 auto;width:100%;padding:70px 40px;display:grid;grid-template-columns:1fr 420px;gap:60px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--red);border:1px solid var(--red);border-radius:4px;padding:5px 13px;font-family:var(--font-c);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--white);margin-bottom:18px;box-shadow:0 2px 12px rgba(204,32,47,.35)}
+.hero-logo{margin-bottom:22px;animation:fsu .7s ease both}
+.hero-logo img{height:80px;width:auto}
+.hero-h1{font-family:var(--font-d);font-size:clamp(50px,6vw,90px);line-height:.93;letter-spacing:.01em;margin-bottom:10px;animation:fsu .7s .1s ease both}
+.hero-h1 .r{color:var(--red)}
+.hero-sub{font-family:var(--font-c);font-size:clamp(15px,2vw,20px);font-weight:600;color:var(--gray-light);letter-spacing:.05em;text-transform:uppercase;margin-bottom:26px;animation:fsu .7s .17s ease both}
+.hero-trust{display:flex;gap:18px;margin-bottom:32px;flex-wrap:wrap;animation:fsu .7s .24s ease both}
+.tp{display:flex;align-items:center;gap:7px;font-family:var(--font-c);font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gray-light)}
+.tp .ic{width:30px;height:30px;background:var(--red-glow);border:1px solid rgba(204,32,47,.4);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:15px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;animation:fsu .7s .3s ease both}
+.btn-outline{background:transparent;color:var(--white);padding:13px 26px;font-size:15px;border:2px solid rgba(255,255,255,.25)}
+.btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,.06)}
+@keyframes fsu{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1100px){
+  .hero-inner{grid-template-columns:1fr;padding:44px 24px}
+  .hform{max-width:540px}
+}
+@media(max-width:768px){
+  .hero-inner{min-height:auto}
 }
 
 .hform{
@@ -428,6 +383,29 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
 .s-call{background:var(--red);color:var(--text)}
 .s-quote{background:var(--bg3);color:var(--text);border:1px solid var(--border)}
 
+
+/* ── PROCESS TIMELINE (pattern adapted from Relume Timeline 7) ───── */
+.pstl{max-width:940px;margin:44px auto 0;display:grid;grid-template-columns:34px 1fr;gap:0 26px}
+.pstl-rail{position:relative;width:3px;justify-self:center;height:100%;background:rgba(255,255,255,.10);border-radius:2px}
+.pstl-fill{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(var(--red),var(--red-dark));
+  border-radius:2px;transform:scaleY(0);transform-origin:top;will-change:transform}
+.pspstl-items{display:flex;flex-direction:column;gap:44px}
+.pstl-item{position:relative;padding-bottom:2px}
+.pspstl-dot{position:absolute;left:-40px;top:7px;width:13px;height:13px;border-radius:50%;
+  background:var(--bg3);border:2px solid rgba(255,255,255,.18);
+  box-shadow:0 0 0 6px var(--bg);transition:background .3s ease,border-color .3s ease,transform .3s ease}
+.pstl-item.on .pspstl-dot{background:var(--red);border-color:var(--red);transform:scale(1.18)}
+.pstl-num{font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:5px;transition:color .3s ease}
+.pstl-item.on .pstl-num{color:var(--red)}
+.pstl-t{font-family:var(--font-d);font-size:clamp(26px,3.2vw,40px);line-height:1;margin-bottom:8px;color:var(--text)}
+.pstl-d{color:var(--muted-lt);max-width:56ch;margin:0}
+@media(max-width:700px){
+  .pstl{grid-template-columns:20px 1fr;gap:0 18px}
+  .pspstl-dot{left:-31px;top:5px;width:11px;height:11px;box-shadow:0 0 0 5px var(--bg)}
+  .pspstl-items{gap:34px}
+}
+
 /* SCROLL REVEAL */
 .rev{opacity:1}
 
@@ -498,7 +476,6 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
 }
 @media(prefers-reduced-motion:reduce){
   .rev{opacity:1;transform:none}
-  .ht i span{transform:none}
   .st-n{opacity:1;transform:none;transition:none}
   *{animation-duration:.01ms!important;animation-delay:.01ms!important;transition-duration:.01ms!important}
 }
@@ -565,6 +542,7 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
     </li>
     <li><a href="/gallery.html">Gallery</a></li>
     <li><a href="/colors.html">Colors</a></li>
+    <li><a href="/floor-visualizer.html">Visualizer</a></li>
     <li><a href="/blog.html">Blog</a></li>
     <li><a href="/reviews.html">Reviews</a></li>
     <li><a href="/contact.html" class="nav-cta">Free Quote</a></li>
@@ -584,6 +562,7 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
   <a href="/service-areas.html">Service Areas (50 Cities)</a>
   <a href="/gallery.html">Gallery</a>
   <a href="/colors.html">Colors</a>
+  <a href="/floor-visualizer.html">Floor Visualizer</a>
   <a href="/blog.html">Blog</a>
   <a href="/reviews.html">Reviews</a>
   <a href="/instant-quote.html" style="color:var(--red)">⚡ Instant Price Calculator</a>
@@ -591,45 +570,31 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
 </div>
 
 <!-- HERO -->
-<section class="hero-scene" id="heroScene">
-  <div class="hero-stage">
-    <div class="ht ht-back" id="typeBack" aria-hidden="true">
-      <i><span>OZARKS</span></i><i><span>CONCRETE</span></i><i><span class="ht-red">COATINGS</span></i>
-    </div>
-    <div class="hero-car" id="heroCar">
-      <img src="hero-bg.png" id="heroBgImg" fetchpriority="high"
-        alt="Lamborghini on a finished epoxy flake garage floor installed by Ozarks Concrete Coatings in Springfield MO"/>
-    </div>
-    <div class="ht ht-front" id="typeFront" aria-hidden="true">
-      <i><span>OZARKS</span></i><i><span>CONCRETE</span></i><i><span class="ht-red">COATINGS</span></i>
-    </div>
+<section class="hero">
+  <div class="hero-bg">
+    <img src="hero-bg.png" alt="Premier Epoxy Garage Floor - Ozarks Concrete Coatings Springfield MO"/>
   </div>
-
-  <div class="hero-fg" id="heroFg">
-    <div class="hero-eyebrow">5.0 Rating · 179 Five-Star Google Reviews</div>
-    <h1 class="hero-h1">Southwest Missouri&rsquo;s premier epoxy &amp; polyaspartic floor coatings</h1>
-    <div class="hero-ctas">
-      <a href="#quote-form" class="btn btn-red">Get My Free Quote</a>
-      <a href="/gallery.html" class="btn btn-ghost">View Our Work</a>
-      <a href="tel:4174026821" class="btn btn-ghost">417.402.6821</a>
-    </div>
-  </div>
-  <div class="scroll-cue" aria-hidden="true">Scroll</div>
-</section>
-
-<!-- QUOTE -->
-<section class="quote-sec">
-  <div class="quote-wrap">
-    <div class="quote-copy rev">
-      <h2>We don&rsquo;t paint concrete.<br/><em>We transform it.</em></h2>
-      <p>Diamond-ground prep, an epoxy-polyurea hybrid basecoat and a polyaspartic topcoat &mdash; installed in one day and backed for life. Tell us about your floor and we&rsquo;ll get you a real number.</p>
-      <div class="quote-pills">
-        <div class="h-pill"><span class="ico">&#128737;</span>Lifetime Warranty</div>
-        <div class="h-pill"><span class="ico">&#9889;</span>1-Day Install</div>
-        <div class="h-pill"><span class="ico">&#128142;</span>Diamond Ground Prep</div>
-        <div class="h-pill"><span class="ico">&#128170;</span>Epoxy-Polyurea Hybrid</div>
+  <div class="hero-inner">
+    <!-- LEFT -->
+    <div>
+      <div class="hero-badge">⭐ 5.0 Rating on Google — 184 Five-Star Reviews</div>
+      <div class="hero-logo"><img src="Logo_with_number.png" alt="Ozarks Concrete Coatings" style="filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))"/></div>
+      <h1 class="hero-h1">Southwest<br/>Missouri's <span class="r">Premier</span><br/>Floor Coatings</h1>
+      <p class="hero-sub">Springfield · Nixa · Ozark · Branson · Republic · Joplin &amp; 75-Mile Radius</p>
+      <div class="hero-trust">
+        <div class="tp"><div class="ic">🛡️</div>Lifetime Warranty</div>
+        <div class="tp"><div class="ic">⚡</div>1-Day Install</div>
+        <div class="tp"><div class="ic">💪</div>Epoxy-Polyurea Hybrid Basecoat</div>
+        <div class="tp"><div class="ic">💎</div>Diamond Ground Prep</div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#quote-form" class="btn btn-red">🚀 Get Free Quote</a>
+        <a href="/instant-quote.html" class="btn btn-outline">⚡ Instant Price Calculator</a>
+        <a href="/floor-visualizer.html" class="btn btn-outline">🎨 Floor Visualizer</a>
+        <a href="tel:4174026821" class="btn btn-outline">📞 417.402.6821</a>
       </div>
     </div>
+    <!-- FORM (also anchored for scroll) -->
     <div class="hform" id="quote-form">
       <div class="hform-head">Get Your Free Quote<span class="sub">No obligation · Fast response · Local experts</span></div>
       <div class="frow">
@@ -829,12 +794,15 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
       <h2 class="sec-title">Our Proven 5-Step Process</h2>
       <p class="sec-body" style="margin:14px auto 0;text-align:center">Every install follows the same meticulous process. No shortcuts. No skipped steps. That's why our floors last a lifetime.</p>
     </div>
-    <div class="proc-grid stagger">
-      <div class="ps rev"><div class="ps-num">1</div><div class="ps-t">Surface Prep</div><p class="ps-d">Diamond grinding removes all coatings, oils, and imperfections. Cracks filled and leveled. This step is everything.</p></div>
-      <div class="ps rev"><div class="ps-num">2</div><div class="ps-t">Primer Coat</div><p class="ps-d">Specialized primer applied for maximum adhesion between the coating system and your concrete substrate.</p></div>
-      <div class="ps rev"><div class="ps-num">3</div><div class="ps-t">Base Coat</div><p class="ps-d">High-performance polyaspartic base coat spread evenly across the floor creating a flawless, bonded foundation.</p></div>
-      <div class="ps rev"><div class="ps-num">4</div><div class="ps-t">Decorative Layer</div><p class="ps-d">Color flakes, metallic pigments, or solid tones broadcast into the wet base. Your floor, your look.</p></div>
-      <div class="ps rev"><div class="ps-num">5</div><div class="ps-t">Topcoat Seal</div><p class="ps-d">UV-stable, chemical-resistant topcoat locks it all in. Gorgeous, easy to maintain. Drive on it in 24 hours.</p></div>
+    <div class="pstl" id="procTl">
+      <div class="pstl-rail"><div class="pstl-fill" id="pstlFill"></div></div>
+      <div class="pspstl-items">
+        <div class="pstl-item"><span class="pspstl-dot"></span><div class="pstl-num">Step 01</div><h3 class="pstl-t">Surface Prep</h3><p class="pstl-d">Diamond grinding removes all coatings, oils, and imperfections. Cracks filled and leveled. This step is everything.</p></div>
+        <div class="pstl-item"><span class="pspstl-dot"></span><div class="pstl-num">Step 02</div><h3 class="pstl-t">Primer Coat</h3><p class="pstl-d">Specialized primer applied for maximum adhesion between the coating system and your concrete substrate.</p></div>
+        <div class="pstl-item"><span class="pspstl-dot"></span><div class="pstl-num">Step 03</div><h3 class="pstl-t">Base Coat</h3><p class="pstl-d">High-performance polyaspartic base coat spread evenly across the floor creating a flawless, bonded foundation.</p></div>
+        <div class="pstl-item"><span class="pspstl-dot"></span><div class="pstl-num">Step 04</div><h3 class="pstl-t">Decorative Layer</h3><p class="pstl-d">Color flakes, metallic pigments, or solid tones broadcast into the wet base. Your floor, your look.</p></div>
+        <div class="pstl-item"><span class="pspstl-dot"></span><div class="pstl-num">Step 05</div><h3 class="pstl-t">Topcoat Seal</h3><p class="pstl-d">UV-stable, chemical-resistant topcoat locks it all in. Gorgeous, easy to maintain. Drive on it in 24 hours.</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -1179,6 +1147,7 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
           <li><a href="/gallery.html">Project Gallery</a></li>
           <li><a href="/reviews.html">Customer Reviews</a></li>
           <li><a href="/colors.html">Color Options</a></li>
+          <li><a href="/floor-visualizer.html">Floor Visualizer</a></li>
           <li><a href="/blog.html">Blog</a></li>
           <li><a href="/faq.html">FAQ</a></li>
           <li><a href="/financing.html">Financing</a></li>
@@ -1295,28 +1264,7 @@ document.querySelectorAll('.fq').forEach(q=>{
   statObs.observe(statsIn);
 })();
 
-// Mouse parallax on hero backdrop
-(function(){
-  const scene=document.getElementById('heroScene');
-  const _bd=document.getElementById('heroBackdrop'); if(!_bd)return;
-  const img=document.getElementById('heroBgImg');
-  if(!scene||!img)return;
-  let tX=0,tY=0,cX=0,cY=0,raf=null;
-  scene.addEventListener('mousemove',e=>{
-    const r=scene.getBoundingClientRect();
-    tX=(e.clientX-r.left)/r.width-.5;
-    tY=(e.clientY-r.top)/r.height-.5;
-    tX*=18;tY*=10;
-    if(!raf)raf=requestAnimationFrame(tick);
-  });
-  scene.addEventListener('mouseleave',()=>{tX=0;tY=0});
-  function tick(){
-    cX+=(tX-cX)*.06;cY+=(tY-cY)*.06;
-    img.style.transform='scale(1.08) translate('+cX+'px,'+cY+'px)';
-    raf=null;
-    if(Math.abs(tX-cX)>.05||Math.abs(tY-cY)>.05)raf=requestAnimationFrame(tick);
-  }
-})();
+
 
 // Form submit
 async function submitForm(btn){
@@ -1374,22 +1322,6 @@ window.addEventListener('load', function(){
     gsap.ticker.lagSmoothing(0);
   }
 
-  /* ENTRANCE — type clips up, car pushes in behind it */
-  gsap.timeline({ defaults:{ ease:'expo.out' } })
-    .from('.ht i span', { yPercent:118, duration:1.25, stagger:0.12 })
-    .from('#heroCar',   { scale:1.22, opacity:0, duration:1.5 }, '-=1.0')
-    .from('#heroFg',    { y:44, opacity:0, duration:1.0 }, '-=0.85')
-    .from('.scroll-cue',{ opacity:0, duration:0.7 }, '-=0.5');
-
-  /* SCROLL SCRUB — layers separate at different rates, then hand off */
-  gsap.timeline({
-    scrollTrigger:{ trigger:'#heroScene', start:'top top', end:'+=150%', scrub:0.8, pin:true, anticipatePin:1 }
-  })
-    .to('#typeBack', { yPercent:-58, scale:1.20, opacity:0.55 }, 0)
-    .to('#heroCar',  { yPercent:26,  scale:1.34 }, 0)
-    .to('#typeFront',{ yPercent:-24, opacity:0.85 }, 0)
-    .to('#heroFg',   { y:-110, opacity:0 }, 0)
-    .to('.scroll-cue',{ opacity:0 }, 0);
 
   /* section reveals via GSAP (replaces the plain IO fade) */
   gsap.utils.toArray('.rev').forEach(function(el){
@@ -1406,6 +1338,23 @@ window.addEventListener('load', function(){
       scrollTrigger:{ trigger:img, start:'top bottom', end:'bottom top', scrub:true }
     });
   });
+
+  /* process timeline: rail fills with scroll, dots light as you pass them */
+  var tl = document.getElementById('procTl');
+  if (tl) {
+    gsap.to('#pstlFill', {
+      scaleY: 1, ease: 'none',
+      scrollTrigger: { trigger: tl, start: 'top 72%', end: 'bottom 78%', scrub: 0.5 }
+    });
+    gsap.utils.toArray('.pstl-item').forEach(function(item){
+      ScrollTrigger.create({
+        trigger: item, start: 'top 72%', end: 'bottom 20%',
+        onEnter:     function(){ item.classList.add('on'); },
+        onEnterBack: function(){ item.classList.add('on'); },
+        onLeaveBack: function(){ item.classList.remove('on'); }
+      });
+    });
+  }
 
   ScrollTrigger.refresh();
 });
