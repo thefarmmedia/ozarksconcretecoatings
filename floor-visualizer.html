@@ -1461,7 +1461,7 @@ function fvApplyColor(skipTrack){
       var preview = new Image();
       preview.onload = function(){ finish(preview.src); };
       preview.onerror = function(){ if (request === fvRenderRequest) render(); };
-      preview.src = 'visualizer-previews/' + color.slug.toLowerCase() + '.jpg';
+      preview.src = 'visualizer-previews/' + color.slug.toLowerCase() + '.jpg?v=20260911-fine';
     } else render();
   }
   if (!skipTrack && color) fvTrack('floor_color_selected', {color: color.slug});
@@ -1870,19 +1870,12 @@ function fvComposite(room, color, callback, shouldCancel){
     // stamp fades out through a radial gradient, no hard edge exists
     // anywhere, and because the stamps wrap, the tile's own borders match
     // perfectly — so it can repeat forever with nothing to see.
-    // CHIP SCALE — this is the bug that made the flakes look enormous.
-    // The previous version cropped 270px of the source photo and drew it
-    // into 337px, i.e. it MAGNIFIED the product photo 1.25x. Source chips
-    // (~30px) became ~37px, so a 512px tile held only ~14 chips, and that
-    // tile was then stretched across ~794px of the near floor — roughly
-    // 58px per chip. Real 1/4" full-broadcast flake reads at ~12-15px at
-    // that distance. Chips are now DOWNSCALED so the tile carries ~37 of
-    // them, cutting rendered chip size by about 75%.
+    // Build detailed chips in texture space; room projection below sets their visible size.
     var TILE = 768;
     var CHIPS_ACROSS_TILE = 72;
     var SRC_CHIP_PX = 30;               // approx chip size in the product photos
     var chipInTile = TILE / CHIPS_ACROSS_TILE;
-    var chipScale = chipInTile / SRC_CHIP_PX; // ~0.46 => a real reduction, not a magnification
+    var chipScale = chipInTile / SRC_CHIP_PX; // reduce the source chips in texture space
 
     var tileCanvas = document.createElement('canvas');
     tileCanvas.width = TILE; tileCanvas.height = TILE;
@@ -1914,7 +1907,6 @@ function fvComposite(room, color, callback, shouldCancel){
     var ds = Math.max(6, cropW * chipScale);        // reduced, never magnified
     var stampSize = Math.max(8, Math.round(ds / 1.5));
     var stampR = stampSize / 2;
-    var maxOffX = Math.max(1, srcW - cropW), maxOffY = Math.max(1, srcH - cropH);
     var stampCanvas = document.createElement('canvas');
     stampCanvas.width = stampSize; stampCanvas.height = stampSize;
     var stampCtx = stampCanvas.getContext('2d');
@@ -1966,15 +1958,21 @@ function fvComposite(room, color, callback, shouldCancel){
       // slight brightness/saturation shift. Real flake is hand-broadcast,
       // so chip size and colour drift across a floor; without this the
       // eye eventually picks up machine-like uniformity.
-      var sJit = 0.90 + rnd() * 0.20;          // +/- ~10% chip size
-      var dsj = ds * sJit;
+      // Mix smaller fragments with medium chips and occasional larger pieces.
+      // Change the source crop, keeping the stamp footprint fully covered.
+      var sizePick = rnd();
+      var sJit = sizePick < 0.55 ? 0.55 + rnd() * 0.30
+        : sizePick < 0.92 ? 0.85 + rnd() * 0.30 : 1.15 + rnd() * 0.25;
+      var sampleW = Math.min(srcW, cropW / sJit);
+      var sampleH = Math.min(srcH, cropH / sJit);
+      var dsj = ds;
       // Brightness/saturation drift is kept small. A whole stamp shifted 5%
       // is a ~123px patch of the tile shifted 5%, i.e. another cloud. The
       // high-pass below would flatten most of it anyway; keeping it tight
       // means there is less for the high-pass to have to undo.
       stampCtx.filter = 'brightness(' + (0.98 + rnd() * 0.04).toFixed(3) +
                         ') saturate(' + (0.97 + rnd() * 0.06).toFixed(3) + ')';
-      stampCtx.drawImage(texImg, rnd() * maxOffX, rnd() * maxOffY, cropW, cropH, -dsj / 2, -dsj / 2, dsj, dsj);
+      stampCtx.drawImage(texImg, rnd() * (srcW - sampleW), rnd() * (srcH - sampleH), sampleW, sampleH, -dsj / 2, -dsj / 2, dsj, dsj);
       stampCtx.filter = 'none';
       stampCtx.restore();
       stampCtx.globalCompositeOperation = 'destination-in';
@@ -2176,12 +2174,9 @@ function fvComposite(room, color, callback, shouldCancel){
       : polyTopY - 0.16 * Math.max(1, polyBotY - polyTopY);
     if (horizonY > polyTopY - 4) horizonY = polyTopY - 4; // keep the floor strictly below the horizon
 
-    // NEAR SCALE. One tile carries CHIPS_ACROSS_TILE chips, so the span a
-    // tile covers at the very front sets the rendered chip size there.
-    // 0.40 * floorWidth over ~37 chips lands near-camera flake at roughly
-    // 13-14px in a 1280px photo, matching the reference installs (the old
-    // 0.62 over ~14 chips gave ~58px, the "giant flake" problem).
-    var nearSpan = Math.max(90, bw * 0.40);
+    // Room-wide view: 55% smaller than the previous 0.40-width projection.
+    // Scaling with floor width keeps the same appearance at every output size.
+    var nearSpan = Math.max(1, bw * 0.18);
     var dNear = polyBotY - horizonY;
     var Acoef = (dNear * dNear) / nearSpan;
     var Bcoef = dNear / nearSpan;

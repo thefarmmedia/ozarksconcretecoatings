@@ -22,14 +22,14 @@ const context = {
 vm.createContext(context);
 vm.runInContext(html.slice(html.indexOf('var fvRenderRequest ='),html.indexOf('// ---------- photorealistic floor recolor')),context);
 context.fvApplyColor(true);
-assert.equal(loads[0].src,'visualizer-previews/houndstooth.jpg');
+assert.equal(loads[0].src,'visualizer-previews/houndstooth.jpg?v=20260911-fine');
 context.fvState.color={name:'Carbon',slug:'Carbon'};
 context.fvApplyColor(true);
 loads[0].onload();
 assert.equal(node('fvImgAfter').src,undefined,'obsolete image must not overwrite selection');
 loads[1].onload();
 node('fvImgAfter').onload();
-assert.equal(node('fvImgAfter').src,'visualizer-previews/carbon.jpg');
+assert.equal(node('fvImgAfter').src,'visualizer-previews/carbon.jpg?v=20260911-fine');
 assert.equal(node('fvStage').attrs['aria-busy'],'false');
 context.fvApplyColor(true);
 loads[2].onerror();
