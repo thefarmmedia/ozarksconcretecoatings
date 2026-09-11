@@ -482,8 +482,8 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
 .fv-main{padding:36px 0 56px;background:var(--gray-50)}
 .fv-layout{display:grid;grid-template-columns:1fr;gap:28px}
 
-.fv-stage-card{background:#100f0f;border-radius:var(--rl);padding:16px;box-shadow:var(--shm)}
-.fv-stage{position:relative;width:100%;aspect-ratio:4/3;border-radius:10px;overflow:hidden;touch-action:none;user-select:none;background:#070707}
+.fv-stage-card{max-width:920px;margin-inline:auto;background:#100f0f;border-radius:var(--rl);padding:16px;box-shadow:var(--shm)}
+.fv-stage{position:relative;width:100%;aspect-ratio:4/3;border-radius:10px;overflow:hidden;touch-action:pan-y;user-select:none;background:#070707}
 .fv-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
 .fv-after-wrap{position:absolute;inset:0;overflow:hidden;will-change:clip-path}
 .fv-after-wrap .fv-img{transition:opacity .15s ease}
@@ -538,6 +538,8 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
 
 .fv-color-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
 .fv-color-card{position:relative;background:#fff;border:2px solid var(--gray-200);border-radius:var(--rl);overflow:hidden;cursor:pointer;transition:transform .15s,border-color .15s;text-align:left}
+.fv-color-card:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.fv-divider:focus-visible::after{outline:3px solid var(--red);outline-offset:3px}
 .fv-color-card:hover{transform:translateY(-3px);border-color:var(--navy)}
 .fv-color-card.fv-color-selected{border-color:var(--gold);box-shadow:0 0 0 2px var(--gold)}
 .fv-color-card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
@@ -592,6 +594,8 @@ body{background:var(--bg);color:var(--text)}
 .fv-main{background:var(--bg)}
 .fv-cta-secondary{background:var(--bg2);border-color:var(--border)}
 .fv-color-card{background:var(--bg2);border-color:var(--border)}
+.fv-color-card:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.fv-divider:focus-visible::after{outline:3px solid var(--red);outline-offset:3px}
 .fv-color-card:hover{border-color:var(--red)}
 .fv-share-btn{background:var(--bg2);border-color:var(--border);color:var(--muted-lt)}
 .fv-share-btn:hover{border-color:var(--red);color:var(--text)}
@@ -631,7 +635,9 @@ body{background:var(--bg);color:var(--text)}
   .fv-toggle-btn{padding:9px 14px;font-size:13px}
 }
 @media(prefers-reduced-motion:reduce){
-  .fv-color-card,.fv-color-card:hover{transition:none;transform:none}
+  .fv-color-card,.fv-color-card:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.fv-divider:focus-visible::after{outline:3px solid var(--red);outline-offset:3px}
+.fv-color-card:hover{transition:none;transform:none}
 }
 </style>
 </head>
@@ -758,8 +764,8 @@ body{background:var(--bg);color:var(--text)}
               <img class="fv-img" id="fvImgAfter" src="" alt="" loading="eager">
             </div>
             <div class="fv-tag fv-tag-after">After</div>
-            <div class="fv-divider" id="fvDivider"></div>
-            <div class="fv-rendering-indicator" id="fvRenderingIndicator">Rendering your floor…</div>
+            <div class="fv-divider" id="fvDivider" role="slider" tabindex="0" aria-label="After preview percentage" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+            <div class="fv-rendering-indicator" id="fvRenderingIndicator" role="status" aria-live="polite">Rendering your floor…</div>
 
             <!-- CALIBRATION OVERLAY: shown right after a customer uploads their own photo -->
             <div class="fv-calibrate" id="fvCalibrate" style="display:none">
@@ -830,7 +836,7 @@ body{background:var(--bg);color:var(--text)}
 
     <!-- INTERNAL LINKS -->
     <div class="fv-internal-links">
-      Ready to go further? Browse the full <a href="/colors.html">epoxy flake color catalog</a>, check out real <a href="/gallery.html">finished floor photos</a> in our project gallery, learn more about our <a href="/type-flake.html">flake system floors</a>, or get a real ballpark with the <a href="/instant-quote.html">epoxy flooring cost calculator</a>. Serving <a href="/area-jefferson-city.html">Jefferson City</a>, <a href="/area-columbia.html">Columbia</a>, and <a href="/area-lake-ozarks.html">Lake of the Ozarks</a>, MO.
+      Ready to go further? Browse the full <a href="/colors.html">epoxy flake color catalog</a>, check out real <a href="/gallery.html">finished floor photos</a> in our project gallery, learn more about our <a href="/garage-floors.html">flake system floors</a>, or get a real ballpark with the <a href="/instant-quote.html">epoxy flooring cost calculator</a>. Serving <a href="/springfield-mo.html">Springfield</a>, <a href="/nixa-mo.html">Nixa</a>, and <a href="/branson-mo.html">Branson</a>, MO.
     </div>
 
     <!-- FAQ -->
@@ -859,7 +865,7 @@ body{background:var(--bg);color:var(--text)}
             <span class="acc-q">Will my finished floor look exactly like the visualizer?</span>
             <span class="acc-icon">+</span>
           </button>
-          <div class="acc-body"><p>It will be very close, but no two rooms have identical lighting, and every slab has its own texture and condition. The visualizer is meant to help you narrow down a color family and direction — your installer will confirm the exact look with a physical sample before your project starts.</p></div>
+          <div class="acc-body"><p>The preview is a guide, not an exact match. Lighting, screen settings, and installation affect the finished appearance. The visualizer is meant to help you narrow down a color family and direction — your installer will confirm the exact look with a physical sample before your project starts.</p></div>
         </div>
         <div class="acc-item">
           <button type="button" class="acc-trigger" onclick="toggleAcc(this)" aria-expanded="false">
@@ -976,7 +982,8 @@ var ROOMS = {
     label: 'Garage',
     image: '/bare-concrete-garage-floor-springfield-mo.webp',
     alt: 'Bare concrete garage floor before epoxy coating, Springfield MO',
-    floorClipPath: 'polygon(0% 55.5%, 11.7% 53.7%, 23.4% 51.7%, 35.2% 49.2%, 46.9% 46.8%, 52.5% 44.4%, 64.2% 45.3%, 75.2% 48.1%, 81.4% 49.4%, 91.6% 50.8%, 100% 52.7%, 100% 100%, 0% 100%)',
+    floorClipPath: 'polygon(0% 55.7%, 51.8% 45.2%, 56.2% 44.3%, 100% 53.2%, 100% 100%, 0% 100%)',
+    preserveObjects: false, // This reference garage is empty; slab stains are not objects.
     // horizonY (eye-level vanishing line, % of image height) may be set
     // per room, but is normally left off: the estimate derived from the
     // floor outline is tuned to keep flake detail readable all the way to
@@ -1365,6 +1372,11 @@ function fvCancelCalibration(){
 }
 
 function fvConfirmCalibration(){
+  var area = fvCalibratePoints.reduce(function(sum, p, i){
+    var q = fvCalibratePoints[(i + 1) % fvCalibratePoints.length];
+    return sum + p.x * q.y - q.x * p.y;
+  }, 0);
+  if (Math.abs(area) < 50) { fvShowToast('Spread the points around the floor before continuing.'); return; }
   var poly = 'polygon(' + fvCalibratePoints.map(function(p){ return p.x + '% ' + p.y + '%'; }).join(', ') + ')';
   ROOMS.custom = {
     label: 'My Photo',
@@ -1419,18 +1431,38 @@ function fvApplyColor(skipTrack){
     var room = ROOMS[fvState.room];
     var indicator = document.getElementById('fvRenderingIndicator');
     var afterImg = document.getElementById('fvImgAfter');
+    indicator.textContent = 'Rendering your floor…';
     indicator.classList.add('fv-rendering-show');
-    fvComposite(room, color, function(url){
+    document.getElementById('fvStage').setAttribute('aria-busy', 'true');
+    afterImg.style.opacity = '0';
+    function finish(url){
       if (request !== fvRenderRequest) return;
-      afterImg.style.opacity = '0';
-      setTimeout(function(){
+      if (!url) {
+        indicator.textContent = 'Preview could not load. Select a color to retry.';
+        document.getElementById('fvStage').setAttribute('aria-busy', 'false');
+        return;
+      }
+      afterImg.onload = function(){
         if (request !== fvRenderRequest) return;
-        afterImg.src = url;
-        afterImg.alt = room.alt + ' coated in ' + color.name;
         afterImg.style.opacity = '1';
         indicator.classList.remove('fv-rendering-show');
-      }, 100);
-    }, function(){ return request !== fvRenderRequest; });
+        document.getElementById('fvStage').setAttribute('aria-busy', 'false');
+      };
+      afterImg.onerror = function(){ finish(null); };
+      afterImg.alt = room.alt + ' coated in ' + color.name;
+      afterImg.src = url;
+    }
+    function render(){
+      fvComposite(room, color, finish, function(){ return request !== fvRenderRequest; });
+    }
+    if (fvState.room === 'garage') {
+      // Pre-rendered with the same compositor: instant room previews on phones.
+      // Customer photos remain entirely local and use the live compositor.
+      var preview = new Image();
+      preview.onload = function(){ finish(preview.src); };
+      preview.onerror = function(){ if (request === fvRenderRequest) render(); };
+      preview.src = 'visualizer-previews/' + color.slug.toLowerCase() + '.jpg';
+    } else render();
   }
   if (!skipTrack && color) fvTrack('floor_color_selected', {color: color.slug});
 }
@@ -1446,7 +1478,7 @@ var fvCanvasCache = new Map();
 var fvImageCache = {};
 
 function fvCompositeKey(room, color){
-  return JSON.stringify([room.image, room.floorClipPath, room.horizonY,
+  return JSON.stringify([room.image, room.floorClipPath, room.horizonY, room.preserveObjects,
     color.texture, color.baseCoatColor]);
 }
 
@@ -1824,7 +1856,7 @@ function fvComposite(room, color, callback, shouldCancel){
       ux2.drawImage(mc, 0, 0, ow, oh, 0, 0, bw, bh); // upscale feathers the edge
       return ux2.getImageData(0, 0, bw, bh).data;
     }
-    var objData = fvObjectMask();
+    var objData = room.preserveObjects === false ? null : fvObjectMask();
 
     // ---- STEP 1: build a SEAMLESS, repeat-free flake texture ----------
     // Earlier versions tiled the flake photo directly in screen space and
@@ -2651,7 +2683,7 @@ function fvComposite(room, color, callback, shouldCancel){
     while (fvCanvasCache.size > 8) fvCanvasCache.delete(fvCanvasCache.keys().next().value);
     callback(url);
   }).catch(function(){
-    callback(room.image); // graceful fallback: show the unmodified room photo
+    callback(null); // Never present an unmodified photo as a successful coating preview.
   });
 }
 
@@ -2667,9 +2699,13 @@ function fvUpdateQuoteLink(){
 // ---------- before / after slider ----------
 function fvSetReveal(pct){
   pct = Math.max(0, Math.min(100, pct));
+  pct = Math.max(0, Math.min(100, pct));
   fvState.reveal = pct;
+  document.getElementById('fvDivider').setAttribute('aria-valuenow', Math.round(pct));
   document.getElementById('fvAfterWrap').style.clipPath = 'inset(0 0 0 ' + (100 - pct) + '%)';
   document.getElementById('fvDivider').style.left = (100 - pct) + '%';
+  document.querySelector('.fv-tag-before').hidden = pct === 100;
+  document.querySelector('.fv-tag-after').hidden = pct === 0;
   document.getElementById('fvBtnBefore').classList.toggle('fv-toggle-active', pct === 0);
   document.getElementById('fvBtnSplit').classList.toggle('fv-toggle-active', pct > 0 && pct < 100);
   document.getElementById('fvBtnAfter').classList.toggle('fv-toggle-active', pct === 100);
@@ -2685,7 +2721,7 @@ function fvSetReveal(pct){
     var x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
     return Math.max(0, Math.min(100, 100 - (x / rect.width) * 100));
   }
-  function start(e){ dragging = true; move(e); }
+  function start(e){ dragging = true; divider.setPointerCapture(e.pointerId); move(e); }
   function move(e){
     if (!dragging) return;
     fvSetReveal(pctFromEvent(e));
@@ -2696,8 +2732,18 @@ function fvSetReveal(pct){
   divider.addEventListener('pointerdown', start);
   window.addEventListener('pointermove', move);
   window.addEventListener('pointerup', end);
+  divider.addEventListener('pointercancel', end);
+  divider.addEventListener('keydown', function(e){
+    var value = fvState.reveal;
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') value -= 5;
+    else if (e.key === 'ArrowRight' || e.key === 'ArrowUp') value += 5;
+    else if (e.key === 'Home') value = 0;
+    else if (e.key === 'End') value = 100;
+    else return;
+    e.preventDefault(); fvSetReveal(value);
+  });
   stage.addEventListener('pointerdown', function(e){
-    if (e.target === divider) return;
+    if (e.target === divider || e.target.closest('.fv-calibrate')) return;
     fvSetReveal(pctFromEvent(e));
   });
 })();
@@ -2711,6 +2757,14 @@ function fvRenderColorGrid(){
   colors.forEach(function(color){
     var card = document.createElement('div');
     card.className = 'fv-color-card' + (fvState.color && fvState.color.slug === color.slug ? ' fv-color-selected' : '');
+    card.tabIndex = 0;
+    card.setAttribute('role', 'group');
+    card.setAttribute('aria-label', 'Preview ' + color.name);
+    card.addEventListener('keydown', function(e){
+      if (e.target !== card || (e.key !== 'Enter' && e.key !== ' ')) return;
+      e.preventDefault(); fvState.color = color; fvApplyColor(false);
+      grid.querySelector('[aria-label="Preview ' + color.name + '"]').focus();
+    });
     var isFav = favs.indexOf(color.slug) !== -1;
     card.innerHTML =
       '<button type="button" class="fv-fav-btn' + (isFav ? ' fv-fav-active' : '') + '" aria-label="Save ' + color.name + ' to favorites" data-slug="' + color.slug + '">' + (isFav ? '❤️' : '🤍') + '</button>' +
@@ -2734,7 +2788,8 @@ function fvRenderColorGrid(){
 function fvGetFavorites(){
   try {
     var raw = localStorage.getItem(FAVORITES_KEY);
-    return raw ? JSON.parse(raw) : [];
+    var parsed = raw ? JSON.parse(raw) : [];
+    return Array.isArray(parsed) ? parsed.filter(function(slug){ return FLAKE_COLORS.some(function(c){ return c.slug === slug; }); }).slice(0, 3) : [];
   } catch (e) { return []; }
 }
 function fvSaveFavorites(list){

@@ -673,6 +673,15 @@
 
 <script>
   // ── GHL WEBHOOK ──────────────────────────────────────────────────────────
+  const visualizerColors = ["Houndstooth", "Arrowhead", "Mushroom", "Nightfall", "Outback", "Ozark", "Tidal-Wave", "Wombat", "Creekbed", "Domino", "Carbon", "Safari", "Shoreline", "Orbit", "Feather-Grey", "Gravel", "Coyote", "Raven", "Glacier", "Cascade", "Agate", "Denali", "Europa", "Husky", "Yukon", "Yosemite", "Slate"];
+  const requestedColor = new URLSearchParams(window.location.search).get('color');
+  const visualizerColor = visualizerColors.includes(requestedColor) ? requestedColor : null;
+  if (visualizerColor) {
+    const selection = document.createElement('p');
+    selection.style.cssText = 'text-align:center;padding:12px 18px;color:#fff;background:#a41929;border-radius:8px';
+    selection.textContent = 'Your visualizer color: ' + visualizerColor.replaceAll('-', ' ') + '. We’ll include this preference with your estimate request.';
+    document.getElementById('sqftInput').closest('.calc-panel, .calc-card, section').prepend(selection);
+  }
   const WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/89Z35Kec8GmMXb7deCkL/webhook-trigger/6697da81-4b7f-4109-a0ae-cd3a90e0bb56';
 
   // ── STATE ────────────────────────────────────────────────────────────────
@@ -814,6 +823,7 @@
       project_type: state.type,
       sqft: est.sqft,
       coating_system: state.system,
+      visualizer_color: visualizerColor,
       concrete_condition: state.condition,
       project_layout: state.layout,
       low_estimate: est.low,

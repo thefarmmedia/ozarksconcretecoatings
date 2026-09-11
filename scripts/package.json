@@ -1,0 +1,1 @@
+{"private":true,"scripts":{"render":"node render-visualizer.cjs"},"dependencies":{"@napi-rs/canvas":"0.1.100"}}
