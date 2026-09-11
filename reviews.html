@@ -81,6 +81,18 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
 .nav-drop-wide{display:none;grid-template-columns:repeat(3,1fr);min-width:600px;gap:1px 10px;left:auto;right:0}
 .nav-drop:hover .nav-drop-wide{display:grid}
 @media(max-width:1300px){.nav-drop-wide{min-width:520px}}
+.rev-grid{columns:3;column-gap:18px}
+@media(max-width:1000px){.rev-grid{columns:2}}
+@media(max-width:640px){.rev-grid{columns:1;column-gap:0}}
+.rev-grid .rc{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;
+  break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid;margin-bottom:18px}
+.rev-more{display:none}
+.rev-grid.expanded .rev-more{display:block}
+.rev-toggle-wrap{text-align:center;margin-top:26px}
+@media(max-width:640px){
+  .rev-grid .rc{padding:20px}
+  .rev-grid .rc p{font-size:15px!important;line-height:1.7!important}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Ozarks Concrete Coatings", "url": "https://ozarksconcretecoatings.com/", "telephone": "+14174026821", "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.97", "reviewCount": "186", "bestRating": "5", "worstRating": "1"}, "review": [{"@type": "Review", "author": {"@type": "Person", "name": "Danny T"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "These this are AMAZING!!! Very professional and talented. The work Ozark Concrete Coating did in our garage, storm room and John Deere room have transformed our home. So very happy with the finished product and the warranty. Choose them for any of your needs, you wronged be disappointed.  We wish we'd have done it years ago🙏❤️🙏 Thank you Tanner, Conner, Berty, Garrett, Jorrey, Pablo and everyone involved. Your work is fantastic ❤️🇺🇸🙏"}, {"@type": "Review", "author": {"@type": "Person", "name": "Tom Kerber"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "Wow!   These guys are fantastic.  They were fast to quiet, came when they said, kept the job site spotless, and the floor looks incredible.  Can’t recommend Ozark Concrete enough."}, {"@type": "Review", "author": {"@type": "Person", "name": "Roger Christian"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "I would like to acknowledge the excellent job that Steven’s crew did on our patio. They did a phenomenal job in very hot conditions, I’m very satisfied with the professional work they did. I would highly recommend them for your project."}, {"@type": "Review", "author": {"@type": "Person", "name": "Anita Christian"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "The folks at Ozarks Concrete Coatings provided great service and communication throughout the process and we are delighted with the final product installed today!"}, {"@type": "Review", "author": {"@type": "Person", "name": "viper guy"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "Tanner and crew were great to work with Fromm the bidding process through installation.   They hammered out 5 car garage spaces quickly at a price that was cheaper than 2 other competitor bids that I received."}, {"@type": "Review", "author": {"@type": "Person", "name": "Robin Cross"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "Awesome job. It looks wonderful with perfect work. Prompt with good price and product.  Very friendly and easy access with questions."}, {"@type": "Review", "author": {"@type": "Person", "name": "Jacqueline"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "Jason, Garrett, & Connor were so great. Very efficient & my garage floor looks amazing!!! Will definitely use them in the future & recommend to everyone!"}, {"@type": "Review", "author": {"@type": "Person", "name": "John Fisher"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "Great bunch of people to work with. Prompt and did a great application. Would recommend them highly!"}, {"@type": "Review", "author": {"@type": "Person", "name": "Jane Binder"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "They arrived on schedule, went right to work, did a great job and gave us maintenance instructions before leaving.  Our garage floor looks terrific!  These are the guys to hire if you’re looking for professional service and results."}, {"@type": "Review", "author": {"@type": "Person", "name": "Barbara Rader"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "Ozark concrete was very professional!  They started our 1,700 sf garage at 11am and got finished at 8pm.  They all worked well together and worked hard!  They answered our questions, and were very patient.  They did a great job, I would recommend Ozark concrete to anyone wanting an epoxy floor!"}, {"@type": "Review", "author": {"@type": "Person", "name": "Judy Stone"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "Ozarks Concrete Coatings have a team of great guys who provide quality service with a smile!  Everything they did was top notch and professional.   Love my new garage and front porch patio and sidewalk.  They worked with me to find the best color to compliment my house. Can't wait to have them do my back patio next.  Great company!"}, {"@type": "Review", "author": {"@type": "Person", "name": "Blake Richter"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "reviewBody": "Our garage floor needed a massive upgrade. Ozarks Concrete Coatings was the right fit for our dream garage floor! The team was highly qualified and the customer service was great. They were in and out in just a few hours. I could not recommend them more!"}]}</script>
 </head>
@@ -209,8 +221,8 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
         <a href="https://g.page/r/CY8HzdE6Y61JEBM/review" target="_blank" rel="noopener" class="btn btn-red">&#9733; Leave a Review</a>
       </div>
     </div>
-    <div style="columns:3;column-gap:18px" class="rev">
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+    <div class="rev rev-grid" id="revGrid">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">These this are AMAZING!!! Very professional and talented. The work Ozark Concrete Coating did in our garage, storm room and John Deere room have transformed our home. So very happy with the finished product and the warranty. Choose them for any of your needs, you wronged be disappointed.  We wish we'd have done it years ago🙏❤️🙏 Thank you Tanner, Conner, Berty, Garrett, Jorrey, Pablo and everyone involved. Your work is fantastic ❤️🇺🇸🙏</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -220,7 +232,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We had an excellent experience with Ozarks Concrete Coatings from start to finish. Steven and his crew were outstanding to work with. Steven was a great foreman — very professional, organized, and communicated everything clearly throughout …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -230,7 +242,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Phenomenal, stunning work! I hired Ozarks Concrete Coatings to epoxy the floor in my large workshop, and they absolutely nailed it. …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -240,7 +252,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 7 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Wow!   These guys are fantastic.  They were fast to quiet, came when they said, kept the job site spotless, and the floor looks incredible.  Can’t recommend Ozark Concrete enough.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -250,7 +262,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a month ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Ozarks Concrete Coatings did an outstanding job on the epoxy floor for our shop at Bliss Brothers Solar. The workmanship was top-notch from start to finish, and what really stood out was their integrity. …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -260,7 +272,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 7 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Imagine the ideal contractor experience from start to finish- that would be how Ozark Concrete Coatings handled my project.  I submitted a request for  a quote and received a call back that same day. We received a fair, reasonable quote and …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -270,7 +282,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 6 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I would like to acknowledge the excellent job that Steven’s crew did on our patio. They did a phenomenal job in very hot conditions, I’m very satisfied with the professional work they did. I would highly recommend them for your project.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -280,7 +292,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a month ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Ozarks Concrete Coatings did an excellent job on both my main garage and my John Deere garage. The finished product looks great, and their bid was less expensive than any of the others we received. Scheduling was convenient and easy, and …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -290,7 +302,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">The folks at Ozarks Concrete Coatings provided great service and communication throughout the process and we are delighted with the final product installed today!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -300,7 +312,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a month ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">My garage flooring is absolutely stunning and I am extremely pleased with Ozarks Concrete Coatings. I recommend this company to you without hesitation and without qualification. The entire team is timely, polite, likeable, hard working and …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -310,7 +322,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Tanner and crew were great to work with Fromm the bidding process through installation.   They hammered out 5 car garage spaces quickly at a price that was cheaper than 2 other competitor bids that I received.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -320,7 +332,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 8 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Awesome job. It looks wonderful with perfect work. Prompt with good price and product.  Very friendly and easy access with questions.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -330,7 +342,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Jason, Garrett, &amp; Connor were so great. Very efficient &amp; my garage floor looks amazing!!! Will definitely use them in the future &amp; recommend to everyone!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -340,7 +352,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Great bunch of people to work with. Prompt and did a great application. Would recommend them highly!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -350,7 +362,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">They arrived on schedule, went right to work, did a great job and gave us maintenance instructions before leaving.  Our garage floor looks terrific!  These are the guys to hire if you’re looking for professional service and results.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -360,7 +372,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Ozark concrete was very professional!  They started our 1,700 sf garage at 11am and got finished at 8pm.  They all worked well together and worked hard!  They answered our questions, and were very patient.  They did a great job, I would recommend Ozark concrete to anyone wanting an epoxy floor!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -370,7 +382,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I had an excellent experience with Ozark Concrete Coating! Absolute professionals from start to finish. The team was knowledgeable, punctual, and took the time to explain the entire process. …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -380,7 +392,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 6 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Time to sing the praises of Ozark Concrete Coatings. Today was the first time I’ve used them. They did floor coatings on my garage and my front porch. I was a little nervous about the front porch at first because I’d never seen an epoxy …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -390,7 +402,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Ozarks Concrete Coatings have a team of great guys who provide quality service with a smile!  Everything they did was top notch and professional.   Love my new garage and front porch patio and sidewalk.  They worked with me to find the best color to compliment my house. Can't wait to have them do my back patio next.  Great company!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -400,7 +412,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We had a basement that we wanted to recoat with something that would withstand moisture. The guys at Ozarks Concrete Coatings were phenomenal at communicating, providing clear and accurate quote, helping us get custom colors, and they went …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -410,7 +422,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Our garage floor needed a massive upgrade. Ozarks Concrete Coatings was the right fit for our dream garage floor! The team was highly qualified and the customer service was great. They were in and out in just a few hours. I could not recommend them more!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -420,7 +432,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We cannot say enough good things about this company!  They gave us a quote, scheduled our date, showed up on time and immediately began work.  They explained all the steps as they were working, answered any questions we had, and didn’t seem …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -430,7 +442,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Our garage and front stoop on our house absolutely beautiful. All done in one day! The guys were professional and cleaned up everything when done. We highly recommend Ozark Concrete Coatings.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -440,7 +452,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Steven &amp; his crew, Aaron &amp; Cole were great to work with. They went over all they were going to do &amp; it happened just like they said. Looks beautiful. Love it.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -450,7 +462,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Thank you Ozark Concrete Coatings for a fantastic job. Steven and crew did an amazing job.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -460,7 +472,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Ozarks Concrete Coatings are professionals from start to finish.  They came and measured our garage, we picked our color, which was Nightfall, and they were out in a few weeks to do the installation. When they come out they inform you of …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -470,7 +482,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Tanner and his crew are the best in the business. I contacted them about my garage floors a few weeks before closing on our new house. We were able to get on the schedule the day we closed, which was perfect as we moved in a few day later. …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -480,7 +492,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Jarrad and his amazing install team are second to none!  Customer Service, Quality Install, Excellent Teamwork, these guys can do it all.  The lead installer even took an extra hour out of his time to come back out for a piece of trim that …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -490,7 +502,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 7 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Ozarks Concert Coatings did a phenomenal job on our two-car garage! The floor was cracking and peeling badly, but they completely transformed it. Their team was professional, efficient, and kept us informed throughout every step …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -500,7 +512,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Had back concrete patio done. Beautiful. Slightly slippery when wet but we k ew that going in. Worth it.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -510,7 +522,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 5 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">These guys do such a fantastic job!! They completely educate you about the product, what they do with it, proper maintenance, and then if you have any questions or concerns they promptly get that answered or resolved. We dealt mostly with …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -520,7 +532,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Jarrad and his crew were awesome to work with.  They coated my front porch and garage in one day and we are very happy with the finish product.  I highly recommend them.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -530,7 +542,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We LOVE our new garage floor! From the day we called to get a quote, to the day the job was complete, the process was seamless. They were very responsive to messages and easy to work with! Our garage looks top notch and feels like an extension of our home now thanks to them. We 100% recommend Ozarks Concrete Coatings!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -540,7 +552,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">If you are looking for quality work and professional workers, look no further.  From Tanner providing the quote to Steven and his team doing to work, things could not have been smoother.  They exceeded our expectations.  The install was done in one day and the result is amazing.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -550,7 +562,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">3 years ago we had  Ozark Concrete Coatings do our 3 car garage floor and it still looks like new so we had them back to do our patio. This is clearly the most honest and professional company in the Ozarks. Highly recommend them!!!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -560,7 +572,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I couldn’t be happier with the job these guys did on my garage. They were professional, clean, timely and did what they said they would do. They use high quality ingredients to make our floor look great for years to come. Also provide a 15 year warranty. I will be using them for future projects.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -570,7 +582,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We were very excited about having our garage floor done by these young men.  We were also a bit embarrassed at what they were getting into. We have several dogs that had used the garage as their bathroom when we aren’t home.  I had tried to …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -580,7 +592,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Excellent service and great quality.  Couldn’t be happier for the finished product!  Highly recommend.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -590,7 +602,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 6 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Extremely courteous and professional company to do business with. I received a quote very quickly and it was well within price range. They were able to work me in their busy schedule in order to get my floor done …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -600,7 +612,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 8 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">My floor turned out better than expected. Absolutely gorgeous. They were super easy to work with and had great personalities. I am already talking to them about a second project.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -610,7 +622,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">If you want a beautiful new floor then you need to go with Ozarks Concrete Coatings.These guys know what they are doing and you will not regret it.Increase the value of your home and enjoy your new space all while supporting your …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -620,7 +632,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">The team was easy to work with, worked quickly, gave a great suggestion on the coating that would match our brick.  They take pride in their work.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -630,7 +642,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a month ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Tanner and his crew were very professional, they got here on time, worked very hard to get it all done and the best part they cleaned up after themselves. My garage and my unfinished room look amazing. I have had a lot of complements since I got it all done.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -640,7 +652,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">These guys do incredible work! I had a warranty issue and they stood behind it and worked around our business schedule. Highly recommend.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -650,7 +662,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 9 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We are so happy with Ozark Concrete Coatings! We finally have the garage floor we have wanted for so long! Plus they were able to bring the garage flooring all the way up to our storm shelter on the garage floor. …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -660,7 +672,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Conner, Garret and the men showed up 9am and done by 2pm. 3 car garage and it looks great. Thank you!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -670,7 +682,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Steven and crew were very professional, and did an amazing job! I recommend them to anyone!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -680,7 +692,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We just had our front porch and back patio done by Ozarks Concrete Coatings, and we're very pleased with the results! They were very professional and personable, and got the work done in one day. It looks fantastic! We definitely recommend this company to others.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -690,7 +702,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We are thrilled with the beauty of our garage floor!  The work was professionally done.  The guys were on time, friendly, and great to communicate with!  We will -and have- recommend them!!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -700,7 +712,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I had the pleasure to meet Tanner, Pablo,and John today as they worked on my floor. When they finished, it changed the look of the entire room. It looks amazing. Very professional and a great group of guys. Thanks so much.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -710,7 +722,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I had heard great things about Ozarks Concrete Coatings prior to reaching out to them and once I did I was not disappointed.  Through the entire process, Tanner was amazing and we absolutely love our new garage floor!  The install was top …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -720,7 +732,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Wonderful experience working with Ozark Concrete Coatings! They were always quick to respond with information and professional in their dealings. We had them grind and seal a Wedding venue flooring and it turned out amazing! Definitely recommend!!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -730,7 +742,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We just got our garage floor done and it looks amazing. Derrick did such a wonderful job. He went above and beyond with customer service and any expectations that we had were exceeded. We recommend them to anyone and everyone!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -740,7 +752,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Very good company to work with they were very prompt on being on time. Everyone of the crew was very respectful very nice and the quality was second to none. They did my 50 x 40 garage and I was so impressed. I had him go ahead and do my house garage as well.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -750,7 +762,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I can not say enough good things about this company! They are responsive and quick to schedule. The crew is so nice, courteous and respectful and they do fantastic work! We get so many compliments on the job they did. In addition, they …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -760,7 +772,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; Edited 7 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I was really happy with our floor coating job. The price was super competitive and the work was excellent.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -770,7 +782,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Ozark Concrete Coatings came highly recommended by a good client of mine. These guys did not disappoint. …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -780,7 +792,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">they did the floor for our glow golf and it definitely exceeded our expectations!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -790,7 +802,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Tanner and the crew were amazing. One of our favorite custom touches for our home. Go ahead and get your patios and porches done too. You’ll be glad you did.  We highly recommend OCC !</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -800,7 +812,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Great product, great looking floor, 15 year warranty, and an excellent team doing the work!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -810,7 +822,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">The Ozarks team did a great job in my 3-car garage. Not a new build, so prep of the floor was required with grinding and epoxy repair of some areas. The color, Coyote, looks great. Have had an epoxied floor in last home and found that the …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -820,7 +832,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Derick was professional, courteous, and punctual. He was very accommodating with our constantly changing contractor schedule. The quality of the work is exceptional, and we are very happy with the results. I highly recommend OZZ for all your costing and concrete needs!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -830,7 +842,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Outstanding/Beautiful Garage Floor is what Ozark Concrete Floors provided me!  I think I am more proud of my garage floor in my new house than anything else!  I highly recommend this professional helpful and friendly company to meet your floor coverings needs. I know you too will be happy you chose them!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -840,7 +852,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">They did an awesome job on our garage floor with the Wombat Flake ! We love how it turned out . We get so many compliments and love how easy it is to clean !</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -850,7 +862,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We love our garage floor!!   Tanner and the guys were professional and did our 3 car garage in one day.   The floor is easy to keep clean.  If you want to improve your garage floor, we highly recommend  Ozarks Concrete Coatings!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -860,7 +872,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We couldn’t be happier with our new garage floor and have had many compliments on it. It is gorgeous and very easy to clean. The estimate they provided was exact, the team arrived promptly,  worked all day and completed the project on time. …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -870,7 +882,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We had high expectations when discussing our garage floor remodel with Ozarks Concrete Coatings.  Tanner and Company worked diligently to create a fantastic garage floor &amp; exceeded our expectations.  Now, as I arrive &amp; depart from home each …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -880,7 +892,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">All the guys were so kind. Our garage floor had a large crack and lots of stains. They came and had the job completed in less than 8 hours. It looks beautiful. They even followed up a few days later to check on our results and gave me their …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -890,7 +902,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Why did we wait so long to finally do this?! After doing some research and getting a few quotes we scheduled with Ozark concrete coatings. They had lots of options on scheduling, offered us a few discounts for choosing a December date and a …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -900,7 +912,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Amazing company and people to do business with. Very hard working, trusting, and the absolute BEST at what they do. Thank you Ozarks Concrete Coating Team.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -910,7 +922,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; Edited 3 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Ozark Concrete Coatings did an amazing job sealing my garage floor. Extremely professional and very efficient. I couldn’t recommend them more!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -920,7 +932,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">The team at Ozarks Concrete Coatings was amazing from start to finish. They carefully walked us through all of the choices they had available, and listened to what our family was looking for, to help us figure out the best fit for us. …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -930,7 +942,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 5 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Stephan, Pablo, Jason , Garrett , great job today very professional</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -940,7 +952,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I recently used Ozark Concrete Coatings to apply an epoxy finish to my garage and rear patio floors.  They both look GREAT and the guys did a great job.  The crew were professional, friendly and fast.  I am recommending them to all my friends.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -950,7 +962,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Despite the extreme weather and quick scheduling the crew was spot on and did a fantastic job. Was impressed with the care and diligent work they were able to accomplish under these conditions. I highly recommend their services and you will not be unhappy in the results Beautiful!!.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -960,7 +972,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Had these guys do an all white floor for photography area, they are great to work with and did a fantastic job!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -970,7 +982,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 7 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Ozarks Concrete Coatings had some of the most professional and respectful installers and managers I have ever met, I have recommended several of my coworkers and friends to get their floors done by this great company!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -980,7 +992,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We had our garage floor and patio area coated by Ozark Concrete Coating. Every step of the way, Ozark Concrete Coating was avaliable for questions, estimates and follow-ups. There was never a time that a question about this process was not …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -990,7 +1002,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Tanner and his crew did a fantastic job on our garage floor and John Deer Room.  Very professional and the job came out perfect.  Highly recommend!!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1000,7 +1012,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">They are all very professional got in a got the job done looks great and billed what they quoted I will use them again</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1010,7 +1022,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">These guys are top notch. Fantastic communication when setting things up and the finished product will blow you away. If you want your garage floor done right this is the company to go with. Very pleased with whole experience.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1020,7 +1032,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I have used them to prep and install floors on multiple occasions. I can't say enough about them.  Friendly, honest, helpful, and willing to go to the extra mile. My floors are fantastic and they worked with me to get exactly what I wanted; …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1030,7 +1042,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">From start to finish Ozarks Concrete Coatings was a pleasure to deal with! Jarrad and the crew showed up in a timely manner, worked efficiently, explained the process thoroughly and answered any question I had along the way. We are super pleased and cannot recommend them enough! Look no further for your epoxy needs! A+++!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1040,7 +1052,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">They did an awesome job. No complaints. Wouldn’t change a thing. Thank you so much</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1050,7 +1062,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 5 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Love the work these guys did on our garage. Our floor looks amazing, and they even went above and beyond and helped us find the perfect paint color to match the new floor. Could not recommend them enough!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1060,7 +1072,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I can’t say enough good things about this company. They were competitively priced but their quality is second to none! They did an amazing job on my 3 car garage to the point that I often just stay out there. The floor is super tough, not slick, and cleans up easily.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1070,7 +1082,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">They are professionals!    Great work, the end product is durable, beautiful with many options to choose from.    If you have concrete that you want really looking good, highly recommend this company!   They did great work for us!!!!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1080,7 +1092,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Thank you so much to Tanner, Derick, and crew from Ozarks Concrete Coatings for my new epoxy coated garage floor.  They are top notch and I would highly recommend them. I can’t wait to set up the garage and start getting settled in.  I’m considering having them back out for my patio and porch!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1090,7 +1102,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Can't say enough good things. Love the look (and feel) of the new floor. The guys were very professional and friendly. Would highly recommend.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1100,7 +1112,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">What an amazing job these guys did!  The previous owners of the house we bought had painted the garage floor with paint that was not designed for concrete and it was peeling up and it looked horrible.  Ozarks Concrete came in and gave me a …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1110,7 +1122,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Contacted Ozark Concrete to have the epoxy flooring done on my garage. From the first meeting with Garrett to the finished product I was 100% satisfied. First of all I have to say that the crew doing the work (The owner Derrick was out …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1120,7 +1132,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I hired Ozark Concrete Coatings to repair some leaking concrete joints and to do an epoxy floor at another location. Both jobs were done very well and the finished product is amazing! I worked primarily with Derek and Tanner and they were both very friendly and easy to get in contact with. 10/10 recommend!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1130,7 +1142,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We had the guys from Ozarks Concrete Coatings out to put a coating on a very old concrete floor for us. To say the floor in its original condition was less than ideal is a tremendous understatement! Tanner and his crew put in the extra work …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1140,7 +1152,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Our experience with Ozark Concrete was amazing. Jarrad and Tanner were punctual, professional, and we were so happy with the end result. Great job fellas!!!!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1150,7 +1162,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">The guys at Ozarks Concrete Coatings were fantastic.  We had a garage floor that was in terrible shape.  We cannot believe it is the same garage floor after the crew at Ozarks Concrete worked their magic.  The floor looks absolutely …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1160,7 +1172,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 5 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We had several cracks and places where the garage floor had chunks out. Tanner and his crew changed our floor from disaster to what my wife said looks like a granite top. We are very pleased and would recommend them for any job.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1170,7 +1182,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I absolutely love my new garage floor. These guys were so kind and very efficient!! I would highly recommend them for any work you need. All done in 1 day and price was very fair</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1180,7 +1192,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I highly recommend Ozarks Concrete Coatings to anyone in need of concrete coating services. Their professionalism, expertise, and commitment to customer satisfaction truly set them apart from the rest.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1190,7 +1202,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Ozark Concrete Coating is a top notch company!  From our first meeting until the final product, we had nothing but wonderful service.  The final  product not only met, but surpassed our expectations.  Every employee we had contact with was …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1200,7 +1212,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Awesome! The professional crew did an amazing job! We love the floor! Thank you!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1210,7 +1222,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">They have an excellent team and hardworking crew. The entire process from the start to finish exceeded our expectations. We are very happy with our garage and porch.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1220,7 +1232,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We love our garage floors!! Professional, easy to work with for scheduling, and a fantastic job!! You won’t regret choosing this team for your job!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1230,7 +1242,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">If you need your floors epoxied, look no further.  The gave me a bid the same day I called.  They came prepared with samples and the process was explained in detail.  They tossed in a couple extras at no cost and gave me a start date.  They …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1240,7 +1252,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 5 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Great crew.  Arrived on time Beautiful job</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1250,7 +1262,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 6 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I could not be more pleased with my beautiful, new garage floor. Five polite, friendly, hardworking guys showed up on time and completely transformed my garage floor in one day. The attention to detail was amazing and I absolutely love everything about it. I would highly recommend this company!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1260,7 +1272,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 5 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Very easy process of getting a quick and honest quote.  Team showed up on time, completed the project in the time frame they quoted and kept the process and my garage clean !  Floor looks great</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1270,7 +1282,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">This was an amazing experience! They completed my shed and my brothers garage both the same day! It looks great! Cleans super easy! It is absolutely the thing for garage floors!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1280,7 +1292,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Ozark Concrete Coatings did a fantastic job on our floors. couldn't be happier. Really good people to work with.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1290,7 +1302,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">They transformed our ugly, stained garage into a beautiful floor, fit for a showroom! The epoxy paint product they use is guaranteed for 15 years.  What an upgrade to our 20+  year old home. Great to work with!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1300,7 +1312,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 5 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We love our flooring! Tanner was amazing to work with and the other guys as well!! We highly recommend this business.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1310,7 +1322,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I highly recommend this company. They did a fantastic job on our Epoxy garage floor. Very professional, easy to deal with. Also cleaned up after themselves when they left. Very Satisfied</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1320,7 +1332,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Tanner and his crew coated my garage floor and made it look beautiful. They were friendly, professional, punctual, and I highly recommend them!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1330,7 +1342,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">This company is beyond awesome!  Professional, timely and knowledgable.  Outside covered grilling area done with epoxy. Looks amazing!  Thank you Guys for the beautiful job.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1340,7 +1352,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; Edited 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">My old garage floor and concrete porch needed a desperate makeover, and Ozark Concrete Coatings did a great job. I’m very happy with the coating and get compliments on it all the time.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1350,7 +1362,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Great professional work. Good mess control and very efficient. True to timelines and budget estimate. Will use again when I do my garage. 100% reccomend.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1360,7 +1372,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">This company is by far the most affordable and best work I’ve ever seen Jarrad was hands down the best sales consultant I’ve ever dealt with he even jumped in and helped on the install.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1370,7 +1382,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">If you are looking for help with home projects or upgrades, you’ve come to the right place. Tanner and the team were very responsive and did a fantastic job with our patio!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1380,7 +1392,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We are so please with the Epoxy flooring that this company installed on the basement floor of Rock Chapel FWB Church. The crew is so professional and friendly to work with. Highly recommend them.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1390,7 +1402,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Tanner and the guys did a great job made my garage floor beautiful excellent workmanship very reasonable thank you so much.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1400,7 +1412,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Tanner and the team did an amazing job. Attention to detail and the communication before, during, and after completion of the project was impressive.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1410,7 +1422,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">This company did a great job on all three epoxy floor projects and I recommend them for any of your concrete floor coating needs.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1420,7 +1432,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Tanner is awesome. these guys do a great job!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1430,7 +1442,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 10 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Great experience with this company. I love the new garage floor and Derek and crew were exceptionally professional to work with. I strongly recommend!!!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1440,7 +1452,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 5 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Great service and product.  We have a 25 year old back patio with stains, etc.  Covered well and made to look brand new!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1450,7 +1462,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">They did an exceptional job on my garage floor!! So much detail and absolute perfection. 💯 satisfaction! …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1460,7 +1472,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">These guys did a great job on my garage floors. I would recommend them. They were professional on time.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1470,7 +1482,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">They completed the work within a small time window and the quality was of the floor was great!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1480,7 +1492,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Outstanding! The quality and professional installation in a timely manner is amazing.  Highly recommend to anyone wanting this service.  Don’t do it yourself!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1490,7 +1502,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 5 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">cant say enough positive things about their service and how they stand behind their product!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1500,7 +1512,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 10 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Excellent work!! Love the new look to my garage. I would highly recommend these guys</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1510,7 +1522,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 5 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">These young men were very professional, knowledgeable, and timely. I couldn’t be more happy with the garage floor coating they did.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1520,7 +1532,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Outstanding quality! Tanner and the crew at Ozark Concrete Coatings are the best in the 417!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1530,7 +1542,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">We are extremely happy with the results of our garage flooring.  We highly recommend them.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1540,7 +1552,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Jordon and his staff were amazing! They completed the job in one day with friendly, helpful staff.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1550,7 +1562,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Great, dependable job!  Highly recommend Tanner and his crew!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1560,7 +1572,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I would highly recommend this company! They are so professional and do high quality work! Thank you!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1570,7 +1582,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Did a great Job, looks great. Got the job done quick</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1580,7 +1592,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">The best of the best! Very professional and work is flawless. Highly recommend!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1590,7 +1602,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">The guys were awesome, professional, and tidy. I would give them a 10 out of 10.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1600,7 +1612,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 5 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Amazing work and worth every penny! Thank you Jordan and Derik!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1610,7 +1622,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">The guys did and excellent job on my shop floor! Thank you!!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1620,7 +1632,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; Edited 7 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">They completely made over my garage floor and it looks amazing.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1630,7 +1642,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Amazing work! Excellent customer service!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1640,7 +1652,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Awesome work!  Great people 👍🏼 …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1650,7 +1662,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">👌🏻👌🏻👌🏻 …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1660,7 +1672,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a year ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Jarred was extremely professional and quality service!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1670,7 +1682,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">friendly, professionalism, caring, quality work-much appreciated!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1680,7 +1692,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Great product and company to work with!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1690,7 +1702,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Very Professional. Superior product.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1700,7 +1712,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Epoxy covering looks and works great!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1710,7 +1722,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 years ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Our porches have never looked better!  Both had old coatings with paint peeling and looked awful.   Jarrad came out and gave an estimate  in about twenty minutes.  They scheduled us promptly and showed up on time.  No surprises, no hiccups, and the bill was exactly as quoted.   Wish we had done it years ago!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1720,7 +1732,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 days ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">2nd time using Ozark Concrete Coatings. Fast, quality, workmanship. Polite, experienced, and efficient installers/applicators. We are currently waiting for the new surface to cure so we can park on it and will likely have Tanner back out to assess an older application that may need a little TLC.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1730,7 +1742,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 5 days ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">I have a new epoxy garage floor that was put in today by Ozark Concrete Coatings.  They did a fabulous job!  Garrett and Alberto were the installers.  They arrived on time and the installation was perfect.  The color is exactly what we wanted.  Thanks for the excellent work. I would highly recommend them. 👍 …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1740,7 +1752,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 6 days ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">As General Manager for Zipco Contracting Inc. We work hard to network with quality businesses to provide the absolute best service to our clients. Ozarks Concrete Coatings are the best at what they do. They have helped us on multiple …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1750,7 +1762,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a week ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">This is my second experience with ozarks concrete coatings the first time they came out and turned my mess of a garage floor into a beautiful floor I'm very proud of. Then today the guys came out and did the same with our concrete porch …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1760,7 +1772,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a week ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Excellent workmanship and professionalism, the guys did an excellent job on my garage floor. Highly recommended!!!!!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1770,7 +1782,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 weeks ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Ozark Concrete Coatings did a fantastic job!  Don't waste your time calling around for estimates, they were priced about the same as others and I saw their work at a couple other businesses, so there was no question who I was going to use. …</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1780,7 +1792,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 weeks ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Absolutely love my new floor, this crew was great, 1 crew started it and a second crew finished it up perfect. Everyone great to talk to and work with.  I would do it again in my next house.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1790,7 +1802,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 weeks ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Very pleased , very good  personnel,  great quality of work, clean up very nice.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1800,7 +1812,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 3 weeks ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">These guys are professionals! Top notch work! We are very pleased with the work they did. Everything was cleaned up and we were left with a beautiful garage floor! Thank you so much guys! I highly recommend this company!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1810,7 +1822,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 4 weeks ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Ozark Concrete Coatings just finished our garage in Stonebridge Village. The floor looks great! Quality materials and workmanship. The install crew was top notch.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1820,7 +1832,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a month ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Awesome job! Professional work, guys were very polite and professional, they explain the process and how to keep it looking good. They were cautious while working and cleaning up!!  Highly recommend!!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1830,7 +1842,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a month ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Garret, Conner, and Jorey were very professional and did a great job! I highly recommend them!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1840,7 +1852,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a month ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Quick, efficient, beautiful work! Very trustworthy firm. Will hire you for more.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1850,7 +1862,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a month ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Quality work with a great crew</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1860,7 +1872,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; a month ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">They did amazing work! We love how it looks! Highly recommend them! Had a great crew - Steven - Cole - Jason &amp; Garrett.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1870,7 +1882,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">TOP QUALITY WORK AND GOOD HONEST PEOPLE! If you are looking for an excellent floor I highly recommend this team! These guys worked hard and treated my floor like it was their own. Thank you Garrett, Connor, Jorey, Alberto, Pablo, Jason!</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1880,7 +1892,7 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
           <span style="font-family:var(--font-c);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gray)">Verified Google Review &middot; 2 months ago</span>
         </div>
       </div>
-      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:26px;break-inside:avoid;margin-bottom:18px">
+      <div class="rc rev-more">
         <div style="color:#ffc107;font-size:16px;margin-bottom:10px;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size:14px;color:var(--gray-light);line-height:1.72;margin-bottom:14px;font-style:italic">Just had my three-car garage resurfaced with epoxy, it looks great and the service was awesome.</p>
         <div style="font-family:var(--font-c);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;display:flex;align-items:center;gap:7px">
@@ -1891,6 +1903,9 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:36px 40px
         </div>
       </div>
     </div>
+      <div class="rev-toggle-wrap">
+        <button type="button" id="revToggle" class="btn btn-outline">Show All 168 Reviews</button>
+      </div>
   </div>
 </section>
 
@@ -1920,5 +1935,17 @@ var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isInters
 document.querySelectorAll(".rev").forEach(function(r){obs.observe(r);});
 </script>
 <script>document.querySelectorAll(".cur-yr").forEach(function(e){e.textContent=new Date().getFullYear();});</script>
+
+<script>
+(function(){
+  var g=document.getElementById('revGrid'), b=document.getElementById('revToggle');
+  if(!g||!b)return;
+  b.addEventListener('click',function(){
+    var open=g.classList.toggle('expanded');
+    b.textContent=open?'Show Fewer Reviews':'Show All 168 Reviews';
+    if(!open)g.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+})();
+</script>
 </body>
 </html>
