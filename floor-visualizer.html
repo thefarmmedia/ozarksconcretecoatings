@@ -614,6 +614,22 @@ body{background:var(--bg);color:var(--text)}
   font-size:13px;color:var(--muted)}
 .fv-breadcrumb a{color:var(--red);text-decoration:none}
 .fv-breadcrumb span{margin:0 6px;color:var(--muted)}
+/* ---- mobile: make the tool the hero, not the chrome ---- */
+/* Four "Coming Soon" chips (basement, shop, metallic, solid) are not
+   selectable and were pushing the actual visualizer below the fold. */
+.fv-pill-disabled{display:none}
+@media(max-width:640px){
+  .fv-hero{padding:24px 0 18px}
+  .fv-h1{font-size:30px;line-height:1.1}
+  .fv-sub{font-size:14px}
+  .fv-picker-row{margin-top:14px}
+  .fv-main{padding-top:16px!important;padding-bottom:20px!important}
+  .fv-main .wrap{padding:0 10px}
+  .fv-stage-card{padding:5px;border-radius:8px}
+  .fv-disclaimer{padding:14px}
+  .fv-disclaimer p{font-size:11.5px;line-height:1.55}
+  .fv-toggle-btn{padding:9px 14px;font-size:13px}
+}
 @media(prefers-reduced-motion:reduce){
   .fv-color-card,.fv-color-card:hover{transition:none;transform:none}
 }
@@ -713,7 +729,7 @@ body{background:var(--bg);color:var(--text)}
   <div class="wrap">
     <div class="fv-eyebrow">Ozarks Concrete Coatings — Interactive Floor Visualizer</div>
     <h1 class="fv-h1">See Your New Floor Before We Install It</h1>
-    <p class="fv-sub">Explore our most popular floor finishes and see how each color can transform your garage, basement, or shop.</p>
+    <p class="fv-sub">Explore our most popular flake colors and see how each one transforms a real garage floor — or upload a photo of your own.</p>
 
     <!-- ROOM SELECTOR (rendered from ROOMS config) -->
     <div style="margin-top:30px">
@@ -2855,6 +2871,21 @@ function toggleAcc(btn){
 })();
 </script>
 
+
+<script>
+/* A picker with nothing to choose between is just noise - hide the whole
+   block (label included) when only one option is selectable. */
+(function(){
+  function tidy(id){
+    var row=document.getElementById(id); if(!row)return;
+    var pills=row.querySelectorAll('.fv-pill:not(.fv-pill-disabled)');
+    if(pills.length<2 && row.parentElement) row.parentElement.style.display='none';
+  }
+  function run(){ tidy('fvSystemPicker'); tidy('fvRoomPicker'); }
+  if(document.readyState!=='loading') setTimeout(run,60);
+  else document.addEventListener('DOMContentLoaded',function(){setTimeout(run,60);});
+})();
+</script>
 
 <script>
 /* nav: hamburger + mobile menu (mirrors index.html) */
