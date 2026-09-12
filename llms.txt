@@ -2,11 +2,11 @@
 
 > Ozarks Concrete Coatings is a local, owner-operated epoxy and polyaspartic floor coating contractor based in Springfield, Missouri, serving a 75-mile radius across Southwest Missouri (50+ cities and communities). Every install uses full diamond-grinding prep and an epoxy-polyaspartic/polyurea hybrid basecoat system, backed by a written Lifetime Warranty against fading, peeling, and yellowing. Most jobs are completed in a single day.
 
-Key facts: phone 417.402.6821, email OzarksConcreteCoatings@gmail.com, based in Springfield/Nixa MO, 5.0 rating across 179 Google reviews, no travel charge within the standard service radius.
+Key facts: phone 417.402.6821, email OzarksConcreteCoatings@gmail.com, based in Springfield/Nixa MO, 5.0 rating on Google across 186 reviews (184 of them five-star), no travel charge within the standard service radius.
 
 ## Core Pages
 
-- [Home](https://ozarksconcretecoatings.com/index.html): Overview, trust signals, service area map, and free quote / instant price calculator entry points.
+- [Home](https://ozarksconcretecoatings.com/): Overview, trust signals, service area map, and free quote / instant price calculator entry points.
 - [About](https://ozarksconcretecoatings.com/about.html): Company background, values, and team.
 - [Residential Services](https://ozarksconcretecoatings.com/residential.html): Overview of all residential coating services.
 - [Commercial Services](https://ozarksconcretecoatings.com/commercial.html): Overview of all commercial/industrial coating services.
@@ -16,6 +16,7 @@ Key facts: phone 417.402.6821, email OzarksConcreteCoatings@gmail.com, based in 
 - [FAQ](https://ozarksconcretecoatings.com/faq.html): Frequently asked questions on pricing, process, warranty, and service area.
 - [Contact](https://ozarksconcretecoatings.com/contact.html): Contact form, phone, email, and hours.
 - [Instant Price Calculator](https://ozarksconcretecoatings.com/instant-quote.html): Self-serve ballpark price estimate tool.
+- [Floor Visualizer](https://ozarksconcretecoatings.com/floor-visualizer.html): Interactive tool that previews 27 real flake colors on a bare-concrete garage photo, or on a photo the visitor uploads. Runs entirely in the browser; uploaded photos never leave the device.
 - [Warranty](https://ozarksconcretecoatings.com/warranty.html): Full written Lifetime Warranty terms and coverage by surface type.
 - [Floor Maintenance Plans](https://ozarksconcretecoatings.com/floor-maintenance.html): Why floor care matters, DIY care guide, and paid maintenance plan pricing.
 - [Financing](https://ozarksconcretecoatings.com/financing.html): Payment/financing options.
