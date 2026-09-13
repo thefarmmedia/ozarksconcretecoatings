@@ -1452,13 +1452,18 @@ function fvApplyColor(skipTrack){
       afterImg.alt = room.alt + ' coated in ' + color.name;
       afterImg.src = url;
     }
-    function render(){
+    // Preset rooms use checked, pre-rendered files. Rebuilding a 1000 x 1000
+    // composite for every click took about seven seconds on a desktop and far
+    // longer on a phone. A second click cancelled the first job, which made
+    // ordinary browsing look as though none of the 27 colors loaded at all.
+    // The bundled previews were generated from this exact garage photograph,
+    // so they keep before/after alignment while loading as normal images.
+    // Only a customer's uploaded photo needs the local canvas compositor.
+    if (fvState.room === 'garage') {
+      finish('/visualizer-previews/' + color.slug.toLowerCase() + '.jpg');
+    } else {
       fvComposite(room, color, finish, function(){ return request !== fvRenderRequest; });
     }
-    // Render against the active room every time so the before/after images
-    // always use the same garage photo. The old pre-rendered previews were
-    // generated from the previous garage and must not be reused here.
-    render();
   }
   if (!skipTrack && color) fvTrack('floor_color_selected', {color: color.slug});
 }
