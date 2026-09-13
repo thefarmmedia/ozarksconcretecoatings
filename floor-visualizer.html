@@ -980,9 +980,9 @@ body{background:var(--bg);color:var(--text)}
 var ROOMS = {
   garage: {
     label: 'Garage',
-    image: '/bare-concrete-garage-floor-springfield-mo.webp',
+    image: '/visualizer-room-garage-20260913.webp',
     alt: 'Bare concrete garage floor before epoxy coating, Springfield MO',
-    floorClipPath: 'polygon(0% 55.7%, 51.8% 45.2%, 56.2% 44.3%, 100% 53.2%, 100% 100%, 0% 100%)',
+    floorClipPath: 'polygon(0% 18.7%, 24.7% 18.8%, 37.7% 18.7%, 51.8% 18.4%, 61% 18.8%, 75% 19.1%, 100% 20.4%, 100% 100%, 0% 100%)',
     preserveObjects: false, // This reference garage is empty; slab stains are not objects.
     // horizonY (eye-level vanishing line, % of image height) may be set
     // per room, but is normally left off: the estimate derived from the
@@ -1455,14 +1455,10 @@ function fvApplyColor(skipTrack){
     function render(){
       fvComposite(room, color, finish, function(){ return request !== fvRenderRequest; });
     }
-    if (fvState.room === 'garage') {
-      // Pre-rendered with the same compositor: instant room previews on phones.
-      // Customer photos remain entirely local and use the live compositor.
-      var preview = new Image();
-      preview.onload = function(){ finish(preview.src); };
-      preview.onerror = function(){ if (request === fvRenderRequest) render(); };
-      preview.src = 'visualizer-previews/' + color.slug.toLowerCase() + '.jpg?v=20260911-fine';
-    } else render();
+    // Render against the active room every time so the before/after images
+    // always use the same garage photo. The old pre-rendered previews were
+    // generated from the previous garage and must not be reused here.
+    render();
   }
   if (!skipTrack && color) fvTrack('floor_color_selected', {color: color.slug});
 }
