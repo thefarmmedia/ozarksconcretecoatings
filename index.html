@@ -483,6 +483,8 @@ footer{background:var(--black);border-top:1.5px solid var(--red);padding:54px 48
 <script src="/vendor/gsap.min.js" defer></script>
 <script src="/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/vendor/lenis.min.js" defer></script>
+<link rel="stylesheet" href="/motion.css"/>
+<script>(function(d){try{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;var c=d.documentElement.classList;c.add('m-pre');if(sessionStorage.getItem('m-wipe'))c.add('m-enter');setTimeout(function(){c.remove('m-pre','m-enter')},2500)}catch(e){}})(document)</script>
 </head>
 <body>
 
@@ -1298,66 +1300,6 @@ async function submitForm(btn){
 document.querySelectorAll('.cur-yr').forEach(e=>e.textContent=new Date().getFullYear());
 </script>
 
-<script>
-/* ── CINEMATIC MOTION SYSTEM ───────────────────────────── */
-window.addEventListener('load', function(){
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduce || !window.gsap || !window.ScrollTrigger) return;
-
-  gsap.registerPlugin(ScrollTrigger);
-
-  /* smooth scroll — the "premium" feel */
-  if (window.Lenis) {
-    var lenis = new Lenis({ duration: 1.15, smoothWheel: true, wheelMultiplier: 0.95 });
-    lenis.on('scroll', ScrollTrigger.update);
-    /* native smooth-scroll fights Lenis — hand anchors to Lenis instead */
-    document.documentElement.style.scrollBehavior = 'auto';
-    document.querySelectorAll('a[href^="#"]').forEach(function(a){
-      a.addEventListener('click', function(ev){
-        var t = document.querySelector(a.getAttribute('href'));
-        if (t) { ev.preventDefault(); lenis.scrollTo(t, { offset:-80 }); }
-      });
-    });
-    gsap.ticker.add(function(t){ lenis.raf(t * 1000); });
-    gsap.ticker.lagSmoothing(0);
-  }
-
-
-  /* section reveals via GSAP (replaces the plain IO fade) */
-  gsap.utils.toArray('.rev').forEach(function(el){
-    gsap.from(el, {
-      y:38, opacity:0, duration:0.95, ease:'expo.out',
-      scrollTrigger:{ trigger:el, start:'top 88%', once:true }
-    });
-  });
-
-  /* project photos drift while scrolling */
-  gsap.utils.toArray('.showcase-img img, .proj-img img').forEach(function(img){
-    gsap.fromTo(img, { yPercent:-6 }, {
-      yPercent:6, ease:'none',
-      scrollTrigger:{ trigger:img, start:'top bottom', end:'bottom top', scrub:true }
-    });
-  });
-
-  /* process timeline: rail fills with scroll, dots light as you pass them */
-  var tl = document.getElementById('procTl');
-  if (tl) {
-    gsap.to('#pstlFill', {
-      scaleY: 1, ease: 'none',
-      scrollTrigger: { trigger: tl, start: 'top 72%', end: 'bottom 78%', scrub: 0.5 }
-    });
-    gsap.utils.toArray('.pstl-item').forEach(function(item){
-      ScrollTrigger.create({
-        trigger: item, start: 'top 72%', end: 'bottom 20%',
-        onEnter:     function(){ item.classList.add('on'); },
-        onEnterBack: function(){ item.classList.add('on'); },
-        onLeaveBack: function(){ item.classList.remove('on'); }
-      });
-    });
-  }
-
-  ScrollTrigger.refresh();
-});
-</script>
+<script src="/motion.js" defer></script>
 </body>
 </html>
