@@ -106,6 +106,8 @@
 @media(max-width:1300px){.nav-drop-wide{min-width:520px}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ozarkconcretecoatings.com/"},{"@type":"ListItem","position":2,"name":"Warranty","item":"https://ozarkconcretecoatings.com/warranty.html"}]}</script>
+<link rel="stylesheet" href="/motion.css"/>
+<script>(function(d){try{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;var c=d.documentElement.classList;c.add('m-pre');if(sessionStorage.getItem('m-wipe'))c.add('m-enter');setTimeout(function(){c.remove('m-pre','m-enter')},2500)}catch(e){}})(document)</script>
 </head>
 <body>
 
@@ -418,5 +420,9 @@
   document.querySelectorAll('.rev').forEach(function(r){obs.observe(r);});
 </script>
 <script>document.querySelectorAll(".cur-yr").forEach(function(e){e.textContent=new Date().getFullYear();});</script>
+<script src="/vendor/gsap.min.js" defer></script>
+<script src="/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/vendor/lenis.min.js" defer></script>
+<script src="/motion.js" defer></script>
 </body>
 </html>

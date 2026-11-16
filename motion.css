@@ -1,0 +1,88 @@
+/* ═══════════════════════════════════════════════════════════
+   OZARKS CONCRETE COATINGS — SITE-WIDE MOTION LAYER
+   Loaded on every page. Pairs with /motion.js (GSAP + ScrollTrigger + Lenis).
+   Everything here is progressive: with JS off or reduced motion on,
+   the page renders exactly as it did before.
+   ═══════════════════════════════════════════════════════════ */
+
+/* Hide hero copy for the split second before motion.js sets its start state
+   (html.m-pre is added by a tiny inline script in <head> and always removed
+   by a 2.5s failsafe, so content can never get stuck hidden). */
+html.m-pre .hero-inner,
+html.m-pre .ph-inner,
+html.m-pre .ch-inner{visibility:hidden}
+
+/* Arriving from another page: start covered by the red wipe. */
+html.m-enter body::after{content:'';position:fixed;inset:0;background:#cc202f;z-index:100000}
+
+/* Let GSAP own the hero entrance instead of the old CSS keyframes. */
+html.m-on .hero-logo,html.m-on .hero-h1,html.m-on .hero-sub,html.m-on .hero-trust,
+html.m-on .hero-ctas,html.m-on .hform,html.m-on .hero-badge{animation:none!important}
+
+/* ── PAGE WIPE ─────────────────────────────────────────── */
+.m-wipe{position:fixed;inset:0;z-index:100000;pointer-events:none;display:flex;align-items:center;justify-content:center;
+  background:#cc202f;transform:translateY(100%)}
+.m-wipe::before{content:'';position:absolute;inset:0;
+  background:repeating-linear-gradient(115deg,rgba(0,0,0,.0) 0 22px,rgba(0,0,0,.08) 22px 24px)}
+.m-wipe-mark{position:relative;font-family:'Bebas Neue',sans-serif;font-size:clamp(46px,9vw,120px);letter-spacing:.04em;
+  color:#070707;line-height:1;white-space:nowrap}
+.m-wipe-mark span{color:#edeae5}
+
+/* ── SCROLL PROGRESS ───────────────────────────────────── */
+.m-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:100001;pointer-events:none;
+  background:linear-gradient(90deg,#a01824,#cc202f 60%,#ff5a66);transform-origin:0 50%;transform:scaleX(0);
+  box-shadow:0 0 12px rgba(204,32,47,.7)}
+
+/* ── NAV: hide on scroll down, glass on scroll ─────────── */
+html.m-on nav{transition:transform .45s cubic-bezier(.16,1,.3,1),background .3s,box-shadow .3s}
+html.m-on nav.m-nav-hide{transform:translateY(-110%)}
+html.m-on nav.m-nav-glass{background:rgba(0,0,0,.78)!important;-webkit-backdrop-filter:blur(14px) saturate(1.4);backdrop-filter:blur(14px) saturate(1.4);
+  box-shadow:0 10px 40px rgba(0,0,0,.55)}
+
+/* ── SPLIT TEXT ────────────────────────────────────────── */
+.m-w{display:inline-block;overflow:hidden;vertical-align:top;padding:.06em .02em .02em;margin:-.06em -.02em -.02em}
+.m-wi{display:inline-block;will-change:transform}
+.m-c{display:inline-block;will-change:transform,opacity;transform-origin:50% 100%}
+.m-hero-words .m-w{overflow:visible;perspective:600px}
+
+/* ── HERO FX ───────────────────────────────────────────── */
+.m-flakes{position:absolute;inset:0;z-index:0;pointer-events:none;width:100%;height:100%}
+.m-glow{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0;transition:opacity .6s;
+  background:radial-gradient(520px circle at var(--mx,70%) var(--my,40%),rgba(204,32,47,.22),transparent 60%)}
+.m-hero-hover .m-glow{opacity:1}
+/* wet-epoxy light sweep across the hero photo */
+.m-sheen{position:absolute;inset:-20% -60%;z-index:0;pointer-events:none;mix-blend-mode:screen;
+  background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.0) 44%,rgba(255,255,255,.22) 50%,rgba(255,255,255,0) 56%,transparent 60%);
+  transform:translateX(-70%)}
+.hero-bg,.ph-bg{will-change:transform}
+
+/* glossy pass on red buttons */
+.btn-red,.nav-cta,.s-call{position:relative;overflow:hidden;isolation:isolate}
+.btn-red::after,.nav-cta::after{content:'';position:absolute;top:0;bottom:0;left:-80%;width:50%;z-index:-1;pointer-events:none;
+  background:linear-gradient(105deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-18deg);transition:left .7s cubic-bezier(.16,1,.3,1)}
+.btn-red:hover::after,.nav-cta:hover::after{left:130%}
+.m-mag{will-change:transform}
+
+/* scroll cue */
+.m-cue{position:absolute;left:50%;bottom:22px;z-index:2;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;
+  font-family:'Barlow Condensed',sans-serif;font-size:10px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:rgba(237,234,229,.55);pointer-events:none}
+.m-cue i{display:block;width:1.5px;height:42px;background:rgba(255,255,255,.12);position:relative;overflow:hidden}
+.m-cue i::after{content:'';position:absolute;left:0;right:0;top:-40%;height:40%;background:#cc202f;animation:mCue 1.6s cubic-bezier(.65,0,.35,1) infinite}
+@keyframes mCue{to{top:110%}}
+@media(max-width:1100px){.m-cue{display:none}}
+
+/* ── MARQUEE BAND ──────────────────────────────────────── */
+.m-marquee{background:#070707;border-top:1px solid rgba(255,255,255,.08);overflow:hidden;padding:26px 0;position:relative;user-select:none}
+.m-marquee::before,.m-marquee::after{content:'';position:absolute;top:0;bottom:0;width:12%;z-index:1;pointer-events:none}
+.m-marquee::before{left:0;background:linear-gradient(90deg,#070707,transparent)}
+.m-marquee::after{right:0;background:linear-gradient(-90deg,#070707,transparent)}
+.m-row{display:flex;width:max-content;white-space:nowrap;will-change:transform}
+.m-row span{font-family:'Bebas Neue',sans-serif;font-size:clamp(54px,9vw,132px);line-height:.95;letter-spacing:.01em;padding-right:.35em}
+.m-row-solid span{color:#edeae5}
+.m-row-solid span b{color:#cc202f;font-weight:400}
+.m-row-out span{color:transparent;-webkit-text-stroke:1.5px rgba(237,234,229,.28)}
+.m-row-out span b{-webkit-text-stroke:1.5px #cc202f;font-weight:400}
+
+@media (prefers-reduced-motion: reduce){
+  .m-wipe,.m-progress,.m-flakes,.m-sheen,.m-glow,.m-cue{display:none!important}
+}

@@ -147,6 +147,8 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:52px 40px
 @media(max-width:1300px){.nav-drop-wide{min-width:520px}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ozarkconcretecoatings.com/"},{"@type":"ListItem","position":2,"name":"Commercial","item":"https://ozarkconcretecoatings.com/commercial.html"},{"@type":"ListItem","position":3,"name":"Churches & Schools","item":"https://ozarkconcretecoatings.com/churches-schools.html"}]}</script>
+<link rel="stylesheet" href="/motion.css"/>
+<script>(function(d){try{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;var c=d.documentElement.classList;c.add('m-pre');if(sessionStorage.getItem('m-wipe'))c.add('m-enter');setTimeout(function(){c.remove('m-pre','m-enter')},2500)}catch(e){}})(document)</script>
 </head>
 <body>
 <div class="topbar">
@@ -456,5 +458,9 @@ footer{background:var(--black);border-top:2px solid var(--red);padding:52px 40px
   document.querySelectorAll('.rev').forEach(r=>obs.observe(r));
   async function submitForm(btn){var card=btn.closest('#quote-form, .sform, .contact-form-card, .big-form, .hform');if(!card)return;var fields=card.querySelectorAll('input[name], select[name], textarea[name]');var data={};fields.forEach(function(f){data[f.name]=f.value.trim();});var errEl=card.querySelector('.form-err');if(!data.firstName&&!data.phone){if(!errEl){errEl=document.createElement('div');errEl.className='form-err';errEl.style.cssText='color:#ff6b6b;font-size:13px;margin-top:10px;text-align:center';btn.insertAdjacentElement('afterend',errEl);}errEl.textContent='Please enter your name and phone number so we can reach you.';return;}if(errEl)errEl.remove();data.page_url=location.href;data.page_title=document.title;var origText=btn.textContent;btn.disabled=true;btn.textContent='Sending...';try{await fetch('https://services.leadconnectorhq.com/hooks/89Z35Kec8GmMXb7deCkL/webhook-trigger/71ba41c7-fff3-428f-8d43-834c5bbcb359',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});}catch(err){console.error('Webhook error:',err);}var wrap=document.createElement('div');wrap.style.cssText='text-align:center;padding:24px 10px';wrap.innerHTML='<div style="font-size:38px;margin-bottom:10px">\u2705</div><div style="font-family:var(--font-c);font-size:19px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px">Request Sent!</div><div style="font-size:14px;color:var(--gray-light);line-height:1.6">We\'ll be in touch within 1 business day.<br/>For immediate help call <a href="tel:4174026821" style="color:var(--red);font-weight:700">417.402.6821</a>.</div>';card.innerHTML='';card.appendChild(wrap);}</script>
 <script>document.querySelectorAll(".cur-yr").forEach(function(e){e.textContent=new Date().getFullYear();});</script>
+<script src="/vendor/gsap.min.js" defer></script>
+<script src="/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/vendor/lenis.min.js" defer></script>
+<script src="/motion.js" defer></script>
 </body>
 </html>
