@@ -136,83 +136,15 @@
     });
   }
 
-  /* ── EPOXY FLAKE BROADCAST (canvas) ──────────────────── */
-  function flakes(host) {
-    var cv = document.createElement('canvas');
-    cv.className = 'm-flakes'; cv.setAttribute('aria-hidden', 'true');
-    var bg = host.firstElementChild;
-    if (bg && !/bg/.test(bg.className)) bg = null;
-    host.insertBefore(cv, bg ? bg.nextSibling : host.firstChild);
-    // make sure the copy stays above the canvas
-    Array.prototype.slice.call(host.children).forEach(function (ch) {
-      if (ch === cv || ch === bg) return;
-      if (getComputedStyle(ch).position === 'static') { ch.style.position = 'relative'; ch.style.zIndex = '1'; }
-    });
-    var ctx = cv.getContext('2d');
-    var dpr = Math.min(window.devicePixelRatio || 1, 2);
-    var W = 0, H = 0, chips = [], mouse = { x: -9999, y: -9999 }, running = true, visible = true;
-    var palette = ['#cc202f', '#cc202f', '#e8333f', '#edeae5', '#bbb8b3', '#8a8480', '#5a5654', '#3a3636', '#1c1a1a', '#d8d2c8'];
-    var N = isSmall ? 26 : 70;
-    // deterministic-ish pseudo random so the pattern is stable per load
-    var seed = 7; function rnd() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
-
-    function make(initial) {
-      var z = 0.45 + rnd() * 0.75, s = (3 + rnd() * 7) * z, pts = [];
-      for (var k = 0; k < 5; k++) { var a = (k / 5) * Math.PI * 2 + rnd() * 0.9; var r = s * (0.55 + rnd() * 0.6); pts.push([Math.cos(a) * r, Math.sin(a) * r]); }
-      return {
-        x: rnd() * W, y: initial ? -rnd() * H * 1.2 : -20 - rnd() * 60,
-        vx: (rnd() - 0.5) * 12, vy: (initial ? 90 : 18) + rnd() * 26 * z, z: z,
-        rot: rnd() * 6.28, vr: (rnd() - 0.5) * 2.2, flip: rnd() * 6.28, vf: 1 + rnd() * 3,
-        sway: rnd() * 6.28, col: palette[Math.floor(rnd() * palette.length)], pts: pts
-      };
-    }
-    function size() {
-      var r = host.getBoundingClientRect(); W = r.width; H = r.height;
-      cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    }
-    size(); for (var i = 0; i < N; i++) chips.push(make(true));
-    window.addEventListener('resize', size);
-    host.addEventListener('pointermove', function (e) { var r = host.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; });
-    host.addEventListener('pointerleave', function () { mouse.x = mouse.y = -9999; });
-    new IntersectionObserver(function (en) { visible = en[0].isIntersecting; }).observe(host);
-    document.addEventListener('visibilitychange', function () { running = !document.hidden; });
-
-    gsap.ticker.add(function (time, dtMs) {
-      if (!running || !visible) return;
-      var dt = Math.min(dtMs, 50) / 1000;
-      ctx.clearRect(0, 0, W, H);
-      for (var i = 0; i < chips.length; i++) {
-        var c = chips[i];
-        c.vy += ((18 + 26 * c.z) - c.vy) * 0.9 * dt;        // settle from the opening "broadcast" burst
-        c.sway += dt * 1.3;
-        var dx = c.x - mouse.x, dy = c.y - mouse.y, d2 = dx * dx + dy * dy;
-        if (d2 < 22000) { var f = (1 - d2 / 22000) * 420 * dt; var d = Math.sqrt(d2) || 1; c.vx += dx / d * f; c.vy += dy / d * f * 0.6; c.vr += 0.05; }
-        c.vx *= 0.97;
-        c.x += (c.vx + Math.sin(c.sway) * 10 * c.z) * dt;
-        c.y += c.vy * dt;
-        c.rot += c.vr * dt; c.flip += c.vf * dt;
-        if (c.y > H + 30 || c.x < -40 || c.x > W + 40) { chips[i] = make(false); continue; }
-        var face = Math.cos(c.flip);                           // tumbling chip catches the light
-        ctx.save(); ctx.translate(c.x, c.y); ctx.rotate(c.rot); ctx.scale(1, Math.max(0.12, Math.abs(face)));
-        ctx.globalAlpha = (0.35 + 0.55 * c.z) * (0.6 + 0.4 * Math.abs(face));
-        ctx.fillStyle = c.col; ctx.beginPath(); ctx.moveTo(c.pts[0][0], c.pts[0][1]);
-        for (var k = 1; k < c.pts.length; k++) ctx.lineTo(c.pts[k][0], c.pts[k][1]);
-        ctx.closePath(); ctx.fill();
-        if (face > 0.93) { ctx.globalAlpha = (face - 0.93) * 9; ctx.fillStyle = '#fff'; ctx.fill(); }
-        ctx.restore();
-      }
-    });
-  }
-
   /* ── HERO ────────────────────────────────────────────── */
   var hero = $('.hero') || $('.page-hero') || $('.calc-hero') || $('.fv-hero');
   if (hero) {
     var bgWrap = $('.hero-bg, .ph-bg', hero);
     var bgImg = bgWrap && $('img', bgWrap);
-    flakes(hero);
 
     var glow = document.createElement('div'); glow.className = 'm-glow';
-    hero.insertBefore(glow, hero.children[1] || null);
+    var bgEl = hero.firstElementChild;
+    hero.insertBefore(glow, bgEl && /bg/.test(bgEl.className) ? bgEl.nextSibling : hero.firstChild);
 
     if (bgWrap) {
       var sheen = document.createElement('div'); sheen.className = 'm-sheen';
@@ -302,6 +234,12 @@
     revs.forEach(function (el) {
       if (hero && hero.contains(el)) return;
       gsap.from(el, { y: 44, opacity: 0, duration: 1, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 88%', once: true } });
+    });
+  } else {
+    // inner pages fade .rev in with their own IntersectionObserver; back it up so
+    // a block can never be skipped on a fast fling and stay invisible
+    revs.forEach(function (el) {
+      ScrollTrigger.create({ trigger: el, start: 'top 96%', once: true, onEnter: function () { el.classList.add('vis'); } });
     });
   }
 
