@@ -51,4 +51,5 @@
   .cov-list,.cov-list *,li.check,li.dot,li.x,.w-section,.breadcrumb,
   .svc-list,.svc-item,.acc-body,.lightbox,.highlight-box,.callout{text-align:left}
   .prose p,.prose h2,.prose h3{margin-left:0;margin-right:0}
+  .hform-head{text-align:center}
 }
